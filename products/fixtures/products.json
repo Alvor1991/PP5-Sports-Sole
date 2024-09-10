@@ -1,0 +1,41 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "sneaker001",
+            "name": "Nike Air Max",
+            "description": "Lightweight and comfortable running shoes with advanced air cushioning technology.",
+            "price": 120.00,
+            "category": 1,
+            "image_url": "https://example.com/nike_air_max.jpg",
+            "image": "nike_air_max.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "sneaker002",
+            "name": "Adidas Superstar",
+            "description": "Classic casual sneakers with timeless design and comfort.",
+            "price": 85.00,
+            "category": 2,
+            "image_url": "https://example.com/adidas_superstar.jpg",
+            "image": "adidas_superstar.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "sneaker003",
+            "name": "Jordan 1 Retro",
+            "description": "Iconic basketball sneakers worn by the best on the court.",
+            "price": 150.00,
+            "category": 3,
+            "image_url": "https://example.com/jordan_1_retro.jpg",
+            "image": "jordan_1_retro.jpg"
+        }
+    }
+]
