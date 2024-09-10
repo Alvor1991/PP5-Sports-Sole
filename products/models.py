@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Category(models.Model):
+    verbose_name_plural = 'Categories'
     """
     Represents a product category.
     """
