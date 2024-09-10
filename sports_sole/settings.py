@@ -61,7 +61,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'PP5.urls'
+ROOT_URLCONF = 'sports_sole.urls'
+
 
 TEMPLATES = [
     {
@@ -105,7 +106,7 @@ LOGIN_REDIRECT_URL = '/'
 
 SITE_ID = 1
 
-WSGI_APPLICATION = 'PP5.wsgi.application'
+WSGI_APPLICATION = 'sports_sole.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
