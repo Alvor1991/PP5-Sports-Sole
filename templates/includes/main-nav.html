@@ -17,10 +17,11 @@
                 Women's
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Running Shoes</a>
-                <a href="" class="dropdown-item">Casual Sneakers</a>
-                <a href="" class="dropdown-item">Basketball Shoes</a>
-                <a href="" class="dropdown-item">All Men's Sneakers</a>
+                <a href="{% url 'products' %}?category=running-shoes" class="dropdown-item">Running Shoes</a>
+                <a href="{% url 'products' %}?category=training-gym-shoes" class="dropdown-item">Training and Gym Shoes</a>
+                <a href="{% url 'products' %}?category=basketball-shoes" class="dropdown-item">Basketball Shoes</a>
+                <a href="{% url 'products' %}?category=lifestyle-sneakers" class="dropdown-item">Casual Sneakers</a>
+                <a href="{% url 'products' %}?category=running-shoes,training-gym-shoes,basketball-shoes,casual-sneakers" class="dropdown-item">All Women's Sneakers</a>
             </div>
         </li>
 
@@ -29,10 +30,11 @@
                 Men's
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Running Shoes</a>
-                <a href="" class="dropdown-item">Casual Sneakers</a>
-                <a href="" class="dropdown-item">Basketball Shoes</a>
-                <a href="" class="dropdown-item">All Men's Sneakers</a>
+                <a href="{% url 'products' %}?category=running-shoes" class="dropdown-item">Running Shoes</a>
+                <a href="{% url 'products' %}?category=training-gym-shoes" class="dropdown-item">Training and Gym Shoes</a>
+                <a href="{% url 'products' %}?category=basketball-shoes" class="dropdown-item">Basketball Shoes</a>
+                <a href="{% url 'products' %}?category=lifestyle-sneakers" class="dropdown-item">Casual Sneakers</a>
+                <a href="{% url 'products' %}?category=running-shoes,training-gym-shoes,basketball-shoes,casual-sneakers" class="dropdown-item">All Women's Sneakers</a>
             </div>
         </li>
 
