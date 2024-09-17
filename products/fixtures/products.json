@@ -8,8 +8,7 @@
             "description": "Lightweight and comfortable running shoes with advanced air cushioning technology.",
             "price": 120.00,
             "category": 1,
-            "image_url": "https://example.com/nike_air_max.jpg",
-            "image": "nike_air_max.jpg"
+            "image": "nike_classic.jpg"
         }
     },
     {
@@ -22,7 +21,7 @@
             "price": 85.00,
             "category": 2,
             "image_url": "https://example.com/adidas_superstar.jpg",
-            "image": "adidas_superstar.jpg"
+            "image": "adidas_sneaker.jpg"
         }
     },
     {
@@ -35,7 +34,7 @@
             "price": 150.00,
             "category": 3,
             "image_url": "https://example.com/jordan_1_retro.jpg",
-            "image": "jordan_1_retro.jpg"
+            "image": "nike_sneakers.jpg"
         }
     },
     {
@@ -48,7 +47,7 @@
             "price": 140.00,
             "category": 1,
             "image_url": "https://example.com/asics_gel_nimbus.jpg",
-            "image": "asics_gel_nimbus.jpg"
+            "image": "adidas_stan.jpg"
         }
     },
     {
