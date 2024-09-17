@@ -8,6 +8,7 @@
             "description": "Lightweight and comfortable running shoes with advanced air cushioning technology.",
             "price": 120.00,
             "category": 1,
+            "gender": "Women",
             "image": "nike_classic.jpg"
         }
     },
