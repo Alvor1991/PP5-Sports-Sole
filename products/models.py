@@ -35,6 +35,7 @@ class Product(models.Model):
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(null=True, blank=True)
+    detail_image = models.ImageField(upload_to='products/', null=True, blank=True)
     gender = models.CharField(max_length=10, choices=[('Men', 'Men'), ('Women', 'Women')], default='Unisex')
 
     def __str__(self):

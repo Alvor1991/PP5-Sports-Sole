@@ -15,11 +15,18 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
-                    {% if product.image %}
+                    {% if product.detail_image %}
+                        <!-- Show the detail image if it exists -->
+                        <a href="{{ product.detail_image.url }}" target="_blank">
+                            <img class="card-img-top img-fluid" src="{{ product.detail_image.url }}" alt="{{ product.name }}">
+                        </a>
+                    {% elif product.image %}
+                        <!-- Fall back to the regular image if detail_image is not set -->
                         <a href="{{ product.image.url }}" target="_blank">
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                         </a>
-                        {% else %}
+                    {% else %}
+                        <!-- Fallback if neither image nor detail_image is available -->
                         <a href="">
                             <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                         </a>
@@ -48,3 +55,4 @@
         </div>
     </div>
 {% endblock %}
+
