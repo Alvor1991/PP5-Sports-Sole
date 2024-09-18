@@ -9,7 +9,8 @@
             "price": 200.00,
             "category": 1,
             "gender": "women",
-            "image": "women_run/woman_run1.jpg"
+            "image": "women_run/woman_run1.jpg",
+            "detail_image": "women_run/woman_run1_detail.jpg"
         }
     },
     {
