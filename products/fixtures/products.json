@@ -23,7 +23,8 @@
             "price": 150.00,
             "category": 1,
             "gender": "women",
-            "image": "women_run/woman_run2.jpg"
+            "image": "women_run/woman_run2.jpg",
+            "detail_image": "women_run/woman_run2_detail.jpg"
         }
     },
     {
@@ -36,7 +37,8 @@
             "price": 100.00,
             "category": 1,
             "gender": "women",
-            "image": "women_run/woman_run3.jpg"
+            "image": "women_run/woman_run3.jpg",
+            "detail_image": "women_run/woman_run3_detail.jpg"
         }
     },
     {
@@ -49,7 +51,8 @@
             "price": 125.00,
             "category": 1,
             "gender": "women",
-            "image": "women_run/woman_run4.jpg"
+            "image": "women_run/woman_run4.jpg",
+            "detail_image": "women_run/woman_run4_detail.jpg"
         }
     },
     {
@@ -62,7 +65,8 @@
             "price": 130.00,
             "category": 1,
             "gender": "women",
-            "image": "women_run/woman_run5.jpg"
+            "image": "women_run/woman_run5.jpg",
+            "detail_image": "women_run/woman_run5_detail.jpg"
         }
     },
     {
@@ -75,7 +79,8 @@
             "price": 200.00,
             "category": 1,
             "gender": "women",
-            "image": "women_run/woman_run6.jpg"
+            "image": "women_run/woman_run6.jpg",
+            "detail_image": "women_run/woman_run6_detail.jpg"
         }
     },
     {
@@ -88,7 +93,8 @@
             "price": 120.00,
             "category": 1,
             "gender": "women",
-            "image": "women_run/woman_run7.jpg"
+            "image": "women_run/woman_run7.jpg",
+            "detail_image": "women_run/woman_run7_detail.jpg"
         }
     },
     {
@@ -101,7 +107,8 @@
             "price": 130.00,
             "category": 1,
             "gender": "women",
-            "image": "women_run/woman_run8.jpg"
+            "image": "women_run/woman_run8.jpg",
+            "detail_image": "women_run/woman_run8_detail.jpg"
         }
     },
     {
@@ -114,7 +121,8 @@
             "price": 110.00,
             "category": 1,
             "gender": "men",
-            "image": "men_run/men_run1.jpg"
+            "image": "men_run/men_run1.jpg",
+            "detail_image": "women_gym/woman_gym1_detail.jpg"
         }
     },
     {
@@ -127,7 +135,8 @@
             "price": 130.00,
             "category": 1,
             "gender": "men",
-            "image": "men_run/men_run2.jpg"
+            "image": "men_run/men_run2.jpg",
+            "detail_image": "women_gym/woman_gym2_detail.jpg.jpg"
         }
     },
     {
@@ -140,7 +149,8 @@
             "price": 210.00,
             "category": 1,
             "gender": "men",
-            "image": "men_run/men_run3.jpg"
+            "image": "men_run/men_run3.jpg",
+            "detail_image": "women_gym/woman_gym3_detail.jpg.jpg"
         }
     },
     {
@@ -153,7 +163,8 @@
             "price": 145.00,
             "category": 1,
             "gender": "men",
-            "image": "men_run/men_run4.jpg"
+            "image": "men_run/men_run4.jpg",
+            "detail_image": "women_run/woman_run1_detail.jpg"
         }
     },
     {
@@ -166,7 +177,8 @@
             "price": 140.00,
             "category": 1,
             "gender": "men",
-            "image": "men_run/men_run5.jpg"
+            "image": "men_run/men_run5.jpg",
+            "detail_image": "women_run/woman_run1_detail.jpg"
         }
     },
     {
@@ -179,7 +191,8 @@
             "price": 160.00,
             "category": 1,
             "gender": "men",
-            "image": "men_run/men_run6.jpg"
+            "image": "men_run/men_run6.jpg",
+            "detail_image": "women_run/woman_run1_detail.jpg"
         }
     },
     {
@@ -192,7 +205,8 @@
             "price": 200.00,
             "category": 1,
             "gender": "men",
-            "image": "men_run/men_run7.jpg"
+            "image": "men_run/men_run7.jpg",
+            "detail_image": "women_run/woman_run1_detail.jpg"
         }
     },
     {
@@ -205,9 +219,11 @@
             "price": 210.00,
             "category": 1,
             "gender": "men",
-            "image": "men_run/men_run8.jpg"
+            "image": "men_run/men_run8.jpg",
+            "detail_image": "women_run/woman_run1_detail.jpg"
         }
     },
+
 
     {
         "pk": 17,
@@ -219,7 +235,8 @@
             "price": 80.00,
             "category": 2,
             "gender": "women",
-            "image": "women_gym/woman_gym1.jpg"
+            "image": "women_gym/woman_gym1.jpg",
+            "detail_image": "women_gym/woman_gym1_detail.jpg"
         }
     },
     {
@@ -232,7 +249,8 @@
             "price": 80.00,
             "category": 2,
             "gender": "women",
-            "image": "women_gym/woman_gym2.jpg"
+            "image": "women_gym/woman_gym2.jpg",
+            "detail_image": "women_gym/woman_gym2_detail.jpg"
         }
     },
     {
@@ -245,7 +263,8 @@
             "price": 110.00,
             "category": 2,
             "gender": "women",
-            "image": "women_gym/woman_gym3.jpg"
+            "image": "women_gym/woman_gym3.jpg",
+            "detail_image": "women_gym/woman_gym3_detail.jpg"
         }
     },
     {
@@ -258,7 +277,8 @@
             "price": 130.00,
             "category": 2,
             "gender": "women",
-            "image": "women_gym/woman_gym4.jpg"
+            "image": "women_gym/woman_gym4.jpg",
+            "detail_image": "women_gym/woman_gym4_detail.jpg"
         }
     },
     {
@@ -271,7 +291,8 @@
             "price": 120.00,
             "category": 2,
             "gender": "women",
-            "image": "women_gym/woman_gym5.jpg"
+            "image": "women_gym/woman_gym5.jpg",
+            "detail_image": "women_gym/woman_gym5_detail.jpg"
         }
     },
     {
@@ -284,7 +305,8 @@
             "price": 130.00,
             "category": 2,
             "gender": "women",
-            "image": "women_gym/woman_gym6.jpg"
+            "image": "women_gym/woman_gym6.jpg",
+            "detail_image": "women_gym/woman_gym6_detail.jpg"
         }
     },
     {
@@ -297,7 +319,8 @@
             "price": 120.00,
             "category": 2,
             "gender": "women",
-            "image": "women_gym/woman_gym7.jpg"
+            "image": "women_gym/woman_gym7.jpg",
+            "detail_image": "women_gym/woman_gym7_detail.jpg"
         }
     },
     {
@@ -310,7 +333,8 @@
             "price": 140.00,
             "category": 2,
             "gender": "women",
-            "image": "women_gym/woman_gym8.jpg"
+            "image": "women_gym/woman_gym8.jpg",
+            "detail_image": "women_gym/woman_gym8_detail.jpg"
         }
     },
     {
@@ -323,7 +347,8 @@
             "price": 120.00,
             "category": 2,
             "gender": "men",
-            "image": "men_gym/men_gym1.jpg"
+            "image": "men_gym/men_gym1.jpg",
+            "detail_image": "women_run/woman_run1_detail.jpg"
         }
     },
     {
@@ -336,7 +361,8 @@
             "price": 100.00,
             "category": 2,
             "gender": "men",
-            "image": "men_gym/men_gym2.jpg"
+            "image": "men_gym/men_gym2.jpg",
+            "detail_image": "women_run/woman_run1_detail.jpg"
         }
     },
     {
@@ -349,7 +375,8 @@
             "price": 180.00,
             "category": 2,
             "gender": "men",
-            "image": "men_gym/men_gym3.jpg"
+            "image": "men_gym/men_gym3.jpg",
+            "detail_image": "women_run/woman_run1_detail.jpg"
         }
     },
     {
@@ -362,7 +389,8 @@
             "price": 85.00,
             "category": 2,
             "gender": "men",
-            "image": "men_gym/men_gym4.jpg"
+            "image": "men_gym/men_gym4.jpg",
+            "detail_image": "women_run/woman_run1_detail.jpg"
         }
     },
     {
@@ -375,7 +403,8 @@
             "price": 170.00,
             "category": 2,
             "gender": "men",
-            "image": "men_gym/men_gym5.jpg"
+            "image": "men_gym/men_gym5.jpg",
+            "detail_image": "women_run/woman_run1_detail.jpg"
         }
     },
     {
@@ -388,7 +417,8 @@
             "price": 140.00,
             "category": 2,
             "gender": "men",
-            "image": "men_gym/men_gym6.jpg"
+            "image": "men_gym/men_gym6.jpg",
+            "detail_image": "women_run/woman_run1_detail.jpg"
         }
     },
     {
@@ -401,7 +431,8 @@
             "price": 130.00,
             "category": 2,
             "gender": "men",
-            "image": "men_gym/men_gym7.jpg"
+            "image": "men_gym/men_gym7.jpg",
+            "detail_image": "women_run/woman_run1_detail.jpg"
         }
     },
     {
@@ -414,7 +445,456 @@
             "price": 100.00,
             "category": 2,
             "gender": "men",
-            "image": "men_gym/men_gym8.jpg"
+            "image": "men_gym/men_gym8.jpg",
+            "detail_image": "women_run/woman_run1_detail.jpg"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "products.product",
+        "fields": {
+            "sku": "woman_bball1",
+            "name": "Nike Air Force 1 Mid 07",
+            "description": "A classic basketball silhouette, the Nike Air Force 1 Mid 07 features a sleek all-white design. It offers superior ankle support with a mid-top collar and includes a Velcro strap for a secure fit. The full-length Air-Sole unit in the midsole provides cushioning for both comfort and performance.",
+            "price": 110.00,
+            "category": 3,
+            "gender": "women",
+            "image": "women_bbl/woman_bbl1.jpg",
+            "detail_image": "women_bbl/woman_bbl1_detail.jpg"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "products.product",
+        "fields": {
+            "sku": "woman_bball2",
+            "name": "Nike PG 3 NASA",
+            "description": "his sneaker is part of Paul George's signature line, inspired by his passion for space exploration. The vibrant color scheme and NASA patchwork make it stand out on and off the court. It offers great responsiveness with Zoom Air cushioning, perfect for dynamic movements in basketball.",
+            "price": 120.00,
+            "category": 3,
+            "gender": "women",
+            "image": "women_bbl/woman_bbl2.jpg",
+            "detail_image": "women_bbl/woman_bbl2_detail.jpg"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "products.product",
+        "fields": {
+            "sku": "woman_bball3",
+            "name": "Nike Air Huarache City Utility",
+            "description": "The Nike Air Huarache City Utility combines a sleek street style with the durability of a utility sneaker. The bold colors and heavy-duty straps offer a secure fit while the lightweight design keeps you agile on the court. The rubber outsole provides excellent traction, making these ideal for quick movements during basketball games.",
+            "price": 120.00,
+            "category": 3,
+            "gender": "women",
+            "image": "women_bbl/woman_bbl3.jpg",
+            "detail_image": "women_bbl/woman_bbl3_detail.jpg"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "products.product",
+        "fields": {
+            "sku": "woman_bball4",
+            "name": "Nike Kyrie 6 Preheat",
+            "description": "The Nike Kyrie 6 Preheat is a vibrant, high-performance basketball shoe designed for agility and speed. The shoe features responsive cushioning and excellent support, perfect for fast, multidirectional movements. With its eye-catching colorways and Kyrie's signature touch, this shoe delivers both style and functionality on and off the court.",
+            "price": 130.00,
+            "category": 3,
+            "gender": "women",
+            "image": "women_bbl/woman_bbl4.jpg",
+            "detail_image": "women_bbl/woman_bbl4_detail.jpg"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "products.product",
+        "fields": {
+            "sku": "woman_bball5",
+            "name": "Nike Air Force 270 QS",
+            "description": "The Nike Air Force 270 QS features a bold, modern look with a high-cut design and cushioned Air Max sole for optimal support and style. Its midfoot straps provide extra lockdown for stability, making this shoe perfect for intense court play.",
+            "price": 180.00,
+            "category": 3,
+            "gender": "women",
+            "image": "women_bbl/woman_bbl5.jpg",
+            "detail_image": "women_bbl/woman_bbl5_detail.jpg"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "products.product",
+        "fields": {
+            "sku": "woman_bball6",
+            "name": "Nike LeBron 15",
+            "description": "The Nike LeBron 15 is designed for performance and style, featuring a unique BattleKnit upper for strength, flexibility, and lightweight support. The full-length Max Air and Zoom Air cushioning offers ultimate comfort and impact protection during high-impact basketball games.",
+            "price": 200.00,
+            "category": 3,
+            "gender": "women",
+            "image": "women_bbl/woman_bbl6.jpg",
+            "detail_image": "women_bbl/woman_bbl6_detail.jpg"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "products.product",
+        "fields": {
+            "sku": "woman_bball7",
+            "name": "Nike Kyrie 4",
+            "description": "Built for precision on the court, the Nike Kyrie 4 is designed for agile and quick movements. With enhanced traction and a comfortable fit, it provides a responsive feel perfect for players seeking to improve their performance.",
+            "price": 130.00,
+            "category": 3,
+            "gender": "women",
+            "image": "women_bbl/woman_bbl7.jpg",
+            "detail_image": "women_bbl/woman_bbl7_detail.jpg"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "products.product",
+        "fields": {
+            "sku": "woman_bball8",
+            "name": "Nike PG 3",
+            "description": "The Nike PG 3 combines lightweight support and a snug fit with multi-directional traction for versatile play on the court. Designed for optimal responsiveness, it enhances your control during fast-paced games.",
+            "price": 110.00,
+            "category": 3,
+            "gender": "women",
+            "image": "women_bbl/woman_bbl8.jpg",
+            "detail_image": "women_bbl/woman_bbl8_detail.jpg"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_bball1",
+            "name": "Nike Lebron Witness II GS",
+            "description": "A durable, mid-top basketball shoe designed for superior support and agility on the court. The shoe features a sleek black design with colorful accents on the outsole. It offers cushioned comfort and a breathable mesh upper, perfect for intense basketball sessions.",
+            "price": 90.00,
+            "category": 3,
+            "gender": "men",
+            "image": "men_bbl/men_bbal1.jpg",
+            "detail_image": "men_bbl/men_bbal1_detail.jpg"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_bball2",
+            "name": "Nike Air Force 1 Mid 07 LV8",
+            "description": "A classic basketball shoe that offers both style and performance. The Air Force 1 Mid 07 LV8 comes with a leather upper and ankle strap for enhanced support. Its cushioned sole ensures comfort for long-lasting wear, making it ideal for both on and off the court.",
+            "price": 120.00,
+            "category": 3,
+            "gender": "men",
+            "image": "men_bbl/men_bbal2.jpg",
+            "detail_image": "men_bbl/men_bbal2_detail.jpg"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_bball3",
+            "name": "Reebok Shaqnosis OG",
+            "description": "The Reebok Shaqnosis OG is a retro basketball shoe originally released in the '90s, made famous by Shaquille O'Neal. With bold, hypnotic stripes and a high-top design, these shoes offer excellent ankle support and comfort for on-court performance.",
+            "price": 150.00,
+            "category": 3,
+            "gender": "men",
+            "image": "men_bbl/men_bbal3.jpg",
+            "detail_image": "men_bbl/men_bbal3_detail.jpg"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_bball4",
+            "name": "Nike Air Force 1 High LV8",
+            "description": "The Nike Air Force 1 High LV8 is an elevated take on the iconic high-top design. Featuring a sleek black and gold colorway, this model combines classic Air Force 1 elements with premium details for a standout look on and off the court.",
+            "price": 130.00,
+            "category": 3,
+            "gender": "men",
+            "image": "men_bbl/men_bbal4.jpg",
+            "detail_image": "men_bbl/men_bbal4_detail.jpg"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_bball5",
+            "name": "Nike KD Trey 5 VII Basketball Shoes",
+            "description": "Designed for ultimate performance on the court, the Nike KD Trey 5 VII is a lightweight basketball shoe with excellent ankle support and a responsive foam midsole for added comfort. The stylish blue upper features a breathable mesh material, and the rubber outsole offers superior traction for quick movements.",
+            "price": 120.00,
+            "category": 3,
+            "gender": "men",
+            "image": "men_bbl/men_bbal5.jpg",
+            "detail_image": "men_bbl/men_bbal5_detail.jpg"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_bball6",
+            "name": "Nike Kobe AD",
+            "description": "A tribute to the legendary Kobe Bryant, these Nike Kobe AD basketball shoes feature a sleek, low-profile design with premium cushioning for explosive movements on the court. The black and yellow color scheme, along with the durable outer sole, makes this shoe ideal for both performance and style.",
+            "price": 130.00,
+            "category": 3,
+            "gender": "men",
+            "image": "men_bbl/men_bbal6.jpg",
+            "detail_image": "men_bbl/men_bbal6_detail.jpg"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_bball7",
+            "name": "Nike Air More Uptempo",
+            "description": "The Nike Air More Uptempo is iconic with its bold AIR branding across the shoe, representing 90s basketball culture. Featuring full-length air cushioning for maximum comfort and durability, this shoe is perfect for on-court performance and off-court style.",
+            "price": 170.00,
+            "category": 3,
+            "gender": "men",
+            "image": "men_bbl/men_bbal7.jpg",
+            "detail_image": "men_bbl/men_bbal7_detail.jpg"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_bball8",
+            "name": "Adidas Crazy BYW LVL I",
+            "description": "The Adidas Crazy BYW LVL I takes inspiration from retro basketball sneakers with a futuristic twist. Featuring a podular midsole for responsive cushioning and a Primeknit upper for flexibility and support, these shoes are designed to give players agility and comfort on the court.",
+            "price": 150.00,
+            "category": 3,
+            "gender": "men",
+            "image": "men_bbl/men_bbal8.jpg",
+            "detail_image": "men_bbl/men_bbal8_detail.jpg"
+        }
+    },
+    {
+        "pk": 49,
+        "model": "products.product",
+        "fields": {
+            "sku": "woman_cas1",
+            "name": "Nike SB Zoom Stefan Janoski",
+            "description": "The Nike SB Zoom Stefan Janoski is a stylish skateboarding shoe designed with a minimalist silhouette and crafted with durable canvas material. The pink upper contrasts sharply with the black Nike swoosh for a sleek, feminine look. A vulcanized rubber sole ensures flexibility, while a low-profile design enhances board feel, making it ideal for casual wear or skating.",
+            "price": 80.00,
+            "category": 4,
+            "gender": "women",
+            "image": "women_cas/woman_cas1.jpg",
+            "detail_image": "women_cas/woman_cas1_detail.jpg"
+        }
+    },
+    {
+        "pk": 50,
+        "model": "products.product",
+        "fields": {
+            "sku": "woman_cas2",
+            "name": "Nike Court Royale",
+            "description": "The Nike Court Royale features a classic tennis-inspired design with a white leather upper and vibrant purple accents. The shoe offers both comfort and retro appeal, with a padded collar and a durable rubber sole. Its simple yet bold colorway makes it perfect for everyday wear while maintaining a sporty edge.",
+            "price": 70.00,
+            "category": 4,
+            "gender": "women",
+            "image": "women_cas/woman_cas2.jpg",
+            "detail_image": "women_cas/woman_cas2_detail.jpg"
+        }
+    },
+    {
+        "pk": 51,
+        "model": "products.product",
+        "fields": {
+            "sku": "woman_cas3",
+            "name": "Nike Air Force 1 LXX",
+            "description": "The iconic Nike Air Force 1 gets a wild twist with a sleek leopard print design. Featuring a soft teal suede and durable leather overlays, this shoe maintains the timeless look of the Air Force 1 with an added flair. A perfect balance of comfort, style, and durability, it's a must-have for casual wear.",
+            "price": 120.00,
+            "category": 4,
+            "gender": "women",
+            "image": "women_cas/woman_cas3.jpg",
+            "detail_image": "women_cas/woman_cas3_detail.jpg"
+        }
+    },
+    {
+        "pk": 52,
+        "model": "products.product",
+        "fields": {
+            "sku": "woman_cas4",
+            "name": "Nike Air Force 1",
+            "description": " fresh take on the classic Nike Air Force 1, this model boasts a pastel color mix, blending shades of blue and grey for a subtle yet fashionable look. With its comfortable midsole cushioning and signature Air technology, this shoe is a casual essential for any wardrobe.",
+            "price": 110.00,
+            "category": 4,
+            "gender": "women",
+            "image": "women_cas/woman_cas4.jpg",
+            "detail_image": "women_cas/woman_cas4_detail.jpg"
+        }
+    },
+    {
+        "pk": 53,
+        "model": "products.product",
+        "fields": {
+            "sku": "woman_cas5",
+            "name": "Nike Air Force 1 '07 LX",
+            "description": "The Nike Air Force 1 '07 LX is an iconic casual shoe with a premium twist. Featuring a crisp white leather upper and a bold metallic gold snakeskin-patterned Swoosh, this shoe combines classic AF1 style with a luxurious aesthetic. The low-top silhouette ensures all-day comfort with its padded collar and responsive cushioning, making it perfect for everyday wear.",
+            "price": 120.00,
+            "category": 4,
+            "gender": "women",
+            "image": "women_cas/woman_cas5.jpg",
+            "detail_image": "women_cas/woman_cas5_detail.jpg"
+        }
+    },
+    {
+        "pk": 54,
+        "model": "products.product",
+        "fields": {
+            "sku": "woman_cas6",
+            "name": "Nike Blazer Low",
+            "description": "The Nike Blazer Low in pink suede offers a retro-inspired look with a modern twist. Its sleek low-top design pairs well with casual outfits, while the gum rubber outsole adds traction and durability. Featuring a simple yet stylish white Swoosh and comfortable construction, this shoe is perfect for a laid-back, everyday look.",
+            "price": 85.00,
+            "category": 4,
+            "gender": "women",
+            "image": "women_cas/woman_cas6.jpg",
+            "detail_image": "women_cas/woman_cas6_detail.jpg"
+        }
+    },
+    {
+        "pk": 55,
+        "model": "products.product",
+        "fields": {
+            "sku": "woman_cas7",
+            "name": "Nike Air Force 1 GTX",
+            "description": "The Nike Air Force 1 GTX is built for durability and all-weather wear, thanks to its waterproof GORE-TEX upper. It features the classic AF1 silhouette but enhanced with performance elements to withstand the elements while still offering the timeless style and comfort of Air cushioning.",
+            "price": 150.00,
+            "category": 4,
+            "gender": "women",
+            "image": "women_cas/woman_cas7.jpg",
+            "detail_image": "women_cas/woman_cas7_detail.jpg"
+        }
+    },
+    {
+        "pk": 56,
+        "model": "products.product",
+        "fields": {
+            "sku": "woman_cas8",
+            "name": "Adidas Stan Smith",
+            "description": "The Adidas Stan Smith remains a timeless icon with its minimalist design. Originally created as a tennis shoe, it has transcended into an everyday staple with its crisp white leather upper, perforated three stripes, and green heel tab. A comfortable and versatile option for casual wear.",
+            "price": 90.00,
+            "category": 4,
+            "gender": "women",
+            "image": "women_cas/woman_cas8.jpg",
+            "detail_image": "women_cas/woman_cas8_detail.jpg"
+        }
+    },
+    {
+        "pk": 57,
+        "model": "products.product",
+        "fields": {
+            "sku": "men_cas1",
+            "name": "Nike SB Check Solarsoft",
+            "description": "A sleek and minimalist casual shoe designed with Nike's Solarsoft sockliner for added comfort and support. The shoe features a durable canvas upper, providing lightweight breathability and flexibility. Perfect for everyday wear or light skateboarding sessions.",
+            "price": 65.00,
+            "category": 4,
+            "gender": "men",
+            "image": "men_cas/men_cas1.jpg",
+            "detail_image": "men_cas/men_cas1_detail.jpg"
+        }
+    },
+    {
+        "pk": 58,
+        "model": "products.product",
+        "fields": {
+            "sku": "men_cas2",
+            "name": "Nike Classic Cortez",
+            "description": "The Nike Classic Cortez delivers retro style inspired by the 1972 original. With its durable suede and nylon upper and lightweight EVA midsole, this shoe combines comfort and heritage style. Ideal for casual outings with a classic flair.",
+            "price": 85.00,
+            "category": 4,
+            "gender": "men",
+            "image": "men_cas/men_cas2.jpg",
+            "detail_image": "men_cas/men_cas2_detail.jpg"
+        }
+    },
+    {
+        "pk": 59,
+        "model": "products.product",
+        "fields": {
+            "sku": "men_cas3",
+            "name": "Nike SB Blazer Low",
+            "description": "A classic low-profile design that blends comfort with a minimalist style. The grey suede upper and gum sole offer durability, while the cushioned insole ensures all-day comfort. Perfect for casual wear and light skating.",
+            "price": 65.00,
+            "category": 4,
+            "gender": "men",
+            "image": "men_cas/men_cas3.jpg",
+            "detail_image": "men_cas/men_cas3_detail.jpg"
+        }
+    },
+    {
+        "pk": 60,
+        "model": "products.product",
+        "fields": {
+            "sku": "men_cas4",
+            "name": "Nike SB Stefan Janoski",
+            "description": "A sleek skateboarding shoe with a durable suede upper and responsive cushioning. This teal-colored sneaker combines a timeless silhouette with Janoski’s signature design elements, featuring a flexible midsole for a natural feel.",
+            "price": 85.00,
+            "category": 4,
+            "gender": "men",
+            "image": "men_cas/men_cas4.jpg",
+            "detail_image": "men_cas/men_cas4_detail.jpg"
+        }
+    },
+    {
+        "pk": 61,
+        "model": "products.product",
+        "fields": {
+            "sku": "men_cas5",
+            "name": "Nike SB Check Solarsoft Canvas",
+            "description": "The Nike SB Check Solarsoft Canvas offers casual style with skate-ready features. The durable canvas upper is lightweight and breathable, while Solarsoft cushioning provides impact protection for all-day comfort. The gum rubber outsole enhances grip, and the sleek dark grey design with a black Nike Swoosh ensures a modern, minimalist look.",
+            "price": 65.00,
+            "category": 4,
+            "gender": "men",
+            "image": "men_cas/men_cas5.jpg",
+            "detail_image": "men_cas/men_cas5_detail.jpg"
+        }
+    },
+    {
+        "pk": 62,
+        "model": "products.product",
+        "fields": {
+            "sku": "men_cas6",
+            "name": "Nike Air Force 1",
+            "description": "The Air Force 1 is one of Nike's most iconic sneakers, known for its timeless design, versatile look, and comfortable wear. This particular version features a suede upper, giving it a premium feel.",
+            "price": 95.00,
+            "category": 4,
+            "gender": "men",
+            "image": "men_cas/men_cas6.jpg",
+            "detail_image": "men_cas/men_cas6_detail.jpg"
+        }
+    },
+    {
+        "pk": 63,
+        "model": "products.product",
+        "fields": {
+            "sku": "men_cas7",
+            "name": "Nike Classic Cortez",
+            "description": "The Nike SB Check Solarsoft offers a flexible design with a cushioned midsole, perfect for both casual wear and skateboarding.",
+            "price": 85.00,
+            "category": 4,
+            "gender": "men",
+            "image": "men_cas/men_cas7.jpg",
+            "detail_image": "men_cas/men_cas7_detail.jpg"
+        }
+    },
+    {
+        "pk": 64,
+        "model": "products.product",
+        "fields": {
+            "sku": "men_cas8",
+            "name": "Nike SB Zoom Janoski Slip RM",
+            "description": "The Nike SB Zoom Janoski Slip RM delivers a sleek, low-profile design with skate-inspired functionality. This slip-on shoe features a canvas upper for durability, a Zoom Air unit for responsive cushioning, and a gum rubber outsole for excellent grip. The minimalist design makes it versatile for both skating and everyday wear.",
+            "price": 75.00,
+            "category": 4,
+            "gender": "men",
+            "image": "men_cas/men_cas8.jpg",
+            "detail_image": "men_cas/men_cas8_detail.jpg"
         }
     }
 ]
