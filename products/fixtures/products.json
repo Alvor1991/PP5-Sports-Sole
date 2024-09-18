@@ -3,156 +3,106 @@
         "pk": 1,
         "model": "products.product",
         "fields": {
-            "sku": "sneaker001",
-            "name": "Nike Air Max",
-            "description": "Lightweight and comfortable running shoes with advanced air cushioning technology.",
+            "sku": "woman_run1",
+            "name": "Women's Running Shoe 1",
+            "description": "High-performance running shoes designed for women, offering comfort and support.",
             "price": 120.00,
             "category": 1,
-            "gender": "Women",
-            "image": "nike_classic.jpg"
+            "gender": "women",
+            "image": "women_run/woman_run1.jpg"
         }
     },
     {
         "pk": 2,
         "model": "products.product",
         "fields": {
-            "sku": "sneaker002",
-            "name": "Adidas Superstar",
-            "description": "Classic casual sneakers with timeless design and comfort.",
-            "price": 85.00,
-            "category": 2,
-            "image_url": "https://example.com/adidas_superstar.jpg",
-            "image": "adidas_sneaker.jpg"
+            "sku": "woman_run2",
+            "name": "Women's Running Shoe 2",
+            "description": "Lightweight running shoes with enhanced cushioning, perfect for long runs.",
+            "price": 130.00,
+            "category": 1,
+            "gender": "women",
+            "image": "women_run/woman_run2.jpg"
         }
     },
     {
         "pk": 3,
         "model": "products.product",
         "fields": {
-            "sku": "sneaker003",
-            "name": "Jordan 1 Retro",
-            "description": "Iconic basketball sneakers worn by the best on the court.",
-            "price": 150.00,
-            "category": 3,
-            "image_url": "https://example.com/jordan_1_retro.jpg",
-            "image": "nike_sneakers.jpg"
+            "sku": "woman_run3",
+            "name": "Women's Running Shoe 3",
+            "description": "Stylish and durable running shoes for daily use.",
+            "price": 115.00,
+            "category": 1,
+            "gender": "women",
+            "image": "women_run/woman_run3.jpg"
         }
     },
     {
         "pk": 4,
         "model": "products.product",
         "fields": {
-            "sku": "sneaker004",
-            "name": "Asics Gel-Nimbus 23",
-            "description": "Premium running shoes with excellent cushioning and support for long-distance runs.",
-            "price": 140.00,
+            "sku": "woman_run4",
+            "name": "Women's Running Shoe 4",
+            "description": "Breathable shoes designed to provide stability and speed.",
+            "price": 125.00,
             "category": 1,
-            "image_url": "https://example.com/asics_gel_nimbus.jpg",
-            "image": "adidas_stan.jpg"
+            "gender": "women",
+            "image": "women_run/woman_run4.jpg"
         }
     },
     {
         "pk": 5,
         "model": "products.product",
         "fields": {
-            "sku": "sneaker005",
-            "name": "Reebok Nano X1",
-            "description": "Versatile training shoes perfect for gym workouts and cross-training.",
-            "price": 130.00,
-            "category": 2,
-            "image_url": "https://example.com/reebok_nano_x1.jpg",
-            "image": "reebok_nano_x1.jpg"
+            "sku": "man_run1",
+            "name": "Men's Running Shoe 1",
+            "description": "Men's running shoes with advanced traction and comfort features.",
+            "price": 110.00,
+            "category": 1,
+            "gender": "men",
+            "image": "men_run/men_run1.jpg"
         }
     },
     {
         "pk": 6,
         "model": "products.product",
         "fields": {
-            "sku": "sneaker006",
-            "name": "Under Armour Curry 8",
-            "description": "High-performance basketball sneakers designed for speed and agility on the court.",
-            "price": 160.00,
-            "category": 3,
-            "image_url": "https://example.com/under_armour_curry.jpg",
-            "image": "under_armour_curry.jpg"
+            "sku": "man_run2",
+            "name": "Men's Running Shoe 2",
+            "description": "Durable men's running shoes for long-distance performance.",
+            "price": 140.00,
+            "category": 1,
+            "gender": "men",
+            "image": "men_run/men_run2.jpg"
         }
     },
     {
         "pk": 7,
         "model": "products.product",
         "fields": {
-            "sku": "sneaker007",
-            "name": "Converse Chuck Taylor All Star",
-            "description": "Casual sneakers with a classic design, perfect for everyday wear.",
-            "price": 60.00,
-            "category": 4,
-            "image_url": "https://example.com/converse_chuck_taylor.jpg",
-            "image": "converse_chuck_taylor.jpg"
+            "sku": "man_run3",
+            "name": "Men's Running Shoe 3",
+            "description": "Lightweight and breathable shoes for men, optimized for speed.",
+            "price": 135.00,
+            "category": 1,
+            "gender": "men",
+            "image": "men_run/men_run3.jpg"
         }
     },
     {
         "pk": 8,
         "model": "products.product",
         "fields": {
-            "sku": "sneaker008",
-            "name": "Nike Metcon 7",
-            "description": "Durable training shoes designed for weightlifting and intense gym sessions.",
-            "price": 130.00,
-            "category": 2,
-            "image_url": "https://example.com/nike_metcon.jpg",
-            "image": "nike_metcon.jpg"
-        }
-    },
-    {
-        "pk": 9,
-        "model": "products.product",
-        "fields": {
-            "sku": "sneaker009",
-            "name": "Puma RS-X3",
-            "description": "Stylish lifestyle sneakers with bold colors and a retro-inspired design.",
-            "price": 110.00,
-            "category": 4,
-            "image_url": "https://example.com/puma_rs_x3.jpg",
-            "image": "puma_rs_x3.jpg"
-        }
-    },
-    {
-        "pk": 10,
-        "model": "products.product",
-        "fields": {
-            "sku": "sneaker010",
-            "name": "Nike Zoom Freak 3",
-            "description": "High-performance basketball shoes worn by Giannis Antetokounmpo, built for explosive movements on the court.",
-            "price": 160.00,
-            "category": 3,
-            "image_url": "https://example.com/nike_zoom_freak.jpg",
-            "image": "nike_zoom_freak.jpg"
-        }
-    },
-    {
-        "pk": 11,
-        "model": "products.product",
-        "fields": {
-            "sku": "sneaker011",
-            "name": "Adidas UltraBoost 21",
-            "description": "Premium running shoes with responsive cushioning and a lightweight design.",
-            "price": 180.00,
+            "sku": "man_run4",
+            "name": "Men's Running Shoe 4",
+            "description": "Running shoes offering superior grip and comfort for men.",
+            "price": 145.00,
             "category": 1,
-            "image_url": "https://example.com/adidas_ultraboost.jpg",
-            "image": "adidas_ultraboost.jpg"
-        }
-    },
-    {
-        "pk": 12,
-        "model": "products.product",
-        "fields": {
-            "sku": "sneaker012",
-            "name": "Nike Air Force 1 '07",
-            "description": "Iconic lifestyle sneakers with timeless style and versatility.",
-            "price": 90.00,
-            "category": 4,
-            "image_url": "https://example.com/nike_air_force_1.jpg",
-            "image": "nike_air_force_1.jpg"
+            "gender": "men",
+            "image": "men_run/men_run4.jpg"
         }
     }
 ]
+
+
