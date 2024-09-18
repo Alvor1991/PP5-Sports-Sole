@@ -4,9 +4,9 @@
         "model": "products.product",
         "fields": {
             "sku": "woman_run1",
-            "name": "Women's Running Shoe 1",
-            "description": "High-performance running shoes designed for women, offering comfort and support.",
-            "price": 120.00,
+            "name": "Nike Air VaporMax Flyknit 2",
+            "description": "The Nike Air VaporMax Flyknit 2 features a lightweight and breathable Flyknit upper with responsive cushioning. The full-length VaporMax air unit ensures soft landings with every stride, making it ideal for running or casual wear.",
+            "price": 200.00,
             "category": 1,
             "gender": "women",
             "image": "women_run/woman_run1.jpg"
@@ -17,9 +17,9 @@
         "model": "products.product",
         "fields": {
             "sku": "woman_run2",
-            "name": "Women's Running Shoe 2",
-            "description": "Lightweight running shoes with enhanced cushioning, perfect for long runs.",
-            "price": 130.00,
+            "name": "Adidas NMD_R1 Primeknit",
+            "description": "The Adidas NMD_R1 combines street-ready style with running technology. The Primeknit upper offers a snug fit, while Boost cushioning provides energy return with each step, perfect for all-day wear.",
+            "price": 150.00,
             "category": 1,
             "gender": "women",
             "image": "women_run/woman_run2.jpg"
@@ -30,9 +30,9 @@
         "model": "products.product",
         "fields": {
             "sku": "woman_run3",
-            "name": "Women's Running Shoe 3",
-            "description": "Stylish and durable running shoes for daily use.",
-            "price": 115.00,
+            "name": "Adidas Alphabounce Beyond",
+            "description": "Designed for athletes, the Adidas Alphabounce Beyond features a flexible and durable upper for comfort and stability during runs. The Bounce midsole provides responsive cushioning, perfect for dynamic movements.",
+            "price": 100.00,
             "category": 1,
             "gender": "women",
             "image": "women_run/woman_run3.jpg"
@@ -43,8 +43,8 @@
         "model": "products.product",
         "fields": {
             "sku": "woman_run4",
-            "name": "Women's Running Shoe 4",
-            "description": "Breathable shoes designed to provide stability and speed.",
+            "name": "Nike Free RN Flyknit 2018",
+            "description": "Lightweight and adaptive, the Nike Free RN Flyknit 2018 offers a snug, sock-like fit. The flexible outsole moves naturally with your foot, making it perfect for running short distances and daily training.",
             "price": 125.00,
             "category": 1,
             "gender": "women",
@@ -55,9 +55,61 @@
         "pk": 5,
         "model": "products.product",
         "fields": {
+            "sku": "woman_run5",
+            "name": "Nike Free RN Flyknit 2018",
+            "description": "The Nike Free RN Flyknit 2018 is designed for natural movement with an ultra-light, breathable Flyknit upper. The flexible sole mimics the foot’s natural motion, making it ideal for running or training. This shoe provides a sock-like fit with superior comfort, ideal for athletes looking for a barefoot-like feel during workouts or casual runs.",
+            "price": 130.00,
+            "category": 1,
+            "gender": "women",
+            "image": "women_run/woman_run5.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "woman_run6",
+            "name": "Nike Air VaporMax Flyknit 2",
+            "description": "Features a lightweight and breathable Flyknit upper with responsive cushioning. The full-length VaporMax air unit ensures soft landings with every stride, making it ideal for running or casual wear.",
+            "price": 200.00,
+            "category": 1,
+            "gender": "women",
+            "image": "women_run/woman_run6.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "woman_run7",
+            "name": "Nike Free RN Flyknit 2018",
+            "description": "Built with a lightweight Flyknit upper and a flexible Free RN sole, this running shoe offers barefoot-like flexibility. Perfect for neutral runners seeking comfort in short runs.",
+            "price": 120.00,
+            "category": 1,
+            "gender": "women",
+            "image": "women_run/woman_run7.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "woman_run8",
+            "name": "Nike Free RN Motion 2018",
+            "description": "The laceless design with straps and Flyknit upper make this model highly supportive and easy to wear. The Nike Free sole delivers flexibility and natural movement for an adaptive run.",
+            "price": 130.00,
+            "category": 1,
+            "gender": "women",
+            "image": "women_run/woman_run8.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
             "sku": "man_run1",
-            "name": "Men's Running Shoe 1",
-            "description": "Men's running shoes with advanced traction and comfort features.",
+            "name": "Nike Sock Dart SE",
+            "description": "The Nike Sock Dart SE Navy is designed with a lightweight and breathable mesh upper that adapts to the foot, providing a snug yet flexible fit for seamless running performance. The slip-on design reduces pressure points, while the adjustable midfoot strap ensures stability during runs. The cushioned sole provides impact protection and comfort, making this a reliable option for short-distance running or casual jogs.",
             "price": 110.00,
             "category": 1,
             "gender": "men",
@@ -65,44 +117,303 @@
         }
     },
     {
-        "pk": 6,
+        "pk": 10,
         "model": "products.product",
         "fields": {
             "sku": "man_run2",
-            "name": "Men's Running Shoe 2",
-            "description": "Durable men's running shoes for long-distance performance.",
-            "price": 140.00,
+            "name": "Nike React Element 55",
+            "description": "A vibrant red running shoe with Nike's React technology, offering a comfortable and responsive cushioning system. The mesh upper provides breathability, while the lightweight design is ideal for daily runs or gym sessions. The modern, sleek look makes it a versatile option for both performance and lifestyle wear.",
+            "price": 130.00,
             "category": 1,
             "gender": "men",
             "image": "men_run/men_run2.jpg"
         }
     },
     {
-        "pk": 7,
+        "pk": 11,
         "model": "products.product",
         "fields": {
             "sku": "man_run3",
-            "name": "Men's Running Shoe 3",
-            "description": "Lightweight and breathable shoes for men, optimized for speed.",
-            "price": 135.00,
+            "name": "Nike Air VaporMax 2021 Flyknit",
+            "description": "The Nike Air VaporMax 2021 Flyknit combines lightweight flexibility with ultra-responsive cushioning. The Flyknit upper delivers stretch and breathability for a snug, sock-like fit, while the VaporMax air unit provides superior shock absorption and energy return. Ideal for runners seeking long-lasting comfort and support on the go.",
+            "price": 210.00,
             "category": 1,
             "gender": "men",
             "image": "men_run/men_run3.jpg"
         }
     },
     {
-        "pk": 8,
+        "pk": 12,
         "model": "products.product",
         "fields": {
             "sku": "man_run4",
-            "name": "Men's Running Shoe 4",
-            "description": "Running shoes offering superior grip and comfort for men.",
+            "name": "Nike Air VaporMax Flyknit 2",
+            "description": "The Nike Air VaporMax Flyknit 2 offers a sleek, lightweight design perfect for both casual wear and running. Featuring a Flyknit upper that hugs the foot, and full-length VaporMax cushioning for a bouncy, responsive feel, this shoe provides excellent energy return. The added structure around the heel provides a locked-in feel, ideal for neutral runners.",
             "price": 145.00,
             "category": 1,
             "gender": "men",
             "image": "men_run/men_run4.jpg"
         }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_run5",
+            "name": "Adidas Pureboost Go",
+            "description": "Designed for urban running, offering excellent comfort and adaptability on city streets. The knit upper is engineered for lightweight breathability, while the responsive Boost midsole provides energy return with every step. A wider forefoot platform allows for quick lateral movements, making it perfect for unpredictable city environments. The flexible Stretchweb outsole ensures grip and stability across different surfaces.",
+            "price": 140.00,
+            "category": 1,
+            "gender": "men",
+            "image": "men_run/men_run5.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_run6",
+            "name": "Nike Free RN Motion Flyknit 2018",
+            "description": "The Nike Free RN Motion Flyknit 2018 features a minimalist design with a breathable, sock-like Flyknit upper. Its dual-strap system ensures a secure fit while maintaining flexibility for natural movement. The shoe's Free sole offers lightweight cushioning and is designed for runners seeking an unrestricted feel, allowing the foot to move naturally.",
+            "price": 160.00,
+            "category": 1,
+            "gender": "men",
+            "image": "men_run/men_run6.jpg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_run7",
+            "name": "Nike Air Vapormax Flyknit 2",
+            "description": "The Nike Air Vapormax Flyknit 2 combines lightweight Flyknit construction with responsive Vapormax cushioning for maximum comfort and a sleek design. This shoe provides superior support and flexibility, making it ideal for running or casual wear. The full-length Air cushioning unit delivers excellent impact protection and a bouncy ride.",
+            "price": 200.00,
+            "category": 1,
+            "gender": "men",
+            "image": "men_run/men_run7.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_run8",
+            "name": "Nike Air VaporMax 2021 Flyknit",
+            "description": "The Nike Air VaporMax 2021 Flyknit is a premium running shoe designed with sustainability in mind. Made from at least 40% recycled content by weight, it features a lightweight and stretchy Flyknit upper for a snug, breathable fit. The signature VaporMax Air unit underfoot delivers soft, responsive cushioning with every stride, making it perfect for runners and lifestyle wearers alike. The bright lime green accents add a pop of color for a modern, stylish look.",
+            "price": 210.00,
+            "category": 1,
+            "gender": "men",
+            "image": "men_run/men_run8.jpg"
+        }
+    },
+
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "sku": "women_gym1",
+            "name": "Nike Flex Experience RN 10",
+            "description": "he Nike Flex Experience RN 10 is designed for flexibility and comfort, perfect for running or all-day wear. The lightweight mesh upper enhances breathability, while the flexible outsole ensures smooth transitions. The soft foam cushioning underfoot offers lasting comfort for your daily runs or gym workouts.",
+            "price": 80.00,
+            "category": 2,
+            "gender": "women",
+            "image": "women_gym/woman_gym1.jpg"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "sku": "women_gym2",
+            "name": "Nike Flex Experience RN 10",
+            "description": "The Nike Flex Experience RN 10 in coral red combines style with functionality, featuring a mesh upper for enhanced breathability and a flexible sole that adapts to your natural running motion. With lightweight construction and supportive cushioning, these are ideal for both gym sessions and outdoor runs.",
+            "price": 80.00,
+            "category": 2,
+            "gender": "women",
+            "image": "women_gym/woman_gym2.jpg"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "sku": "women_gym3",
+            "name": "Nike LunarCharge Essential",
+            "description": "The Nike LunarCharge Essential offers a stylish yet functional design suitable for both casual wear and light workouts. Featuring a seamless upper and Lunarlon foam for soft cushioning, this sneaker provides excellent comfort for everyday activities.",
+            "price": 110.00,
+            "category": 2,
+            "gender": "women",
+            "image": "women_gym/woman_gym3.jpg"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "sku": "women_gym4",
+            "name": "Nike Air Presto Ultra Breathe",
+            "description": "Lightweight and ultra-breathable, the Nike Air Presto Ultra Breathe is perfect for running or gym training. Its stretch mesh upper allows for flexibility and ventilation, while the cushioned midsole ensures a comfortable stride.",
+            "price": 130.00,
+            "category": 2,
+            "gender": "women",
+            "image": "women_gym/woman_gym4.jpg"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "sku": "women_gym5",
+            "name": "Nike Free RN Flyknit 2018",
+            "description": "These lightweight Nike Free RN Flyknit shoes are designed for natural movement. The Flyknit upper offers a snug, supportive fit, and the flexible sole allows your foot to move freely, making them perfect for short runs or all-day wear.",
+            "price": 120.00,
+            "category": 2,
+            "gender": "women",
+            "image": "women_gym/woman_gym5.jpg"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "sku": "women_gym6",
+            "name": "Nike Air Presto Ultra Breathe",
+            "description": "The Nike Air Presto Ultra Breathe is a breathable, lightweight sneaker designed with a sock-like fit for maximum comfort. Its foam midsole provides cushioning, making it ideal for casual wear and light workouts.",
+            "price": 130.00,
+            "category": 2,
+            "gender": "women",
+            "image": "women_gym/woman_gym6.jpg"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "sku": "women_gym7",
+            "name": "Nike LunarCharge Essential Mint",
+            "description": "The Nike LunarCharge Essential Mint combines innovative technology and style in a sleek, minimalist design. Featuring a cushioned Lunarlon midsole, this shoe provides excellent comfort and support, making it a great option for gym sessions or casual wear. The breathable mesh upper enhances airflow, while the soft, lightweight construction offers maximum flexibility for everyday activities.",
+            "price": 120.00,
+            "category": 2,
+            "gender": "women",
+            "image": "women_gym/woman_gym7.jpg"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "sku": "women_gym8",
+            "name": "Adidas EQT Support Mid ADV Stripes",
+            "description": "The Adidas EQT Support Mid ADV Stripes delivers a modern, sporty look with signature 90s-inspired design elements. It features a stretchy knit upper for a sock-like fit, providing flexibility and breathability during workouts. The soft, supportive midsole ensures comfort and stability, making it a perfect option for gym enthusiasts seeking both style and performance.",
+            "price": 140.00,
+            "category": 2,
+            "gender": "women",
+            "image": "women_gym/woman_gym8.jpg"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_gym1",
+            "name": "Nike Zoom Freak 2",
+            "description": "The Nike Zoom Freak 2 is designed for high-intensity gym and training sessions. With its lightweight upper and responsive cushioning, it provides excellent support and stability for lateral movements and fast-paced training. The design includes a sleek white mesh upper with gold accents for a bold and stylish look.",
+            "price": 120.00,
+            "category": 2,
+            "gender": "men",
+            "image": "men_gym/men_gym1.jpg"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_gym2",
+            "name": "Nike Renew Run",
+            "description": "TThe Nike Renew Run offers a blend of comfort and durability, perfect for gym workouts. Its breathable mesh upper keeps your feet cool, while the cushioned midsole provides responsive support, making it ideal for running, strength training, or cardio workouts. The black and volt colorway adds a touch of modern energy to your training gear.",
+            "price": 100.00,
+            "category": 2,
+            "gender": "men",
+            "image": "men_gym/men_gym2.jpg"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_gym3",
+            "name": "Nike Air Zoom BB NXT",
+            "description": "The Nike Air Zoom BB NXT is designed for performance and comfort, with a bold red colorway for standout style. It features Nike Air Zoom cushioning that enhances responsiveness and support, making it perfect for high-intensity training sessions. The shoe's lightweight construction provides stability without compromising agility, making it ideal for gym workouts.",
+            "price": 180.00,
+            "category": 2,
+            "gender": "men",
+            "image": "men_gym/men_gym3.jpg"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_gym4",
+            "name": "Nike Renew Run 2",
+            "description": "The Nike Renew Run 2 is a versatile shoe built for endurance and comfort. It features soft foam cushioning for a smooth ride, making it suitable for gym training or light running. The breathable upper keeps your feet cool, while the durable outsole ensures traction on various surfaces. A perfect blend of support and flexibility for your workout needs.",
+            "price": 85.00,
+            "category": 2,
+            "gender": "men",
+            "image": "men_gym/men_gym4.jpg"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_gym5",
+            "name": "Nike Air Max 97 PRM",
+            "description": "The iconic Nike Air Max 97 features the legendary full-length Max Air unit, providing unparalleled cushioning. This specific model showcases a sleek teal blue upper, designed with breathable mesh and synthetic overlays for a comfortable and supportive fit during gym sessions. Its traction outsole ensures stability and grip during dynamic movements.",
+            "price": 170.00,
+            "category": 2,
+            "gender": "men",
+            "image": "men_gym/men_gym5.jpg"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_gym6",
+            "name": "Adidas NMD R1",
+            "description": "The Adidas EQT Support Mid ADV Stripes delivers a modern, sporty look with signature 90s-inspired design elements. It features a stretchy knit upper for a sock-like fit, providing flexibility and breathability during workouts. The soft, supportive midsole ensures comfort and stability, making it a perfect option for gym enthusiasts seeking both style and performance.",
+            "price": 140.00,
+            "category": 2,
+            "gender": "men",
+            "image": "men_gym/men_gym6.jpg"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_gym7",
+            "name": "Nike Zoom Freak 2",
+            "description": "Designed for dynamic performance, the Nike Zoom Freak 2 features a lightweight mesh upper, providing breathability and comfort during intense gym sessions. The shoe's responsive cushioning and rubber outsole allow for excellent grip and quick movements, perfect for gym training and high-energy workouts.",
+            "price": 130.00,
+            "category": 2,
+            "gender": "men",
+            "image": "men_gym/men_gym7.jpg"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "products.product",
+        "fields": {
+            "sku": "man_gym8",
+            "name": "Nike Presto",
+            "description": "The Nike Presto Fly combines sleek design with optimal comfort, making it ideal for both casual wear and gym training. Its lightweight mesh upper ensures ventilation, while the TPU cage around the midfoot offers stability during lateral movements. The foam midsole provides soft cushioning, making it perfect for all-day wear at the gym or for light training activities.",
+            "price": 100.00,
+            "category": 2,
+            "gender": "men",
+            "image": "men_gym/men_gym8.jpg"
+        }
     }
 ]
-
-
