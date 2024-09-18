@@ -8,6 +8,7 @@
             "description": "The Nike Air VaporMax Flyknit 2 features a lightweight and breathable Flyknit upper with responsive cushioning. The full-length VaporMax air unit ensures soft landings with every stride, making it ideal for running or casual wear.",
             "price": 200.00,
             "category": 1,
+            "rating": 4.7,
             "gender": "women",
             "image": "women_run/woman_run1.jpg",
             "detail_image": "women_run/woman_run1_detail.jpg"
@@ -22,6 +23,7 @@
             "description": "The Adidas NMD_R1 combines street-ready style with running technology. The Primeknit upper offers a snug fit, while Boost cushioning provides energy return with each step, perfect for all-day wear.",
             "price": 150.00,
             "category": 1,
+            "rating": 4.7,
             "gender": "women",
             "image": "women_run/woman_run2.jpg",
             "detail_image": "women_run/woman_run2_detail.jpg"
@@ -36,6 +38,7 @@
             "description": "Designed for athletes, the Adidas Alphabounce Beyond features a flexible and durable upper for comfort and stability during runs. The Bounce midsole provides responsive cushioning, perfect for dynamic movements.",
             "price": 100.00,
             "category": 1,
+            "rating": 4.5,
             "gender": "women",
             "image": "women_run/woman_run3.jpg",
             "detail_image": "women_run/woman_run3_detail.jpg"
@@ -50,6 +53,7 @@
             "description": "Lightweight and adaptive, the Nike Free RN Flyknit 2018 offers a snug, sock-like fit. The flexible outsole moves naturally with your foot, making it perfect for running short distances and daily training.",
             "price": 125.00,
             "category": 1,
+            "rating": 4.6,
             "gender": "women",
             "image": "women_run/woman_run4.jpg",
             "detail_image": "women_run/woman_run4_detail.jpg"
@@ -64,6 +68,7 @@
             "description": "The Nike Free RN Flyknit 2018 is designed for natural movement with an ultra-light, breathable Flyknit upper. The flexible sole mimics the foot’s natural motion, making it ideal for running or training. This shoe provides a sock-like fit with superior comfort, ideal for athletes looking for a barefoot-like feel during workouts or casual runs.",
             "price": 130.00,
             "category": 1,
+            "rating": 4.9,
             "gender": "women",
             "image": "women_run/woman_run5.jpg",
             "detail_image": "women_run/woman_run5_detail.jpg"
@@ -92,6 +97,7 @@
             "description": "Built with a lightweight Flyknit upper and a flexible Free RN sole, this running shoe offers barefoot-like flexibility. Perfect for neutral runners seeking comfort in short runs.",
             "price": 120.00,
             "category": 1,
+            "rating": 4.2,
             "gender": "women",
             "image": "women_run/woman_run7.jpg",
             "detail_image": "women_run/woman_run7_detail.jpg"
@@ -106,6 +112,7 @@
             "description": "The laceless design with straps and Flyknit upper make this model highly supportive and easy to wear. The Nike Free sole delivers flexibility and natural movement for an adaptive run.",
             "price": 130.00,
             "category": 1,
+            "rating": 4.5,
             "gender": "women",
             "image": "women_run/woman_run8.jpg",
             "detail_image": "women_run/woman_run8_detail.jpg"
