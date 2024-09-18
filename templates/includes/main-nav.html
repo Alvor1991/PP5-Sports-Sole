@@ -1,7 +1,7 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font fw-bold nav-link text-black mr-5" href="#" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
@@ -13,33 +13,33 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font fw-bold nav-link text-black mr-5" href="#" id="clothing-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Women's
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=running_shoes" class="dropdown-item">Running Shoes</a>
-                <a href="{% url 'products' %}?category=training_gym_shoes" class="dropdown-item">Training and Gym Shoes</a>
-                <a href="{% url 'products' %}?category=basketball_shoes" class="dropdown-item">Basketball Shoes</a>
-                <a href="{% url 'products' %}?category=casual_sneakers" class="dropdown-item">Casual Sneakers</a>
-                <a href="{% url 'products' %}?category=running_shoes,training_gym_shoes,basketball_shoes,casual_sneakers" class="dropdown-item">All Women's Sneakers</a>
+                <a href="{% url 'products' %}?category=running_shoes&gender=Women" class="dropdown-item">Running Shoes</a>
+                <a href="{% url 'products' %}?category=training_gym_shoes&gender=Women" class="dropdown-item">Training and Gym Shoes</a>
+                <a href="{% url 'products' %}?category=basketball_shoes&gender=Women" class="dropdown-item">Basketball Shoes</a>
+                <a href="{% url 'products' %}?category=casual_sneakers&gender=Women" class="dropdown-item">Casual Sneakers</a>
+                <a href="{% url 'products' %}?category=running_shoes,training_gym_shoes,basketball_shoes,casual_sneakers&gender=Women" class="dropdown-item">All Women's Sneakers</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font fw-bold nav-link text-black mr-5" href="#" id="homeware-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Men's
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'products' %}?category=running_shoes" class="dropdown-item">Running Shoes</a>
-                <a href="{% url 'products' %}?category=training_gym_shoes" class="dropdown-item">Training and Gym Shoes</a>
-                <a href="{% url 'products' %}?category=basketball_shoes" class="dropdown-item">Basketball Shoes</a>
-                <a href="{% url 'products' %}?category=casual_sneakers" class="dropdown-item">Casual Sneakers</a>
-                <a href="{% url 'products' %}?category=running_shoes,training_gym_shoes,basketball_shoes,casual_sneakers" class="dropdown-item">All Men's Sneakers</a>
+                <a href="{% url 'products' %}?category=running_shoes&gender=Men" class="dropdown-item">Running Shoes</a>
+                <a href="{% url 'products' %}?category=training_gym_shoes&gender=Men" class="dropdown-item">Training and Gym Shoes</a>
+                <a href="{% url 'products' %}?category=basketball_shoes&gender=Men" class="dropdown-item">Basketball Shoes</a>
+                <a href="{% url 'products' %}?category=casual_sneakers&gender=Men" class="dropdown-item">Casual Sneakers</a>
+                <a href="{% url 'products' %}?category=running_shoes,training_gym_shoes,basketball_shoes,casual_sneakers&gender=Men" class="dropdown-item">All Men's Sneakers</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font fw-bold nav-link text-black" href="#" id="specials-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">

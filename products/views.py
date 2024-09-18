@@ -1,17 +1,19 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.db.models.functions import Lower
+
 from .models import Product, Category
 
-
 def all_products(request):
-    """ A view to show all products, including sorting and search queries """
+    """ A view to show all products, including sorting, gender, and search queries """
 
     products = Product.objects.all()
     query = None
     categories = None
     sort = None
     direction = None
+    gender = None
 
     if request.GET:
         if 'sort' in request.GET:
@@ -32,9 +34,14 @@ def all_products(request):
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
-            
+
+        if 'gender' in request.GET:
+            gender = request.GET['gender']
+            if gender:
+                products = products.filter(gender__iexact=gender)
+
         if 'q' in request.GET:
-            query = request.GET['q']
+            query = request.GET['q'].strip()  # Cleaned query input
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
@@ -42,17 +49,17 @@ def all_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
-    current_sorting = f'{sort}_{direction}'       
+    current_sorting = f'{sort or "name"}_{direction or "asc"}'
 
     context = {
         'products': products,
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'selected_gender': gender,
     }
 
     return render(request, 'products/products.html', context)
-
 
 def product_detail(request, product_id):
     """ A view to show individual product details """
