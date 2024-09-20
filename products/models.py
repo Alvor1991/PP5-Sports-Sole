@@ -25,6 +25,16 @@ class Category(models.Model):
         return self.friendly_name
 
 
+class Size(models.Model):
+    """
+    Represents a size for a product.
+    """
+    size = models.CharField(max_length=10)
+
+    def __str__(self):
+        return self.size
+
+
 class Product(models.Model):
     """
     Represents a product in the store.
@@ -42,11 +52,11 @@ class Product(models.Model):
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     detail_image = models.ImageField(upload_to='products/', null=True, blank=True)
-    gender = models.CharField(max_length=6, choices=GENDER_CHOICES, null=True, blank=True) 
+    gender = models.CharField(max_length=6, choices=GENDER_CHOICES, null=True, blank=True)
+    sizes = models.ManyToManyField(Size, related_name='products')
 
     def __str__(self):
         """
         Returns the name of the product.
         """
         return self.name
-
