@@ -1,0 +1,257 @@
+[33mcommit dd106d6abfb1f803a1b743b9fcaf3cfd8d290e6c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Sat Sep 21 09:43:49 2024 +0000
+
+    Update allowed hosts
+
+[33mcommit 8751c5454ca5d2a165f49cfb9c342ddff0e433a2[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Sat Sep 21 09:36:27 2024 +0000
+
+    Add heroku files for deployment
+
+[33mcommit dfa55f8102c3eb2ff20e57aff3efe8fc2732fa86[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Fri Sep 20 13:14:06 2024 +0000
+
+    Finish product size logic
+
+[33mcommit 20e5060e7448e76ec58db6537939172a953bda2d[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Fri Sep 20 12:13:37 2024 +0000
+
+    Add size to product model and box to template
+
+[33mcommit 2bbaaa46a0c8c67dce6abde7a8d1d4184a2ec403[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Fri Sep 20 10:48:04 2024 +0000
+
+    Add gender to model to filter by gender
+
+[33mcommit 6100d6d31847ecf517fc7a0fd285d333524b4e60[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Fri Sep 20 08:34:53 2024 +0000
+
+    Update context processor, update shopping bag
+
+[33mcommit 69f872c3ebb76bf37f4d588223eaf1e2a252c8bc[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Thu Sep 19 10:45:19 2024 +0000
+
+    Added add to bag functionality
+
+[33mcommit ca57bdd4f9a6af1425a4069d73c05933aeb36d4f[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Thu Sep 19 10:11:41 2024 +0000
+
+    Added bag context and delivery logic
+
+[33mcommit 1395af61c1852ecd99c958dd19935c91f930d7a2[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Thu Sep 19 10:05:00 2024 +0000
+
+    Added shopping bag app, urls and template
+
+[33mcommit fd51ef8d250889bc3f02f0782625a9a72dac63e0[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Wed Sep 18 21:16:16 2024 +0000
+
+    Add sorting and back to top link
+
+[33mcommit b480f48c453a045912da42a1e13a8a4fa3e812cf[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Wed Sep 18 14:15:03 2024 +0000
+
+    Add meta info for seo, add rating to model and admin
+
+[33mcommit 34068c49086a520112021ad9bc1318ff3d7dea6c[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Wed Sep 18 13:32:28 2024 +0000
+
+    Update products
+
+[33mcommit ee0ec0f259e021e8468c61b976ebc60bcd7b4ba9[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Wed Sep 18 10:12:50 2024 +0000
+
+    Add separate image detail to model
+
+[33mcommit df5ccf3778aca9b209d13689f133be9d2ac594dc[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Wed Sep 18 09:31:15 2024 +0000
+
+    Update products
+
+[33mcommit 1af0d26eef97f8da1f0d3ad02dea6d2bdc25a5de[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Wed Sep 18 07:08:45 2024 +0000
+
+    Fix nav issue, update products
+
+[33mcommit 1b5cbdac3cfd6862b9d064229a68badd71572bcd[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Tue Sep 17 14:36:30 2024 +0000
+
+    Add images to media, add gender to model, remove image url from model
+
+[33mcommit 48eee115456139ac748e802ae1a231a99ed336ec[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Tue Sep 17 14:01:57 2024 +0000
+
+    Update product images, remove image url from json
+
+[33mcommit 18d7199530084d61f5fd43696f6503642ea30842[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Sat Sep 14 09:43:07 2024 +0000
+
+    Added sorting and product counts to product page
+
+[33mcommit 9184ec00eae2aaffb6e8a34cc864fca9e0cc208f[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Thu Sep 12 10:27:36 2024 +0000
+
+    Added sorting
+
+[33mcommit f947d0e8a5d4ad55d7ea96348b0b412a6f118ace[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Thu Sep 12 10:19:31 2024 +0000
+
+    Add all products nav links
+
+[33mcommit 4cbaaa0496e3e4aafccffd62812a7a5d3d543447[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Thu Sep 12 10:16:40 2024 +0000
+
+    Update causal sneaker navlinks
+
+[33mcommit 74ba2ec7377e76b1041e4af13dd5035aacc9a5a7[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Thu Sep 12 10:11:33 2024 +0000
+
+    Update category and product json files, update main nav menu links
+
+[33mcommit 581d01e5c19f5946104270b1fe8efe48de2b4e77[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Wed Sep 11 12:02:01 2024 +0000
+
+    Update verbose name categories, update admin database for category names
+
+[33mcommit 474917ee6686ac26417270c36e7e164fe2d76429[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Wed Sep 11 11:25:53 2024 +0000
+
+    Update main nav and product model with categories
+
+[33mcommit 3c8b4b12e9b698454e72313c4e6c04eb3e35a31b[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Tue Sep 10 14:37:48 2024 +0000
+
+    Ensure product details funcionality
+
+[33mcommit cb0c78ed6be08e6502e32f7712cea6728aa3ac95[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Tue Sep 10 13:57:00 2024 +0000
+
+    Update readme with user stories
+
+[33mcommit 56003477b39b2e49507018e2adb44a790c4848de[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Tue Sep 10 13:11:53 2024 +0000
+
+    Alter code to fit bootstrap 5 guidelines
+
+[33mcommit 3c8ec457b2b2a130b7a4e9149e53d2649db2eaa2[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Tue Sep 10 10:23:05 2024 +0000
+
+    Adjust file structure for products
+
+[33mcommit 68ca6f1f1dba34441135790e4b486ec6a9d54a9a[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Tue Sep 10 09:53:25 2024 +0000
+
+    Add overlay for products page
+
+[33mcommit 621222d033744133ce5e08e99b05f08806ee4d99[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Tue Sep 10 09:20:18 2024 +0000
+
+    Customise admin
+
+[33mcommit 7c89e0f5d09048d29682138cc2ac828341456f11[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Tue Sep 10 09:11:56 2024 +0000
+
+    Create product pages and load product data into database
+
+[33mcommit 4a7439d1ff743615719fe1ec82763f0780f33af0[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Tue Sep 10 07:28:11 2024 +0000
+
+    Update file names and settings with sports sole
+
+[33mcommit 015223fb58518dd5ec4fd755f1d9886227c06366[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Tue Sep 10 07:08:04 2024 +0000
+
+    Add products url file, add products to settings
+
+[33mcommit 226bf8cf2766dd54b09a7256c51ca88335394789[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Mon Sep 9 15:06:24 2024 +0000
+
+    Added search functionality
+
+[33mcommit e04c179f00d1c4e96df88898455e78b949312d77[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Thu Sep 5 13:58:57 2024 +0000
+
+    Add products app and models
+
+[33mcommit 95b8d6dd5c565fc54de4afa7491b905949a16d7e[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Thu Sep 5 10:31:57 2024 +0000
+
+    Added mobile header and main navbar
+
+[33mcommit 8ca7b4f374efa9306936c2b61f7840803e4dc212[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Wed Aug 21 11:01:26 2024 +0000
+
+    Complete basic home page and CSS
+
+[33mcommit cea9567f512fd0be27a29e04eb899b66c71c4158[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Wed Aug 21 09:52:04 2024 +0000
+
+    Add basic header to base html
+
+[33mcommit 4ec917c01acd0a3e7a8f2dd8504383e8579b8e08[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Wed Aug 21 07:28:48 2024 +0000
+
+    Added home app and templates
+
+[33mcommit 108482967c72bae7780a3acc0757c7357b7f5592[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Wed Aug 21 07:03:03 2024 +0000
+
+    Add allauth and base templates
+
+[33mcommit 418632f9d93ce912fea8dc36892e5fd3b85f256f[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Tue Aug 20 11:36:45 2024 +0000
+
+    Setup allauth
+
+[33mcommit 8d972ffa1a0ccec5c9f55efa78c272da9a95be38[m
+Author: Ryan Nolan <ryannolan_@hotmail.com>
+Date:   Tue Aug 20 10:35:05 2024 +0000
+
+    Initial commit
+
+[33mcommit 57321af7eb703e38dabddb41589917b715c73288[m
+Author: Alvor1991 <137897729+Alvor1991@users.noreply.github.com>
+Date:   Tue Aug 20 11:17:39 2024 +0100
+
+    Initial commit
