@@ -1,4 +1,7 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.contrib import messages
+from products.models import Product
+
 
 def view_bag(request):
     """ A view that renders the bag contents page """
@@ -8,6 +11,7 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
 
+    product = Product.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity', 1))  # Default to 1 if not provided
     redirect_url = request.POST.get('redirect_url')
     size = request.POST.get('product_size')  # Size should always be present for your case
@@ -28,6 +32,7 @@ def add_to_bag(request, item_id):
         bag[item_id]['items_by_size'][size] += quantity
     else:
         bag[item_id]['items_by_size'][size] = quantity
+        messages.success(request, f'Added {product.name} to your bag')
 
     # Save the updated bag in the session
     request.session['bag'] = bag
@@ -70,4 +75,3 @@ def remove_from_bag(request, item_id):
 
     except Exception as e:
         return HttpResponse(status=500)
-
