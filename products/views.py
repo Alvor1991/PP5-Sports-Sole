@@ -35,7 +35,6 @@ def all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-        # Filter by Gender
         if 'gender' in request.GET:
             gender = request.GET['gender']
             products = products.filter(gender__iexact=gender)

@@ -12,66 +12,73 @@ def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
 
     product = Product.objects.get(pk=item_id)
-    quantity = int(request.POST.get('quantity', 1))  # Default to 1 if not provided
+    quantity = int(request.POST.get('quantity', 1))  
     redirect_url = request.POST.get('redirect_url')
-    size = request.POST.get('product_size')  # Size should always be present for your case
+    size = request.POST.get('product_size')  
     bag = request.session.get('bag', {})
 
-    # Check if the item already exists in the bag
     if item_id in bag:
-        # Ensure that bag[item_id] is always a dictionary with 'items_by_size'
         if isinstance(bag[item_id], int):
-            # If it was mistakenly stored as an int, convert it to the correct structure
             bag[item_id] = {'items_by_size': {}}
     else:
-        # Initialize the product in the bag as a dictionary with 'items_by_size'
         bag[item_id] = {'items_by_size': {}}
 
-    # Update the quantity for the specified size
     if size in bag[item_id]['items_by_size']:
         bag[item_id]['items_by_size'][size] += quantity
+        messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {bag[item_id]["items_by_size"][size]}')
     else:
         bag[item_id]['items_by_size'][size] = quantity
-        messages.success(request, f'Added {product.name} to your bag')
+        messages.success(request, f'Added size {size.upper()} {product.name} to your bag')
 
-    # Save the updated bag in the session
     request.session['bag'] = bag
     return redirect(redirect_url)
 
 
+from django.contrib import messages
+from django.shortcuts import get_object_or_404
+
 def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
 
+    product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
-    size = request.POST.get('product_size')  # Size is always expected
+    size = request.POST.get('product_size')  
     bag = request.session.get('bag', {})
 
     if item_id in bag and size in bag[item_id]['items_by_size']:
         if quantity > 0:
             bag[item_id]['items_by_size'][size] = quantity
+            messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {bag[item_id]["items_by_size"][size]}')
         else:
             del bag[item_id]['items_by_size'][size]
             if not bag[item_id]['items_by_size']:
                 bag.pop(item_id)
+            messages.success(request, f'Removed size {size.upper()} {product.name} from your bag')
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
 
 
+from django.contrib import messages
+
 def remove_from_bag(request, item_id):
     """Remove the item from the shopping bag"""
 
     try:
-        size = request.POST['product_size']  # Size is always expected
+        product = get_object_or_404(Product, pk=item_id)
+        size = request.POST['product_size'] 
         bag = request.session.get('bag', {})
 
         if item_id in bag and size in bag[item_id]['items_by_size']:
             del bag[item_id]['items_by_size'][size]
             if not bag[item_id]['items_by_size']:
                 bag.pop(item_id)
+            
+            messages.success(request, f'Removed size {size.upper()} {product.name} from your bag')
 
         request.session['bag'] = bag
         return HttpResponse(status=200)
 
     except Exception as e:
+        messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
