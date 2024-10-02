@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -125,12 +126,16 @@ WSGI_APPLICATION = 'sports_sole.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+     'default': dj_database_url.parse('your-database-url-here')
+ }
 
 
 # Password validation
@@ -188,7 +193,3 @@ STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'sportssole@example.com'
-
-print(f"STRIPE_PUBLIC_KEY: {STRIPE_PUBLIC_KEY}")
-print(f"STRIPE_SECRET_KEY: {STRIPE_SECRET_KEY}")
-print(f"STRIPE_WH_SECRET: {STRIPE_WH_SECRET}")
