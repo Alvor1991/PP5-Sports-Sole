@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-s4nm71j8qcr7er!g3ctvpdydl$f3k!sdw!dq9oh1p&axf-6(o6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-alvor1991-pp5-m2hkfsjl009.ws.codeinstitute-ide.net', 'sports-sole.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-alvor1991-pp5-m2hkfsjl009.ws.codeinstitute-ide.net', 'sports-sole-d03df7b3c157.herokuapp.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-alvor1991-pp5-m2hkfsjl009.ws.codeinstitute-ide.net'
