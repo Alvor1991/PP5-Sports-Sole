@@ -27,6 +27,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
+
+
 ALLOWED_HOSTS = ['8000-alvor1991-pp5-m2hkfsjl009.ws.codeinstitute-ide.net', 'sports-sole-d03df7b3c157.herokuapp.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = [
@@ -55,7 +57,6 @@ INSTALLED_APPS = [
     # Other
     'crispy_forms',
     'storages',
-
 ]
 
 MIDDLEWARE = [
@@ -195,12 +196,17 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 if 'USE_AWS' in os.environ:
+    DEBUG = False
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'sports-sole4'
     AWS_S3_REGION_NAME = 'eu-north-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+    AWS_S3_OBJECT_PARAMETERS = {
+    'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+    'CacheControl': 'max-age=94608000',
+}
 
     # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
