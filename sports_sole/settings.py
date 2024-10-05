@@ -27,11 +27,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-
-
-ALLOWED_HOSTS = ['8000-alvor1991-pp5-m2hkfsjl009.ws.codeinstitute-ide.net', 'sports-sole-d03df7b3c157.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-alvor1991-pp5-m2hkfsjl009.ws.codeinstitute-ide.net', 'sports-sole-d03df7b3c157.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = [
+    'https://*.herokuapp.com',
     'https://8000-alvor1991-pp5-m2hkfsjl009.ws.codeinstitute-ide.net'
 ]
 
@@ -53,8 +52,6 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
-
-    # Other
     'crispy_forms',
     'storages',
 ]
@@ -144,8 +141,8 @@ else:
 
 
 DATABASES = {
-     'default': dj_database_url.parse('postgres://uuacmhqx1aq:7RUQCvXLTRS0@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/dish_barge_polar_235696')
- }
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+}
 
 
 # Password validation
@@ -190,7 +187,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
