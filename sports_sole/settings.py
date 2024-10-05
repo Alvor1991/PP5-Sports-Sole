@@ -174,17 +174,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-
-# This will collect static files into this directory in production
-if not 'USE_AWS' in os.environ:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Only for non-AWS environments
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-# AWS S3 Configuration for Static and Media files
 if 'USE_AWS' in os.environ:
     # Cache control for AWS S3
     AWS_S3_OBJECT_PARAMETERS = {
@@ -208,6 +197,19 @@ if 'USE_AWS' in os.environ:
     # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+
+else:
+    # Local development static files settings
+    STATIC_URL = '/static/'
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+    # This will collect static files into this directory in production if AWS isn't used
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+    # Media files settings for local development
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 
 # Stripe
