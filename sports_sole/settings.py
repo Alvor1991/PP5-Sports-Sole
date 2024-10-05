@@ -14,9 +14,11 @@ import os
 import dj_database_url
 from pathlib import Path
 
+if os.path.isfile('env.py'):
+    import env
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -182,16 +184,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
-# Define where collected static files should go in production
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-
-if not 'USE_AWS' in os.environ:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Add this to collect static files into one place
-
-if DEBUG:  # In development
-    STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
-
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
