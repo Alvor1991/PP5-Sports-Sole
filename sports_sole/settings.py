@@ -182,10 +182,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Define where collected static files should go in production
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-#STATICFILES_DIRS = [BASE_DIR / "static"]
+
 if not 'USE_AWS' in os.environ:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Add this to collect static files into one place
 
 if DEBUG:  # In development
     STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
@@ -193,8 +195,6 @@ if DEBUG:  # In development
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
