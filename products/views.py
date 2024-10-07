@@ -1,5 +1,3 @@
-from django.db.models.functions import Coalesce
-from django.db.models import Value
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -8,13 +6,6 @@ from django.db.models.functions import Lower
 
 from .models import Product, Category
 from .forms import ProductForm
-
-from django.http import HttpResponse
-import cloudinary.config
-
-def debug_cloudinary(request):
-    config = cloudinary.config()
-    return HttpResponse(f"Cloudinary is configured with cloud_name: {config.cloud_name}")
 
 def all_products(request):
     """ A view to show all products, including sorting, gender, and search queries """
@@ -61,10 +52,6 @@ def all_products(request):
 
     current_sorting = f'{sort}_{direction}'
 
-    products = products.annotate(
-        image_url=Coalesce('image__url', Value(''))
-    )
-
     context = {
         'products': products,
         'search_term': query,
@@ -73,16 +60,12 @@ def all_products(request):
         'selected_gender': gender,
     }
 
-    print(f"First product image URL: {products.first().image_url if products.exists() else 'No products'}")
-
     return render(request, 'products/products.html', context)
 
 def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
-
-    print(f"Product image URL: {product.image.url if product.image else 'No image'}")
 
     context = {
         'product': product,
