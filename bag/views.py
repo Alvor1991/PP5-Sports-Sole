@@ -34,9 +34,6 @@ def add_to_bag(request, item_id):
     return redirect(redirect_url)
 
 
-from django.contrib import messages
-from django.shortcuts import get_object_or_404
-
 def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
 
@@ -58,8 +55,6 @@ def adjust_bag(request, item_id):
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
 
-
-from django.contrib import messages
 
 def remove_from_bag(request, item_id):
     """Remove the item from the shopping bag"""
