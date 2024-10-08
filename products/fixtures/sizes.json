@@ -1,0 +1,8 @@
+[
+    {"model": "products.size", "pk": 1, "fields": {"size": "6"}},
+    {"model": "products.size", "pk": 2, "fields": {"size": "7"}},
+    {"model": "products.size", "pk": 3, "fields": {"size": "8"}},
+    {"model": "products.size", "pk": 4, "fields": {"size": "9"}},
+    {"model": "products.size", "pk": 5, "fields": {"size": "10"}},
+    {"model": "products.size", "pk": 6, "fields": {"size": "11"}}
+]
