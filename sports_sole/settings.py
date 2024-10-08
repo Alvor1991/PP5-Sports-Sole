@@ -12,21 +12,21 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import env  
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-s4nm71j8qcr7er!g3ctvpdydl$f3k!sdw!dq9oh1p&axf-6(o6'
+SECRET_KEY = os.getenv('SECRET_KEY', 'default-insecure-secret-key-for-local')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-alvor1991-pp5-m2hkfsjl009.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['8000-alvor1991-pp5-m2hkfsjl009.ws.codeinstitute-ide.net', '.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-alvor1991-pp5-m2hkfsjl009.ws.codeinstitute-ide.net'
@@ -108,6 +108,8 @@ AUTHENTICATION_BACKENDS = (
 
 )
 
+SITE_ID = 1
+
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
@@ -117,8 +119,6 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
-
-SITE_ID = 1
 
 WSGI_APPLICATION = 'sports_sole.wsgi.application'
 
@@ -188,7 +188,3 @@ STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'sportssole@example.com'
-
-print(f"STRIPE_PUBLIC_KEY: {STRIPE_PUBLIC_KEY}")
-print(f"STRIPE_SECRET_KEY: {STRIPE_SECRET_KEY}")
-print(f"STRIPE_WH_SECRET: {STRIPE_WH_SECRET}")
