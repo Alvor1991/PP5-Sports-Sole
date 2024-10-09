@@ -50,16 +50,9 @@ class StripeWH_Handler:
         bag = intent.metadata.bag
         save_info = intent.metadata.save_info
 
-        # Check if charges attribute is present
-        if hasattr(intent, 'charges') and len(intent.charges.data) > 0:
-            billing_details = intent.charges.data[0].billing_details
-            grand_total = round(intent.charges.data[0].amount / 100, 2)
-        else:
-            # Fallback if charges attribute is missing
-            billing_details = None
-            grand_total = round(intent.amount / 100, 2)
-
+        billing_details = intent.charges.data[0].billing_details
         shipping_details = intent.shipping
+        grand_total = round(intent.charges.data[0].amount / 100, 2)
 
         # Clean data in the shipping details
         for field, value in shipping_details.address.items():
@@ -87,7 +80,7 @@ class StripeWH_Handler:
             try:
                 order = Order.objects.get(
                     full_name__iexact=shipping_details.name,
-                    email__iexact=billing_details.email if billing_details else intent.receipt_email,
+                    email__iexact=billing_details.email,
                     phone_number__iexact=shipping_details.phone,
                     country__iexact=shipping_details.address.country,
                     postcode__iexact=shipping_details.address.postal_code,
@@ -104,7 +97,6 @@ class StripeWH_Handler:
             except Order.DoesNotExist:
                 attempt += 1
                 time.sleep(1)
-
         if order_exists:
             self._send_confirmation_email(order)
             return HttpResponse(
@@ -116,7 +108,7 @@ class StripeWH_Handler:
                 order = Order.objects.create(
                     full_name=shipping_details.name,
                     user_profile=profile,
-                    email=billing_details.email if billing_details else intent.receipt_email,
+                    email=billing_details.email,
                     phone_number=shipping_details.phone,
                     country=shipping_details.address.country,
                     postcode=shipping_details.address.postal_code,
@@ -126,7 +118,6 @@ class StripeWH_Handler:
                     county=shipping_details.address.state,
                     original_bag=bag,
                     stripe_pid=pid,
-                    grand_total=grand_total,
                 )
                 for item_id, item_data in json.loads(bag).items():
                     product = Product.objects.get(id=item_id)
@@ -152,7 +143,6 @@ class StripeWH_Handler:
                 return HttpResponse(
                     content=f'Webhook received: {event["type"]} | ERROR: {e}',
                     status=500)
-
         self._send_confirmation_email(order)
         return HttpResponse(
             content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
@@ -165,3 +155,4 @@ class StripeWH_Handler:
         return HttpResponse(
             content=f'Webhook received: {event["type"]}',
             status=200)
+        
