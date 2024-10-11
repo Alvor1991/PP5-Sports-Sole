@@ -611,7 +611,7 @@
             "category": 3,
             "rating": 4.5,
             "gender": "men",
-            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/men_bbal1_ioonyp.jpg",
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/men_bbal1_ioonyp.jpg",
             "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/men_bbal1_detail_hl0lal.jpg"
         }
     },
@@ -626,7 +626,7 @@
             "category": 3,
             "rating": 4.5,
             "gender": "men",
-            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/men_bbal2_pznu6q.jpg",
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/men_bbal2_pznu6q.jpg",
             "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/men_bbal2_detail_uqnade.jpg"
         }
     },
