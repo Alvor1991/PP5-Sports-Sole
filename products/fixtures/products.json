@@ -11,7 +11,7 @@
             "rating": 4.7,
             "gender": "women",
             "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/lbfyteag7jvxym9m66ce.jpg",
-            "detail_image": "women_run/woman_run1_detail.jpg"
+            "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/bdlajetzdruqriao4pie.jpg"
         }
     },
     {
@@ -851,8 +851,8 @@
             "category": 4,
             "rating": 4.2,
             "gender": "men",
-            "image": "men_cas/men_cas1.jpg",
-            "detail_image": "men_cas/men_cas1_detail.jpg"
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/apk6rpj99g2bmis2ziuf.jpg",
+            "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/gbrqy3gbvoig6zehrytk.jpg"
         }
     },
     {
@@ -866,8 +866,8 @@
             "category": 4,
             "rating": 4.5,
             "gender": "men",
-            "image": "men_cas/men_cas2.jpg",
-            "detail_image": "men_cas/men_cas2_detail.jpg"
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/cusbo0zq5dcbiwlmgeck.jpg",
+            "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/oupmxh0yvwhlxpen65fu.jpg"
         }
     },
     {
@@ -881,8 +881,8 @@
             "category": 4,
             "rating": 4.3,
             "gender": "men",
-            "image": "men_cas/men_cas3.jpg",
-            "detail_image": "men_cas/men_cas3_detail.jpg"
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/imxpm3ofycnil6jtcewb.jpg",
+            "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/p9ykzmjo9sxqcx9zko5d.jpg"
         }
     },
     {
@@ -896,8 +896,8 @@
             "category": 4,
             "rating": 4.5,
             "gender": "men",
-            "image": "men_cas/men_cas4.jpg",
-            "detail_image": "men_cas/men_cas4_detail.jpg"
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/vguxwf8ndugvnkpsbnca.jpg",
+            "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/ntlgcwybmi6tqtmw4u8i.jpg"
         }
     },
     {
@@ -911,8 +911,8 @@
             "category": 4,
             "rating": 4.5,
             "gender": "men",
-            "image": "men_cas/men_cas5.jpg",
-            "detail_image": "men_cas/men_cas5_detail.jpg"
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/soxy996wmypdmtvr8ic6.jpg",
+            "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/jlghsik23awgioqwbol4.jpg"
         }
     },
     {
@@ -926,8 +926,8 @@
             "category": 4,
             "rating": 4.4,
             "gender": "men",
-            "image": "men_cas/men_cas6.jpg",
-            "detail_image": "men_cas/men_cas6_detail.jpg"
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/z0r0hadp33rzandhzbsj.jpg",
+            "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/hsmriz4tnmkneciy07ox.jpg"
         }
     },
     {
@@ -941,8 +941,8 @@
             "category": 4,
             "rating": 4.2,
             "gender": "men",
-            "image": "men_cas/men_cas7.jpg",
-            "detail_image": "men_cas/men_cas7_detail.jpg"
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/lzilbyyegkgrkpdnnrxn.jpg",
+            "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/lzilbyyegkgrkpdnnrxn.jpg"
         }
     },
     {
@@ -956,8 +956,8 @@
             "category": 4,
             "rating": 4.1,
             "gender": "men",
-            "image": "men_cas/men_cas8.jpg",
-            "detail_image": "men_cas/men_cas8_detail.jpg"
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/vmukxrmfcg3c0lflid0n.jpg",
+            "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/zvoiqzyyiln6g5ucxtp8.jpg"
         }
     }
 ]
