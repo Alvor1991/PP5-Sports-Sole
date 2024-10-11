@@ -8,6 +8,7 @@
             "description": "The Nike Air VaporMax Flyknit 2 features a lightweight and breathable Flyknit upper with responsive cushioning. The full-length VaporMax air unit ensures soft landings with every stride, making it ideal for running or casual wear.",
             "price": 200.00,
             "category": 1,
+            "tags": ["clearance"],
             "rating": 4.7,
             "gender": "women",
             "image": "women_run/woman_run1.jpg",
