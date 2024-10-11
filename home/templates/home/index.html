@@ -31,14 +31,12 @@
         <div class="col-12 text-center">
             <h3>Join Our Community</h3>
             <p>Sign up for our newsletter and get 10% off your first purchase!</p>
-
             <!-- Bootstrap success message -->
             {% if signup_success %}
             <div class="alert alert-success" role="alert">
                 Thank you for subscribing to our newsletter!
             </div>
             {% endif %}
-
             <form method="post" action="{% url 'home' %}">
                 {% csrf_token %}
                 <div class="input-group mb-3">
@@ -75,4 +73,43 @@
 </div>
 {% endif %}
 
+<!-- FAQ Section -->
+{% if faqs %}
+<div class="container my-5">
+    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+        {% for faq in faqs %}
+        <div class="card">
+            <div class="card-header" id="heading{{ forloop.counter }}">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse{{ forloop.counter }}" aria-expanded="true" aria-controls="collapse{{ forloop.counter }}">
+                        {{ faq.question }}
+                    </button>
+                </h2>
+            </div>
+            <div id="collapse{{ forloop.counter }}" class="collapse" aria-labelledby="heading{{ forloop.counter }}" data-parent="#faqAccordion">
+                <div class="card-body">
+                    {{ faq.answer|linebreaks }}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.collapse').on('show.bs.collapse', function () {
+            $(this).prev('.card-header').addClass('active');
+        });
+        $('.collapse').on('hide.bs.collapse', function () {
+            $(this).prev('.card-header').removeClass('active');
+        });
+    });
+</script>
 {% endblock %}

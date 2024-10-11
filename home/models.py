@@ -20,3 +20,17 @@ class CustomerTestimonial(models.Model):
 
     def __str__(self):
         return f"{self.name} - {self.rating} stars"
+
+class FAQ(models.Model):
+    question = models.CharField(max_length=200)
+    answer = models.TextField()
+    category = models.CharField(max_length=100, blank=True)
+    order = models.IntegerField(default=0)
+
+    class Meta:
+        ordering = ['order']
+        verbose_name = "FAQ"
+        verbose_name_plural = "FAQs"
+
+    def __str__(self):
+        return self.question
