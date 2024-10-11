@@ -42,12 +42,36 @@
             </form>
             {% if messages %}
                 {% for message in messages %}
-                    <div class="alert alert-{{ message.tags }}">
-                        {{ message }}
-                    </div>
+                <div class="alert alert-{{ message.tags }}">
+                    {{ message }}
+                </div>
                 {% endfor %}
             {% endif %}
         </div>
     </div>
 </div>
+
+<!-- Testimonials Section -->
+{% if testimonials %}
+<div class="container my-5">
+    <h2 class="text-center mb-4">What Our Customers Say</h2>
+    <div class="row">
+        {% for testimonial in testimonials %}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">{{ testimonial.name }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Rating: {{ testimonial.rating }} / 5</h6>
+                    <p class="card-text">{{ testimonial.testimonial|truncatewords:30 }}</p>
+                </div>
+                <div class="card-footer text-muted">
+                    {{ testimonial.date }}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
 {% endblock %}
