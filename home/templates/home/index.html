@@ -2,26 +2,52 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-dark">
-                    The new collections are here
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-                    </h4>
-                </div>
+<div class="container h-100">
+    <div class="row h-100">
+        <div class="col-7 col-md-6 my-auto">
+            <h1 class="display-4 logo-font text-dark">
+                The new collections are here
+            </h1>
+            <div class="my-5">
+                <h4>
+                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                </h4>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Newsletter Signup Section -->
+<div class="container bg-light py-5 my-5">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h3>Join Our Community</h3>
+            <p>Sign up for our newsletter and get 10% off your first purchase!</p>
+            <form method="post" action="{% url 'home' %}">
+                {% csrf_token %}
+                <div class="input-group mb-3">
+                    {{ form.email }}
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</div>
 {% endblock %}
