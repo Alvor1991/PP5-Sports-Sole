@@ -84,7 +84,7 @@
             "price": 200.00,
             "category": 1,
             "gender": "women",
-            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_run6_pljoyk.jpg",
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/woman_run6_pljoyk.jpg",
             "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_run6_detail_ytfr0z.jpg"
         }
     },
@@ -144,7 +144,7 @@
             "category": 1,
             "rating": 4.5,
             "gender": "men",
-            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/men_run2_a6iggr.jpg",
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/men_run2_a6iggr.jpg",
             "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/men_run2_detail_th00rh.jpg"
         }
     },
@@ -204,7 +204,7 @@
             "category": 1,
             "rating": 4.5,
             "gender": "men",
-            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/men_run6_f2f51q.jpg",
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/men_run6_f2f51q.jpg",
             "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/men_run6_detail_dsm1j5.jpg"
         }
     },
@@ -311,7 +311,7 @@
             "category": 2,
             "rating": 4.5,
             "gender": "women",
-            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_gym5_nxdtv7.jpg",
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/woman_gym5_nxdtv7.jpg",
             "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_gym5_detail_gay8fs.jpg"
         }
     },
@@ -461,7 +461,7 @@
             "category": 2,
             "rating": 4.5,
             "gender": "men",
-            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/men_gym2_ckvjfa.jpg",
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/men_gym2_ckvjfa.jpg",
             "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/men_gym2_detail_xza87f.jpg"
         }
     },
@@ -536,7 +536,7 @@
             "category": 3,
             "rating": 4.5,
             "gender": "women",
-            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl4_ykdvzz.jpg",
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/woman_bbl4_ykdvzz.jpg",
             "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl4_detail_veqjqr.jpg"
         }
     },
@@ -656,7 +656,7 @@
             "category": 3,
             "rating": 4.5,
             "gender": "men",
-            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/men_bbal4_zuqpkl.jpg",
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/men_bbal4_zuqpkl.jpg",
             "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/men_bbal4_detail_wlt4fr.jpg"
         }
     },
@@ -701,7 +701,7 @@
             "category": 3,
             "rating": 4.5,
             "gender": "men",
-            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/men_bbal7_ud6z0i.jpg",
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/men_bbal7_ud6z0i.jpg",
             "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/men_bbal7_detail.jpg_drvpgy.jpg"
         }
     },
@@ -746,7 +746,7 @@
             "category": 4,
             "rating": 4.5,
             "gender": "women",
-            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_cas2_xactui.jpg",
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/woman_cas2_xactui.jpg",
             "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_cas2_detail_metfjp.jpg"
         }
     },
@@ -791,7 +791,7 @@
             "category": 4,
             "rating": 4.1,
             "gender": "women",
-            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_cas5_ipseit.jpg",
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/woman_cas5_ipseit.jpg",
             "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_cas5_detail_wnyjst.jpg"
         }
     },
@@ -851,7 +851,7 @@
             "category": 4,
             "rating": 4.2,
             "gender": "men",
-            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/men_cas8_gjjkza.jpg",
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/men_cas8_gjjkza.jpg",
             "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/men_cas8_detail_kicdjd.jpg"
         }
     },
@@ -956,7 +956,7 @@
             "category": 4,
             "rating": 4.1,
             "gender": "men",
-            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/men_cas1_lorijp.jpg",
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/men_cas1_lorijp.jpg",
             "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/men_cas1_detail_anued1.jpg"
         }
     }
