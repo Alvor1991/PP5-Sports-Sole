@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+from taggit.models import Tag 
 
 from .models import Product, Category
 from .forms import ProductForm
@@ -16,6 +17,7 @@ def all_products(request):
     gender = None
     sort = None
     direction = None
+    tag = None
 
     if request.GET:
         if 'sort' in request.GET:
@@ -49,6 +51,10 @@ def all_products(request):
             
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
+        
+        if 'tag' in request.GET:  
+            tag = request.GET['tag']
+            products = products.filter(tags__name__in=[tag])
 
     current_sorting = f'{sort}_{direction}'
 

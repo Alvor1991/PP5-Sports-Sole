@@ -1,5 +1,6 @@
 from django.db import models
 from cloudinary.models import CloudinaryField 
+from taggit.managers import TaggableManager
 
 class Category(models.Model):
     """
@@ -54,6 +55,7 @@ class Product(models.Model):
     detail_image = CloudinaryField('image', null=True, blank=True)
     gender = models.CharField(max_length=6, choices=GENDER_CHOICES, null=True, blank=True)
     sizes = models.ManyToManyField(Size, related_name='products')
+    tags = TaggableManager()
 
     def __str__(self):
         """
