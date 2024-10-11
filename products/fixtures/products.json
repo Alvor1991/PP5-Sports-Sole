@@ -491,8 +491,8 @@
             "category": 3,
             "rating": 4.5,
             "gender": "women",
-            "image": "women_bbl/woman_bbl1.jpg",
-            "detail_image": "women_bbl/woman_bbl1_detail.jpg"
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl1_vv22pq.jpg",
+            "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl1_detail_zc5a6d.jpg"
         }
     },
     {
@@ -506,8 +506,8 @@
             "category": 3,
             "rating": 4.5,
             "gender": "women",
-            "image": "women_bbl/woman_bbl2.jpg",
-            "detail_image": "women_bbl/woman_bbl2_detail.jpg"
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl2_i3f54t.jpg",
+            "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl2_detail_xhcm7l.jpg"
         }
     },
     {
@@ -521,8 +521,8 @@
             "category": 3,
             "rating": 4.5,
             "gender": "women",
-            "image": "women_bbl/woman_bbl3.jpg",
-            "detail_image": "women_bbl/woman_bbl3_detail.jpg"
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl3_rjrey6.jpg",
+            "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl3_detail_mfbr4p.jpg"
         }
     },
     {
@@ -536,8 +536,8 @@
             "category": 3,
             "rating": 4.5,
             "gender": "women",
-            "image": "women_bbl/woman_bbl4.jpg",
-            "detail_image": "women_bbl/woman_bbl4_detail.jpg"
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl4_ykdvzz.jpg",
+            "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl4_detail_veqjqr.jpg"
         }
     },
     {
@@ -551,8 +551,8 @@
             "category": 3,
             "rating": 4.5,
             "gender": "women",
-            "image": "women_bbl/woman_bbl5.jpg",
-            "detail_image": "women_bbl/woman_bbl5_detail.jpg"
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl5_a2orm5.jpg",
+            "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl5_detail_ns35su.jpg"
         }
     },
     {
@@ -566,8 +566,8 @@
             "category": 3,
             "rating": 4.5,
             "gender": "women",
-            "image": "women_bbl/woman_bbl6.jpg",
-            "detail_image": "women_bbl/woman_bbl6_detail.jpg"
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl6_djfjja.jpg",
+            "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl6_detail_fqyrj4.jpg"
         }
     },
     {
@@ -581,8 +581,8 @@
             "category": 3,
             "rating": 4.5,
             "gender": "women",
-            "image": "women_bbl/woman_bbl7.jpg",
-            "detail_image": "women_bbl/woman_bbl7_detail.jpg"
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl7_zaaxjq.jpg",
+            "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl7_detail_exz83y.jpg"
         }
     },
     {
@@ -596,8 +596,8 @@
             "category": 3,
             "rating": 4.5,
             "gender": "women",
-            "image": "women_bbl/woman_bbl8.jpg",
-            "detail_image": "women_bbl/woman_bbl8_detail.jpg"
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl7_detail_exz83y.jpg",
+            "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl7_detail_exz83y.jpg"
         }
     },
     {
@@ -836,7 +836,7 @@
             "category": 4,
             "rating": 4.5,
             "gender": "women",
-            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_cas8_ps0ale.jpg",
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/woman_cas8_ps0ale.jpg",
             "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_cas8_detail_l5ujsg.jpg"
         }
     },
