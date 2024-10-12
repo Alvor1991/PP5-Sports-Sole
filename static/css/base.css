@@ -340,15 +340,5 @@ footer a:hover {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
-    }
-
-    @media (max-width: 576px) {
-        .input-group {
-            flex-direction: column;
-        }
-        .input-group-append {
-            margin-top: 10px;
-            width: 100%;
-        }
-    }    
+    }   
 }
