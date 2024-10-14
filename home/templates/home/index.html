@@ -10,16 +10,20 @@
 {% endblock %}
 
 {% block content %}
-<div class="container h-100">
-    <div class="row h-100">
-        <div class="col-7 col-md-6 my-auto">
-            <h1 class="display-4 logo-font text-dark">
-                The new collections are here
-            </h1>
-            <div class="my-5">
-                <h4>
-                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-                </h4>
+
+<!-- Hero Section (Half the height with background image) -->
+<div class="hero-section">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-7 col-md-6 my-auto">
+                <h1 class="display-4 logo-font text-white">
+                    The new collections are here
+                </h1>
+                <div class="my-5">
+                    <h4>
+                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                    </h4>
+                </div>
             </div>
         </div>
     </div>
@@ -31,7 +35,6 @@
         <div class="col-12 text-center">
             <h3>Join Our Community</h3>
             <p>Sign up for our newsletter and get 10% off your first purchase!</p>
-            <!-- Bootstrap success message -->
             {% if signup_success %}
             <div class="alert alert-success" role="alert">
                 Thank you for subscribing to our newsletter!
@@ -96,7 +99,6 @@
         {% endfor %}
     </div>
 </div>
-
 {% endif %}
 
 {% endblock %}
@@ -114,3 +116,4 @@
     });
 </script>
 {% endblock %}
+

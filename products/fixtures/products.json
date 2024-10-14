@@ -491,7 +491,7 @@
             "category": 3,
             "rating": 4.5,
             "gender": "women",
-            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl1_vv22pq.jpg",
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/woman_bbl1_vv22pq.jpg",
             "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl1_detail_zc5a6d.jpg"
         }
     },
@@ -501,7 +501,7 @@
         "fields": {
             "sku": "woman_bball2",
             "name": "Nike PG 3 NASA",
-            "description": "his sneaker is part of Paul George's signature line, inspired by his passion for space exploration. The vibrant color scheme and NASA patchwork make it stand out on and off the court. It offers great responsiveness with Zoom Air cushioning, perfect for dynamic movements in basketball.",
+            "description": "This sneaker is part of Paul George's signature line, inspired by his passion for space exploration. The vibrant color scheme and NASA patchwork make it stand out on and off the court. It offers great responsiveness with Zoom Air cushioning, perfect for dynamic movements in basketball.",
             "price": 120.00,
             "category": 3,
             "rating": 4.5,
@@ -551,7 +551,7 @@
             "category": 3,
             "rating": 4.5,
             "gender": "women",
-            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl5_a2orm5.jpg",
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/woman_bbl5_a2orm5.jpg",
             "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl5_detail_ns35su.jpg"
         }
     },
@@ -566,7 +566,7 @@
             "category": 3,
             "rating": 4.5,
             "gender": "women",
-            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl6_djfjja.jpg",
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/woman_bbl6_djfjja.jpg",
             "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl6_detail_fqyrj4.jpg"
         }
     },
@@ -596,7 +596,7 @@
             "category": 3,
             "rating": 4.5,
             "gender": "women",
-            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl7_detail_exz83y.jpg",
+            "image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/woman_bbl7_detail_exz83y.jpg",
             "detail_image": "https://res.cloudinary.com/dn3hzyiqk/image/upload/v12345678/woman_bbl7_detail_exz83y.jpg"
         }
     },
