@@ -2,12 +2,18 @@ html {
     height: 100%;
 }
 
-body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+.hero-section {
+    background: url('https://res.cloudinary.com/dn3hzyiqk/image/upload/v1728932346/homepage-background-cropped_k71eex.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555;
-    font-family: 'Lato';
+    height: 50vh; /* Cover half the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure the rest of the page has a white background */
+body {
+    background-color: white;
 }
 
 /* from Bulma */
@@ -28,27 +34,28 @@ body {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
+    background: #e6b800; /* Bold yellow for a standout CTA */
+    color: black;
     min-width: 260px;
 }
 
 .btn-black {
-    background: black;
+    background: #1a1a1a; /* Sleek, modern black */
     color: white;
+    border-radius: 0;
 }
 
 .btn-outline-black {
     background: white;
-    color: black !important; 
-    border: 1px solid black;
+    color: #1a1a1a !important; /* Match with a darker black */
+    border: 1px solid #1a1a1a;
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
-    color: white !important;
+    background: #ffcc00 !important; /* Vibrant yellow for a pop of color */
+    color: black !important;
 }
 
 .shop-now-button:hover,
@@ -57,8 +64,8 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: #ffcc00 !important; /* Yellow hover for a bold highlight */
+    color: black;
 }
 
 .text-black {
@@ -84,7 +91,7 @@ body {
 }
 
 a.category-badge > span.badge:hover {
-    background: #212529 !important;
+    background: #ff6600 !important; /* Bright orange for energy */
     color: #fff !important;
 }
 
@@ -268,6 +275,20 @@ input[name='q']::placeholder {
 }
 
 
+/* Footer Styles */
+footer {
+    margin-top: 2rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -327,5 +348,5 @@ input[name='q']::placeholder {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
-    }
+    }   
 }
