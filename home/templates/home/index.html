@@ -29,12 +29,13 @@
     </div>
 </div>
 
-<!-- Product Feature Section -->
+<!-- Arrivals Section -->
+{% if new_arrivals %}
 <div class="container my-5">
-    <h2 class="text-center mb-4">Our Bestsellers</h2>
+    <h2 class="text-center mb-4">Arrivals</h2> <!-- Update to just 'Arrivals' -->
     <div class="row">
-        {% for product in featured_products %}
-        <div class="col-md-4 mb-4">
+        {% for product in new_arrivals %}
+        <div class="col-md-3 mb-4">
             <div class="card h-100">
                 <a href="{% url 'product_detail' product.id %}">
                     <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
@@ -42,13 +43,13 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ product.name }}</h5>
                     <p class="card-text">€{{ product.price }}</p>
-                    <a href="{% url 'product_detail' product.id %}" class="btn btn-primary">View Product</a>
                 </div>
             </div>
         </div>
         {% endfor %}
     </div>
 </div>
+{% endif %}
 
 <!-- Newsletter Signup Section -->
 <div class="container bg-light py-5 my-5">
