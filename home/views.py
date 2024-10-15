@@ -1,8 +1,6 @@
 from django.shortcuts import render
-from django.core.mail import send_mail
-from django.conf import settings
 from .forms import NewsletterSignupForm, ContactForm
-from .models import CustomerTestimonial, FAQ
+from .models import CustomerTestimonial, FAQ, ContactSubmission  # Ensure ContactSubmission is imported
 from products.models import Product
 
 def index(request):
@@ -18,29 +16,25 @@ def index(request):
     if request.method == 'POST' and 'newsletter_signup' in request.POST:
         newsletter_form = NewsletterSignupForm(request.POST)
         if newsletter_form.is_valid():
-            newsletter_form.save()
-            signup_success = True  # Trigger Bootstrap success message for newsletter signup
+            newsletter_form.save()  # Save to database
+            signup_success = True  # Trigger success message
+            newsletter_form = NewsletterSignupForm()  # Reset form after successful submission
+        else:
+            print("Newsletter form errors:", newsletter_form.errors)  # Log form errors if any
     else:
         newsletter_form = NewsletterSignupForm()
 
-    # Handle contact form submission
+    # Handle contact form submission (this is working fine)
     if request.method == 'POST' and 'contact_form' in request.POST:
         contact_form = ContactForm(request.POST)
         if contact_form.is_valid():
-            # Get form data
-            name = contact_form.cleaned_data['name']
-            email = contact_form.cleaned_data['email']
-            message = contact_form.cleaned_data['message']
-            
-            # Send the email using Django's send_mail function
-            send_mail(
-                subject=f"Contact Form Submission from {name}",
-                message=message,
-                from_email=email,
-                recipient_list=[settings.DEFAULT_FROM_EMAIL],
+            ContactSubmission.objects.create(
+                name=contact_form.cleaned_data['name'],
+                email=contact_form.cleaned_data['email'],
+                message=contact_form.cleaned_data['message']
             )
-            contact_form = ContactForm()  # Reset the form after successful submission
-            contact_success = True  # Trigger Bootstrap success message for contact form
+            contact_success = True
+            contact_form = ContactForm()  # Reset form
     else:
         contact_form = ContactForm()
 
@@ -55,4 +49,6 @@ def index(request):
     }
 
     return render(request, 'home/index.html', context)
+
+
 
