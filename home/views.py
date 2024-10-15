@@ -22,6 +22,7 @@ def index(request):
                 'form': form, 
                 'testimonials': testimonials, 
                 'faqs': faqs,
+                'new_arrivals': new_arrivals,
                 'signup_success': True
             })
     else:
@@ -31,6 +32,7 @@ def index(request):
         'form': form,
         'testimonials': testimonials,
         'faqs': faqs,
+         'new_arrivals': new_arrivals,
     }
     return render(request, 'home/index.html', context)
 
