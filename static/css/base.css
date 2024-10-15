@@ -314,6 +314,27 @@ footer a:hover {
         height: calc(100vh - 116px);
     }
 
+    .hero-section {
+        background-size: cover;
+        background-position: center; /* Adjust background position */
+        height: auto; /* Let height adjust automatically */
+    }
+
+    .hero-section h1 {
+        font-size: 1.5rem; /* Adjust text size */
+        line-height: 1.2; /* Adjust line height for mobile */
+    }
+
+    .shop-now-button {
+        font-size: 0.9rem; /* Make the button smaller */
+        padding: 0.5rem 1rem; /* Adjust padding */
+        margin-top: 1rem; /* Ensure there's space between button and text */
+    }
+
+    .hero-section .container {
+        padding: 1rem; /* Add some padding on mobile to prevent overflow */
+    }
+
     .display-4.logo-font.text-black {
         font-size: 2rem;
     }
