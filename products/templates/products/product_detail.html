@@ -19,15 +19,15 @@
                     <a href="{{ product.detail_image.url }}" target="_blank">
                         <img class="card-img-top img-fluid" src="{{ product.detail_image.url }}" alt="{{ product.name }}">
                     </a>
-                {% elif product.image %}
+                    {% elif product.image %}
                     <a href="{{ product.image.url }}" target="_blank">
                         <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                     </a>
-                {% else %}
-                    <a href="">
-                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    {% else %}
+                    <a href="{% url 'product_detail' product.id %}">
+                        <img class="card-img-top img-fluid" src="https://res.cloudinary.com/dn3hzyiqk/image/upload/v1728937153/tdbaje7ykphz9qlkkvtd.jpg" alt="{{ product.name }}">
                     </a>
-                {% endif %}                
+                    {% endif %}           
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">

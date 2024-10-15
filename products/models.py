@@ -55,7 +55,7 @@ class Product(models.Model):
     detail_image = CloudinaryField('image', null=True, blank=True)
     gender = models.CharField(max_length=6, choices=GENDER_CHOICES, null=True, blank=True)
     sizes = models.ManyToManyField(Size, related_name='products')
-    tags = TaggableManager()
+    tags = TaggableManager(blank=True)
 
     def __str__(self):
         """
