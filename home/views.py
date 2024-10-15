@@ -10,6 +10,9 @@ def index(request):
     # Get the first 5 FAQs
     faqs = FAQ.objects.all().order_by('order')[:5]
 
+    # Fetch products tagged with "new arrivals"
+    new_arrivals = Product.objects.filter(tags__name__in=["arrivals"])[:4]  
+
     if request.method == 'POST':
         form = NewsletterSignupForm(request.POST)
         if form.is_valid():
