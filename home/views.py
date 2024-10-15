@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import NewsletterSignupForm
 from .models import CustomerTestimonial, FAQ
+from products.models import Product
 
 def index(request):
     """ A view to return the index page """
