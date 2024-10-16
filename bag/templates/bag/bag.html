@@ -129,6 +129,7 @@
 <script type="text/javascript">
     // Update quantity on click
     $('.update-link').click(function(e) {
+        console.log("Update button clicked!");
         var form = $(this).prev('.update-form');
         form.submit();
     })

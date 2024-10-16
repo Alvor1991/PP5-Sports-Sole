@@ -12,17 +12,16 @@ def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
 
     product = Product.objects.get(pk=item_id)
-    quantity = int(request.POST.get('quantity', 1))  
+    quantity = int(request.POST.get('quantity', 1))
     redirect_url = request.POST.get('redirect_url')
-    size = request.POST.get('product_size')  
+    size = request.POST.get('product_size')  # Assume all products have sizes
     bag = request.session.get('bag', {})
 
-    if item_id in bag:
-        if isinstance(bag[item_id], int):
-            bag[item_id] = {'items_by_size': {}}
-    else:
+    # Initialize bag entry if it doesn't exist
+    if item_id not in bag:
         bag[item_id] = {'items_by_size': {}}
 
+    # Handle size-based quantities
     if size in bag[item_id]['items_by_size']:
         bag[item_id]['items_by_size'][size] += quantity
         messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {bag[item_id]["items_by_size"][size]}')
@@ -30,28 +29,32 @@ def add_to_bag(request, item_id):
         bag[item_id]['items_by_size'][size] = quantity
         messages.success(request, f'Added size {size.upper()} {product.name} to your bag')
 
+    # Save the updated bag in session
     request.session['bag'] = bag
     return redirect(redirect_url)
-
 
 def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
-    size = request.POST.get('product_size')  
+    size = request.POST.get('product_size')  # All products have sizes
     bag = request.session.get('bag', {})
 
+    # Check if the item and size exist in the bag
     if item_id in bag and size in bag[item_id]['items_by_size']:
         if quantity > 0:
+            # Update the quantity for the specific size
             bag[item_id]['items_by_size'][size] = quantity
             messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {bag[item_id]["items_by_size"][size]}')
         else:
+            # If quantity is 0, remove the size from the bag
             del bag[item_id]['items_by_size'][size]
-            if not bag[item_id]['items_by_size']:
+            if not bag[item_id]['items_by_size']:  # If no sizes left, remove item completely
                 bag.pop(item_id)
             messages.success(request, f'Removed size {size.upper()} {product.name} from your bag')
 
+    # Save the updated bag in session
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
 
