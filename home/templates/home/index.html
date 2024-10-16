@@ -36,7 +36,7 @@
     <div class="row">
         {% for product in new_arrivals %}
         <div class="col-md-3 mb-4">
-            <div class="card h-100">
+            <div class="card h-100 shadow-sm"> <!-- Added shadow-sm for a subtle shadow -->
                 <a href="{% url 'product_detail' product.id %}">
                     <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
                 </a>
@@ -51,23 +51,28 @@
 </div>
 {% endif %}
 
+
 <!-- Testimonials Section -->
 {% if testimonials %}
 <div class="container my-5">
-    <h2 class="text-center mb-4">What Our Customers Say</h2>
+    <h2 class="text-center mb-5">What Our Customers Say</h2>
     <div class="row">
         {% for testimonial in testimonials %}
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title">{{ testimonial.name }}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Rating: {{ testimonial.rating }} / 5</h6>
-                    <p class="card-text">{{ testimonial.testimonial|truncatewords:30 }}</p>
-                </div>
-                <div class="card-footer text-muted">
-                    {{ testimonial.date }}
-                </div>
+        <div class="col-md-4 mb-5 d-flex flex-column align-items-center">
+            <blockquote class="blockquote text-center text-dark" style="font-style: italic; font-size: 1.1em; color: #6c757d;">
+                "{{ testimonial.testimonial|truncatewords:20 }}"
+                <footer class="blockquote-footer mt-3">{{ testimonial.name }}</footer>
+            </blockquote>
+            <div class="text-center mt-2">
+                {% for star in "12345" %}
+                    {% if forloop.counter <= testimonial.rating %}
+                        <i class="fas fa-star text-warning"></i> 
+                    {% else %}
+                        <i class="far fa-star text-muted"></i> 
+                    {% endif %}
+                {% endfor %}
             </div>
+            <small class="text-muted">{{ testimonial.date }}</small>
         </div>
         {% endfor %}
     </div>
