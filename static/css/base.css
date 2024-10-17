@@ -1,5 +1,6 @@
-html {
+html, body {
     height: 100%;
+    margin: 0;
 }
 
 .hero-section {
@@ -14,8 +15,18 @@ html {
 body {
     background-image: url('https://res.cloudinary.com/dn3hzyiqk/image/upload/v1729024113/sports-pattern_ti84cn.png');
     background-repeat: repeat;
-    background-size: 30%; /* Adjust this value to control the size of the pattern */
+    background-size: 30%; 
     background-color: #f4f4f4; /* Fallback color */
+}
+
+.wrapper {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper > main {
+    flex-grow: 1; 
 }
 
 /* from Bulma */
@@ -278,7 +289,7 @@ input[name='q']::placeholder {
 
 .newsletter-input {
     border: 2px solid transparent;
-    background-image: linear-gradient(#fff, #fff), radial-gradient(circle at top left, #000000, #FFD700);  /* From black to yellow */
+    background-image: linear-gradient(#fff, #fff), radial-gradient(circle at top left, #000000, #FFD700); 
     background-origin: border-box;
     background-clip: padding-box, border-box;
     padding: 10px;
@@ -295,18 +306,22 @@ input[name='q']::placeholder {
 }
 
 .container.bg-light {
-    background-color: #5a5a5a; /* Darker grey */
+    background-color: #5a5a5a; 
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
 }
-
-
 
 /* Footer Styles */
 footer {
-    margin-top: 2rem;
+    margin-top: auto;
+    flex-shrink: 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
 }
+
 
 footer a:hover {
     text-decoration: underline;
@@ -317,7 +332,6 @@ footer a:hover {
     margin-right: 10px;
 }
 
-/* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -332,14 +346,9 @@ footer a:hover {
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
-    }
-
-    body {
-        height: calc(100vh - 116px);
     }
 
     .hero-section {
@@ -357,18 +366,6 @@ footer a:hover {
         font-size: 0.9rem; 
         padding: 0.5rem 1rem; 
         margin-top: 1rem; 
-    }
-
-    .hero-section .container {
-        padding: 1rem; 
-    }
-
-    .display-4.logo-font.text-black {
-        font-size: 2rem;
-    }
-
-    .nav-link {
-        padding: 0.15rem;
     }
 
     .nav-link i.fa-lg {
