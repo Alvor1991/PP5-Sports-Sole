@@ -63,6 +63,201 @@ Visit the deployed website [here]().
 
 #### User Stories
 
+1. As a user, I can register an account so that I can book and manage my appointments online.
+
+2. As an admin, I can manage website content so that I can keep info up-to-date and relevant for users.
+
+3. As a user, I can access the website on any device so that I have a seamless experience on all devices.
+
+4. As a user, I can view the home page to get an overview of services so I can learn more about the website.
+
+5. As a user, I can view info about the therapist so that I can learn about their credentials and expertise.
+
+6. As a user, I can view a list of available treatments so that I can choose the appropriate therapy session.
+
+7. As a user, I can create an appointment so that I can schedule a therapy session.
+
+8. As a user, I can view a list of my appointments so that I can see my scheduled therapy sessions.
+
+9. As a user, I can update my appointments so that I can change the details of a scheduled session.
+
+10. As a user, I can delete my appointments so that I can cancel a session I no longer need.
+
+#### Strategy Table
+
+Opportunity / Problem | Importance | Viability / Feasibility
+--- | --- | ---
+Responsive design | 5 | 5
+Account registration | 5 | 5
+Browse treatments | 5 | 5
+Book appointments | 5 | 5
+Manage appointments | 5 | 5
+User appointments dashboard | 5 | 4
+**Future Implementations:**
+Integration with payment gateway | 3 | 2
+Email notifications for booking confirmations | 3 | 2
+Expand to include blog for sharing tips | 2 | 2
+Expand to include more therapists | 2 | 2
+**Total** | **40** | **37**
+
+
+### Scope
+
+According to the strategy table, not all features can be implemented in the first release of the project. For this reason, the project will be divided in multiple phases, as shown below:
+
+| **First Phase**                   | **Second Phase**                                     |
+|-----------------------------------|------------------------------------------------------|
+| Responsive design                 | Integration with payment gateway                     |
+| Account registration              | Email notifications for booking confirmations        |
+| Browse and view treatments        | Blog page for sharing tips                           |
+| Book and manage appointments      | Ability to add more therapists to the site           |
+
+#### Kanban board
+
+GitHub Projects was used as a project management tool with a Kanban board to track these user stories and monitor progress. **Story points** were assigned to these user stories, using the Fibonacci sequence (3, 5, 8) to represent the relative complexity and effort involved in each task:
+
+**Start**
+![User Stories Progress - Start](assets/readme_files/start.png)
+
+**Week 1**
+![User Stories Progress - Week 1](assets/readme_files/week1.png)
+
+**Week 2**
+![User Stories Progress - Week 2](assets/readme_files/week2.png)
+
+**Week 3**
+![User Stories Progress - Week 3](assets/readme_files/week3.png)
+
+
+### Structure
+
+#### Flowchart
+
+The website is organized using a [Mermaid](https://mermaid.js.org/) Flowchart to illustrate the user journey and interactions, ensuring intuitive navigation and a seamless user experience. The chart outlines the interactions available to both logged-in and logged-out users, illustrating how they navigate through the site's features.
+
+![Sports Therapy Booking website map](assets/readme_files/flowchart.png)
+
+##### User Flow
+
+###### Non-Logged-In Users:
+* **Home Page**: an overview of the services offered, client testimonials, and quick links to book an appointment.
+* **About Page**: detailed info about the therapist's credentials and philosophy. It also includes a contact form.
+* **Treatments Page**: all available treatments with descriptions and pricing, along with a FAQ section.
+* **Login Page**: allows users to log in to access personalized features like appointment management.
+* **Book Appointment**: direct access to booking form; redirects users to log in before booking an appointment.
+
+###### Logged-In Users:
+* **Home Page**: same for non-logged-in users.
+* **About Page**: same for non-logged-in users.
+* **Treatments Page**: same for non-logged-in users.
+* **My Appointments Page**: allows users to view, edit, or delete their scheduled appointments.
+* **Logout**: allows users to log out of their account securely.
+* **Book Appointment**: direct accesses to booking form; users can schedule their appointments.
+
+#### Database Model
+
+The database model was designed using [drawsql](https://drawsql.app/) and is managed with [PostgreSQL](https://www.postgresql.org/), a relational database.
+
+![Sports Therapy Management database model](assets/readme_files/erdiagram.png)
+
+##### Home App
+
+###### ClientTestimonial Model
+
+The `ClientTestimonial` model manages and displays client feedback on the website.
+
+* **Client Name**: A `CharField` that stores the name of the client providing the testimonial.
+* **Testimonial Text**: A `TextField` containing testimonials provided by users.
+* **Active**: A `BooleanField` indicating whether the testimonial is currently active and displayed on the website. 
+* **Date Added**: A `DateTimeField` of when the testimonial was added, allowing for tracking of feedback.
+
+##### About App
+
+###### About Model
+
+The `About` model is designed to manage and present detailed information about the therapist.
+
+* **Title**: A `CharField` that stores the title of the "About Me" section.
+* **Content**: A `TextField` containing the main content of the "About Me" section.
+
+###### ContactRequest Model
+
+The `ContactRequest` model allows for efficient handling of client inquiries and communication.
+
+* **Name**: A `CharField` storing the name of the individual making the contact request.
+* **Email**: An `EmailField` capturing the email address of the requester.
+* **Message**: A `TextField` containing the message or inquiry sent by the individual.
+* **Read**: A `BooleanField` indicating whether the message has been read. Defaults to `False`.
+* **Created On**: A `DateTimeField` that records when the contact request was created.
+
+##### Treatments App
+
+###### Treatment Model
+
+Each treatment offered by the therapist is detailed in the `Treatment` model.
+
+* **Name**: A `CharField` storing the name of the treatment.
+* **Description**: A `TextField` providing a detailed description of the treatment.
+* **Services Offered**: An optional `TextField` detailing the services provided as part of the treatment.
+* **Benefits**: An optional `TextField` outlining the benefits of the treatment.
+* **Price**: A `DecimalField` indicating the price of the treatment, up to two decimal places.
+* **Image**: A `CloudinaryField` to store an optional image associated with the treatment.
+* **Button Text**: A `CharField` providing default text for call-to-action buttons related for booking appointments.
+
+**FAQ Model**
+
+The `FAQ` model is used to manage frequently asked questions.
+
+* **Question**: A `CharField` storing the frequently asked questions.
+* **Answer**: A `TextField` containing the answer to the question.
+
+##### Appointments App
+
+###### Appointment Model
+
+The `Appointment` model facilitates the scheduling & management of therapy sessions.
+
+* **User**: A foreign key from the `User` model that stores the client who has booked the appointment.
+* **Date**: The date of the appointment, stored as a `DateField`.
+* **Time**: The time of the appointment, stored as a `TimeField`.
+* **Treatment**: A `CharField` representing the type of treatment selected for the appointment.
+
+### Skeleton
+
+#### Wireframes
+
+[Balsamiq](https://balsamiq.com/) was used to create a layout of the website in the planning phase. Here are my initial designs: 
+
+Page | Desktop Version | Mobile Version
+--- | --- | ---
+Login | ![Desktop Login wireframe image](assets/wireframes/login.png) | ![Mobile Login wireframe image](assets/wireframes/login_mobile.png)
+Sign Up | ![Desktop Sign Up wireframe image](assets/wireframes/signup.png) | ![Mobile Sign Up wireframe image](assets/wireframes/signup_mobile.png)
+Home | ![Desktop Home wireframe image](assets/wireframes/index.png) | ![Mobile Home wireframe image](assets/wireframes/index_mobile.png)
+Products | ![Desktop About wireframe image](assets/wireframes/products.png) | ![Mobile About wireframe image](assets/wireframes/home_mobile.png)
+Product Detail | ![Desktop Treatments wireframe image](assets/wireframes/product_detail.png) | ![Mobile Treatments wireframe image](assets/wireframes/products_mobile.png)
+Bag | ![Book Appointment wireframe image](assets/wireframes/bag.png) | ![Mobile Book Appointment wireframe image](assets/wireframes/bag_mobile.png)
+Checkout | ![View Appointments wireframe image](assets/wireframes/checkout.png) | ![Mobile View Appointments wireframe image](assets/wireframes/checkout_mobile.png)
+My profile | ![View Appointments wireframe image](assets/wireframes/profile.png) | ![Mobile View Appointments wireframe image](assets/wireframes/profile_mobile.png)
+Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_product.png) | ![Mobile View Appointments wireframe image](assets/wireframes/add_product_mobile.png)
+
+
+
+## User Experience (UX)
+
+### Strategy
+
+#### Project Goals
+
+* Provide a user-friendly interface for clients to book sports therapy appointments.
+
+* Implement a responsive design to ensure accessibility across various devices.
+
+* Allow clients to manage their bookings easily through a personal dashboard.
+
+* Ensure secure authentication and data handling.
+
+#### User Stories
+
 ##### Viewing and Navigation
 
 1. As a shopper, I want to view a list of sneakers so that I can choose the ones I’d like to purchase.
