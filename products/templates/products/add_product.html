@@ -26,9 +26,13 @@
                 <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
-                        {% if field.name != 'image' %}
+                        {% if field.name != 'image' and field.name != 'detail_image' %}
                             {{ field | as_crispy_field }}
-                        {% else %}
+                        {% elif field.name == 'image' %}
+                            <label for="{{ field.id_for_label }}">Product Image</label>
+                            {{ field }}
+                        {% elif field.name == 'detail_image' %}
+                            <label for="{{ field.id_for_label }}">Product Detail Image</label>
                             {{ field }}
                         {% endif %}
                     {% endfor %}
@@ -37,6 +41,7 @@
                         <button class="btn btn-black rounded-0" type="submit">Add Product</button>
                     </div>
                 </form>
+                
             </div>            
         </div>
     </div>
