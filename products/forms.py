@@ -2,13 +2,24 @@ from django import forms
 from .widgets import CustomClearableFileInput
 from .models import Product, Category
 
+
 class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
         # Exclude the sizes field from the form
         exclude = ['sizes']
 
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
+    image = forms.ImageField(
+        label='Product Image',
+        required=False,
+        widget=CustomClearableFileInput
+    )
+    
+    detail_image = forms.ImageField(
+        label='Product Detail Image', 
+        required=False,
+        widget=CustomClearableFileInput
+    )
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
