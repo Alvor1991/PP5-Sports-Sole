@@ -154,11 +154,12 @@
                     <ul class="list-unstyled">
                         <li><a href="{% url 'home' %}" class="text-light">Home</a></li>
                         <li><a href="{% url 'products' %}" class="text-light">Shop</a></li>
-                        <li><a href="#" class="text-light">Contact</a></li>
+                        <li><a href="{% url 'products' %}?category=running_shoes,training_gym_shoes,basketball_shoes,casual_sneakers&gender=Women" class="text-light">Women's</a></li>
+                        <li><a href="{% url 'products' %}?category=running_shoes,training_gym_shoes,basketball_shoes,casual_sneakers&gender=Men" class="text-light">Men's</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 mb-3">
-                    <h5>Customer Service</h5>
+                    <h5>Categories</h5>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light">Shipping Info</a></li>
                         <li><a href="#" class="text-light">Returns & Exchanges</a></li>
