@@ -1,26 +1,27 @@
 from django.shortcuts import render
 from .forms import NewsletterSignupForm, ContactForm
-from .models import CustomerTestimonial, FAQ, ContactSubmission  # Ensure ContactSubmission is imported
+from .models import CustomerTestimonial, FAQ, ContactSubmission
 from products.models import Product
 
+
 def index(request):
-    """ A view to return the index page with newsletter signup and contact forms """
+    """ Return the index page with newsletter signup and contact forms """
     testimonials = CustomerTestimonial.objects.all().order_by('-date')[:3]
     faqs = FAQ.objects.all().order_by('order')[:5]
     new_arrivals = Product.objects.filter(tags__name__in=["arrivals"])[:4]
 
-    contact_success = False  # Track success for the contact form
-    signup_success = False   # Track success for the newsletter form
+    contact_success = False
+    signup_success = False
 
     # Handle newsletter signup form
     if request.method == 'POST' and 'newsletter_signup' in request.POST:
         newsletter_form = NewsletterSignupForm(request.POST)
         if newsletter_form.is_valid():
             newsletter_form.save()  # Save to database
-            signup_success = True  # Trigger success message
-            newsletter_form = NewsletterSignupForm()  # Reset form after successful submission
+            signup_success = True
+            newsletter_form = NewsletterSignupForm()
         else:
-            print("Newsletter form errors:", newsletter_form.errors)  # Log form errors if any
+            print("Newsletter form errors:", newsletter_form.errors)
     else:
         newsletter_form = NewsletterSignupForm()
 
@@ -34,7 +35,7 @@ def index(request):
                 message=contact_form.cleaned_data['message']
             )
             contact_success = True
-            contact_form = ContactForm()  # Reset form
+            contact_form = ContactForm()
     else:
         contact_form = ContactForm()
 
@@ -44,11 +45,8 @@ def index(request):
         'testimonials': testimonials,
         'faqs': faqs,
         'new_arrivals': new_arrivals,
-        'signup_success': signup_success,  # For Bootstrap success message
-        'contact_success': contact_success,  # For Bootstrap success message
+        'signup_success': signup_success,
+        'contact_success': contact_success,
     }
 
     return render(request, 'home/index.html', context)
-
-
-
