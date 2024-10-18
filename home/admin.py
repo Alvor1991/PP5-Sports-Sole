@@ -1,5 +1,8 @@
 from django.contrib import admin
-from .models import NewsletterSubscriber, CustomerTestimonial, FAQ, ContactSubmission
+from .models import (
+    NewsletterSubscriber, CustomerTestimonial, FAQ, ContactSubmission
+)
+
 
 @admin.register(FAQ)
 class FAQAdmin(admin.ModelAdmin):
@@ -8,6 +11,7 @@ class FAQAdmin(admin.ModelAdmin):
     search_fields = ('question', 'answer')
     ordering = ('order',)
 
+
 @admin.register(NewsletterSubscriber)
 class NewsletterSubscriberAdmin(admin.ModelAdmin):
     list_display = ('email', 'signup_date', 'is_active')
@@ -15,12 +19,14 @@ class NewsletterSubscriberAdmin(admin.ModelAdmin):
     search_fields = ('email',)
     date_hierarchy = 'signup_date'
 
+
 @admin.register(CustomerTestimonial)
 class CustomerTestimonialAdmin(admin.ModelAdmin):
     list_display = ('name', 'rating', 'date')
     list_filter = ('rating', 'date')
     search_fields = ('name', 'testimonial')
     date_hierarchy = 'date'
+
 
 @admin.register(ContactSubmission)
 class ContactSubmissionAdmin(admin.ModelAdmin):
