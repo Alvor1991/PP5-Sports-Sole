@@ -63,25 +63,30 @@ Visit the deployed website [here]().
 
 #### User Stories
 
-1. As a user, I can register an account so that I can book and manage my appointments online.
+1. As a shopper, I can view a list of sneakers so that I can select some to purchase.
+2. As a shopper, I can see detailed information for sneakers so that I can make an informed purchase decision.
+3. As a shopper, I can quickly identify deals and discounts so that I can take advantage of special offers.
+4. As a shopper, I can view the total cost of selected items so that I can stay within my budget.
+5. As a site user, I can register for an account so that I can have a personalized shopping experience.
+6. As a site user, I can log in or log out of my account so that I can access my personal information securely.
+7. As a site user, I can recover my password so that I can regain access to my account if I forget it.
+8. As a site user, I can receive an email confirmation after registering so that I can verify my account creation was successful.
+9. As a site user, I can have a personalized user profile so that I can view my order history and save my payment information.
+10. As a shopper, I can sort sneakers by price, rating, or category so that I can easily find the best sneakers for me.
+11. As a shopper, I can sort sneakers by category so that I can find specific types of sneakers quickly.
+12. As a shopper, I can search for sneakers by name or description so that I can find a specific product I'd like to purchase.
+13. As a shopper, I can filter products across multiple categories so that I can find sneakers that meet specific criteria.
+14. As a shopper, I can select the size and quantity of sneakers so that I can ensure I'm ordering the correct product.
+15. As a shopper, I can view the final cost including taxes and shipping so that I know the total amount I'll be charged.
+16. As a shopper, I can complete my purchase securely so that I can confidently buy the sneakers I want.
+17. As a site user, I can sign up for a newsletter so that I can stay informed about new products and offers.
+18. As a store owner, I can add a product so that I can expand my product range.
+19. As a store owner, I can edit or update a product so that I can change product details as needed.
+20. As a store owner, I can delete a product so that I can remove items that are no longer for sale.
+21. As a store owner, I can manage client testimonials so that I can showcase positive customer experiences.
+22. As a store owner, I can manage FAQs so that I can provide up-to-date information to customers.
+23. As a site user, I can use a contact form so that I can communicate with the store owners for inquiries or support.
 
-2. As an admin, I can manage website content so that I can keep info up-to-date and relevant for users.
-
-3. As a user, I can access the website on any device so that I have a seamless experience on all devices.
-
-4. As a user, I can view the home page to get an overview of services so I can learn more about the website.
-
-5. As a user, I can view info about the therapist so that I can learn about their credentials and expertise.
-
-6. As a user, I can view a list of available treatments so that I can choose the appropriate therapy session.
-
-7. As a user, I can create an appointment so that I can schedule a therapy session.
-
-8. As a user, I can view a list of my appointments so that I can see my scheduled therapy sessions.
-
-9. As a user, I can update my appointments so that I can change the details of a scheduled session.
-
-10. As a user, I can delete my appointments so that I can cancel a session I no longer need.
 
 #### Strategy Table
 
@@ -105,7 +110,7 @@ Expand to include more therapists | 2 | 2
 
 According to the strategy table, not all features can be implemented in the first release of the project. For this reason, the project will be divided in multiple phases, as shown below:
 
-| **First Phase**                   | **Second Phase**                                     |
+| **Viewing and Navigation**        | **Registration and User Accounts**                   |
 |-----------------------------------|------------------------------------------------------|
 | Responsive design                 | Integration with payment gateway                     |
 | Account registration              | Email notifications for booking confirmations        |
@@ -116,18 +121,23 @@ According to the strategy table, not all features can be implemented in the firs
 
 GitHub Projects was used as a project management tool with a Kanban board to track these user stories and monitor progress. **Story points** were assigned to these user stories, using the Fibonacci sequence (3, 5, 8) to represent the relative complexity and effort involved in each task:
 
-**Start**
-![User Stories Progress - Start](assets/readme_files/start.png)
+**Sprint 1 - Basic Product Viewing and User**
+![User Stories Progress - Start](assets/readme_files/sprint1.png)
 
-**Week 1**
-![User Stories Progress - Week 1](assets/readme_files/week1.png)
+**Sprint 2 - Product Management and User Profiles**
+![User Stories Progress - Week 1](assets/readme_files/sprint2.png)
 
-**Week 2**
-![User Stories Progress - Week 2](assets/readme_files/week2.png)
+**Sprint 3 - Shopping Bag and Checkout Process**
+![User Stories Progress - Week 2](assets/readme_files/sprint3.png)
 
-**Week 3**
-![User Stories Progress - Week 3](assets/readme_files/week3.png)
+**Sprint 4 - Checkout Process - Part**
+![User Stories Progress - Week 3](assets/readme_files/sprint4.png)
 
+**Sprint 5 - Sorting, Searching, and Additional Features**
+![User Stories Progress - Week 3](assets/readme_files/sprint5.png)
+
+**Sprint 6 - Marketing Features and Final Polishing**
+![User Stories Progress - Week 3](assets/readme_files/sprint6.png)
 
 ### Structure
 
@@ -241,56 +251,22 @@ My profile | ![View Appointments wireframe image](assets/wireframes/profile.png)
 Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_product.png) | ![Mobile View Appointments wireframe image](assets/wireframes/add_product_mobile.png)
 
 
+## Agile Development Plan
 
-## User Experience (UX)
+## Epics and User Stories
 
-### Strategy
-
-#### Project Goals
-
-* Provide a user-friendly interface for clients to book sports therapy appointments.
-
-* Implement a responsive design to ensure accessibility across various devices.
-
-* Allow clients to manage their bookings easily through a personal dashboard.
-
-* Ensure secure authentication and data handling.
-
-#### User Stories
-
-##### Viewing and Navigation
-
-1. As a shopper, I want to view a list of sneakers so that I can choose the ones I’d like to purchase.
-
-2. As a shopper, I want to see detailed info for each sneaker (price, description, available sizes) so that I can make informed purchasing decisions.
-
-3. As a shopper, I want to be notified about special offers and discounts so that I can save money on my purchases.
-
-4. As a shopper, I want to easily view the total cost of my selected items so that I can avoid spending more than I intend.
-
-##### Registration and User Accounts
-
-5. As a site user, I want to register for an account easily so that I can view my order history and profile information.
-6. As a site user, I want to log in or log out quickly so that I can access my personal account when needed.
-7. As a site user, I want to recover my password easily so that I can regain access to my account if I forget it.
-8. As a site user, I want to receive an email confirmation after registering so that I can verify my registration was successful.
-9. As a site user, I want to have a personalized user profile so that I can view my past orders and manage my account information.
-
-##### Sorting and Searching
-
-10. As a shopper, I want to sort sneakers by price, rating, or category so that I can find the best products that fit my preferences.
-11. As a shopper, I want to sort sneakers by category (e.g., running shoes, casual shoes) so that I can easily find sneakers specific to my needs.
-12. As a shopper, I want to search for sneakers by name or description so that I can quickly locate the product I’m interested in.
-13. As a shopper, I want to filter products across multiple categories (e.g., men's running shoes, women’s casual shoes) to find products that suit my interests
-
-##### Purchasing and Checkout
-
-14. As a shopper, I want to easily select the size and quantity of the sneakers I’m purchasing so that I ensure I’m ordering the correct item.
-15. As a shopper, I want to view the final cost, including taxes and shipping, so that I understand exactly what I will pay.
-16. As a shopper, I want to complete my purchase quickly and securely so that my personal and payment information is protected.
+| Epic ID | Epic Name | User Stories |
+|---------|-----------|--------------|
+| E1 | Viewing and Navigation | 1. View a List of Sneakers (#1)<br>2. See Detailed Information for Sneakers (#2)<br>3. Quickly Identify Deals and Discounts (#3)<br>4. View the Total Cost of Selected Items (#4) |
+| E2 | Registration and User Accounts | 5. Register for an Account (#5)<br>6. Log In or Log Out of My Account (#6)<br>7. Recover My Password (#7)<br>8. Receive an Email Confirmation After Registering (#8)<br>9. Have a Personalized User Profile (#9) |
+| E3 | Sorting and Searching | 10. Sort Sneakers by Price, Rating, or Category (#10)<br>11. Sort Sneakers by Category (#11)<br>12. Search for Sneakers by Name or Description (#12)<br>13. Filter Products Across Multiple Categories (#13) |
+| E4 | Purchasing and Checkout | 14. Select Size and Quantity of Sneakers (#14)<br>15. View Final Cost Including Taxes and Shipping (#15)<br>16. Complete My Purchase Securely (#16) |
+| E5 | Marketing and Customer Engagement | 17. Newsletter Signup (#17)<br>18. Client Testimonial Management (#21)<br>19. FAQ Management (#22)<br>20. Contact Form (#23) |
+| E6 | Admin and Store Management | 21. Add Product (#18)<br>22. Edit/Update Product (#19)<br>23. Delete Product (#20) |
 
 
-# Agile Development Plan
+
+
 
 ## User Stories and Epics
 

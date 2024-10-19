@@ -15,58 +15,145 @@
 
 ***
 
-
 ## Testing User Stories
 
-#### 1. User can register an account to book and manage appointments (**3 Story Points**)
-* AC1: Register with a form, account is created.
-* AC2: Valid username and password register the account.
-* AC3: Redirected to "My Profile" page, see a no bookings message.
+### 1. View a List of Sneakers
 
-#### 2. Admin can manage content to keep info up-to-date (**8 Story Points**)
-* AC1: Admin dashboard access to edit/update content.
-* AC2: Treatment updates reflected on the public site.
-* AC3: Edit treatment content and prices accurately.
+* AC1: User can see a list of sneakers on the main products page.
+* AC2: Sneakers are displayed with basic information (name, image, price).
+* AC3: User can navigate through multiple pages of sneakers if applicable.
 
-#### 3. User can access the website on any device for a seamless experience (**3 Story Points**)
-* AC1: Website layout adjusts to fit mobile screens.
-* AC2: Content remains readable when resizing the browser.
-* AC3: Navigation menu collapses into mobile-friendly version.
+### 2. See Detailed Information for Sneakers
 
-#### 4. User can view the home page to get an overview of services (**3 Story Points**)
-* AC1: Home page shows introduction and service overview.
-* AC2: Scroll to see user testimonials.
-* AC3: Call-to-action buttons for booking or learning more.
+* AC1: User can click on a sneaker to view its detailed information.
+* AC2: Detailed view shows price, description, rating, and available sizes.
+* AC3: User can see sneaker images clearly.
 
-#### 5. User can view therapist info to learn about credentials (**3 Story Points**)
-* AC1: About page shows therapist’s biography and credentials.
-* AC2: Read content to understand services and experience.
-* AC3: Contact form for questions or more information.
+### 3. Quickly Identify Deals and Discounts
 
-#### 6. User can view treatments to choose appropriate therapy (**5 Story Points**)
-* AC1: Treatments page lists available services.
-* AC2: Click on treatment to see detailed description.
-* AC3: Understand benefits and pricing of each treatment.
+* AC1: Special offers are clearly marked on the product list.
+* AC2: User can easily navigate to a dedicated special offers section.
+* AC3: Discounts or deal prices are prominently displayed.
 
-#### 7. User can create an appointment to schedule a therapy session (**5 Story Points**)
-* AC1: Booking form shows available slots.
-* AC2: Selected treatment is added to the booking.
-* AC3: Confirmation received once appointment is created.
+### 4. View the Total Cost of Selected Items
 
-#### 8. User can view appointments to see scheduled sessions (**5 Story Points**)
-* AC1: Log in to see upcoming and past bookings.
-* AC2: View details like date, time, and treatment.
-* AC3: Navigate to detailed appointment information.
+* AC1: Running total is visible in the shopping bag icon.
+* AC2: Total updates immediately when adding or removing items.
+* AC3: User can view a detailed breakdown in the shopping bag.
 
-#### 9. User can update appointments to change session details (**5 Story Points**)
-* AC1: Edit appointment to see current details.
-* AC2: Update date, time, or treatment, reflecting changes.
-* AC3: Confirmation received after updating appointment.
+### 5. Register for an Account
 
-#### 10. User can delete appointments to cancel a session (**5 Story Points**)
-* AC1: Delete appointment prompts for confirmation.
-* AC2: Confirm to remove appointment from the list.
-* AC3: Message confirms appointment cancellation.
+* AC1: User can access a registration form from the main navigation.
+* AC2: Form validates input and creates account with valid information.
+* AC3: User receives confirmation of successful registration.
+
+### 6. Log In or Log Out of My Account
+
+* AC1: Registered user can log in with correct credentials.
+* AC2: Logged-in user can easily log out from any page.
+* AC3: User's login status is clearly indicated in the navigation.
+
+### 7. Recover My Password
+
+* AC1: User can request password reset from login page.
+* AC2: Reset instructions are sent to user's email.
+* AC3: User can set a new password and access their account.
+
+### 8. Receive an Email Confirmation After Registering
+
+* AC1: User receives an email shortly after registration.
+* AC2: Email contains confirmation link or welcome message.
+* AC3: User can verify their email address if required.
+
+### 9. Have a Personalized User Profile
+
+* AC1: Logged-in user can access their profile page.
+* AC2: Profile displays order history and saved information.
+* AC3: User can update their default delivery information.
+
+### 10. Sort Sneakers by Price, Rating, or Category
+
+* AC1: User can sort sneakers by price (low to high, high to low).
+* AC2: User can sort sneakers by rating.
+* AC3: User can sort sneakers by category.
+
+### 11. Sort Sneakers by Category
+
+* AC1: User can navigate to a specific sneaker category.
+* AC2: Sorting options are available within the category view.
+* AC3: Category-specific sorting (if applicable) is available.
+
+### 12. Search for Sneakers by Name or Description
+
+* AC1: Search bar is easily accessible from all pages.
+* AC2: Search returns relevant results based on sneaker name or description.
+* AC3: User can view the number of search results.
+
+### 13. Filter Products Across Multiple Categories
+
+* AC1: User can select multiple categories to filter sneakers.
+* AC2: Filtered results show sneakers from all selected categories.
+* AC3: User can easily add or remove categories from the filter.
+
+### 14. Select Size and Quantity of Sneakers
+
+* AC1: Size options are clearly displayed on the product page.
+* AC2: Quantity can be easily adjusted before adding to bag.
+* AC3: Selected size and quantity are confirmed when adding to bag.
+
+### 15. View Final Cost Including Taxes and Shipping
+
+* AC1: Final cost breakdown is shown before completing purchase.
+* AC2: Taxes and shipping costs are clearly itemized.
+* AC3: User can see how costs change based on delivery options.
+
+### 16. Complete My Purchase Securely
+
+* AC1: Checkout process guides user through payment steps.
+* AC2: Payment form is clear and easy to fill out.
+* AC3: User receives clear confirmation of successful purchase.
+
+### 17. Newsletter Signup
+
+* AC1: Newsletter signup form is easily accessible.
+* AC2: User can enter email and subscribe with one click.
+* AC3: Confirmation of subscription is provided to the user.
+
+### 18. Add Product
+
+* AC1: Admin can access a form to add new products.
+* AC2: All necessary product details can be entered.
+* AC3: New product appears in the product list after adding.
+
+### 19. Edit/Update Product
+
+* AC1: Admin can select a product to edit.
+* AC2: Edit form is pre-filled with current product information.
+* AC3: Changes are reflected immediately after updating.
+
+### 20. Delete Product
+
+* AC1: Admin can select a product to delete.
+* AC2: Confirmation is required before deletion.
+* AC3: Product is removed from the site after confirmation.
+
+### 21. Client Testimonial Management
+
+* AC1: Admin can add new client testimonials.
+* AC2: Existing testimonials can be edited or removed.
+* AC3: Testimonials are displayed on the appropriate page(s).
+
+### 22. FAQ Management
+
+* AC1: Admin can add new FAQ entries.
+* AC2: Existing FAQs can be updated or deleted.
+* AC3: FAQs are organized and easily accessible to users.
+
+### 23. Contact Form
+
+* AC1: Users can easily find and access the contact form.
+* AC2: Form includes fields for name, email, and message.
+* AC3: User receives confirmation when message is sent successfully.
 
 ## Code Validation
 
