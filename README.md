@@ -87,57 +87,28 @@ Visit the deployed website [here]().
 22. As a store owner, I can manage FAQs so that I can provide up-to-date information to customers.
 23. As a site user, I can use a contact form so that I can communicate with the store owners for inquiries or support.
 
-
-#### Strategy Table
-
-Opportunity / Problem | Importance | Viability / Feasibility
---- | --- | ---
-Responsive design | 5 | 5
-Account registration | 5 | 5
-Browse treatments | 5 | 5
-Book appointments | 5 | 5
-Manage appointments | 5 | 5
-User appointments dashboard | 5 | 4
-**Future Implementations:**
-Integration with payment gateway | 3 | 2
-Email notifications for booking confirmations | 3 | 2
-Expand to include blog for sharing tips | 2 | 2
-Expand to include more therapists | 2 | 2
-**Total** | **40** | **37**
-
-
-### Scope
-
-According to the strategy table, not all features can be implemented in the first release of the project. For this reason, the project will be divided in multiple phases, as shown below:
-
-| **Viewing and Navigation**        | **Registration and User Accounts**                   |
-|-----------------------------------|------------------------------------------------------|
-| Responsive design                 | Integration with payment gateway                     |
-| Account registration              | Email notifications for booking confirmations        |
-| Browse and view treatments        | Blog page for sharing tips                           |
-| Book and manage appointments      | Ability to add more therapists to the site           |
-
 #### Kanban board
 
 GitHub Projects was used as a project management tool with a Kanban board to track these user stories and monitor progress. **Story points** were assigned to these user stories, using the Fibonacci sequence (3, 5, 8) to represent the relative complexity and effort involved in each task:
 
-**Sprint 1 - Basic Product Viewing and User**
-![User Stories Progress - Start](assets/readme_files/sprint1.png)
+**Sprint 1 - Basic Product Viewing and User**  
+<img src="assets/readme_files/sprint1.png" alt="User Stories Progress - Sprint 1" width="60%" height="700px">
 
-**Sprint 2 - Product Management and User Profiles**
-![User Stories Progress - Week 1](assets/readme_files/sprint2.png)
+**Sprint 2 - Product Management and User Profiles**  
+<img src="assets/readme_files/sprint2.png" alt="User Stories Progress - Sprint 2" width="60%" height="700px">
 
-**Sprint 3 - Shopping Bag and Checkout Process**
-![User Stories Progress - Week 2](assets/readme_files/sprint3.png)
+**Sprint 3 - Shopping Bag and Checkout Process**  
+<img src="assets/readme_files/sprint3.png" alt="User Stories Progress - Sprint 3" width="60%" height="700px">
 
-**Sprint 4 - Checkout Process - Part**
-![User Stories Progress - Week 3](assets/readme_files/sprint4.png)
+**Sprint 4 - Checkout Process - Part**  
+<img src="assets/readme_files/sprint4.png" alt="User Stories Progress - Sprint 4" width="60%" height="700px">
 
-**Sprint 5 - Sorting, Searching, and Additional Features**
-![User Stories Progress - Week 3](assets/readme_files/sprint5.png)
+**Sprint 5 - Sorting, Searching, and Additional Features**  
+<img src="assets/readme_files/sprint5.png" alt="User Stories Progress - Sprint 5" width="60%" height="700px">
 
-**Sprint 6 - Marketing Features and Final Polishing**
-![User Stories Progress - Week 3](assets/readme_files/sprint6.png)
+**Sprint 6 - Marketing Features and Final Polishing**  
+<img src="assets/readme_files/sprint6.png" alt="User Stories Progress - Sprint 6" width="60%" height="700px">
+
 
 ### Structure
 
@@ -145,7 +116,7 @@ GitHub Projects was used as a project management tool with a Kanban board to tra
 
 The website is organized using a [Mermaid](https://mermaid.js.org/) Flowchart to illustrate the user journey and interactions, ensuring intuitive navigation and a seamless user experience. The chart outlines the interactions available to both logged-in and logged-out users, illustrating how they navigate through the site's features.
 
-![Sports Therapy Booking website map](assets/readme_files/flowchart.png)
+![Sorts Sole website map](assets/readme_files/flowchart.png)
 
 ##### User Flow
 
@@ -168,7 +139,7 @@ The website is organized using a [Mermaid](https://mermaid.js.org/) Flowchart to
 
 The database model was designed using [drawsql](https://drawsql.app/) and is managed with [PostgreSQL](https://www.postgresql.org/), a relational database.
 
-![Sports Therapy Management database model](assets/readme_files/erdiagram.png)
+![Sports Sole database model](assets/readme_files/erdiagram.png)
 
 ##### Home App
 
@@ -243,7 +214,7 @@ Page | Desktop Version | Mobile Version
 Login | ![Desktop Login wireframe image](assets/wireframes/login.png) | ![Mobile Login wireframe image](assets/wireframes/login_mobile.png)
 Sign Up | ![Desktop Sign Up wireframe image](assets/wireframes/signup.png) | ![Mobile Sign Up wireframe image](assets/wireframes/signup_mobile.png)
 Home | ![Desktop Home wireframe image](assets/wireframes/index.png) | ![Mobile Home wireframe image](assets/wireframes/index_mobile.png)
-Products | ![Desktop About wireframe image](assets/wireframes/products.png) | ![Mobile About wireframe image](assets/wireframes/home_mobile.png)
+Products | ![Desktop About wireframe image](assets/wireframes/products.png) | ![Mobile About wireframe image](assets/wireframes/products_mobile.png)
 Product Detail | ![Desktop Treatments wireframe image](assets/wireframes/product_detail.png) | ![Mobile Treatments wireframe image](assets/wireframes/products_mobile.png)
 Bag | ![Book Appointment wireframe image](assets/wireframes/bag.png) | ![Mobile Book Appointment wireframe image](assets/wireframes/bag_mobile.png)
 Checkout | ![View Appointments wireframe image](assets/wireframes/checkout.png) | ![Mobile View Appointments wireframe image](assets/wireframes/checkout_mobile.png)
@@ -253,7 +224,7 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 
 ## Agile Development Plan
 
-## Epics and User Stories
+### Epics and User Stories
 
 | Epic ID | Epic Name | User Stories |
 |---------|-----------|--------------|
@@ -265,77 +236,27 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 | E6 | Admin and Store Management | 21. Add Product (#18)<br>22. Edit/Update Product (#19)<br>23. Delete Product (#20) |
 
 
-## MoSCoW Prioritization
-
-| User Story | MoSCoW Prioritization |
-|------------|-----------------------|
-| View a List of Sneakers (#1) | Must Have |
-| See Detailed Information for Sneakers (#2) | Must Have |
-| Register for an Account (#5) | Must Have |
-| Log In or Log Out of My Account (#6) | Must Have |
-| Select Size and Quantity of Sneakers (#14) | Must Have |
-| Complete My Purchase Securely (#16) | Must Have |
-| Add Product (#18) | Must Have |
-| Edit/Update Product (#19) | Must Have |
-| Delete Product (#20) | Must Have |
-| View the Total Cost of Selected Items (#4) | Should Have |
-| Recover My Password (#7) | Should Have |
-| Receive an Email Confirmation After Registering (#8) | Should Have |
-| Have a Personalized User Profile (#9) | Should Have |
-| Search for Sneakers by Name or Description (#12) | Should Have |
-| View Final Cost Including Taxes and Shipping (#15) | Should Have |
-| Quickly Identify Deals and Discounts (#3) | Could Have |
-| Sort Sneakers by Price, Rating, or Category (#10) | Could Have |
-| Sort Sneakers by Category (#11) | Could Have |
-| Filter Products Across Multiple Categories (#13) | Could Have |
-| Newsletter Signup (#17) | Could Have |
-| Client Testimonial Management (#21) | Could Have |
-| FAQ Management (#22) | Could Have |
-| Contact Form (#23) | Could Have |
-| Customer loyalty program | Won't Have |
-| Advanced analytics dashboard for store owners | Won't Have |
-
+### MoSCoW Prioritization
 
 | Priority    | User Stories                                                                                           |
 |-------------|-------------------------------------------------------------------------------------------------------|
-| Must Have   | View a List of Sneakers (#1), See Detailed Information for Sneakers (#2), Register for an Account (#5),<br>Log In or Log Out of My Account (#6), Select Size and Quantity of Sneakers (#14), Complete My Purchase Securely (#16),<br>Add Product (#18), Edit/Update Product (#19), Delete Product (#20) |
-| Should Have | View the Total Cost of Selected Items (#4), Recover My Password (#7), Receive an Email Confirmation After Registering (#8),<br>Have a Personalized User Profile (#9), Search for Sneakers by Name or Description (#12), View Final Cost Including Taxes and Shipping (#15) |
-| Could Have  | Quickly Identify Deals and Discounts (#3), Sort Sneakers by Price, Rating, or Category (#10),<br>Sort Sneakers by Category (#11), Filter Products Across Multiple Categories (#13), Newsletter Signup (#17),<br>Client Testimonial Management (#21), FAQ Management (#22), Contact Form (#23) |
-| Won't Have  | Customer loyalty program, Advanced analytics dashboard for store owners                                 |
+| Must Have   | 1. View a List of Sneakers (#1)<br>2. See Detailed Information for Sneakers (#2)<br>3. Register for an Account (#5)<br>4. Log In or Log Out of My Account (#6)<br>5. Select Size and Quantity of Sneakers (#14)<br>6. Complete My Purchase Securely (#16)<br>7. Add Product (#18)<br>8. Edit/Update Product (#19)<br>9. Delete Product (#20) |
+| Should Have | 1. View the Total Cost of Selected Items (#4)<br>2. Recover My Password (#7)<br>3. Receive an Email Confirmation After Registering (#8)<br>4. Have a Personalized User Profile (#9)<br>5. Search for Sneakers by Name or Description (#12)<br>6. View Final Cost Including Taxes and Shipping (#15) |
+| Could Have  | 1. Quickly Identify Deals and Discounts (#3)<br>2. Sort Sneakers by Price, Rating, or Category (#10)<br>3. Sort Sneakers by Category (#11)<br>4. Filter Products Across Multiple Categories (#13)<br>5. Newsletter Signup (#17)<br>6. Client Testimonial Management (#21)<br>7. FAQ Management (#22)<br>8. Contact Form (#23) |
+| Won't Have  | 1. Customer loyalty program<br>2. Advanced analytics dashboard for store owners |
 
 
+### Sprint Planning
 
-## Sprint Planning
+| Sprint     | Duration   | User Stories                        | Milestone                                               |
+|------------|------------|-------------------------------------|---------------------------------------------------------|
+| Sprint 1   | 2 weeks    | #1, #2, #5, #6                      | Basic product catalog and user account functionality     |
+| Sprint 2   | 2 weeks    | #18, #19, #20, #7, #8, #9           | Admin product management and enhanced user account features |
+| Sprint 3   | 2 weeks    | #4, #14, #15                        | Functional shopping bag and initial checkout process     |
+| Sprint 4   | 2 weeks    | #16                                 | Secure checkout process completion                      |
+| Sprint 5   | 2 weeks    | #10, #11, #12, #13, #3              | Implemented search, sorting, and special offers features |
+| Sprint 6   | 2 weeks    | #17, #21, #22, #23                  | Implement marketing features, bug fixes, and final testing |
 
-### Sprint 1: Basic Product Viewing and User Authentication
-Duration: 2 weeks
-User Stories: #1, #2, #5, #6
-Milestone: Basic product catalog and user account functionality
-
-### Sprint 2: Product Management and User Profiles
-Duration: 2 weeks
-User Stories: #18, #19, #20, #7, #8, #9
-Milestone: Admin product management and enhanced user account features
-
-### Sprint 3: Shopping Bag and Checkout Process - Part 1
-Duration: 2 weeks
-User Stories: #4, #14, #15
-Milestone: Functional shopping bag and initial checkout process
-
-### Sprint 4: Checkout Process - Part 2
-Duration: 2 weeks
-User Stories: #16
-Milestone: Secure checkout process completion
-
-### Sprint 5: Sorting, Searching, and Additional Features
-Duration: 2 weeks
-User Stories: #10, #11, #12, #13, #3
-Milestone: Implemented search, sorting, and special offers features
-
-### Sprint 6: Marketing Features and Final Polishing
-Duration: 2 weeks
-User Stories: #17, #21, #22, #23
-Tasks: Implement marketing features, bug fixes, performance optimization, and final testing
 
 ## Implementation Process
 

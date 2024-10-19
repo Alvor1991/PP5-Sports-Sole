@@ -163,30 +163,32 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
 W3C Markup Validator found the following errors in `base.html`:
 
-![base.html validation errors image](assets/testing_files/base_html_error1.png)
+<div style="display: flex; justify-content: space-between;">
+    <img src="assets/testing_files/base_html_error1.png" alt="base.html validation errors image" width="45%" style="margin-bottom: 20px;">
+    <img src="assets/testing_files/base_html_error2.png" alt="base.html validation errors image" width="45%" style="margin-bottom: 20px;">
+</div>
 
-![base.html validation errors image](assets/testing_files/base_html_error2.png)
-
-Warning: The type attribute is unnecessary for JavaScript resources.
+Warning: The type attribute is unnecessary for JavaScript resources.  
 Fix: Removed type="text/javascript" from all script tags (HTML5 default).
 
-Error: The aria-labelledby attribute must point to an element in the same document.
+Error: The aria-labelledby attribute must point to an element in the same document.  
 Fix: Updated the id of Women’s to "womens-link" and Men’s to "mens-link" to match aria-labelledby.
 
-Warning: Possible misuse of aria-label.
+Warning: Possible misuse of aria-label.  
 Fix: Removed aria-label from dropdowns since aria-labelledby already handles accessibility.
 
-Warning: The first occurrence of ID user-options was here.
+Warning: The first occurrence of ID user-options was here.  
 Fix: Renamed the duplicate id="user-options" to id="user-options-mobile" in the mobile navigation.
 
-Warning: Possible misuse of aria-label.
+Warning: Possible misuse of aria-label.  
 Fix: Removed aria-label="Search" from "fas fa-search" as it is unnecessary for purely decorative icons.
 
 W3C Markup Validator found the following errors in `treatments.html`:
 
 ![treatments.html validation errors image](assets/testing_files/treatment_errors.png)
 
-* To resolve the error, I wrapped content with a div instead of p and removed redundant closing tags. 
+* To resolve the error, I wrapped content with a div instead of p and removed redundant closing tags.
+
 
 ### CSS
 
