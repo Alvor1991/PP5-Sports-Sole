@@ -16,4 +16,3 @@ stripe==10.12.0
 urllib3==1.26.15
 whitenoise==6.5.0
 django-taggit==6.1.0
-
