@@ -296,6 +296,15 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 | Advanced analytics dashboard for store owners | Won't Have |
 
 
+| Priority    | User Stories                                                                                           |
+|-------------|-------------------------------------------------------------------------------------------------------|
+| Must Have   | View a List of Sneakers (#1), See Detailed Information for Sneakers (#2), Register for an Account (#5),<br>Log In or Log Out of My Account (#6), Select Size and Quantity of Sneakers (#14), Complete My Purchase Securely (#16),<br>Add Product (#18), Edit/Update Product (#19), Delete Product (#20) |
+| Should Have | View the Total Cost of Selected Items (#4), Recover My Password (#7), Receive an Email Confirmation After Registering (#8),<br>Have a Personalized User Profile (#9), Search for Sneakers by Name or Description (#12), View Final Cost Including Taxes and Shipping (#15) |
+| Could Have  | Quickly Identify Deals and Discounts (#3), Sort Sneakers by Price, Rating, or Category (#10),<br>Sort Sneakers by Category (#11), Filter Products Across Multiple Categories (#13), Newsletter Signup (#17),<br>Client Testimonial Management (#21), FAQ Management (#22), Contact Form (#23) |
+| Won't Have  | Customer loyalty program, Advanced analytics dashboard for store owners                                 |
+
+
+
 ## Sprint Planning
 
 ### Sprint 1: Basic Product Viewing and User Authentication
