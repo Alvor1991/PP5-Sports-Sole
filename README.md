@@ -265,80 +265,36 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 | E6 | Admin and Store Management | 21. Add Product (#18)<br>22. Edit/Update Product (#19)<br>23. Delete Product (#20) |
 
 
-
-
-
-## User Stories and Epics
-
-### Epic 1: Viewing and Navigation
-1. View a List of Sneakers (#1)
-2. See Detailed Information for Sneakers (#2)
-3. Quickly Identify Deals and Discounts (#3)
-4. View the Total Cost of Selected Items (#4)
-
-### Epic 2: Registration and User Accounts
-5. Register for an Account (#5)
-6. Log In or Log Out of My Account (#6)
-7. Recover My Password (#7)
-8. Receive an Email Confirmation After Registering (#8)
-9. Have a Personalized User Profile (#9)
-
-### Epic 3: Sorting and Searching
-10. Sort Sneakers by Price, Rating, or Category (#10)
-11. Sort Sneakers by Category (#11)
-12. Search for Sneakers by Name or Description (#12)
-13. Filter Products Across Multiple Categories (#13)
-
-### Epic 4: Purchasing and Checkout
-14. Select Size and Quantity of Sneakers (#14)
-15. View Final Cost Including Taxes and Shipping (#15)
-16. Complete My Purchase Securely (#16)
-
-### Epic 5: Marketing and Customer Engagement
-17. Newsletter Signup (#17)
-18. Client Testimonial Management (#21)
-19. FAQ Management (#22)
-20. Contact Form (#23)
-
-### Epic 6: Admin and Store Management
-21. Add Product (#18)
-22. Edit/Update Product (#19)
-23. Delete Product (#20)
-
 ## MoSCoW Prioritization
 
-### Must Have
-- View a List of Sneakers (#1)
-- See Detailed Information for Sneakers (#2)
-- Register for an Account (#5)
-- Log In or Log Out of My Account (#6)
-- Select Size and Quantity of Sneakers (#14)
-- Complete My Purchase Securely (#16)
-- Add Product (#18)
-- Edit/Update Product (#19)
-- Delete Product (#20)
+| User Story | MoSCoW Prioritization |
+|------------|-----------------------|
+| View a List of Sneakers (#1) | Must Have |
+| See Detailed Information for Sneakers (#2) | Must Have |
+| Register for an Account (#5) | Must Have |
+| Log In or Log Out of My Account (#6) | Must Have |
+| Select Size and Quantity of Sneakers (#14) | Must Have |
+| Complete My Purchase Securely (#16) | Must Have |
+| Add Product (#18) | Must Have |
+| Edit/Update Product (#19) | Must Have |
+| Delete Product (#20) | Must Have |
+| View the Total Cost of Selected Items (#4) | Should Have |
+| Recover My Password (#7) | Should Have |
+| Receive an Email Confirmation After Registering (#8) | Should Have |
+| Have a Personalized User Profile (#9) | Should Have |
+| Search for Sneakers by Name or Description (#12) | Should Have |
+| View Final Cost Including Taxes and Shipping (#15) | Should Have |
+| Quickly Identify Deals and Discounts (#3) | Could Have |
+| Sort Sneakers by Price, Rating, or Category (#10) | Could Have |
+| Sort Sneakers by Category (#11) | Could Have |
+| Filter Products Across Multiple Categories (#13) | Could Have |
+| Newsletter Signup (#17) | Could Have |
+| Client Testimonial Management (#21) | Could Have |
+| FAQ Management (#22) | Could Have |
+| Contact Form (#23) | Could Have |
+| Customer loyalty program | Won't Have |
+| Advanced analytics dashboard for store owners | Won't Have |
 
-### Should Have
-- View the Total Cost of Selected Items (#4)
-- Recover My Password (#7)
-- Receive an Email Confirmation After Registering (#8)
-- Have a Personalized User Profile (#9)
-- Search for Sneakers by Name or Description (#12)
-- View Final Cost Including Taxes and Shipping (#15)
-
-### Could Have
-- Quickly Identify Deals and Discounts (#3)
-- Sort Sneakers by Price, Rating, or Category (#10)
-- Sort Sneakers by Category (#11)
-- Filter Products Across Multiple Categories (#13)
-- Newsletter Signup (#17)
-- Client Testimonial Management (#21)
-- FAQ Management (#22)
-- Contact Form (#23)
-
-### Won't Have (this iteration)
-- Customer loyalty program
-- Advanced analytics dashboard for store owners
 
 ## Sprint Planning
 
