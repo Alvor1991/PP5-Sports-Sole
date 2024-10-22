@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Sitemap: https://sports-sole-d03df7b3c157.herokuapp.com/sitemap.xml
