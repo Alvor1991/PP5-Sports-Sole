@@ -63,51 +63,57 @@ Visit the deployed website [here]().
 
 #### User Stories
 
-1. As a shopper, I can view a list of sneakers so that I can select some to purchase.
-2. As a shopper, I can see detailed information for sneakers so that I can make an informed purchase decision.
-3. As a shopper, I can quickly identify deals and discounts so that I can take advantage of special offers.
-4. As a shopper, I can view the total cost of selected items so that I can stay within my budget.
-5. As a site user, I can register for an account so that I can have a personalized shopping experience.
-6. As a site user, I can log in or log out of my account so that I can access my personal information securely.
-7. As a site user, I can recover my password so that I can regain access to my account if I forget it.
-8. As a site user, I can receive an email confirmation after registering so that I can verify my account creation was successful.
-9. As a site user, I can have a personalized user profile so that I can view my order history and save my payment information.
-10. As a shopper, I can sort sneakers by price, rating, or category so that I can easily find the best sneakers for me.
-11. As a shopper, I can sort sneakers by category so that I can find specific types of sneakers quickly.
-12. As a shopper, I can search for sneakers by name or description so that I can find a specific product I'd like to purchase.
-13. As a shopper, I can filter products across multiple categories so that I can find sneakers that meet specific criteria.
-14. As a shopper, I can select the size and quantity of sneakers so that I can ensure I'm ordering the correct product.
-15. As a shopper, I can view the final cost including taxes and shipping so that I know the total amount I'll be charged.
-16. As a shopper, I can complete my purchase securely so that I can confidently buy the sneakers I want.
-17. As a site user, I can sign up for a newsletter so that I can stay informed about new products and offers.
-18. As a store owner, I can add a product so that I can expand my product range.
-19. As a store owner, I can edit or update a product so that I can change product details as needed.
-20. As a store owner, I can delete a product so that I can remove items that are no longer for sale.
-21. As a store owner, I can manage client testimonials so that I can showcase positive customer experiences.
-22. As a store owner, I can manage FAQs so that I can provide up-to-date information to customers.
-23. As a site user, I can use a contact form so that I can communicate with the store owners for inquiries or support.
+Shopper Stories:
+1. View a List of Sneakers
+2. See Detailed Information for Sneakers
+3. Quickly Identify Deals and Discounts
+4. View the Total Cost of Selected Items
+5. Register for an Account
+6. Log In or Log Out of My Account
+7. Recover My Password
+8. Receive an Email Confirmation After Registering
+9. Have a Personalized User Profile
+10. Sort Sneakers by Price, Rating, or Category
+11. Sort Sneakers by Category
+12. Search for Sneakers by Name or Description
+13. Filter Products Across Multiple Categories
+14. Select Size and Quantity of Sneakers
+15. View Final Cost Including Taxes and Shipping
+16. Complete My Purchase Securely
+17. Newsletter Signup
+23. Contact Form
+24. Wishlist/Favorites Feature
+25. Post-Purchase Product Review System
+
+Admin Stories:
+18. Add Product
+19. Edit/Update Product
+20. Delete Product
+21. Client Testimonial Management
+22. FAQ Management
 
 #### Kanban board
 
 GitHub Projects was used as a project management tool with a Kanban board to track these user stories and monitor progress. **Story points** were assigned to these user stories, using the Fibonacci sequence (3, 5, 8) to represent the relative complexity and effort involved in each task:
 
 **Sprint 1 - Basic Product Viewing and User**  
-<img src="assets/readme_files/sprint1.png" alt="User Stories Progress - Sprint 1" width="60%" height="700px">
+<img src="assets/readme_files/sprint1.png" alt="User Stories Progress - Sprint 1" height="500px">
 
 **Sprint 2 - Product Management and User Profiles**  
-<img src="assets/readme_files/sprint2.png" alt="User Stories Progress - Sprint 2" width="60%" height="700px">
+<img src="assets/readme_files/sprint2.png" alt="User Stories Progress - Sprint 2" height="500px">
 
 **Sprint 3 - Shopping Bag and Checkout Process**  
-<img src="assets/readme_files/sprint3.png" alt="User Stories Progress - Sprint 3" width="60%" height="700px">
+<img src="assets/readme_files/sprint3.png" alt="User Stories Progress - Sprint 3" height="500px">
 
 **Sprint 4 - Checkout Process - Part**  
-<img src="assets/readme_files/sprint4.png" alt="User Stories Progress - Sprint 4" width="60%" height="700px">
+<img src="assets/readme_files/sprint4.png" alt="User Stories Progress - Sprint 4" height="500px">
 
 **Sprint 5 - Sorting, Searching, and Additional Features**  
-<img src="assets/readme_files/sprint5.png" alt="User Stories Progress - Sprint 5" width="60%" height="700px">
+<img src="assets/readme_files/sprint5.png" alt="User Stories Progress - Sprint 5" height="500px">
 
 **Sprint 6 - Marketing Features and Final Polishing**  
-<img src="assets/readme_files/sprint6.png" alt="User Stories Progress - Sprint 6" width="60%" height="700px">
+<img src="assets/readme_files/sprint6.png" alt="User Stories Progress - Sprint 6" height="500px">
+
 
 
 ### Structure
@@ -141,68 +147,6 @@ The database model was designed using [drawsql](https://drawsql.app/) and is man
 
 ![Sports Sole database model](assets/readme_files/erdiagram.png)
 
-##### Home App
-
-###### ClientTestimonial Model
-
-The `ClientTestimonial` model manages and displays client feedback on the website.
-
-* **Client Name**: A `CharField` that stores the name of the client providing the testimonial.
-* **Testimonial Text**: A `TextField` containing testimonials provided by users.
-* **Active**: A `BooleanField` indicating whether the testimonial is currently active and displayed on the website. 
-* **Date Added**: A `DateTimeField` of when the testimonial was added, allowing for tracking of feedback.
-
-##### About App
-
-###### About Model
-
-The `About` model is designed to manage and present detailed information about the therapist.
-
-* **Title**: A `CharField` that stores the title of the "About Me" section.
-* **Content**: A `TextField` containing the main content of the "About Me" section.
-
-###### ContactRequest Model
-
-The `ContactRequest` model allows for efficient handling of client inquiries and communication.
-
-* **Name**: A `CharField` storing the name of the individual making the contact request.
-* **Email**: An `EmailField` capturing the email address of the requester.
-* **Message**: A `TextField` containing the message or inquiry sent by the individual.
-* **Read**: A `BooleanField` indicating whether the message has been read. Defaults to `False`.
-* **Created On**: A `DateTimeField` that records when the contact request was created.
-
-##### Treatments App
-
-###### Treatment Model
-
-Each treatment offered by the therapist is detailed in the `Treatment` model.
-
-* **Name**: A `CharField` storing the name of the treatment.
-* **Description**: A `TextField` providing a detailed description of the treatment.
-* **Services Offered**: An optional `TextField` detailing the services provided as part of the treatment.
-* **Benefits**: An optional `TextField` outlining the benefits of the treatment.
-* **Price**: A `DecimalField` indicating the price of the treatment, up to two decimal places.
-* **Image**: A `CloudinaryField` to store an optional image associated with the treatment.
-* **Button Text**: A `CharField` providing default text for call-to-action buttons related for booking appointments.
-
-**FAQ Model**
-
-The `FAQ` model is used to manage frequently asked questions.
-
-* **Question**: A `CharField` storing the frequently asked questions.
-* **Answer**: A `TextField` containing the answer to the question.
-
-##### Appointments App
-
-###### Appointment Model
-
-The `Appointment` model facilitates the scheduling & management of therapy sessions.
-
-* **User**: A foreign key from the `User` model that stores the client who has booked the appointment.
-* **Date**: The date of the appointment, stored as a `DateField`.
-* **Time**: The time of the appointment, stored as a `TimeField`.
-* **Treatment**: A `CharField` representing the type of treatment selected for the appointment.
-
 ### Skeleton
 
 #### Wireframes
@@ -234,6 +178,7 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 | E4 | Purchasing and Checkout | 14. Select Size and Quantity of Sneakers (#14)<br>15. View Final Cost Including Taxes and Shipping (#15)<br>16. Complete My Purchase Securely (#16) |
 | E5 | Marketing and Customer Engagement | 17. Newsletter Signup (#17)<br>18. Client Testimonial Management (#21)<br>19. FAQ Management (#22)<br>20. Contact Form (#23) |
 | E6 | Admin and Store Management | 21. Add Product (#18)<br>22. Edit/Update Product (#19)<br>23. Delete Product (#20) |
+| E7 | Future Enhancements | 24. Wishlist/Favorites feature (#24)<br>25. Post-Purchase Product Review System (#25) |
 
 
 ### MoSCoW Prioritization
@@ -243,7 +188,7 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 | Must Have   | 1. View a List of Sneakers (#1)<br>2. See Detailed Information for Sneakers (#2)<br>3. Register for an Account (#5)<br>4. Log In or Log Out of My Account (#6)<br>5. Select Size and Quantity of Sneakers (#14)<br>6. Complete My Purchase Securely (#16)<br>7. Add Product (#18)<br>8. Edit/Update Product (#19)<br>9. Delete Product (#20) |
 | Should Have | 1. View the Total Cost of Selected Items (#4)<br>2. Recover My Password (#7)<br>3. Receive an Email Confirmation After Registering (#8)<br>4. Have a Personalized User Profile (#9)<br>5. Search for Sneakers by Name or Description (#12)<br>6. View Final Cost Including Taxes and Shipping (#15) |
 | Could Have  | 1. Quickly Identify Deals and Discounts (#3)<br>2. Sort Sneakers by Price, Rating, or Category (#10)<br>3. Sort Sneakers by Category (#11)<br>4. Filter Products Across Multiple Categories (#13)<br>5. Newsletter Signup (#17)<br>6. Client Testimonial Management (#21)<br>7. FAQ Management (#22)<br>8. Contact Form (#23) |
-| Won't Have  | 1. Customer loyalty program<br>2. Advanced analytics dashboard for store owners |
+| Won't Have | 1. Wishlist/Favorites feature (#24)<br>2. Post-Purchase Product Review System (#25) |
 
 
 ### Sprint Planning
@@ -262,8 +207,7 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 
 Progress, challenges faced, and solutions implemented to demonstrate agile methodology application.
 
-
-# Final Comprehensive Django Sports Sole User Flow Chart
+# Sports Sole User Flow Chart
 
 ## Persistent Elements (Available on All Pages)
 
@@ -373,5 +317,3 @@ Progress, challenges faced, and solutions implemented to demonstrate agile metho
 - Password Recovery Process
 
 This comprehensive flow chart now accurately represents the full user experience on your Django Sports Sole website, incorporating all the elements from your provided templates and accounting for various user types and interactions.
-
-
