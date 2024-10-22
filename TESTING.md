@@ -12,7 +12,6 @@
 4. [Tools Testing](#tools-testing)
 5. [Manual Testing](#manual-testing)
 
-
 ***
 
 ## Testing User Stories
@@ -393,362 +392,163 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
     </tr>
 </table>
 
-#### About Page 
+#### Products Page
 
 <table>
     <tr>
-        <th>Feature</th>
+        <th colspan=2>Feature</th>
         <th>Users</th>
         <th>Test</th>
         <th>Outcome</th>
         <th>Pass/Fail</th>
     </tr>
     <tr>
-        <td rowspan=2>Profile Image</td>
+        <td rowspan=6>Product Filters</td>
+        <td rowspan=2>Category Filtering</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Profile image displays correctly and is responsive.</td>
+        <td>Filters products by selected category</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Image is styled as a rounded circle with a border.</td>
+        <td>Filter options clearly displayed and responsive</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Content Sections</td>
+        <td rowspan=2>Sort Selector</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Content sections render correctly.</td>
+        <td>Sorts products by price, rating, name as selected</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Even spacing between content sections, ensuring readability and a clean layout.</td>
+        <td>Dropdown styled consistently and responsive</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Icons</td>
+        <td rowspan=2>Price Filtering</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Icons for credentials are displayed correctly.</td>
+        <td>Filters products within selected price range</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Icons are styled consistently with the overall design.</td>
+        <td>Price filter options clearly displayed</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Contact Form</td>
+        <td rowspan=4>Product Cards</td>
+        <td rowspan=2>Product Information</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Contact form is displayed correctly and submissions are processed as expected.</td>
+        <td>Displays correct product details and links to product page</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Form fields are styled using Bootstrap's crispy forms for consistent design.</td>
+        <td>Cards display consistently and are responsive</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Edit/Delete Links</td>
+        <td rowspan=2>Admin</td>
+        <td>Functionality</td>
+        <td>Edit and delete options visible only to admin</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Links styled appropriately and visible</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>
 
-#### Treatments Page
+#### Product Detail Page
 
 <table>
     <tr>
-        <th>Feature</th>
+        <th colspan=2>Feature</th>
         <th>Users</th>
         <th>Test</th>
         <th>Outcome</th>
         <th>Pass/Fail</th>
     </tr>
     <tr>
-        <td rowspan=2>Card Display</td>
+        <td rowspan=4>Product Images</td>
+        <td rowspan=2>Main Image</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Treatments are displayed as a card with an image, title, description, and a button.</td>
+        <td>Image loads correctly</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Cards are evenly spaced and styled with a consistent design.</td>
+        <td>Image is responsive and maintains aspect ratio</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Treatment Image</td>
+        <td rowspan=2>Additional Images</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Images for each treatment are displayed correctly and are responsive.</td>
+        <td>Additional product images load and display correctly</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Images are styled to fit within the card layout without distortion.</td>
+        <td>Images are responsive and well-organized</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Learn More Button</td>
+        <td rowspan=6>Product Controls</td>
+        <td rowspan=2>Size Selector</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Button redirects to a detailed page for the specific treatment.</td>
+        <td>Size selection works correctly</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Button has a hover effect and is styled consistently with overall design.</td>
+        <td>Dropdown styled consistently</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>FAQ Section</td>
+        <td rowspan=2>Quantity Selector</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>FAQ section displays correctly and each FAQ can be expanded to show answer.</td>
+        <td>Quantity can be adjusted within valid range</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>FAQ section is styled with consistent spacing and design.</td>
+        <td>Controls are clear and responsive</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Accordion Functionality</td>
+        <td rowspan=2>Add to Bag Button</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Accordions expand and collapse correctly when clicked.</td>
+        <td>Adds selected product to shopping bag</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Accordions are styled to match the site's overall design, with smooth transitions.</td>
+        <td>Button is prominent and shows hover effect</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
-</table>
-
-#### Book Appointments Page
-
-<table>
     <tr>
-        <th>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=2>Booking Form</td>
-        <td rowspan=2>Registered</td>
+        <td rowspan=2>Keep Shopping</td>
+        <td rowspan=2>Return Link</td>
+        <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Form fields for date, time slot, and treatment render correctly and are functional.</td>
+        <td>Returns to products page</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Form fields are styled consistently and are user-friendly.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Submit Button</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Clicking submit button successfully submits form & books appointment.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Button has a hover effect and is styled consistently with the overall design.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Cancel Button</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Clicking the cancel button redirects back to the user appointments page without submitting the form.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Button has a hover effect and is styled consistently with overall design.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Date Field</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Allows users to select a date for the appointment. Past dates are disabled.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Styled consistently with the overall design and is user-friendly.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Time Slot Field</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Populates available time slots based on the selected date.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Time slot dropdown is styled consistently with overall design & is user-friendly.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Treatment Field</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Allows users to select the desired treatment for the appointment.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Treatment dropdown is styled consistently with overall design & is user-friendly.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-</table>
-
-#### User Appointments Page
-
-<table>
-    <tr>
-        <th>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=2>Appointments Table</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Displays appointment details such as date, time and treatment correctly.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Styled consistently with the overall design and is responsive.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Update Button</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Clicking the update button redirects to the update appointment page for correct appointment.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Button has a hover effect & is styled consistently with overall design.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Delete Button</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Clicking the delete button triggers a confirmation modal for correct appointment.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Button has a hover effect and is styled consistently with overall design.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Delete Confirmation Modal</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>The modal displays the correct appointment details & allows the user to confirm or cancel deletion.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Modal is styled consistently with the overall design.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Appointment Deleted Message</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>If appointments is deleted, a message is displayed to confirm.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Message is styled consistently with the overall design.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Appointment Updated Message</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>If appointments is updated, a message is displayed to confirm.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Message is styled consistently with the overall design.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>No Appointments Message</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>If no appointments are found, a message is displayed with a link to book an appointment.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Message is styled consistently with the overall design.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-</table>
-
-#### Update Appointments Page
-
-<table>
-    <tr>
-        <th>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=2>Update Form</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Users can update the date, time slot, and treatment for an appointment.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>The form fields are styled consistently with the overall design.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Update Button</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Clicking the update button successfully updates the appointment & redirects to user appointments.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Button has a hover effect and is styled consistently with overall design.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Cancel Button</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Redirects back to the user appointments without making any changes.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Button is styled in red to indicate cancellation and has a hover effect.</td>
+        <td>Link is clearly visible with hover effect</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>

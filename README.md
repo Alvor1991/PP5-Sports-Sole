@@ -43,9 +43,7 @@ Visit the deployed website [here]().
 8. [Known Bugs](#known-bugs)
 9. [Acknowledgements](#acknowledgements)
 
-
 ***
-
 
 ## User Experience (UX)
 
@@ -53,13 +51,46 @@ Visit the deployed website [here]().
 
 #### Project Goals
 
-* Provide a user-friendly interface for clients to book sports therapy appointments.
+Sports Sole is a B2C (Business to Consumer) e-commerce platform specializing in sports footwear. The application serves as a direct bridge between the business and individual consumers, offering a comprehensive range of sports shoes.
 
-* Implement a responsive design to ensure accessibility across various devices.
+##### Business Model
 
-* Allow clients to manage their bookings easily through a personal dashboard.
+The site operates on a B2C model where:
+- Products are sold directly to end consumers
+- Customer accounts allow for personalized shopping experiences
+- Direct marketing through newsletter subscriptions
+- Customer engagement through testimonials and FAQs
 
-* Ensure secure authentication and data handling.
+##### Target Audience
+- Sports enthusiasts looking for quality footwear
+- Casual shoppers seeking athletic shoes
+- Customers interested in both performance and style
+- People looking for specific types of sports shoes (running, basketball, etc.)
+
+##### Marketing Strategy
+
+1. **Email Marketing**
+   - Newsletter subscription feature to build customer database
+   - Keep customers informed about new products and offers
+
+2. **Customer Engagement**
+   - Customer testimonials to build trust
+   - FAQ section to provide immediate answers to common queries
+   - Contact form for customer support
+
+3. **User Experience**
+   - Easy navigation through product categories
+   - Detailed product information and images
+   - Secure user accounts and checkout process
+   - Order history and profile management
+
+##### Site Owner Goals
+
+- Provide a professional and trustworthy e-commerce platform
+- Build and maintain a loyal customer base
+- Efficiently manage product inventory
+- Drive sales through effective product presentation
+- Gather customer data through newsletter signups
 
 #### User Stories
 
@@ -114,8 +145,6 @@ GitHub Projects was used as a project management tool with a Kanban board to tra
 **Sprint 6 - Marketing Features and Final Polishing**  
 <img src="assets/readme_files/sprint6.png" alt="User Stories Progress - Sprint 6" height="500px">
 
-
-
 ### Structure
 
 #### Flowchart
@@ -125,21 +154,6 @@ The website is organized using a [Mermaid](https://mermaid.js.org/) Flowchart to
 ![Sorts Sole website map](assets/readme_files/flowchart.png)
 
 ##### User Flow
-
-###### Non-Logged-In Users:
-* **Home Page**: an overview of the services offered, client testimonials, and quick links to book an appointment.
-* **About Page**: detailed info about the therapist's credentials and philosophy. It also includes a contact form.
-* **Treatments Page**: all available treatments with descriptions and pricing, along with a FAQ section.
-* **Login Page**: allows users to log in to access personalized features like appointment management.
-* **Book Appointment**: direct access to booking form; redirects users to log in before booking an appointment.
-
-###### Logged-In Users:
-* **Home Page**: same for non-logged-in users.
-* **About Page**: same for non-logged-in users.
-* **Treatments Page**: same for non-logged-in users.
-* **My Appointments Page**: allows users to view, edit, or delete their scheduled appointments.
-* **Logout**: allows users to log out of their account securely.
-* **Book Appointment**: direct accesses to booking form; users can schedule their appointments.
 
 #### Database Model
 
@@ -203,11 +217,11 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 | Sprint 6   | 2 weeks    | #17, #21, #22, #23                  | Implement marketing features, bug fixes, and final testing |
 
 
-## Implementation Process
+### Implementation Process
 
 Progress, challenges faced, and solutions implemented to demonstrate agile methodology application.
 
-# Sports Sole User Flow Chart
+#### Sports Sole User Flow Chart
 
 ## Persistent Elements (Available on All Pages)
 
