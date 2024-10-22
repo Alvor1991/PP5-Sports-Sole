@@ -155,6 +155,18 @@
 * AC2: Form includes fields for name, email, and message.
 * AC3: User receives confirmation when message is sent successfully.
 
+### 24. Wishlist/Favorites Feature
+
+* AC1: Given I am viewing a product, I can click a heart icon to add/remove it from my wishlist.
+* AC2: When I access my profile, I can view all my wishlist items in one dedicated section.
+* AC3: Given I am in my wishlist section, I can easily navigate to product details or remove items.
+
+### 25. Post-Purchase Product Review System
+
+* AC1: Given I have received my order, I receive an email invitation to review my purchased items.
+* AC2: When clicking the review link in the email, I can rate the product and write my review.
+* AC3: When viewing products, I can see verified purchase reviews from other customers to help inform my decision.
+
 ## Code Validation
 
 ### HTML
@@ -255,6 +267,7 @@ Device | Operating System | Outcome | Pass/Fail
 MacBook Air 15" | macOS Sonoma | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
 iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
 
+
 ### Test Results
 
 #### Base HTML 
@@ -269,136 +282,68 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
     </tr>
     <tr>
         <td rowspan=16>Navigation Bar</td>
-        <td rowspan=2>Main logo link</td>
+        <td rowspan=2>Sports Sole logo</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Clicking the link redirects to the Home page.</td>
+        <td>Clicking the logo redirects to the Home page</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Responsive on smaller screens.</td>
+        <td>Responsive on smaller screens</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Home link</td>
+        <td rowspan=2>Search Bar</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Clicking the link redirects to the Home page.</td>
+        <td>Search input works and returns relevant results</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Hover effect working as expected.</td>
+        <td>Search bar is clearly visible and responsive</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>About link</td>
+        <td rowspan=2>My Account Dropdown</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Clicking the link redirects to the About page.</td>
+        <td>Dropdown menu shows appropriate options for logged in/out users</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Hover effect working as expected.</td>
+        <td>Dropdown menu styled consistently and responsive</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Treatments link</td>
-        <td rowspan=2>Unregistered</td>
-        <td>Functionality</td>
-        <td>Clicking the link redirects to the Treatments page.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Hover effect working as expected.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Login link</td>
-        <td rowspan=2>Unregistered</td>
-        <td>Functionality</td>
-        <td>Clicking the link redirects to the Login page.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Hover effect working as expected.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>My Appointments link</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Clicking the link redirects to Appointments page.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Hover effect working as expected.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Logout link</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Clicking the link logs out the user and redirects to the Home page.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Hover effect working as expected.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Responsive Toggle Menu</td>
+        <td rowspan=2>Shopping Bag</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Clicking the button toggles the navigation menu.</td>
+        <td>Shows correct total and links to shopping bag page</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Responsive navigation menu on smaller screens.<br>Hover effect working as expected.</td>
+        <td>Updates visually when items added/removed</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=8>Footer</td>
-        <td rowspan=2>Facebook icon</td>
+        <td rowspan=2>Main Nav Menu</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Clicking the link opens Facebook page on a separate tab.</td>
+        <td>All navigation links work correctly</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Hover effect working as expected.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Instagram icon</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>Clicking the link opens Instagram page on a separate tab.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Hover effect working as expected.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Main Content Area</td>
-        <td>All</td>
-        <td>Functionality</td>
-        <td>Main content area renders correctly and displays the page-specific content.</td>
+        <td>Responsive design works on all screen sizes</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>
 
-#### Home Page 
+#### Home Page
 
 <table>
     <tr>
@@ -409,91 +354,41 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <th>Pass/Fail</th>
     </tr>
     <tr>
-        <td rowspan=2>Page Buttons</td>
-        <td rowspan=2>Book Appointment button</td>
+        <td rowspan=4>Hero Section</td>
+        <td rowspan=2>Shop Now button</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Clicking the button redirects to the Booking page.</td>
+        <td>Redirects to products page when clicked</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Hover effect working as expected.</td>
+        <td>Button is responsive and hover effect works</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=4>Service Cards</td>
-        <td rowspan=2>Learn More buttons</td>
+        <td rowspan=2>Hero Image</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Clicking the button redirects to the Treatments page.</td>
+        <td>Image loads correctly</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Hover effect working as expected.</td>
+        <td>Image is responsive on all screen sizes</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Service Icons</td>
+        <td rowspan=4>New Arrivals</td>
+        <td rowspan=2>Product Cards</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Icons are displayed correctly and provide visual cues.</td>
+        <td>Links to correct product details pages</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Icons are styled consistently with the overall design.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=4>Client Testimonials</td>
-        <td rowspan=2>Carousel Controls</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>Clicking the controls navigates through the testimonials.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Carousel controls are styled consistently with overall design.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Testimonial Content</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>Testimonials display correctly and are readable.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Testimonials are styled consistently with the overall design.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=4>Call to Action</td>
-        <td rowspan=2>Book Now button</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>Clicking the button redirects to the Booking page.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Hover effect working as expected.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Contact Link</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>Clicking the link redirects to the About Me page.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Hover effect working as expected.</td>
+        <td>Cards display correctly and are responsive</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>
