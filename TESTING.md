@@ -269,6 +269,143 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
 
 ### Test Results
 
+
+#### Login Page
+
+<table>
+   <tr>
+       <th colspan=2>Feature</th>
+       <th>Users</th>
+       <th>Test</th>
+       <th>Outcome</th>
+       <th>Pass/Fail</th>
+   </tr>
+   <tr>
+       <td rowspan=4>Login Form</td>
+       <td rowspan=2>Form Input</td>
+       <td rowspan=2>All</td>
+       <td>Functionality</td>
+       <td>Form accepts username/email and password, validates input</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Form is clearly laid out and responsive</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td rowspan=2>Submit Button</td>
+       <td rowspan=2>All</td>
+       <td>Functionality</td>
+       <td>Logs user in when credentials are correct</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Button is prominent with hover effect</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td rowspan=4>Additional Links</td>
+       <td rowspan=2>Forgot Password</td>
+       <td rowspan=2>All</td>
+       <td>Functionality</td>
+       <td>Links to password reset page</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Link is clearly visible with hover effect</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td rowspan=2>Register Link</td>
+       <td rowspan=2>All</td>
+       <td>Functionality</td>
+       <td>Links to registration page</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Link is clearly visible with hover effect</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+</table>
+
+#### Registration Page
+
+<table>
+   <tr>
+       <th colspan=2>Feature</th>
+       <th>Users</th>
+       <th>Test</th>
+       <th>Outcome</th>
+       <th>Pass/Fail</th>
+   </tr>
+   <tr>
+       <td rowspan=6>Registration Form</td>
+       <td rowspan=2>Form Fields</td>
+       <td rowspan=2>All</td>
+       <td>Functionality</td>
+       <td>All required fields validate correctly (email, username, password)</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Form fields are clearly labeled and responsive</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td rowspan=2>Password Validation</td>
+       <td rowspan=2>All</td>
+       <td>Functionality</td>
+       <td>Ensures passwords match and meet requirements</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Password requirements clearly displayed</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td rowspan=2>Submit Button</td>
+       <td rowspan=2>All</td>
+       <td>Functionality</td>
+       <td>Creates account and sends verification email</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Button is prominent with hover effect</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td rowspan=4>Additional Features</td>
+       <td rowspan=2>Email Verification</td>
+       <td rowspan=2>All</td>
+       <td>Functionality</td>
+       <td>Verification email sent and link works correctly</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Verification messages clearly displayed</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td rowspan=2>Login Link</td>
+       <td rowspan=2>All</td>
+       <td>Functionality</td>
+       <td>Links to login page for existing users</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Link is clearly visible with hover effect</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+</table>
+
 #### Base HTML 
 
 <table>
@@ -553,98 +690,1133 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
     </tr>
 </table>
 
-#### Signup Page
+#### Shopping Bag Page
 
 <table>
     <tr>
-        <th>Feature</th>
+        <th colspan=2>Feature</th>
         <th>Users</th>
         <th>Test</th>
         <th>Outcome</th>
         <th>Pass/Fail</th>
     </tr>
     <tr>
-        <td rowspan=2>Sign Up Form</td>
+        <td rowspan=6>Product Information</td>
+        <td rowspan=2>Product Details</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Form fields render correctly and accept user input.</td>
+        <td>Shows correct product image, name, size, and price</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Form fields are styled consistently with the overall design.</td>
+        <td>Information clearly laid out and responsive</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Sign Up Button</td>
+        <td rowspan=2>Quantity Adjuster</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Clicking the button submits the form and attempts to register the user.</td>
+        <td>Updates quantity correctly, min/max limits work</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Button has a hover effect and is styled consistently with overall design.</td>
+        <td>Controls are clear and easy to use</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Sign Up Link</td>
+        <td rowspan=2>Remove Link</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Clicking the link redirects to the sign up page.</td>
+        <td>Removes item from bag when clicked</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Link has a hover effect and is styled consistently with overall design.</td>
+        <td>Link is clearly visible with hover effect</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=6>Bag Summary</td>
+        <td rowspan=2>Subtotal</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Displays correct subtotal for all items</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Clearly displayed and updates dynamically</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Delivery Cost</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Calculates delivery cost correctly, shows free delivery threshold</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Delivery information clearly displayed</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Grand Total</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Shows correct total including delivery</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Total prominently displayed and updates correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=4>Action Buttons</td>
+        <td rowspan=2>Keep Shopping</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Returns to products page</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Button clearly visible with hover effect</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Secure Checkout</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Proceeds to checkout when clicked</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Button prominent with hover effect</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>
 
-#### Login Page
+#### Checkout Page
 
 <table>
     <tr>
-        <th>Feature</th>
+        <th colspan=2>Feature</th>
         <th>Users</th>
         <th>Test</th>
         <th>Outcome</th>
         <th>Pass/Fail</th>
     </tr>
     <tr>
-        <td rowspan=2>Login Form</td>
+        <td rowspan=8>Order Form</td>
+        <td rowspan=2>Personal Details</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Form fields render correctly and accept user input.</td>
+        <td>Form validates full name, email, phone number correctly</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Form fields are styled consistently with the overall design.</td>
+        <td>Fields clearly labeled and responsive</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Sign In Button</td>
+        <td rowspan=2>Delivery Information</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Clicking the button submits the form and attempts to log the user in.</td>
+        <td>Address fields validate and save correctly</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Button has a hover effect and is styled consistently with overall design.</td>
+        <td>Address fields properly formatted and clear</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Signup Link</td>
-        <td rowspan=2>All</td>
+        <td rowspan=2>Save Info Checkbox</td>
+        <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Clicking the link redirects to the signup page.</td>
+        <td>Saves delivery info to profile when checked</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Link has a hover effect and is styled consistently with overall design.</td>
+        <td>Checkbox clearly visible with label</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Login/Register Link</td>
+        <td rowspan=2>Unregistered</td>
+        <td>Functionality</td>
+        <td>Links to login/register page</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Links clearly visible and styled</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=6>Payment Section</td>
+        <td rowspan=2>Stripe Element</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Card input validates and processes payment</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Payment element styled consistently</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Error Messages</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Shows relevant error messages for invalid inputs</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Error messages clearly visible</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Loading Overlay</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Shows during payment processing</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Overlay visible and prevents double submission</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=6>Order Summary</td>
+        <td rowspan=2>Item Details</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Shows correct items, quantities, and sizes</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Summary clearly laid out and readable</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Order Total</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Displays correct subtotal, delivery, and grand total</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Totals clearly displayed and formatted</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Action Buttons</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Adjust Bag and Complete Order buttons work correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Buttons prominently displayed with hover effects</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+</table>
+
+#### Profile Page
+
+<table>
+    <tr>
+        <th colspan=2>Feature</th>
+        <th>Users</th>
+        <th>Test</th>
+        <th>Outcome</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td rowspan=6>Default Delivery Information</td>
+        <td rowspan=2>Form Fields</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>All fields can be updated and saved correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Form is clearly laid out and responsive</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Update Button</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>Successfully updates delivery information</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Button is prominent with hover effect</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Country Selector</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>Shows and selects countries correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Dropdown styled consistently with form</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=8>Order History</td>
+        <td rowspan=2>Order List</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>Shows all past orders with correct details</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Orders displayed in clear, organized manner</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Order Details Link</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>Links to detailed view of past orders</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Links are clearly visible with hover effect</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Order Number</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>Shows truncated order number with full number on hover</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Order numbers formatted consistently</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Order Information</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>Displays correct date, items, and total for each order</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Information clearly laid out and readable</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=4>Success Messages</td>
+        <td rowspan=2>Update Success</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>Shows confirmation when profile is updated</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Message is clearly visible and properly styled</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Toast Messages</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>Shows relevant toast messages for actions</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Toasts appear and disappear smoothly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+</table>
+
+#### Product Management
+
+<table>
+    <tr>
+        <th colspan=2>Feature</th>
+        <th>Users</th>
+        <th>Test</th>
+        <th>Outcome</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td rowspan=8>Add Product Form</td>
+        <td rowspan=2>Category Selection</td>
+        <td rowspan=2>Admin</td>
+        <td>Functionality</td>
+        <td>Correctly selects and assigns product category</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Dropdown is clearly visible and functional</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Product Details</td>
+        <td rowspan=2>Admin</td>
+        <td>Functionality</td>
+        <td>All fields validate and save correctly (name, description, price)</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Form fields clearly labeled and organized</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Image Upload</td>
+        <td rowspan=2>Admin</td>
+        <td>Functionality</td>
+        <td>Successfully uploads and displays product images</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Upload controls clearly visible and functional</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Submit Button</td>
+        <td rowspan=2>Admin</td>
+        <td>Functionality</td>
+        <td>Successfully adds new product to database</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Button is prominent with hover effect</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=8>Edit Product</td>
+        <td rowspan=2>Form Population</td>
+        <td rowspan=2>Admin</td>
+        <td>Functionality</td>
+        <td>Form populates with current product information</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Existing data clearly displayed in form</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Image Update</td>
+        <td rowspan=2>Admin</td>
+        <td>Functionality</td>
+        <td>Can update or remove existing images</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Current and new image preview displayed correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Update Button</td>
+        <td rowspan=2>Admin</td>
+        <td>Functionality</td>
+        <td>Successfully updates product information</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Button clearly visible with hover effect</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Cancel Button</td>
+        <td rowspan=2>Admin</td>
+        <td>Functionality</td>
+        <td>Returns to product detail page without changes</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Button clearly visible with hover effect</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=4>Delete Product</td>
+        <td rowspan=2>Delete Button</td>
+        <td rowspan=2>Admin</td>
+        <td>Functionality</td>
+        <td>Successfully removes product from database</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Delete button clearly visible in red</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Confirmation</td>
+        <td rowspan=2>Admin</td>
+        <td>Functionality</td>
+        <td>Confirms before deleting product</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Confirmation message clearly visible</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=4>Access Control</td>
+        <td rowspan=2>URL Access</td>
+        <td rowspan=2>Non-Admin</td>
+        <td>Functionality</td>
+        <td>Redirects non-admin users attempting to access admin URLs</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Error messages displayed appropriately</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Admin Links</td>
+        <td rowspan=2>Admin</td>
+        <td>Functionality</td>
+        <td>Admin-only links visible only to admin users</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Admin controls consistently styled</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+</table>
+
+#### Newsletter Management
+
+<table>
+    <tr>
+        <th colspan=2>Feature</th>
+        <th>Users</th>
+        <th>Test</th>
+        <th>Outcome</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td rowspan=6>Newsletter Signup</td>
+        <td rowspan=2>Email Input</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Validates email format and prevents duplicates</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Input field clearly visible and responsive</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Submit Button</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Successfully subscribes user to newsletter</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Button prominent with hover effect</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Success Message</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Displays confirmation of successful signup</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Success message clearly visible</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+</table>
+
+#### Testimonials Management
+
+<table>
+    <tr>
+        <th colspan=2>Feature</th>
+        <th>Users</th>
+        <th>Test</th>
+        <th>Outcome</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td rowspan=8>Display Testimonials</td>
+        <td rowspan=2>Testimonial Cards</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Displays all approved testimonials</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Cards properly formatted and responsive</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Rating Display</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Shows correct star rating for each testimonial</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Star ratings clearly visible</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Testimonial Text</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Displays full testimonial text correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Text properly formatted and readable</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Customer Name</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Shows customer name correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Name displayed appropriately</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=6>Admin Controls</td>
+        <td rowspan=2>Add Testimonial</td>
+        <td rowspan=2>Admin</td>
+        <td>Functionality</td>
+        <td>Successfully adds new testimonials</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Add form clearly laid out</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Edit Testimonial</td>
+        <td rowspan=2>Admin</td>
+        <td>Functionality</td>
+        <td>Successfully edits existing testimonials</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Edit controls clearly visible</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Delete Testimonial</td>
+        <td rowspan=2>Admin</td>
+        <td>Functionality</td>
+        <td>Successfully removes testimonials</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Delete controls prominently displayed</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+</table>
+
+#### FAQ Management
+
+<table>
+    <tr>
+        <th colspan=2>Feature</th>
+        <th>Users</th>
+        <th>Test</th>
+        <th>Outcome</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td rowspan=6>Display FAQs</td>
+        <td rowspan=2>FAQ List</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Shows all FAQ items in correct order</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>FAQs clearly laid out and readable</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Accordion Function</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Expands/collapses FAQ answers correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Smooth animation on expand/collapse</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Category Display</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Groups FAQs by category correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Categories clearly separated and labeled</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=6>Admin Controls</td>
+        <td rowspan=2>Add FAQ</td>
+        <td rowspan=2>Admin</td>
+        <td>Functionality</td>
+        <td>Successfully adds new FAQ items</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Add form clearly laid out</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Edit FAQ</td>
+        <td rowspan=2>Admin</td>
+        <td>Functionality</td>
+        <td>Successfully edits existing FAQs</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Edit controls clearly visible</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Delete FAQ</td>
+        <td rowspan=2>Admin</td>
+        <td>Functionality</td>
+        <td>Successfully removes FAQ items</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Delete controls prominently displayed</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+</table>
+
+#### Contact Form
+
+<table>
+    <tr>
+        <th colspan=2>Feature</th>
+        <th>Users</th>
+        <th>Test</th>
+        <th>Outcome</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td rowspan=8>Form Fields</td>
+        <td rowspan=2>Name Field</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Validates and requires name input</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Field clearly labeled and visible</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Email Field</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Validates email format correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Field clearly labeled and visible</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Message Field</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Accepts and requires message input</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Text area properly sized and responsive</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Submit Button</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Successfully submits form when valid</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Button prominent with hover effect</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=4>Form Feedback</td>
+        <td rowspan=2>Success Message</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Shows success message after submission</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Success message clearly visible</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Error Messages</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Shows appropriate error messages for invalid inputs</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Error messages clearly visible</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+</table>
+
+#### Toast Messages
+
+<table>
+    <tr>
+        <th colspan=2>Feature</th>
+        <th>Users</th>
+        <th>Test</th>
+        <th>Outcome</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td rowspan=8>Success Toasts</td>
+        <td rowspan=2>Add to Bag</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Shows when item added to bag</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Success style applied correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Profile Update</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>Shows when profile updated</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Success style applied correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Order Confirmation</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Shows after successful order</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Success style applied correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Sign In/Out</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>Shows on successful login/logout</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Success style applied correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=4>Error Toasts</td>
+        <td rowspan=2>Form Errors</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Shows when form submission fails</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Error style applied correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Payment Errors</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Shows when payment fails</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Error style applied correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+</table>
+
+
+#### General Site Navigation
+
+<table>
+    <tr>
+        <th colspan=2>Feature</th>
+        <th>Users</th>
+        <th>Test</th>
+        <th>Outcome</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td rowspan=6>Header Consistency</td>
+        <td rowspan=2>Navigation Bar</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Remains fixed at top across all pages</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Consistent styling across all pages</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Search Function</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Available and functional on all pages</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Search bar consistently styled</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Shopping Bag Icon</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Updates and accessible from all pages</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Consistently positioned and styled</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=6>Footer Consistency</td>
+        <td rowspan=2>Footer Content</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>All links functional across pages</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Consistent styling across all pages</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Newsletter Signup</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Form accessible from all pages</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Consistently styled and positioned</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Social Links</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>All social links work correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Icons consistently styled</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+</table>
+
+#### Responsive Design Testing
+
+<table>
+    <tr>
+        <th colspan=2>Feature</th>
+        <th>Device/Screen Size</th>
+        <th>Test</th>
+        <th>Outcome</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td rowspan=8>Navigation Elements</td>
+        <td rowspan=2>Desktop (>1024px)</td>
+        <td rowspan=2>Large Screens</td>
+        <td>Layout</td>
+        <td>Full navigation bar displayed horizontally</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Functionality</td>
+        <td>All navigation elements accessible</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Tablet (768px-1024px)</td>
+        <td rowspan=2>Medium Screens</td>
+        <td>Layout</td>
+        <td>Navigation adapts to medium screens</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Functionality</td>
+        <td>All features remain accessible</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Mobile (320px-767px)</td>
+        <td rowspan=2>Small Screens</td>
+        <td>Layout</td>
+        <td>Hamburger menu appears, mobile-friendly layout</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Functionality</td>
+        <td>Menu toggles correctly, all links work</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Small Mobile (<320px)</td>
+        <td rowspan=2>Extra Small</td>
+        <td>Layout</td>
+        <td>Content remains accessible on very small screens</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Functionality</td>
+        <td>All essential features usable</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=8>Content Layout</td>
+        <td rowspan=2>Product Cards</td>
+        <td rowspan=2>All Sizes</td>
+        <td>Layout</td>
+        <td>Cards resize and reflow appropriately</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Functionality</td>
+        <td>All product information remains visible</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Forms</td>
+        <td rowspan=2>All Sizes</td>
+        <td>Layout</td>
+        <td>Forms adjust to screen width</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Functionality</td>
+        <td>All form fields remain usable</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Images</td>
+        <td rowspan=2>All Sizes</td>
+        <td>Layout</td>
+        <td>Images scale proportionally</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Functionality</td>
+        <td>Images load and display correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Text Content</td>
+        <td rowspan=2>All Sizes</td>
+        <td>Layout</td>
+        <td>Text remains readable at all sizes</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Functionality</td>
+        <td>No text overflow or overlap issues</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>
