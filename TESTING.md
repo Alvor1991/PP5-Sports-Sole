@@ -1820,3 +1820,150 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>
+
+#### Wishlist Feature
+
+<table>
+   <tr>
+       <th colspan=2>Feature</th>
+       <th>Users</th>
+       <th>Test</th>
+       <th>Outcome</th>
+       <th>Pass/Fail</th>
+   </tr>
+   <tr>
+       <td rowspan=6>Add to Wishlist Button</td>
+       <td rowspan=2>Non-Logged In Users</td>
+       <td rowspan=2>All</td>
+       <td>Functionality</td>
+       <td>Prompts user to sign in when clicked</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Button clearly visible on product detail page</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td rowspan=2>Logged In Users</td>
+       <td rowspan=2>Registered</td>
+       <td>Functionality</td>
+       <td>Successfully adds item to wishlist</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Button indicates when item is in wishlist</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td rowspan=2>Button Position</td>
+       <td rowspan=2>All</td>
+       <td>Functionality</td>
+       <td>Consistent location on all product detail pages</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Button styled consistently with site theme</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td rowspan=8>Toast Notifications</td>
+       <td rowspan=2>Success Message</td>
+       <td rowspan=2>Registered</td>
+       <td>Functionality</td>
+       <td>Shows when item successfully added to wishlist</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Toast includes product image and details</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td rowspan=2>Duplicate Item Alert</td>
+       <td rowspan=2>Registered</td>
+       <td>Functionality</td>
+       <td>Shows alert when attempting to add existing item</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Alert message clearly indicates item is already in wishlist</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td rowspan=2>View Wishlist Button</td>
+       <td rowspan=2>Registered</td>
+       <td>Functionality</td>
+       <td>Button in toast redirects to wishlist</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Button clearly visible in toast message</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td rowspan=2>Sign In Prompt</td>
+       <td rowspan=2>Non-Registered</td>
+       <td>Functionality</td>
+       <td>Prompts non-logged in users to sign in</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Message clearly communicates requirement</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td rowspan=8>Wishlist Display</td>
+       <td rowspan=2>Profile Integration</td>
+       <td rowspan=2>Registered</td>
+       <td>Functionality</td>
+       <td>Wishlist accessible from profile page</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Wishlist section clearly organized in profile</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td rowspan=2>Item Display</td>
+       <td rowspan=2>Registered</td>
+       <td>Functionality</td>
+       <td>Shows all wishlisted items correctly</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Items displayed with clear images and details</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td rowspan=2>Remove Items</td>
+       <td rowspan=2>Registered</td>
+       <td>Functionality</td>
+       <td>Can remove items from wishlist</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Remove option clearly visible</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td rowspan=2>Empty State</td>
+       <td rowspan=2>Registered</td>
+       <td>Functionality</td>
+       <td>Shows appropriate message when wishlist empty</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+   <tr>
+       <td>Style</td>
+       <td>Empty state message clearly displayed</td>
+       <td><span style="color:green">Pass</span></td>
+   </tr>
+</table>
