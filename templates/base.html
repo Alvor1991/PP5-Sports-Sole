@@ -122,19 +122,31 @@
     </header>
 
     {% if messages %}
+    <!-- General Message Container (excludes wishlist messages) -->
     <div class="message-container">
         {% for message in messages %}
-        {% with message.level as level %}
-        {% if level == 40 %}
-        {% include 'includes/toasts/toast_error.html' %}
-        {% elif level == 30 %}
-        {% include 'includes/toasts/toast_warning.html' %}
-        {% elif level == 25 %}
-        {% include 'includes/toasts/toast_success.html' %}
-        {% else %}
-        {% include 'includes/toasts/toast_info.html' %}
+        {% if 'wishlist' not in message.tags %}
+            {% with message.level as level %}
+            {% if level == 40 %}
+            {% include 'includes/toasts/toast_error.html' %}
+            {% elif level == 30 %}
+            {% include 'includes/toasts/toast_warning.html' %}
+            {% elif level == 25 %}
+            {% include 'includes/toasts/toast_success.html' %}
+            {% else %}
+            {% include 'includes/toasts/toast_info.html' %}
+            {% endif %}
+            {% endwith %}
         {% endif %}
-        {% endwith %}
+        {% endfor %}
+    </div>
+
+    <!-- Wishlist-specific Message Container -->
+    <div class="message-container-wishlist">
+        {% for message in messages %}
+            {% if 'wishlist' in message.tags %}
+                {% include 'includes/toasts/toast_wishlist.html' %}
+            {% endif %}
         {% endfor %}
     </div>
     {% endif %}

@@ -132,6 +132,23 @@ input[name='q']::placeholder {
     height: 2px;
 }
 
+/* Toasts for Wishlist */
+.message-container-wishlist {
+    position: fixed;
+    top: 72px;
+    right: 150px;  /* Adjust as needed for 'My Account' icon */
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0; 
