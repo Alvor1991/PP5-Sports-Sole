@@ -1,6 +1,5 @@
-html, body {
+html {
     height: 100%;
-    margin: 0;
 }
 
 .hero-section {
@@ -17,16 +16,6 @@ body {
     background-repeat: repeat;
     background-size: 30%; 
     background-color: #f4f4f4; /* Fallback color */
-}
-
-.wrapper {
-    min-height: 100vh; 
-    display: flex;
-    flex-direction: column;
-}
-
-.wrapper > main {
-    flex-grow: 1; 
 }
 
 /* from Bulma */
@@ -53,15 +42,17 @@ body {
 }
 
 .btn-black {
-    background: #1a1a1a; /* Sleek, modern black */
+    background: #1a1a1a;
     color: white;
     border-radius: 0;
+    border-radius: 10px;
 }
 
 .btn-outline-black {
     background: white;
-    color: #1a1a1a !important; /* Match with a darker black */
+    color: #1a1a1a !important; 
     border: 1px solid #1a1a1a;
+    border-radius: 10px;
 }
 
 .btn-outline-black:hover,
@@ -69,6 +60,7 @@ body {
 .btn-outline-black:focus {
     background: #ffcc00 !important; /* Vibrant yellow for a pop of color */
     color: black !important;
+    border-radius: 10px;
 }
 
 .shop-now-button:hover,
@@ -79,6 +71,11 @@ body {
 .btn-black:focus {
     background: #ffcc00 !important; /* Yellow hover for a bold highlight */
     color: black;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    border-radius: 10px; /* Rounding for the Remove button */
 }
 
 .text-black {
@@ -142,6 +139,23 @@ input[name='q']::placeholder {
 .toast-capper {
     height: 2px;
 }
+
+/* Toasts for Wishlist */
+.message-container-wishlist {
+    position: fixed;
+    top: 72px;
+    right: 150px;  /* Adjust as needed for 'My Account' icon */
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
@@ -314,14 +328,8 @@ input[name='q']::placeholder {
 
 /* Footer Styles */
 footer {
-    margin-top: auto;
-    flex-shrink: 0;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
+    margin-top: 2rem;
 }
-
 
 footer a:hover {
     text-decoration: underline;
@@ -351,6 +359,10 @@ footer a:hover {
         padding-top: 116px;
     }
 
+    body {
+        height: calc(100vh - 116px);
+    }
+
     .hero-section {
         background-size: cover;
         background-position: center; 
@@ -366,6 +378,20 @@ footer a:hover {
         font-size: 0.9rem; 
         padding: 0.5rem 1rem; 
         margin-top: 1rem; 
+    }
+
+    .hero-section .container {
+        padding: 1rem; 
+    }
+
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+
+        padding: 0.15rem;
+
     }
 
     .nav-link i.fa-lg {
