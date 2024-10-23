@@ -42,15 +42,17 @@ body {
 }
 
 .btn-black {
-    background: #1a1a1a; /* Sleek, modern black */
+    background: #1a1a1a;
     color: white;
     border-radius: 0;
+    border-radius: 10px;
 }
 
 .btn-outline-black {
     background: white;
-    color: #1a1a1a !important; /* Match with a darker black */
+    color: #1a1a1a !important; 
     border: 1px solid #1a1a1a;
+    border-radius: 10px;
 }
 
 .btn-outline-black:hover,
@@ -58,6 +60,7 @@ body {
 .btn-outline-black:focus {
     background: #ffcc00 !important; /* Vibrant yellow for a pop of color */
     color: black !important;
+    border-radius: 10px;
 }
 
 .shop-now-button:hover,
@@ -68,6 +71,11 @@ body {
 .btn-black:focus {
     background: #ffcc00 !important; /* Yellow hover for a bold highlight */
     color: black;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    border-radius: 10px; /* Rounding for the Remove button */
 }
 
 .text-black {
