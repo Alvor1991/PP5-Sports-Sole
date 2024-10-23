@@ -7,6 +7,7 @@ from taggit.models import Tag
 
 from .models import Product, Category
 from .forms import ProductForm
+from profiles.models import Wishlist
 
 
 def all_products(request):
@@ -74,11 +75,16 @@ def all_products(request):
 
 def product_detail(request, product_id):
     """ A view to show individual product details """
-
     product = get_object_or_404(Product, pk=product_id)
+
+    if request.user.is_authenticated:
+        wishlist_items = Wishlist.objects.filter(user=request.user)
+    else:
+        wishlist_items = []
 
     context = {
         'product': product,
+        'wishlist_items': wishlist_items,  
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -156,3 +162,17 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def add_to_wishlist(request, product_id):
+    """ Add a product to the user's wishlist """
+    product = get_object_or_404(Product, id=product_id)
+    wishlist_item, created = Wishlist.objects.get_or_create(user=request.user, product=product)
+    
+    if created:
+        messages.success(request, f"{product.name} has been added to your wishlist!")
+    else:
+        messages.info(request, f"{product.name} is already in your wishlist.")
+    
+    return redirect('product_detail', product_id=product_id)
