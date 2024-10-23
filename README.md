@@ -2,7 +2,7 @@
 
 Sports Sole is your go-to online platform for high-quality sneakers designed to meet the needs of athletes, casual wearers, and sneaker enthusiasts alike. Whether you're searching for performance running shoes, stylish casual sneakers, or durable basketball shoes, Sports Sole offers a wide selection of top brands and the latest models. At Sports Sole, we’re committed to helping you find the perfect pair for every step.
 
-Visit the deployed website [here]().
+Visit the deployed website [https://sports-sole-d03df7b3c157.herokuapp.com/].
 
 ## Table of Contents
 
@@ -62,6 +62,7 @@ The site operates on a B2C model where:
 - Customer engagement through testimonials and FAQs
 
 ##### Target Audience
+
 - Sports enthusiasts looking for quality footwear
 - Casual shoppers seeking athletic shoes
 - Customers interested in both performance and style
@@ -117,6 +118,7 @@ Shopper Stories:
 25. Post-Purchase Product Review System
 
 Admin Stories:
+
 18. Add Product
 19. Edit/Update Product
 20. Delete Product
@@ -125,24 +127,28 @@ Admin Stories:
 
 #### Kanban board
 
-GitHub Projects was used as a project management tool with a Kanban board to track these user stories and monitor progress. **Story points** were assigned to these user stories, using the Fibonacci sequence (3, 5, 8) to represent the relative complexity and effort involved in each task:
+**Sprint 1 - Basic Product Viewing and User**
 
-**Sprint 1 - Basic Product Viewing and User**  
 <img src="assets/readme_files/sprint1.png" alt="User Stories Progress - Sprint 1" height="500px">
 
 **Sprint 2 - Product Management and User Profiles**  
+
 <img src="assets/readme_files/sprint2.png" alt="User Stories Progress - Sprint 2" height="500px">
 
 **Sprint 3 - Shopping Bag and Checkout Process**  
+
 <img src="assets/readme_files/sprint3.png" alt="User Stories Progress - Sprint 3" height="500px">
 
 **Sprint 4 - Checkout Process - Part**  
+
 <img src="assets/readme_files/sprint4.png" alt="User Stories Progress - Sprint 4" height="500px">
 
 **Sprint 5 - Sorting, Searching, and Additional Features**  
+
 <img src="assets/readme_files/sprint5.png" alt="User Stories Progress - Sprint 5" height="500px">
 
 **Sprint 6 - Marketing Features and Final Polishing**  
+
 <img src="assets/readme_files/sprint6.png" alt="User Stories Progress - Sprint 6" height="500px">
 
 ### Structure
