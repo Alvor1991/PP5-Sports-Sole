@@ -36,7 +36,7 @@
     <div class="row">
         {% for product in new_arrivals %}
         <div class="col-md-3 mb-4">
-            <div class="card h-100 shadow-sm"> <!-- Added shadow-sm for a subtle shadow -->
+            <div class="card h-100 shadow-sm">
                 <a href="{% url 'product_detail' product.id %}">
                     <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
                 </a>
@@ -50,7 +50,6 @@
     </div>
 </div>
 {% endif %}
-
 
 <!-- Testimonials Section -->
 {% if testimonials %}
@@ -102,7 +101,6 @@
         </div>
     </div>
 </div>
-
 
 <!-- Contact Form Section -->
 <div class="container py-5 my-5">
