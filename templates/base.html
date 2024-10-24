@@ -122,7 +122,6 @@
     </header>
 
     {% if messages %}
-    <!-- General Message Container (excludes wishlist messages) -->
     <div class="message-container">
         {% for message in messages %}
         {% if 'wishlist' not in message.tags %}
@@ -140,8 +139,6 @@
         {% endif %}
         {% endfor %}
     </div>
-
-    <!-- Wishlist-specific Message Container -->
     <div class="message-container-wishlist">
         {% for message in messages %}
             {% if 'wishlist' in message.tags %}

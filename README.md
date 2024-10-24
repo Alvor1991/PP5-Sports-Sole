@@ -198,7 +198,7 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 | E4 | Purchasing and Checkout | 14. Select Size and Quantity of Sneakers (#14)<br>15. View Final Cost Including Taxes and Shipping (#15)<br>16. Complete My Purchase Securely (#16) |
 | E5 | Marketing and Customer Engagement | 17. Newsletter Signup (#17)<br>18. Client Testimonial Management (#21)<br>19. FAQ Management (#22)<br>20. Contact Form (#23) |
 | E6 | Admin and Store Management | 21. Add Product (#18)<br>22. Edit/Update Product (#19)<br>23. Delete Product (#20) |
-| E7 | Future Enhancements | 24. Wishlist/Favorites feature (#24)<br>25. Post-Purchase Product Review System (#25) |
+| E7 | Future Enhancements | 25. Post-Purchase Product Review System (#25) |
 
 
 ### MoSCoW Prioritization
