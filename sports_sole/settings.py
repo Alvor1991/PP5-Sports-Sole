@@ -70,7 +70,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'cloudinary_storage',
     'cloudinary',
-    'taggit'
+    'taggit',
     'widget_tweaks',
 ]
 
