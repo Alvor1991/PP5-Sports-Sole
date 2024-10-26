@@ -13,32 +13,31 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
     product = Product.objects.get(pk=item_id)
+    price = float(product.discounted_price) if product.discounted_price else float(product.price)  # Convert Decimal to float
     quantity = int(request.POST.get('quantity', 1))
     redirect_url = request.POST.get('redirect_url')
-    size = request.POST.get('product_size')  # Assume all products have sizes
+    size = request.POST.get('product_size')
     bag = request.session.get('bag', {})
 
-    # Initialize bag entry if it doesn't exist
     if item_id not in bag:
         bag[item_id] = {'items_by_size': {}}
 
-    # Handle size-based quantities
     if size in bag[item_id]['items_by_size']:
-        bag[item_id]['items_by_size'][size] += quantity
+        bag[item_id]['items_by_size'][size]['quantity'] += quantity
+        bag[item_id]['items_by_size'][size]['price'] = price
         messages.success(
             request,
             f'Updated size {size.upper()} {product.name} quantity to '
-            f'{bag[item_id]["items_by_size"][size]}'
+            f'{bag[item_id]["items_by_size"][size]["quantity"]}'
         )
     else:
-        bag[item_id]['items_by_size'][size] = quantity
+        bag[item_id]['items_by_size'][size] = {'quantity': quantity, 'price': price}
         messages.success(
             request,
             f'Added size {size.upper()} {product.name} to your bag'
         )
 
-    # Save the updated bag in session
-    request.session['bag'] = bag
+    request.session['bag'] = bag  # Save the updated bag in session
     return redirect(redirect_url)
 
 
@@ -52,12 +51,12 @@ def adjust_bag(request, item_id):
     # Check if the item and size exist in the bag
     if item_id in bag and size in bag[item_id]['items_by_size']:
         if quantity > 0:
-            # Update the quantity for the specific size
-            bag[item_id]['items_by_size'][size] = quantity
+            # Update the quantity for the specific size while keeping the price
+            bag[item_id]['items_by_size'][size]['quantity'] = quantity
             messages.success(
                 request,
                 f'Updated size {size.upper()} {product.name} quantity to '
-                f'{bag[item_id]["items_by_size"][size]}'
+                f'{bag[item_id]["items_by_size"][size]["quantity"]}'
             )
         else:
             # If quantity is 0, remove the size from the bag
@@ -95,5 +94,6 @@ def remove_from_bag(request, item_id):
         return HttpResponse(status=200)
 
     except Exception as e:
-        messages.error(request, f'Error removing item: {e}')
+        messages.error(request, f'Error removing item: {str(e)}')
         return HttpResponse(status=500)
+
