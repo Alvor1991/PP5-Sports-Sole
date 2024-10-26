@@ -36,7 +36,7 @@
     <div class="row">
         {% for product in new_arrivals %}
         <div class="col-md-3 mb-4">
-            <div class="card h-100 shadow-sm">
+            <div class="card h-100 shadow">
                 <a href="{% url 'product_detail' product.id %}">
                     <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
                 </a>
@@ -79,7 +79,7 @@
 {% endif %}
 
 <!-- Newsletter Signup Section -->
-<div class="container bg-light py-5 my-5">
+<div class="container bg-light py-5 my-5" id="newsletter-section" style="scroll-margin-top: 100px;">
     <div class="row">
         <div class="col-12 text-center">
             <h3>Join Our Community</h3>
@@ -159,4 +159,3 @@
     });
 </script>
 {% endblock %}
-

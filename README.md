@@ -335,3 +335,69 @@ Progress, challenges faced, and solutions implemented to demonstrate agile metho
 - Password Recovery Process
 
 This comprehensive flow chart now accurately represents the full user experience on your Django Sports Sole website, incorporating all the elements from your provided templates and accounting for various user types and interactions.
+
+### Business Model
+
+#### Company description
+
+NoPlast is a B2C company that offer our customers plastic- free alternatives to plastic products in order to help us in our mission, to reduce the plastic consumption. Additionally, we provide information to create consciousness about plastic pollution and help our customers to take active choices in order to reduce their plastic waste.
+
+#### Customers
+
+Our thought costumers are millennials and younger, singles and families who have an environmental interest and a will to reduce their plastic consumption.
+
+#### Competitors
+
+We see that we have three types of competitors. 
+There are companies that have the same interest and vision as NoPlast. But they are mainly focusing on a smaller range of products, such as baby products, hygiene and makeup, or kitchen products, while we have a wider range of products (Lilla Lammet, Less Plastic, Ecco-Verde, etc.).
+The other type of competitors that are bigger and have all kinds of products, but they supply both environmental and plastic products and it is therefore not as easy to get a good overview and get inspired of new plastic free products, and environmental tips at the same place. (Åhlens, IKEA etc.).
+There are some companies that offer the same kind of range as we do (Be Plast Free and Rekoshoppen). But they are not on the informative aspect to solve the plastic waste problem.
+
+#### SWOT analysis
+
+### Strengths
+- Wide range of sports shoes catering to different activities (running, basketball, training)
+- User-friendly e-commerce platform with robust search and filtering
+- Secure payment processing system
+- Personalized user accounts with wishlist functionality
+- Clear product categorization (Men's/Women's)
+- Detailed product information and imagery
+- Newsletter subscription for customer engagement
+- Responsive design accessible on all devices
+
+### Weaknesses
+- New brand in a competitive market
+- Limited product range (only footwear)
+- No physical store presence
+- Limited customer reviews and ratings
+- No loyalty program currently implemented
+- Dependency on third-party payment systems
+- Limited social proof as a new business
+
+### Opportunities
+- Growing market for athletic footwear
+- Increasing trend in fitness and sports activities
+- Potential for expansion into related products
+- Social media marketing potential
+- Seasonal sales and promotions
+- Customer data collection through newsletter signups
+- Integration of customer reviews system
+- Mobile commerce growth
+
+### Threats
+- Established competitors (Nike, Adidas, etc.)
+- Economic fluctuations affecting consumer spending
+- Changing fashion trends
+- Supply chain dependencies
+- Price competition from larger retailers
+- Cybersecurity risks
+- Changes in e-commerce regulations
+
+**Marketing Strategy**
+
+Due to our small marketing budget, we have decided to start a Facebook Business page and interact with our customers and bigger organizations within the environmentally friendly branch through that marketing channel. For our buying customers we have made it easy to sign up for our newsletter, in order to make them even more loyal and facilitate for them to share tips and products with their friends and family. Now, in this stage of starting a new company we rely a lot on “word of mouth” and that cooperation’s with organizations and influencers to bring value to the company by attracting more visitors for our homepage and more buying customers.
+
+**Facebook Business page**
+
+See the live Facebook Business page [here](https://www.facebook.com/profile.php?id=61567026901922).
+![Sports Sole Facebook Business page image](assets/readme_files/facebook.png)

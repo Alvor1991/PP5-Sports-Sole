@@ -6,6 +6,7 @@ from .forms import UserProfileForm
 from checkout.models import Order
 from products.models import Product
 
+
 @login_required
 def profile(request):
     """ Display the user's profile. """
@@ -90,11 +91,19 @@ def remove_from_wishlist(request, product_id):
     """ Remove a product from the user's wishlist """
     product = get_object_or_404(Product, id=product_id)
     wishlist_item = Wishlist.objects.filter(user=request.user, product=product)
-    
+
     if wishlist_item.exists():
         wishlist_item.delete()
-        messages.success(request, f"{product.name} has been removed from your wishlist.", extra_tags='wishlist')
+        messages.success(
+            request,
+            f"{product.name} has been removed from your wishlist.",
+            extra_tags='wishlist'
+            )
     else:
-        messages.error(request, f"{product.name} was not found in your wishlist.", extra_tags='wishlist')
+        messages.error(
+            request,
+            f"{product.name} was not found in your wishlist.",
+            extra_tags='wishlist'
+            )
 
     return redirect('profile')
