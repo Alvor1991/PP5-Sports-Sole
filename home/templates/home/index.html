@@ -103,15 +103,13 @@
 </div>
 
 <!-- Contact Form Section -->
-<div class="container py-5 my-5">
+<div class="container py-5 my-5" id="contact-section" style="scroll-margin-top: 150px;">
     <h2 class="text-center mb-4">Get in Touch</h2>
-
     {% if contact_success %}
     <div class="alert alert-success" role="alert">
         Thank you for your message. We will get back to you soon.
     </div>
     {% endif %}
-
     <form method="post" action="{% url 'home' %}">
         {% csrf_token %}
         {{ contact_form.as_p }}
@@ -121,7 +119,7 @@
 
 <!-- FAQ Section -->
 {% if faqs %}
-<div class="container my-5">
+<div class="container my-5" id="faq-section" style="scroll-margin-top: 100px;">
     <h2 class="text-center mb-4">Frequently Asked Questions</h2>
     <div class="accordion" id="faqAccordion">
         {% for faq in faqs %}

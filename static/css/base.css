@@ -5,7 +5,7 @@ html {
 .hero-section {
     background: url('https://res.cloudinary.com/dn3hzyiqk/image/upload/v1728932346/homepage-background-cropped_k71eex.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 50vh; /* Cover half the viewport height */
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,7 +15,12 @@ body {
     background-image: url('https://res.cloudinary.com/dn3hzyiqk/image/upload/v1729024113/sports-pattern_ti84cn.png');
     background-repeat: repeat;
     background-size: 30%; 
-    background-color: #f4f4f4; /* Fallback color */
+    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .logo-font {
+    font-family: 'Oswald', sans-serif;
 }
 
 /* from Bulma */
@@ -36,7 +41,7 @@ body {
 }
 
 .shop-now-button {
-    background: #e6b800; /* Bold yellow for a standout CTA */
+    background: #e6b800;
     color: black;
     min-width: 260px;
 }
@@ -44,23 +49,22 @@ body {
 .btn-black {
     background: #1a1a1a;
     color: white;
-    border-radius: 0;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .btn-outline-black {
     background: white;
     color: #1a1a1a !important; 
     border: 1px solid #1a1a1a;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: #ffcc00 !important; /* Vibrant yellow for a pop of color */
+    background: #ffcc00 !important;
     color: black !important;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .shop-now-button:hover,
@@ -69,13 +73,13 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #ffcc00 !important; /* Yellow hover for a bold highlight */
+    background: #ffcc00 !important;
     color: black;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .btn-danger {
-    border-radius: 10px; /* Rounding for the Remove button */
+    border-radius: 5px; /* Rounding for the Remove button */
 }
 
 .text-black {
@@ -147,6 +151,18 @@ input[name='q']::placeholder {
     right: 150px;  /* Adjust as needed for 'My Account' icon */
     z-index: 99999999999;
 }
+
+.btn-wishlist {
+    background-color: white;
+    color: black;
+    border: 1px solid #d3d3d3; /* Light gray border */
+    transition: border-color 0.3s;
+}
+
+.btn-wishlist:hover {
+    border-color: #e63946; /* Soft red border on hover */
+}
+
 
 .custom-toast {
     overflow: visible;

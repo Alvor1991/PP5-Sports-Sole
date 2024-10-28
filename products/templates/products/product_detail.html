@@ -119,15 +119,14 @@
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
                     </form>
-
                     <!-- Add Wishlist Button -->
                     {% if product in user.wishlist.all %}
                     <p>This item is already in your wishlist</p>
                     {% else %}
                     <form method="POST" action="{% url 'add_to_wishlist' product.id %}">
                         {% csrf_token %}
-                        <button type="submit" class="btn btn-outline-black mt-5">
-                            <span class="icon"><i class="fas fa-heart"></i></span>
+                        <button type="submit" class="btn btn-wishlist mt-5">
+                            <span class="icon"><i class="fas fa-heart" style="color: #e63946;"></i></span>
                             <span class="text-uppercase">Add to Wishlist</span>
                         </button>
                     </form>
