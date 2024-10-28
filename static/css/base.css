@@ -2,6 +2,15 @@ html {
     height: 100%;
 }
 
+body {
+    background-image: url('https://res.cloudinary.com/dn3hzyiqk/image/upload/v1729024113/sports-pattern_ti84cn.png');
+    background-repeat: repeat;
+    background-size: 30%; 
+    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
 .hero-section {
     background: url('https://res.cloudinary.com/dn3hzyiqk/image/upload/v1728932346/homepage-background-cropped_k71eex.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -11,35 +20,27 @@ html {
     justify-content: center;
 }
 
-body {
-    background-image: url('https://res.cloudinary.com/dn3hzyiqk/image/upload/v1729024113/sports-pattern_ti84cn.png');
-    background-repeat: repeat;
-    background-size: 30%; 
-    background-color: #f4f4f4;
-    font-family: 'Poppins', sans-serif;
-}
-
+/* Typography */
 h1, h2, h3, h4, h5, h6, .logo-font {
     font-family: 'Oswald', sans-serif;
 }
 
-/* from Bulma */
-.icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
+.text-black {
+    color: #000 !important;
 }
 
-.logo-font {
-    text-transform: uppercase;
+/* Layout */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.main-logo-link {
-    width: fit-content;
+main {
+    flex-grow: 1; /* Allows the main content to grow and push the footer down */
 }
 
+/* Buttons */
 .shop-now-button {
     background: #e6b800;
     color: black;
@@ -79,11 +80,7 @@ h1, h2, h3, h4, h5, h6, .logo-font {
 }
 
 .btn-danger {
-    border-radius: 5px; /* Rounding for the Remove button */
-}
-
-.text-black {
-    color: #000 !important;
+    border-radius: 5px;
 }
 
 .border-black {
@@ -92,6 +89,34 @@ h1, h2, h3, h4, h5, h6, .logo-font {
 
 .bg-black {
     background: #000 !important;
+}
+
+.btn-wishlist {
+    background-color: white;
+    color: black;
+    border: 1px solid #d3d3d3;
+    transition: border-color 0.3s;
+}
+
+.btn-wishlist:hover {
+    border-color: #e63946;
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
 }
 
 .overlay {
@@ -105,8 +130,7 @@ h1, h2, h3, h4, h5, h6, .logo-font {
 }
 
 a.category-badge > span.badge:hover {
-    background: #ff6600 !important; /* Bright orange for energy */
-    color: #fff !important;
+    background: #ffcc00;
 }
 
 .btt-button {
@@ -115,6 +139,21 @@ a.category-badge > span.badge:hover {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    border: 1px solid #000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btt-button .fa-arrow-up {
+    color: #000;
+}
+
+footer ~ .btt-button .fa-arrow-up {
+    color: #fff;
 }
 
 .btt-link,
@@ -152,18 +191,6 @@ input[name='q']::placeholder {
     z-index: 99999999999;
 }
 
-.btn-wishlist {
-    background-color: white;
-    color: black;
-    border: 1px solid #d3d3d3; /* Light gray border */
-    transition: border-color 0.3s;
-}
-
-.btn-wishlist:hover {
-    border-color: #e63946; /* Soft red border on hover */
-}
-
-
 .custom-toast {
     overflow: visible;
 }
@@ -171,7 +198,6 @@ input[name='q']::placeholder {
 .toast-capper {
     height: 2px;
 }
-
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
@@ -223,7 +249,6 @@ input[name='q']::placeholder {
     overflow-x: hidden;
     overflow-y: auto;
 }
-
 
 /* -------------------------------- Media Queries */
 
@@ -344,6 +369,7 @@ input[name='q']::placeholder {
 
 /* Footer Styles */
 footer {
+    margin-top: auto;
     margin-top: 2rem;
 }
 
@@ -355,6 +381,12 @@ footer a:hover {
     font-size: 1.2rem;
     margin-right: 10px;
 }
+
+.custom-discount-price {
+    color: #28A745; /* Replace with your desired color */
+    font-weight: bold; /* Optional, to make it stand out more */
+}
+
 
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -423,13 +455,13 @@ footer a:hover {
         font-size: .9rem;
     }
 
-    .btn.btn-outline-black.rounded-0,
-    .btn.btn-black.rounded-0 {
+    .btn.btn-outline-black,
+    .btn.btn-black {
         padding: .375rem .375rem;
     }
 
-    .btn.btn-outline-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg {
+    .btn.btn-outline-black.btn-lg,
+    .btn.btn-black.btn-lg {
         padding: .375rem .375rem;
         font-size: .75rem;
     }

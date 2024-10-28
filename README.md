@@ -401,3 +401,19 @@ Due to our small marketing budget, we have decided to start a Facebook Business 
 
 See the live Facebook Business page [here](https://www.facebook.com/profile.php?id=61567026901922).
 ![Sports Sole Facebook Business page image](assets/readme_files/facebook.png)
+
+
+
+
+Page | Desktop | Mobile |
+--- | --- | --- |
+| Nav Bar | ![Nav image](assets/readme_files/nav.png) | ![Nav image](assets/readme_files/mobile_nav.png) |
+| Home | ![Desktop Home Page image](assets/readme_files/home.png) | ![Mobile Home Page image](assets/readme_files/mobile_home.png) |
+| About | ![Desktop About Page image](assets/readme_files/about.png) | ![Mobile About Page image](assets/readme_files/mobile_about.png) |
+| Book Appointment | ![Desktop Book Appointment Page image](assets/readme_files/book_appointment.png) | ![Mobile Book Appointment Page image](assets/readme_files/mobile_book_appointment.png) |
+| User Appointments | ![Desktop User Appointments Page image](assets/readme_files/user_appointments.png) | ![Mobile User Appointments Page image](assets/readme_files/mobile_user_appointments.png) |
+| Update Appointment | ![Desktop Update Appointment Page image](assets/readme_files/update_appointment.png) | ![Mobile Update Appointment Page image](assets/readme_files/mobile_update_appointment.png) |
+| Delete Appointment | ![Desktop Delete Appointment Page image](assets/readme_files/appointment_deleted.png) | ![Mobile Delete Appointment Page image](assets/readme_files/mobile_delete_appointment.png) |
+| Sign Up | ![Desktop Sign Up Page image](assets/readme_files/signup.png) | ![Mobile Sign Up Page image](assets/readme_files/mobile_signup.png) |
+| Sign In | ![Desktop Sign In Page image](assets/readme_files/login.png) | ![Mobile Sign In Page image](assets/readme_files/mobile_login.png) |
+| 404 Error | ![Desktop 404 Error Page image](assets/readme_files/desktop_404.png) | ![Mobile 404 Error Page image](assets/readme_files/mobile_404.png) |

@@ -3,8 +3,6 @@
 <html lang="en">
 
 <head>
-
-
     {% block meta %}
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
@@ -21,7 +19,6 @@
     {% block corecss %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Add these in your HTML head section -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
@@ -46,7 +43,7 @@
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                <a href="{% url 'home' %}" aria-label="Sports Sole Home" class="nav-link main-logo-link">
                     <h2 class="logo-font text-black my-0"><strong>Sports</strong> Sole</h2>
                 </a>
             </div>
@@ -148,61 +145,68 @@
     </div>
     {% endif %}
 
-    {% block page_header %}
-    {% endblock %}
+    <!-- Wrapper for sticky footer with Flexbox -->
+    <div class="content-wrapper d-flex flex-column min-vh-100">
+        <!-- Main content area -->
+        <main class="flex-grow-1">
+            {% block page_header %}
+            {% endblock %}
 
-    {% block content %}
-    {% endblock %}
+            {% block content %}
+            {% endblock %}
+        </main>
 
-    <footer class="bg-dark text-light py-4 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 mb-3">
-                    <h5>Sports Sole</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="{% url 'home' %}#contact-section" class="text-light">Contact</a></li>
-                        <li><a href="{% url 'home' %}#faq-section" class="text-light">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="{% url 'home' %}" class="text-light">Home</a></li>
-                        <li><a href="{% url 'products' %}" class="text-light">Shop</a></li>
-                        <li><a href="{% url 'products' %}?category=running_shoes,training_gym_shoes,basketball_shoes,casual_sneakers&gender=Women"
-                                class="text-light">Women's</a></li>
-                        <li><a href="{% url 'products' %}?category=running_shoes,training_gym_shoes,basketball_shoes,casual_sneakers&gender=Men"
-                                class="text-light">Men's</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <h5>Categories</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="{% url 'products' %}?category=running_shoes" class="text-light">Running Shoes</a></li>
-                        <li><a href="{% url 'products' %}?category=training_gym_shoes" class="text-light">Training and Gym Shoes</a></li>
-                        <li><a href="{% url 'products' %}?category=basketball_shoes" class="text-light">Basketball Shoes</a></li>
-                        <li><a href="{% url 'products' %}?category=casual_sneakers" class="text-light">Casual Sneakers</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <h5>Connect With Us</h5>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/profile.php?id=61567026901922" class="text-light me-2"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+        <!-- Footer -->
+        <footer class="bg-dark text-light py-4 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <h5>Sports Sole</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="{% url 'home' %}#contact-section" class="text-light">Contact</a></li>
+                            <li><a href="{% url 'home' %}#faq-section" class="text-light">FAQ</a></li>
+                        </ul>
                     </div>
-                    <p class="mt-2">Subscribe to our newsletter for exclusive deals!</p>
-                    <a href="{% url 'home' %}#newsletter-section" class="btn btn-outline-light btn-sm">Sign Up</a>
+                    <div class="col-md-3 mb-3">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="{% url 'home' %}" class="text-light">Home</a></li>
+                            <li><a href="{% url 'products' %}" class="text-light">Shop</a></li>
+                            <li><a href="{% url 'products' %}?category=running_shoes,training_gym_shoes,basketball_shoes,casual_sneakers&gender=Women"
+                                    class="text-light">Women's</a></li>
+                            <li><a href="{% url 'products' %}?category=running_shoes,training_gym_shoes,basketball_shoes,casual_sneakers&gender=Men"
+                                    class="text-light">Men's</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <h5>Categories</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="{% url 'products' %}?category=running_shoes" class="text-light">Running Shoes</a></li>
+                            <li><a href="{% url 'products' %}?category=training_gym_shoes" class="text-light">Training and Gym Shoes</a></li>
+                            <li><a href="{% url 'products' %}?category=basketball_shoes" class="text-light">Basketball Shoes</a></li>
+                            <li><a href="{% url 'products' %}?category=casual_sneakers" class="text-light">Casual Sneakers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <h5>Connect With Us</h5>
+                        <div class="social-icons">                          
+                            <a href="https://www.facebook.com/profile.php?id=61567026901922" class="text-light me-2" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com" class="text-light me-2" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://instagram.com" class="text-light me-2" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <p class="mt-2">Subscribe to our newsletter for exclusive deals!</p>
+                        <a href="{% url 'home' %}#newsletter-section" class="btn btn-outline-light btn-sm">Sign Up</a>
+                    </div>
+                </div>
+                <hr class="bg-light">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2024 Sports Sole. All rights reserved.</p>
+                    </div>
                 </div>
             </div>
-            <hr class="bg-light">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p>&copy; 2024 Sports Sole. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     {% block postloadjs %}
     <script>
