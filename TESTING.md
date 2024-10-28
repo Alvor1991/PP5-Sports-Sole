@@ -46,7 +46,7 @@
 * AC2: Logged-in user can easily log out from any page.
 * AC3: User's login status is clearly indicated in the navigation.
 
-### 7. Recover My Password**
+### 7. Recover My Password
 * AC1: User can request password reset from login page.
 * AC2: Reset instructions are sent to user's email.
 * AC3: User can set a new password and access their account.
@@ -138,7 +138,7 @@
 
 ### 24. Wishlist/Favorites Feature
 
-* AC1: Given I am viewing a product, I can click a button to add it to my wishlist (receiving a toast success message), or if the item is already in my wishlist, I will receive a toast message indicating this.
+* AC1: Given I am viewing a product, I can click a button to add it to my wishlist.
 * AC2: When I access my profile, I can view all my wishlist items in a dedicated section.
 * AC3: Given I am viewing my wishlist in my profile, I can remove items using a button beneath each product.
 
@@ -152,9 +152,7 @@
 
 ### HTML
 
-[W3C Markup Validator](https://validator.w3.org/) service was used to validate the HTML code of the project to ensure there were no syntax errors.
-
-W3C Markup Validator found the following errors:
+[W3C Markup Validator](https://validator.w3.org/) service was used to validate the HTML code and found the following errors:
 
 <div style="display: flex; justify-content: space-between;">
     <img src="assets/testing_files/base_html_error1.png" alt="base.html validation errors image" width="60%" style="margin-bottom: 20px;">
@@ -240,99 +238,27 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
 
 ### Test Results
 
+### Login Page Testing
 
-#### Login Page
+| Feature                  | Users | Test                               | Outcome                                   | Pass/Fail |
+|--------------------------|-------|------------------------------------|-------------------------------------------|-----------|
+| Login Form               | All   | Form Input                         | Accepts valid username/email and password | <span style="color:green">Pass</span> |
+|                          |       | Submit Button                      | Logs user in with correct credentials     | <span style="color:green">Pass</span> |
+| Additional Links         | All   | Forgot Password Link               | Links to password reset page               | <span style="color:green">Pass</span> |
+|                          |       | Register Link                      | Links to registration page                 | <span style="color:green">Pass</span> |
 
-#### Login Page
+---
 
-<table>
-    <tr>
-        <th colspan=2>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=2>Login Form</td>
-        <td rowspan=1>Form Input</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Form accepts username/email and password, validates input</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Submit Button</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Logs user in when credentials are correct</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Additional Links</td>
-        <td rowspan=1>Forgot Password</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Links to password reset page</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Register Link</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Links to registration page</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-</table>
+### Registration Page Testing
 
-#### Registration Page
+| Feature                   | Users     | Test                               | Outcome                                   | Pass/Fail |
+|---------------------------|-----------|------------------------------------|-------------------------------------------|-----------|
+| Registration Form         | All       | Form Fields                        | All required fields validate correctly     | <span style="color:green">Pass</span> |
+|                           |           | Password Validation                | Ensures passwords match and meet requirements | <span style="color:green">Pass</span> |
+|                           |           | Submit Button                     | Creates account and sends verification email | <span style="color:green">Pass</span> |
+| Additional Features       | All       | Email Verification                 | Verification email sent and link works correctly | <span style="color:green">Pass</span> |
+|                           |           | Login Link                        | Links to login page for existing users     | <span style="color:green">Pass</span> |
 
-<table>
-    <tr>
-        <th colspan=2>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=3>Registration Form</td>
-        <td rowspan=1>Form Fields</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>All required fields validate correctly (email, username, password)</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Password Validation</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Ensures passwords match and meet requirements</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Submit Button</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Creates account and sends verification email</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Additional Features</td>
-        <td rowspan=1>Email Verification</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Verification email sent and link works correctly</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Login Link</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Links to login page for existing users</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-</table>
 
 #### Base HTML 
 

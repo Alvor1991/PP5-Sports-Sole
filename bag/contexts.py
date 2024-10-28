@@ -30,7 +30,7 @@ def bag_contents(request):
         else:
             # Handle new case with items by size
             for size, size_data in item_data['items_by_size'].items():
-                price = Decimal(size_data['price'])  # Get price from session
+                price = Decimal(size_data['price'])
                 quantity = size_data['quantity']
                 subtotal = price * quantity
                 total += subtotal
