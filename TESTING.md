@@ -235,10 +235,68 @@ Device | Operating System | Outcome | Pass/Fail
 MacBook Air 15" | macOS Sonoma | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
 iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
 
-
 ### Test Results
 
-### Login Page Testing
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Test</th>
+        <th>Outcome</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Login Form</td>
+        <td>Form Input</td>
+        <td>Accepts valid username/email and password</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Submit Button</td>
+        <td>Logs user in with correct credentials</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan="2">Login Page - Additional Links</td>
+        <td>Forgot Password Link</td>
+        <td>Links to password reset page</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Register Link</td>
+        <td>Links to registration page</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan="3">Registration Form</td>
+        <td>Form Fields</td>
+        <td>All required fields validate correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Password Validation</td>
+        <td>Ensures passwords match and meet requirements</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Submit Button</td>
+        <td>Creates account and sends verification email</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan="2">Registration Page - Additional Features</td>
+        <td>Email Verification</td>
+        <td>Verification email sent and link works correctly</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Login Link</td>
+        <td>Links to login page for existing users</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+</table>
+
+
+#### Login Page
 
 | Feature                  | Users | Test                               | Outcome                                   | Pass/Fail |
 |--------------------------|-------|------------------------------------|-------------------------------------------|-----------|
@@ -247,9 +305,7 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
 | Additional Links         | All   | Forgot Password Link               | Links to password reset page               | <span style="color:green">Pass</span> |
 |                          |       | Register Link                      | Links to registration page                 | <span style="color:green">Pass</span> |
 
----
-
-### Registration Page Testing
+#### Registration Page
 
 | Feature                   | Users     | Test                               | Outcome                                   | Pass/Fail |
 |---------------------------|-----------|------------------------------------|-------------------------------------------|-----------|
@@ -259,596 +315,75 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
 | Additional Features       | All       | Email Verification                 | Verification email sent and link works correctly | <span style="color:green">Pass</span> |
 |                           |           | Login Link                        | Links to login page for existing users     | <span style="color:green">Pass</span> |
 
+#### Base HTML Features
 
-#### Base HTML 
+| Feature                  | Users | Test                               | Outcome                                   | Pass/Fail |
+|--------------------------|-------|------------------------------------|-------------------------------------------|-----------|
+| Navigation Bar           | All   | Sports Sole logo                   | Clicking the logo redirects to the Home page | <span style="color:green">Pass</span> |
+|                          |       | Search Bar                         | Search input works and returns relevant results | <span style="color:green">Pass</span> |
+|                          |       | My Account                         | Dropdown shows appropriate options for logged in/out users | <span style="color:green">Pass</span> |
+|                          |       | Shopping Bag                       | Shows correct total and links to shopping bag page | <span style="color:green">Pass</span> |
+|                          |       | Main Nav Menu                      | Navigation links work correctly (Products, Men's, Women's, Special) | <span style="color:green">Pass</span> |
+| Footer                   | All   | Footer Content                     | All links functional across pages         | <span style="color:green">Pass</span> |
+|                          |       | Contact link                       | Redirects to contact form                 | <span style="color:green">Pass</span> |
+|                          |       | FAQ link                           | Redirects to FAQ section                  | <span style="color:green">Pass</span> |
+|                          |       | Newsletter Signup link             | Redirects to newsletter signup            | <span style="color:green">Pass</span> |
+|                          |       | Social Links                       | All social links work correctly           | <span style="color:green">Pass</span> |
 
-#### Base Features
+#### Home Page Features
 
-<table>
-    <tr>
-        <th colspan=2>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=5>Navigation Bar</td>
-        <td rowspan=1>Sports Sole logo</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Clicking the logo redirects to the Home page</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Search Bar</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Search input works and returns relevant results</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>My Account Dropdown</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Dropdown menu shows appropriate options for logged in/out users</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Shopping Bag</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Shows correct total and links to shopping bag page</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Main Nav Menu</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>All navigation links work correctly</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-</table>
-
-#### Home Page
-
-<table>
-    <tr>
-        <th colspan=2>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=2>Hero Section</td>
-        <td rowspan=1>Shop Now button</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Redirects to products page when clicked</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Hero Image</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Image loads correctly</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>New Arrivals</td>
-        <td rowspan=1>Product Cards</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Links to correct product details pages</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-</table>
+| Feature              | Users | Test                                          | Outcome                                           | Pass/Fail                       |
+|----------------------|-------|-----------------------------------------------|---------------------------------------------------|----------------------------------|
+| Hero Section         | All   | Shop Now Button, Hero Image                  | Redirects correctly and image loads               | <span style="color:green">Pass</span> |
+| New Arrivals         | All   | Product Cards                                | Links to correct product details pages            | <span style="color:green">Pass</span> |
+| Newsletter Signup     | All   | Email Input, Submit Button, Success Message | Validates correctly, subscribes user successfully, displays confirmation | <span style="color:green">Pass</span> |
+| Display Testimonials   | All   | Testimonial Cards, Rating Display            | Shows approved testimonials and ratings           | <span style="color:green">Pass</span> |
+| Contact Form         | All   | Form Fields, Submit Button, Form Feedback    | Validates inputs, shows success/error messages    | <span style="color:green">Pass</span> |
+| Display FAQs         | All   | FAQ List, Accordion Function                 | Shows FAQs correctly and expands/collapses       | <span style="color:green">Pass</span> |
 
 #### Products Page
 
-<table>
-    <tr>
-        <th colspan=2>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=3>Product Filters</td>
-        <td rowspan=1>Category Filtering</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Filters products by selected category</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Sort Selector</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Sorts products by price, rating, name as selected</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Price Filtering</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Filters products within selected price range</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Product Cards</td>
-        <td rowspan=1>Product Information</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Displays correct product details and links to product page</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Edit/Delete Links</td>
-        <td rowspan=1>Admin</td>
-        <td>Functionality</td>
-        <td>Edit and delete options visible only to admin</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-</table>
+| Feature             | Users     | Test                                              | Outcome                                           | Pass/Fail                       |
+|---------------------|-----------|---------------------------------------------------|---------------------------------------------------|----------------------------------|
+| Product Filtering    | All       | Category Filtering, Sort Selector, Price Filtering | Filters products correctly based on selection       | <span style="color:green">Pass</span> |
+| Product Cards       | All       | Product Information                                 | Displays correct details                           | <span style="color:green">Pass</span> |
+| Scroll-to-Top Button | All       | Arrow Button                                       | Returns user to the top of the products page      | <span style="color:green">Pass</span> |
+
 
 #### Product Detail Page
 
-<table>
-    <tr>
-        <th colspan=2>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=2>Product Images</td>
-        <td rowspan=1>Main Image</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Image loads correctly</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Additional Images</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Additional product images load and display correctly</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=3>Product Controls</td>
-        <td rowspan=1>Size Selector</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Size selection works correctly</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Quantity Selector</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Quantity can be adjusted within valid range</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Add to Bag Button</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Adds selected product to shopping bag</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Keep Shopping</td>
-        <td rowspan=1>Return Link</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Returns to products page</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-</table>
+| Feature            | Users | Test                                               | Outcome                                           | Pass/Fail                       |
+|--------------------|-------|----------------------------------------------------|---------------------------------------------------|----------------------------------|
+| Product Images      | All   | Main Image, Additional Images                      | All images load correctly                         | <span style="color:green">Pass</span> |
+| Product Controls     | All   | Size Selector, Quantity Selector                | All controls work as intended                   | <span style="color:green">Pass</span> |
+| Buttons            | All   | Add To Bag button                                | Adds items to bag user to the products page         | <span style="color:green">Pass</span> |
+|                    | All   | Keep Shopping button                                | Returns user to the products page                 | <span style="color:green">Pass</span> |
+|                    | All   | Add to Wishlist button                              | Successfully adds item to wishlist                | <span style="color:green">Pass</span> |
 
 #### Profile Page
 
-<table>
-    <tr>
-        <th colspan=2>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=3>Default Delivery Information</td>
-        <td rowspan=1>Form Fields</td>
-        <td rowspan=1>Registered</td>
-        <td>Functionality</td>
-        <td>All fields can be updated and saved correctly</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Update Button</td>
-        <td rowspan=1>Registered</td>
-        <td>Functionality</td>
-        <td>Successfully updates delivery information</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Country Selector</td>
-        <td rowspan=1>Registered</td>
-        <td>Functionality</td>
-        <td>Shows and selects countries correctly</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=4>Order History</td>
-        <td rowspan=1>Order List</td>
-        <td rowspan=1>Registered</td>
-        <td>Functionality</td>
-        <td>Shows all past orders with correct details</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Order Details Link</td>
-        <td rowspan=1>Registered</td>
-        <td>Functionality</td>
-        <td>Links to detailed view of past orders</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Order Number</td>
-        <td rowspan=1>Registered</td>
-        <td>Functionality</td>
-        <td>Shows truncated order number with full number on hover</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Order Information</td>
-        <td rowspan=1>Registered</td>
-        <td>Functionality</td>
-        <td>Displays correct date, items, and total for each order</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Success Messages</td>
-        <td rowspan=1>Update Success</td>
-        <td rowspan=1>Registered</td>
-        <td>Functionality</td>
-        <td>Shows confirmation when profile is updated</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Toast Messages</td>
-        <td rowspan=1>Registered</td>
-        <td>Functionality</td>
-        <td>Shows relevant toast messages for actions</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-</table>
-
-#### Newsletter Management
-
-<table>
-    <tr>
-        <th colspan=2>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=3>Newsletter Signup</td>
-        <td rowspan=1>Email Input</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Validates email format and prevents duplicates</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Submit Button</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Successfully subscribes user to newsletter</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Success Message</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Displays confirmation of successful signup</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-</table>
-
-#### Testimonials Management
-
-<table>
-    <tr>
-        <th colspan=2>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=4>Display Testimonials</td>
-        <td rowspan=1>Testimonial Cards</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Displays all approved testimonials</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Rating Display</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Shows correct star rating for each testimonial</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Testimonial Text</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Displays full testimonial text correctly</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Customer Name</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Shows customer name correctly</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=3>Admin Controls</td>
-        <td rowspan=1>Add Testimonial</td>
-        <td rowspan=1>Admin</td>
-        <td>Functionality</td>
-        <td>Successfully adds new testimonials</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Edit Testimonial</td>
-        <td rowspan=1>Admin</td>
-        <td>Functionality</td>
-        <td>Successfully edits existing testimonials</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Delete Testimonial</td>
-        <td rowspan=1>Admin</td>
-        <td>Functionality</td>
-        <td>Successfully removes testimonials</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-</table>
-
-#### FAQ Management
-
-<table>
-    <tr>
-        <th colspan=2>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=3>Display FAQs</td>
-        <td rowspan=1>FAQ List</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Shows all FAQ items in correct order</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Accordion Function</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Expands/collapses FAQ answers correctly</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Category Display</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Groups FAQs by category correctly</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=3>Admin Controls</td>
-        <td rowspan=1>Add FAQ</td>
-        <td rowspan=1>Admin</td>
-        <td>Functionality</td>
-        <td>Successfully adds new FAQ items</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Edit FAQ</td>
-        <td rowspan=1>Admin</td>
-        <td>Functionality</td>
-        <td>Successfully edits existing FAQs</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Delete FAQ</td>
-        <td rowspan=1>Admin</td>
-        <td>Functionality</td>
-        <td>Successfully removes FAQ items</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-</table>
-
-#### Contact Form
-
-<table>
-    <tr>
-        <th colspan=2>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=4>Form Fields</td>
-        <td rowspan=1>Name Field</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Validates and requires name input</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Email Field</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Validates email format correctly</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Message Field</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Accepts and requires message input</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Submit Button</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Successfully submits form when valid</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Form Feedback</td>
-        <td rowspan=1>Success Message</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Shows success message after submission</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Error Messages</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Shows appropriate error messages for invalid inputs</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-</table>
+| Feature              | Users     | Test                                         | Outcome                                           | Pass/Fail                       |
+|----------------------|-----------|----------------------------------------------|---------------------------------------------------|----------------------------------|
+| Profile Management    | Registered| Default Delivery Info, Update Button        | All fields can be updated, updates are successful | <span style="color:green">Pass</span> |
+| Order History        | Registered| Order List, Order Details Link              | Displays past orders correctly, links function    | <span style="color:green">Pass</span> |
+| Wishlist Management   | Registered| Wishlist Accessibility                      | Wishlist accessible from profile page             | <span style="color:green">Pass</span> |
+|                      |           | Item Display                               | Shows all wishlisted items correctly               | <span style="color:green">Pass</span> |
+|                      |           | Remove Items                               | Can remove items from wishlist                      | <span style="color:green">Pass</span> |
+|                      |           | Empty State                                | Shows appropriate message when wishlist empty      | <span style="color:green">Pass</span> |
 
 #### Toast Messages
 
-<table>
-    <tr>
-        <th colspan=2>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=4>Success Toasts</td>
-        <td rowspan=1>Add to Bag</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Shows when item added to bag</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Profile Update</td>
-        <td rowspan=1>Registered</td>
-        <td>Functionality</td>
-        <td>Shows when profile updated</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Order Confirmation</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Shows after successful order</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Sign In/Out</td>
-        <td rowspan=1>Registered</td>
-        <td>Functionality</td>
-        <td>Shows on successful login/logout</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Error Toasts</td>
-        <td rowspan=1>Form Errors</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Shows when form submission fails</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Payment Errors</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Shows when payment fails</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-</table>
+| Feature               | Users     | Test                                          | Outcome                                           | Pass/Fail                       |
+|-----------------------|-----------|-----------------------------------------------|---------------------------------------------------|----------------------------------|
+| Success Toasts        | All       | Add to Bag                                   | Shows when item added to bag                      | <span style="color:green">Pass</span> |
+|                       | All       | Remove from Bag                             | Shows when item removed from bag                  | <span style="color:green">Pass</span> |
+|                       | Registered | Profile Update                              | Shows when profile updated successfully            | <span style="color:green">Pass</span> |
+|                       | All       | Order Confirmation                           | Shows after successful order                      | <span style="color:green">Pass</span> |
+| Error Toasts          | All       | Form Errors                                 | Shows when form submission fails                   | <span style="color:green">Pass</span> |
+|                       | All       | Payment Errors                              | Shows when payment fails                           | <span style="color:green">Pass</span> |
+|                       | Registered | Account Update Errors                       | Shows when there is an error updating account information | <span style="color:green">Pass</span> |
+|                       | All       | Authentication Errors                       | Shows when login fails                            | <span style="color:green">Pass</span> |
 
-#### General Site Navigation
-
-<table>
-    <tr>
-        <th colspan=2>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=3>Header Consistency</td>
-        <td rowspan=1>Navigation Bar</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Remains fixed at top across all pages</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Search Function</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Available and functional on all pages</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Shopping Bag Icon</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Updates and accessible from all pages</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=3>Footer Consistency</td>
-        <td rowspan=1>Footer Content</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>All links functional across pages</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Newsletter Signup</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>Form accessible from all pages</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=1>Social Links</td>
-        <td rowspan=1>All</td>
-        <td>Functionality</td>
-        <td>All social links work correctly</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-</table>
 
 #### Responsive Design Testing
 
@@ -918,89 +453,4 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <td>No text overflow or overlap issues</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
-</table>
-
-#### Wishlist Feature
-
-<table>
-   <tr>
-       <th colspan=2>Feature</th>
-       <th>Users</th>
-       <th>Test</th>
-       <th>Outcome</th>
-       <th>Pass/Fail</th>
-   </tr>
-   <tr>
-       <td rowspan=3>Add to Wishlist Button</td>
-       <td rowspan=1>Non-Logged In Users</td>
-       <td rowspan=1>All</td>
-       <td>Functionality</td>
-       <td>Prompts user to sign in when clicked</td>
-       <td><span style="color:green">Pass</span></td>
-   </tr>
-   <tr>
-       <td rowspan=1>Logged In Users</td>
-       <td rowspan=1>Registered</td>
-       <td>Functionality</td>
-       <td>Successfully adds item to wishlist</td>
-       <td><span style="color:green">Pass</span></td>
-   </tr>
-   <tr>
-       <td rowspan=1>Button Position</td>
-       <td rowspan=1>All</td>
-       <td>Functionality</td>
-       <td>Consistent location on all product detail pages</td>
-       <td><span style="color:green">Pass</span></td>
-   </tr>
-   <tr>
-       <td rowspan=3>Toast Notifications</td>
-       <td rowspan=1>Success Message</td>
-       <td rowspan=1>Registered</td>
-       <td>Functionality</td>
-       <td>Shows when item successfully added to wishlist</td>
-       <td><span style="color:green">Pass</span></td>
-   </tr>
-   <tr>
-       <td rowspan=1>Duplicate Item Alert</td>
-       <td rowspan=1>Registered</td>
-       <td>Functionality</td>
-       <td>Alert when attempting to add existing item</td>
-       <td><span style="color:green">Pass</span></td>
-   </tr>
-   <tr>
-       <td rowspan=1>View Wishlist Button</td>
-       <td rowspan=1>Registered</td>
-       <td>Functionality</td>
-       <td>Button in toast redirects to wishlist</td>
-       <td><span style="color:green">Pass</span></td>
-   </tr>
-   <tr>
-       <td rowspan=4>Wishlist Display</td>
-       <td rowspan=1>Profile Integration</td>
-       <td rowspan=1>Registered</td>
-       <td>Functionality</td>
-       <td>Wishlist accessible from profile page</td>
-       <td><span style="color:green">Pass</span></td>
-   </tr>
-   <tr>
-       <td rowspan=1>Item Display</td>
-       <td rowspan=1>Registered</td>
-       <td>Functionality</td>
-       <td>Shows all wishlisted items correctly</td>
-       <td><span style="color:green">Pass</span></td>
-   </tr>
-   <tr>
-       <td rowspan=1>Remove Items</td>
-       <td rowspan=1>Registered</td>
-       <td>Functionality</td>
-       <td>Can remove items from wishlist</td>
-       <td><span style="color:green">Pass</span></td>
-   </tr>
-   <tr>
-       <td rowspan=1>Empty State</td>
-       <td rowspan=1>Registered</td>
-       <td>Functionality</td>
-       <td>Shows appropriate message when wishlist empty</td>
-       <td><span style="color:green">Pass</span></td>
-   </tr>
 </table>
