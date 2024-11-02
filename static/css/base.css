@@ -187,16 +187,8 @@ input[name='q']::placeholder {
 .message-container-wishlist {
     position: fixed;
     top: 72px;
-    right: 150px;  /* Adjust as needed for 'My Account' icon */
+    right: 100px;  /* Adjust as needed for 'My Account' icon */
     z-index: 99999999999;
-}
-
-.custom-toast {
-    overflow: visible;
-}
-
-.toast-capper {
-    height: 2px;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
@@ -313,7 +305,6 @@ input[name='q']::placeholder {
 	color: #17a2b8; /* text-info */
 }
 
-
 /* Product Form */
 
 .btn-file {
@@ -383,10 +374,9 @@ footer a:hover {
 }
 
 .custom-discount-price {
-    color: #28A745; /* Replace with your desired color */
-    font-weight: bold; /* Optional, to make it stand out more */
+    color: #28A745; 
+    font-weight: bold; 
 }
-
 
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -403,6 +393,10 @@ footer a:hover {
 }
 
 @media (max-width: 991px) {
+    .content-wrapper {
+        padding-top: 20px; /* Adjust for more space at the top of main content */
+    }
+
     .header-container {
         padding-top: 116px;
     }

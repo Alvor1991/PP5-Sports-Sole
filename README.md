@@ -2,7 +2,7 @@
 
 Sports Sole is your go-to online platform for high-quality sneakers designed to meet the needs of athletes, casual wearers, and sneaker enthusiasts alike. Whether you're searching for performance running shoes, stylish casual sneakers, or durable basketball shoes, Sports Sole offers a wide selection of top brands and the latest models. At Sports Sole, we’re committed to helping you find the perfect pair for every step.
 
-Visit the deployed website [https://sports-sole-d03df7b3c157.herokuapp.com/].
+Visit the deployed website [here](https://sports-sole-d03df7b3c157.herokuapp.com/])
 
 ## Table of Contents
 
@@ -49,11 +49,7 @@ Visit the deployed website [https://sports-sole-d03df7b3c157.herokuapp.com/].
 
 ### Strategy
 
-#### Project Goals
-
-Sports Sole is a B2C (Business to Consumer) e-commerce platform specializing in sports footwear. The application serves as a direct bridge between the business and individual consumers, offering a comprehensive range of sports shoes.
-
-##### Site Owner Goals
+#### Site Owner Goals
 
 - Provide a professional and trustworthy e-commerce platform
 - Build and maintain a loyal customer base
@@ -61,7 +57,7 @@ Sports Sole is a B2C (Business to Consumer) e-commerce platform specializing in 
 - Drive sales through effective product presentation
 - Gather customer data through newsletter signups
 
-##### Business Model
+#### Business Model
 
 The site operates on a B2C model where:
 - Products are sold directly to end consumers
@@ -69,25 +65,25 @@ The site operates on a B2C model where:
 - Direct marketing through newsletter subscriptions
 - Customer engagement through testimonials and FAQs
 
-##### Target Audience
+#### Target Audience
 
 - Sports enthusiasts looking for quality footwear
 - Casual shoppers seeking athletic shoes
 - Customers interested in both performance and style
 - People looking for specific types of sports shoes (running, basketball, etc.)
 
-##### Marketing Strategy
+#### Marketing Strategy
 
-1. **Email Marketing**
+1. ##### Email Marketing
    - Newsletter subscription feature to build customer database
    - Keep customers informed about new products and offers
 
-2. **Customer Engagement**
+2. ##### Customer Engagement
    - Customer testimonials to build trust
    - FAQ section to provide immediate answers to common queries
    - Contact form for customer support
 
-3. **User Experience**
+3. ##### User Experience
    - Easy navigation through product categories
    - Detailed product information and images
    - Secure user accounts and checkout process
@@ -191,7 +187,7 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 
 | Epic ID | Epic Name | User Stories |
 |---------|-----------|--------------|
-| E1 | Viewing and Navigation | 1. View a List of Sneakers (#1)<br>2. See Detailed Information for Sneakers (#2)<br>3. Quickly Identify Deals and Discounts (#3)<br>4. View the Total Cost of Selected Items (#4) |
+| E1 | Viewing and Navigation | 1. View a List of Sneakers (#1)<br>2. See Detailed Information for Sneakers (#2)<br>3. Quickly Identify Deals and Discounts (#3)<br>4. View the Total Cost of Selected Items (#4)<br>26. View and Purchase Discounted Products (#26) |
 | E2 | Registration and User Accounts | 5. Register for an Account (#5)<br>6. Log In or Log Out of My Account (#6)<br>7. Recover My Password (#7)<br>8. Receive an Email Confirmation After Registering (#8)<br>9. Have a Personalized User Profile (#9)<br>24. Wishlist/Favorites feature (#24) |
 | E3 | Sorting and Searching | 10. Sort Sneakers by Price, Rating, or Category (#10)<br>11. Sort Sneakers by Category (#11)<br>12. Search for Sneakers by Name or Description (#12)<br>13. Filter Products Across Multiple Categories (#13) |
 | E4 | Purchasing and Checkout | 14. Select Size and Quantity of Sneakers (#14)<br>15. View Final Cost Including Taxes and Shipping (#15)<br>16. Complete My Purchase Securely (#16) |
@@ -202,11 +198,11 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 
 ### MoSCoW Prioritization
 
-| Priority    | User Stories                                                                                           |
+| Priority | User Stories |
 |-------------|-------------------------------------------------------------------------------------------------------|
-| Must Have   | 1. View a List of Sneakers (#1)<br>2. See Detailed Information for Sneakers (#2)<br>3. Register for an Account (#5)<br>4. Log In or Log Out of My Account (#6)<br>5. Select Size and Quantity of Sneakers (#14)<br>6. Complete My Purchase Securely (#16)<br>7. Add Product (#18)<br>8. Edit/Update Product (#19)<br>9. Delete Product (#20) |
+| Must Have | 1. View a List of Sneakers (#1)<br>2. See Detailed Information for Sneakers (#2)<br>3. Register for an Account (#5)<br>4. Log In or Log Out of My Account (#6)<br>5. Select Size and Quantity of Sneakers (#14)<br>6. Complete My Purchase Securely (#16)<br>7. Add Product (#18)<br>8. Edit/Update Product (#19)<br>9. Delete Product (#20) |
 | Should Have | 1. View the Total Cost of Selected Items (#4)<br>2. Recover My Password (#7)<br>3. Receive an Email Confirmation After Registering (#8)<br>4. Have a Personalized User Profile (#9)<br>5. Search for Sneakers by Name or Description (#12)<br>6. View Final Cost Including Taxes and Shipping (#15) |
-| Could Have | 1. Quickly Identify Deals and Discounts (#3)<br>2. Sort Sneakers by Price, Rating, or Category (#10)<br>3. Sort Sneakers by Category (#11)<br>4. Filter Products Across Multiple Categories (#13)<br>5. Newsletter Signup (#17)<br>6. Client Testimonial Management (#21)<br>7. FAQ Management (#22)<br>8. Contact Form (#23)<br>9. Wishlist/Favorites feature (#24) |
+| Could Have | 1. Quickly Identify Deals and Discounts (#3)<br>2. Sort Sneakers by Price, Rating, or Category (#10)<br>3. Sort Sneakers by Category (#11)<br>4. Filter Products Across Multiple Categories (#13)<br>5. Newsletter Signup (#17)<br>6. Client Testimonial Management (#21)<br>7. FAQ Management (#22)<br>8. Contact Form (#23)<br>9. Wishlist/Favorites feature (#24)<br>10. View and Purchase Discounted Products (#26) |
 | Won't Have | 1. Post-Purchase Product Review System (#25) |
 
 ### Sprint Planning
@@ -217,7 +213,7 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 | Sprint 2   | 2 weeks    | #18, #19, #20, #7, #8, #9           | Admin product management and enhanced user account features |
 | Sprint 3   | 2 weeks    | #4, #14, #15                        | Functional shopping bag and initial checkout process     |
 | Sprint 4   | 2 weeks    | #16                                 | Secure checkout process completion                      |
-| Sprint 5   | 2 weeks    | #10, #11, #12, #13, #3              | Implemented search, sorting, and special offers features |
+| Sprint 5   | 2 weeks | #10, #11, #12, #13, #3, #26            | Implemented search, sorting, and special offers features |
 | Sprint 6   | 2 weeks    | #17, #21, #22, #23, #24             | Implement marketing features, wishlist functionality, bug fixes, and final testing |
 
 #### Sports Sole User Flow Chart

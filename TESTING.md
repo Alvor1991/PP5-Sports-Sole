@@ -1,8 +1,8 @@
-# Sports Therapy Website Testing
+# Sports Sole Website Testing
 
-[Back to the README.md file](https://github.com/Alvor1991/PP4-SportsTherapy)  
+[Back to the README.md file](https://github.com/Alvor1991/PP5-Sports-Sole/blob/main/README.md)  
 
-[View the live website here](https://pp4-physio-4e914098e1ff.herokuapp.com)  
+[View the live website here](https://sports-sole-d03df7b3c157.herokuapp.com/)  
 
 ## Table of Contents
 
@@ -132,9 +132,9 @@
 
 ### 23. Contact Form
 
-* AC1: Users can easily find and access the contact form.
+* AC1: I can easily find and access the contact form.
 * AC2: Form includes fields for name, email, and message.
-* AC3: User receives confirmation when message is sent successfully.
+* AC3: I receive a confirmation when message is sent successfully.
 
 ### 24. Wishlist/Favorites Feature
 
@@ -147,6 +147,11 @@
 * AC1: Given I have received my order, I receive an email invitation to review my purchased items.
 * AC2: When clicking the review link in the email, I can rate the product and write my review.
 * AC3: When viewing products, I can see verified purchase reviews from other customers to help inform my decision.
+
+### 26. View and Purchase Discounted Products
+* AC1: Given I am viewing a product page, I can see the original price crossed out and the discounted price clearly displayed.
+* AC2: When I click on Special Offers, I can see all products that currently have discounts applied.
+* AC3: When I add discounted items to bag, they are added at the correct reduced price. 
 
 ## Code Validation
 
@@ -332,7 +337,7 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan="4">Footer</td>
+        <td rowspan="5">Footer</td>
         <td>Footer Content</td>
         <td>All links functional across pages</td>
         <td><span style="color:green">Pass</span></td>
