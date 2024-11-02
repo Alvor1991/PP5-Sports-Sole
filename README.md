@@ -122,80 +122,6 @@ The site operates on a B2C model where:
 21. Client Testimonial Management
 22. FAQ Management
 
-**#### User Stories**
-
-
-**#### User Stories**
-
-**Story Point Key:**
-- 1 = Low complexity (Simple features, basic CRUD operations, straightforward implementations)
-- 3 = Medium complexity (Multiple components, integrations, moderate functionality)
-- 5 = High complexity (Security features, complex integrations, significant development effort)
-
-
-**Story Points Scale:**
-| Points | Complexity | Description |
-|--------|------------|-------------|
-| 1 | Low | Simple features, basic CRUD operations, straightforward implementations |
-| 3 | Medium | Multiple components, integrations, moderate functionality |
-| 5 | High | Security features, complex integrations, significant development effort |
-
-**##### Shopper Stories:**
-1. View a List of Sneakers (1)
-  - Basic product display functionality
-2. See Detailed Information for Sneakers (3)
-  - Multiple data points and image handling
-3. Quickly Identify Deals and Discounts (3)
-  - Requires clear display of special offers
-4. View the Total Cost of Selected Items (1)
-  - Basic calculation and display
-5. Register for an Account (3)
-  - Form validation and database integration
-6. Log In or Log Out of My Account (1)
-  - Standard authentication functionality
-7. Recover My Password (3)
-  - Email integration and security measures
-8. Receive an Email Confirmation After Registering (3)
-  - Email service integration
-9. Have a Personalized User Profile (5)
-  - Complex user data management and display
-10. Sort Sneakers by Price, Rating, or Category (3)
-   - Multiple sorting algorithms
-11. Sort Sneakers by Category (1)
-   - Basic filtering functionality
-12. Search for Sneakers by Name or Description (5)
-   - Complex search functionality
-13. Filter Products Across Multiple Categories (3)
-   - Multiple filter combinations
-14. Select Size and Quantity of Sneakers (1)
-   - Basic product selection features
-15. View Final Cost Including Taxes and Shipping (3)
-   - Multiple calculations required
-16. Complete My Purchase Securely (5)
-   - Complex payment integration and security
-17. Newsletter Signup (1)
-   - Simple form and email list management
-23. Contact Form (1)
-   - Basic form functionality
-24. Wishlist/Favorites Feature (5)
-   - User-specific data management
-25. Post-Purchase Product Review System (5)
-   - Complex review system integration
-26. View and Purchase Discounted Products (3)
-   - Price calculations and display logic
-
-**##### Admin Stories:**
-18. Add Product (5)
-   - Complex form with image handling
-19. Edit/Update Product (5)
-   - Similar complexity to adding products
-20. Delete Product (1)
-   - Basic deletion with confirmation
-21. Client Testimonial Management (3)
-   - Content management functionality
-22. FAQ Management (3)
-   - Basic content management system
-
 #### Kanban board
 
 **Sprint 1 - Basic Product Viewing and User**
@@ -210,7 +136,7 @@ The site operates on a B2C model where:
 
 <img src="assets/readme_files/sprint3.png" alt="User Stories Progress - Sprint 3" height="500px">
 
-**Sprint 4 - Checkout Process - Part**  
+**Sprint 4 - Checkout Process**  
 
 <img src="assets/readme_files/sprint4.png" alt="User Stories Progress - Sprint 4" height="500px">
 
@@ -290,6 +216,57 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 | Sprint 4   | 2 weeks    | #16                                 | Secure checkout process completion                      |
 | Sprint 5   | 2 weeks | #10, #11, #12, #13, #3, #26            | Implemented search, sorting, and special offers features |
 | Sprint 6   | 2 weeks    | #17, #21, #22, #23, #24             | Implement marketing features, wishlist functionality, bug fixes, and final testing |
+
+### Difficulty Level (Fibonacci sequence)
+
+**Story Point Key:**
+- 1 = Low complexity (Simple features, basic CRUD operations, straightforward implementations)
+- 3 = Medium complexity (Multiple components, integrations, moderate functionality)
+- 5 = High complexity (Security features, complex integrations, significant development effort)
+
+**Story Points Scale:**
+| Points | Complexity | Description |
+|--------|------------|-------------|
+| 1 | Low | Simple features, basic CRUD operations, straightforward implementations |
+| 3 | Medium | Multiple components, integrations, moderate functionality |
+| 5 | High | Security features, complex integrations, significant development effort |
+
+**##### Shopper Stories:**
+1. View a List of Sneakers - Basic product display functionality (1)
+2. See Detailed Information for Sneakers - Multiple data points and image handling (3)
+3. Quickly Identify Deals and Discounts - Clear display of special offers (3)
+4. View the Total Cost of Selected Items - Basic calculation and display (1)
+5. Register for an Account - Form validation and database integration (3)
+6. Log In or Log Out of My Account - Standard authentication functionality (1)
+7. Recover My Password - Email integration and security measures (3)
+8. Receive an Email Confirmation After Registering - Email service integration (3)
+9. Have a Personalized User Profile - User data management and display (5)
+10. Sort Sneakers by Price, Rating, or Category - Multiple sorting algorithms (3)
+11. Sort Sneakers by Category - Basic filtering functionality (1)
+12. Search for Sneakers by Name or Description - Complex search functionality (5)
+13. Filter Products Across Multiple Categories - Multiple filter combinations (3)
+14. Select Size and Quantity of Sneakers - Basic product selection features (1)
+15. View Final Cost Including Taxes and Shipping - Multiple calculations required (3)
+16. Complete My Purchase Securely - Payment integration and security (5)
+17. Newsletter Signup - Simple form and email list management (1)
+23. Contact Form - Basic form functionality (1)
+24. Wishlist/Favorites Feature - User-specific data management (5)
+25. Post-Purchase Product Review System - Complex review system integration (5)
+26. View and Purchase Discounted Products - Price calculations and display logic (3)
+
+**##### Admin Stories:**
+18. Add Product - Complex form with image handling (5)
+19. Edit/Update Product - Similar complexity to adding products (5)
+20. Delete Product - Basic deletion with confirmation (1)
+21. Client Testimonial Management - Content management functionality (3)
+22. FAQ Management - Basic content management system (3)
+
+
+
+
+
+
+
 
 #### Sports Sole User Flow Chart
 
