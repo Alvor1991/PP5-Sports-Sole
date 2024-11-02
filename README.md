@@ -57,39 +57,6 @@ Visit the deployed website [here](https://sports-sole-d03df7b3c157.herokuapp.com
 - Drive sales through effective product presentation.
 - Gather customer data through newsletter signups.
 
-#### Business Model
-
-The site operates on a B2C model where:
-- Products are sold directly to end consumers.
-- Customer accounts allow for personalized shopping experiences.
-- Direct marketing through newsletter subscriptions.
-- Customer engagement through testimonials and FAQs.
-
-#### Target Audience
-
-- Sports enthusiasts looking for quality footwear.
-- Casual shoppers seeking athletic shoes.
-- Customers interested in both performance and style.
-- People looking for specific types of sports shoes (running, basketball, etc.)
-
-#### Marketing Strategy
-
-1. ##### Email Marketing
-   - Newsletter subscription feature to build customer database
-   - Keep customers informed about new products and offers
-
-2. ##### Customer Engagement
-   - Customer testimonials to build trust
-   - FAQ section to provide immediate answers to common queries
-   - Contact form for customer support
-
-3. ##### User Experience
-   - Easy navigation through product categories
-   - Detailed product information and images
-   - Secure user accounts and checkout process
-   - Order history and profile management
-   - Wish list for favourite products 
-
 #### User Stories
 
 ##### Shopper Stories:
@@ -253,133 +220,25 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 
 <img src="assets/readme_files/sprint6.png" alt="User Stories Progress - Sprint 6">
 
-#### Sports Sole User Flow Chart
+## Marketing 
 
-## Persistent Elements (Available on All Pages)
+### Search Engine Optimisation 
 
-### Header
-- Logo (links to Home)
-- Search Bar
-- My Account Dropdown
-  - For non-authenticated users:
-    -> Register
-    -> Login
-  - For authenticated users:
-    -> My Profile
-    -> Logout
-  - For superusers:
-    -> Product Management
-- Shopping Bag (with total amount)
-- Free Delivery Threshold Banner
-
-### Main Navigation
-- Home
-- All Products
-  -> By Price
-  -> By Rating
-  -> By Category
-  -> All Products
-- Women's
-  -> Running Shoes
-  -> Training and Gym Shoes
-  -> Basketball Shoes
-  -> Casual Sneakers
-  -> All Women's Sneakers
-- Men's
-  -> Running Shoes
-  -> Training and Gym Shoes
-  -> Basketball Shoes
-  -> Casual Sneakers
-  -> All Men's Sneakers
-- Special Offers
-  -> New Arrivals
-  -> Clearance
-
-### Footer
-- Quick Links (Home, Shop,)
-- Customer Service (Contact, FAQ)
-- Social Media Links
-- Newsletter Signup
-
-## Page-Specific Flows
-
-### 1. Home Page (index.html)
-- Hero Section with "Shop Now" CTA
-- New Arrivals Section
-- Customer Testimonials
-- Newsletter Signup Form
-- Contact Form
-- FAQ Section
-
-### 2. Products Page (products.html)
-- Product Listing with Filtering and Sorting Options
-- Category Badges
-- Pagination (if implemented)
-- For superusers: Edit/Delete product options
-
-### 3. Product Detail Page (product_detail.html)
-- Product Image (with zoom option if implemented)
-- Product Information (name, price, category, rating)
-- Size Selection
-- Quantity Selection
-- Add to Bag functionality
-- For superusers: Edit/Delete product options
-
-### 4. Shopping Bag Page (bag.html)
-- List of Items in Bag
-- Update Quantity functionality
-- Remove Item functionality
-- Subtotal for each item
-- Order Total, Delivery Cost, Grand Total
-- "Keep Shopping" and "Secure Checkout" options
-
-### 5. Checkout Page (checkout.html)
-- Order Summary
-- Delivery Information Form
-- Payment Information (Stripe integration)
-- Option to save delivery info to profile (for authenticated users)
-- Complete Order functionality
-
-### 6. Checkout Success Page
-- Order confirmation details
-- Order history
-
-### 7. Profile Page (profile.html)
-- Default Delivery Information Form
-- Order History Table
-
-### 8. Product Management (for superusers)
-- Add Product Form
-- Edit Product Form
-
-## User Interactions
-- Receive and view toast messages for various actions
-- Use of "Back to Top" button on longer pages
-- Responsive design elements (e.g., collapsible navigation on mobile)
-
-## Authentication Flows
-- Registration Process
-- Login Process
-- Password Recovery Process
-
-This comprehensive flow chart now accurately represents the full user experience on your Django Sports Sole website, incorporating all the elements from your provided templates and accounting for various user types and interactions.
 
 ### Business Model
 
-#### Company description
+The site operates on a B2C model where:
+- Products are sold directly to end consumers.
+- Customer accounts allow for personalised shopping experiences.
+- Direct marketing through newsletter subscriptions.
+- Customer engagement through testimonials and FAQs.
 
-NoPlast is a B2C company that offer our customers plastic- free alternatives to plastic products in order to help us in our mission, to reduce the plastic consumption. Additionally, we provide information to create consciousness about plastic pollution and help our customers to take active choices in order to reduce their plastic waste.
+#### Target Audience
 
-#### Customers
-
-Our thought costumers are millennials and younger, singles and families who have an environmental interest and a will to reduce their plastic consumption.
-
-#### Competitors
-
-We see that we have three types of competitors. 
-There are companies that have the same interest and vision as NoPlast. But they are mainly focusing on a smaller range of products, such as baby products, hygiene and makeup, or kitchen products, while we have a wider range of products (Lilla Lammet, Less Plastic, Ecco-Verde, etc.).
-The other type of competitors that are bigger and have all kinds of products, but they supply both environmental and plastic products and it is therefore not as easy to get a good overview and get inspired of new plastic free products, and environmental tips at the same place. (Åhlens, IKEA etc.).
-There are some companies that offer the same kind of range as we do (Be Plast Free and Rekoshoppen). But they are not on the informative aspect to solve the plastic waste problem.
+- Sports enthusiasts looking for quality footwear.
+- Casual shoppers seeking athletic shoes.
+- Customers interested in both performance and style.
+- People looking for specific types of sports shoes (running, basketball, etc.)
 
 #### SWOT analysis
 
@@ -421,26 +280,38 @@ There are some companies that offer the same kind of range as we do (Be Plast Fr
 - Cybersecurity risks
 - Changes in e-commerce regulations
 
-**Marketing Strategy**
+### Marketing Strategy
 
-Due to our small marketing budget, we have decided to start a Facebook Business page and interact with our customers and bigger organizations within the environmentally friendly branch through that marketing channel. For our buying customers we have made it easy to sign up for our newsletter, in order to make them even more loyal and facilitate for them to share tips and products with their friends and family. Now, in this stage of starting a new company we rely a lot on “word of mouth” and that cooperation’s with organizations and influencers to bring value to the company by attracting more visitors for our homepage and more buying customers.
+1. ##### Email Marketing
+   - Newsletter subscription feature to build customer database
+   - Keep customers informed about new products and offers
+
+2. ##### Customer Engagement
+   - Customer testimonials to build trust
+   - FAQ section to provide immediate answers to common queries
+   - Contact form for customer support
+
+3. ##### User Experience
+   - Easy navigation through product categories
+   - Detailed product information and images
+   - Secure user accounts and checkout process
+   - Order history and profile management
+   - Wish list for favourite products 
 
 **Facebook Business page**
 
 See the live Facebook Business page [here](https://www.facebook.com/profile.php?id=61567026901922).
 ![Sports Sole Facebook Business page image](assets/readme_files/facebook.png)
 
-
-
-
 Page | Desktop | Mobile |
 --- | --- | --- |
 | Nav Bar | ![Nav image](assets/readme_files/nav.png) | ![Nav image](assets/readme_files/mobile_nav.png) |
-| Home | ![Desktop Home Page image](assets/readme_files/home.png) | ![Mobile Home Page image](assets/readme_files/mobile_home.png) |
-| About | ![Desktop About Page image](assets/readme_files/about.png) | ![Mobile About Page image](assets/readme_files/mobile_about.png) |
-| Book Appointment | ![Desktop Book Appointment Page image](assets/readme_files/book_appointment.png) | ![Mobile Book Appointment Page image](assets/readme_files/mobile_book_appointment.png) |
-| User Appointments | ![Desktop User Appointments Page image](assets/readme_files/user_appointments.png) | ![Mobile User Appointments Page image](assets/readme_files/mobile_user_appointments.png) |
-| Update Appointment | ![Desktop Update Appointment Page image](assets/readme_files/update_appointment.png) | ![Mobile Update Appointment Page image](assets/readme_files/mobile_update_appointment.png) |
+| Home (1)  | ![Desktop Home 1 image](assets/readme_files/home1.png) | ![Mobile Home 1 Page image](assets/readme_files/mobile_home1.png) |
+| Home (2) | ![Desktop Home 2 image](assets/readme_files/home2.png) | ![Mobile Home 2 Page image](assets/readme_files/mobile_home2.png) |
+| Products | ![Desktop Products Page image](assets/readme_files/products.png) | ![Mobile Products Page image](assets/readme_files/mobile_products.png) |
+| Product Detail | ![Desktop Product Detail Page image](assets/readme_files/product_detail.png) | ![Mobile Product Detail Page image](assets/readme_files/mobile_product_detail.png) |
+| Bag | ![Desktop User Bag Page image](assets/readme_files/bag.png) | ![Mobile User Bag Page image](assets/readme_files/mobile_bag.png) |
+| Checkout | ![Desktop Checkout Page image](assets/readme_files/checkout.png) | ![Mobile Checkout Page image](assets/readme_files/mobile_checkout.png) |
 | Delete Appointment | ![Desktop Delete Appointment Page image](assets/readme_files/appointment_deleted.png) | ![Mobile Delete Appointment Page image](assets/readme_files/mobile_delete_appointment.png) |
 | Sign Up | ![Desktop Sign Up Page image](assets/readme_files/signup.png) | ![Mobile Sign Up Page image](assets/readme_files/mobile_signup.png) |
 | Sign In | ![Desktop Sign In Page image](assets/readme_files/login.png) | ![Mobile Sign In Page image](assets/readme_files/mobile_login.png) |
@@ -585,4 +456,119 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 
 
 
-[Back to top ⇧](#sports-therapy)
+[Back to top ⇧](#sports-sole)
+
+
+
+
+
+
+
+## Persistent Elements (Available on All Pages)
+
+### Header
+- Logo (links to Home)
+- Search Bar
+- My Account Dropdown
+  - For non-authenticated users:
+    -> Register
+    -> Login
+  - For authenticated users:
+    -> My Profile
+    -> Logout
+  - For superusers:
+    -> Product Management
+- Shopping Bag (with total amount)
+- Free Delivery Threshold Banner
+
+### Main Navigation
+- Home
+- All Products
+  -> By Price
+  -> By Rating
+  -> By Category
+  -> All Products
+- Women's
+  -> Running Shoes
+  -> Training and Gym Shoes
+  -> Basketball Shoes
+  -> Casual Sneakers
+  -> All Women's Sneakers
+- Men's
+  -> Running Shoes
+  -> Training and Gym Shoes
+  -> Basketball Shoes
+  -> Casual Sneakers
+  -> All Men's Sneakers
+- Special Offers
+  -> New Arrivals
+  -> Clearance
+
+### Footer
+- Quick Links (Home, Shop,)
+- Customer Service (Contact, FAQ)
+- Social Media Links
+- Newsletter Signup
+
+## Page-Specific Flows
+
+### 1. Home Page (index.html)
+- Hero Section with "Shop Now" CTA
+- New Arrivals Section
+- Customer Testimonials
+- Newsletter Signup Form
+- Contact Form
+- FAQ Section
+
+### 2. Products Page (products.html)
+- Product Listing with Filtering and Sorting Options
+- Category Badges
+- Pagination (if implemented)
+- For superusers: Edit/Delete product options
+
+### 3. Product Detail Page (product_detail.html)
+- Product Image (with zoom option if implemented)
+- Product Information (name, price, category, rating)
+- Size Selection
+- Quantity Selection
+- Add to Bag functionality
+- For superusers: Edit/Delete product options
+
+### 4. Shopping Bag Page (bag.html)
+- List of Items in Bag
+- Update Quantity functionality
+- Remove Item functionality
+- Subtotal for each item
+- Order Total, Delivery Cost, Grand Total
+- "Keep Shopping" and "Secure Checkout" options
+
+### 5. Checkout Page (checkout.html)
+- Order Summary
+- Delivery Information Form
+- Payment Information (Stripe integration)
+- Option to save delivery info to profile (for authenticated users)
+- Complete Order functionality
+
+### 6. Checkout Success Page
+- Order confirmation details
+- Order history
+
+### 7. Profile Page (profile.html)
+- Default Delivery Information Form
+- Order History Table
+
+### 8. Product Management (for superusers)
+- Add Product Form
+- Edit Product Form
+
+## User Interactions
+- Receive and view toast messages for various actions
+- Use of "Back to Top" button on longer pages
+- Responsive design elements (e.g., collapsible navigation on mobile)
+
+## Authentication Flows
+- Registration Process
+- Login Process
+- Password Recovery Process
+
+This comprehensive flow chart now accurately represents the full user experience on your Django Sports Sole website, incorporating all the elements from your provided templates and accounting for various user types and interactions.
