@@ -224,14 +224,7 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 - 3 = Medium complexity (Multiple components, integrations, moderate functionality)
 - 5 = High complexity (Security features, complex integrations, significant development effort)
 
-**Story Points Scale:**
-| Points | Complexity | Description |
-|--------|------------|-------------|
-| 1 | Low | Simple features, basic CRUD operations, straightforward implementations |
-| 3 | Medium | Multiple components, integrations, moderate functionality |
-| 5 | High | Security features, complex integrations, significant development effort |
-
-**##### Shopper Stories:**
+##### Shopper Stories:
 1. View a List of Sneakers - Basic product display functionality (1)
 2. See Detailed Information for Sneakers - Multiple data points and image handling (3)
 3. Quickly Identify Deals and Discounts - Clear display of special offers (3)
@@ -262,7 +255,49 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 22. FAQ Management - Basic content management system (3)
 
 
+**Story Points Scale:**
+| Points | Complexity | Description |
+|--------|------------|-------------|
+| 1 | Low | Simple features, basic CRUD operations, straightforward implementations |
+| 3 | Medium | Multiple components, integrations, moderate functionality |
+| 5 | High | Security features, complex integrations, significant development effort |
 
+**Story Points Scale:**
+| Points | Complexity | Description |
+|--------|------------|-------------|
+| 1 | Low | Simple features, basic CRUD operations, straightforward implementations |
+| 3 | Medium | Multiple components, integrations, moderate functionality |
+| 5 | High | Security features, complex integrations, significant development effort |
+
+**User Stories by Complexity**
+| Complexity | User Story |
+|------------|------------|
+| 1 | #1 View a List of Sneakers - Basic product display functionality |
+| 1 | #4 View the Total Cost of Selected Items - Basic calculation and display |
+| 1 | #6 Log In or Log Out of My Account - Standard authentication functionality |
+| 1 | #11 Sort Sneakers by Category - Basic filtering functionality |
+| 1 | #14 Select Size and Quantity of Sneakers - Basic product selection features |
+| 1 | #17 Newsletter Signup - Simple form and email list management |
+| 1 | #23 Contact Form - Basic form functionality |
+| 1 | #20 Delete Product - Basic deletion with confirmation |
+| 3 | #2 See Detailed Information for Sneakers - Multiple data points and image handling |
+| 3 | #3 Quickly Identify Deals and Discounts - Clear display of special offers |
+| 3 | #5 Register for an Account - Form validation and database integration |
+| 3 | #7 Recover My Password - Email integration and security measures |
+| 3 | #8 Receive an Email Confirmation After Registering - Email service integration |
+| 3 | #10 Sort Sneakers by Price, Rating, or Category - Multiple sorting algorithms |
+| 3 | #13 Filter Products Across Multiple Categories - Multiple filter combinations |
+| 3 | #15 View Final Cost Including Taxes and Shipping - Multiple calculations required |
+| 3 | #26 View and Purchase Discounted Products - Price calculations and display logic |
+| 3 | #21 Client Testimonial Management - Content management functionality |
+| 3 | #22 FAQ Management - Basic content management system |
+| 5 | #9 Have a Personalized User Profile - User data management and display |
+| 5 | #12 Search for Sneakers by Name or Description - Complex search functionality |
+| 5 | #16 Complete My Purchase Securely - Payment integration and security |
+| 5 | #24 Wishlist/Favorites Feature - User-specific data management |
+| 5 | #25 Post-Purchase Product Review System - Complex review system integration |
+| 5 | #18 Add Product - Complex form with image handling |
+| 5 | #19 Edit/Update Product - Similar complexity to adding products |
 
 
 
