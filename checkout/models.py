@@ -8,6 +8,7 @@ from django_countries.fields import CountryField
 
 from products.models import Product
 from profiles.models import UserProfile
+from decimal import Decimal
 
 
 class Order(models.Model):
@@ -95,8 +96,10 @@ class OrderLineItem(models.Model):
         Override the original save method to set the lineitem total
         and update the order total.
         """
-        self.lineitem_total = self.product.price * self.quantity
+        print(f"Product price: {self.product.price}, Quantity: {self.quantity}")
+        self.lineitem_total = Decimal(self.product.price) * self.quantity
         super().save(*args, **kwargs)
+
 
     def __str__(self):
         return f'SKU {self.product.sku} on order {self.order.order_number}'

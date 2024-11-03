@@ -312,7 +312,7 @@ Page | Desktop | Mobile |
 | Product Detail | ![Desktop Product Detail Page image](assets/readme_files/product_detail.png) | ![Mobile Product Detail Page image](assets/readme_files/mobile_product_detail.png) |
 | Bag | ![Desktop User Bag Page image](assets/readme_files/bag.png) | ![Mobile User Bag Page image](assets/readme_files/mobile_bag.png) |
 | Checkout | ![Desktop Checkout Page image](assets/readme_files/checkout.png) | ![Mobile Checkout Page image](assets/readme_files/mobile_checkout.png) |
-| Delete Appointment | ![Desktop Delete Appointment Page image](assets/readme_files/appointment_deleted.png) | ![Mobile Delete Appointment Page image](assets/readme_files/mobile_delete_appointment.png) |
+| Checkout Success | ![Desktop Checkout Success Page image](assets/readme_files/checkout_success.png) | ![Mobile Checkout Success Page image](assets/readme_files/mobile_checkout_success.png) |
 | Sign Up | ![Desktop Sign Up Page image](assets/readme_files/signup.png) | ![Mobile Sign Up Page image](assets/readme_files/mobile_signup.png) |
 | Sign In | ![Desktop Sign In Page image](assets/readme_files/login.png) | ![Mobile Sign In Page image](assets/readme_files/mobile_login.png) |
 | 404 Error | ![Desktop 404 Error Page image](assets/readme_files/desktop_404.png) | ![Mobile 404 Error Page image](assets/readme_files/mobile_404.png) |

@@ -464,3 +464,11 @@ footer a:hover {
         padding: .25rem .5rem !important;
     }   
 }
+
+@media (max-width: 767px) {
+    .wishlist-container {
+        border: none;
+        padding-top: 0;
+        margin-top: 0;
+    }
+}

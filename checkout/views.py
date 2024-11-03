@@ -74,8 +74,15 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in item_data['items_by_size'] \
-                         .items():
+                        for size, item_info in (
+                            item_data['items_by_size']
+                        ).items():
+                            # Check if item_info is a dict and extract quantity
+                            if isinstance(item_info, dict):
+                                quantity = item_info['quantity']
+                            else:
+                                quantity = item_info  # If it's an int
+
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
@@ -85,9 +92,9 @@ def checkout(request):
                             order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "Some products in your bag wasn't found in database. "
-                        "Please call us for assistance!")
-                    )
+                        "Some products in your bag weren't found in database. "
+                        "Please call us for assistance!"
+                    ))
                     order.delete()
                     return redirect(reverse('view_bag'))
 
@@ -97,7 +104,7 @@ def checkout(request):
             )
         else:
             messages.error(request, 'There was an error with your form. '
-                                    'Please double check your information.')
+                                    'Please double-check your information.')
     else:
         bag = request.session.get('bag', {})
         if not bag:
@@ -166,9 +173,9 @@ def checkout_success(request, order_number):
                 'default_country': order.country,
                 'default_postcode': order.postcode,
                 'default_town_or_city': order.town_or_city,
-                'default_street_address1': order.street_address1,
-                'default_street_address2': order.street_address2,
-                'default_county': order.county,
+                'street_address1': order.street_address1,
+                'street_address2': order.street_address2,
+                'county': order.county,
             }
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
