@@ -2,20 +2,104 @@ html {
     height: 100%;
 }
 
+body {
+    background-image: url('https://res.cloudinary.com/dn3hzyiqk/image/upload/v1729024113/sports-pattern_ti84cn.png');
+    background-repeat: repeat;
+    background-size: 30%; 
+    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
 .hero-section {
     background: url('https://res.cloudinary.com/dn3hzyiqk/image/upload/v1728932346/homepage-background-cropped_k71eex.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 50vh; /* Cover half the viewport height */
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-body {
-    background-image: url('https://res.cloudinary.com/dn3hzyiqk/image/upload/v1729024113/sports-pattern_ti84cn.png');
-    background-repeat: repeat;
-    background-size: 30%; 
-    background-color: #f4f4f4; /* Fallback color */
+/* Typography */
+h1, h2, h3, h4, h5, h6, .logo-font {
+    font-family: 'Oswald', sans-serif;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+/* Layout */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1; /* Allows the main content to grow and push the footer down */
+}
+
+/* Buttons */
+.shop-now-button {
+    background: #e6b800;
+    color: black;
+    min-width: 260px;
+}
+
+.btn-black {
+    background: #1a1a1a;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-outline-black {
+    background: white;
+    color: #1a1a1a !important; 
+    border: 1px solid #1a1a1a;
+    border-radius: 5px;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: #ffcc00 !important;
+    color: black !important;
+    border-radius: 5px;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #ffcc00 !important;
+    color: black;
+    border-radius: 5px;
+}
+
+.btn-danger {
+    border-radius: 5px;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.bg-black {
+    background: #000 !important;
+}
+
+.btn-wishlist {
+    background-color: white;
+    color: black;
+    border: 1px solid #d3d3d3;
+    transition: border-color 0.3s;
+}
+
+.btn-wishlist:hover {
+    border-color: #e63946;
 }
 
 /* from Bulma */
@@ -35,61 +119,6 @@ body {
     width: fit-content;
 }
 
-.shop-now-button {
-    background: #e6b800; /* Bold yellow for a standout CTA */
-    color: black;
-    min-width: 260px;
-}
-
-.btn-black {
-    background: #1a1a1a;
-    color: white;
-    border-radius: 0;
-    border-radius: 10px;
-}
-
-.btn-outline-black {
-    background: white;
-    color: #1a1a1a !important; 
-    border: 1px solid #1a1a1a;
-    border-radius: 10px;
-}
-
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
-    background: #ffcc00 !important; /* Vibrant yellow for a pop of color */
-    color: black !important;
-    border-radius: 10px;
-}
-
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #ffcc00 !important; /* Yellow hover for a bold highlight */
-    color: black;
-    border-radius: 10px;
-}
-
-.btn-danger {
-    border-radius: 10px; /* Rounding for the Remove button */
-}
-
-.text-black {
-    color: #000 !important;
-}
-
-.border-black {
-    border: 1px solid black !important;
-}
-
-.bg-black {
-    background: #000 !important;
-}
-
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -101,8 +130,7 @@ body {
 }
 
 a.category-badge > span.badge:hover {
-    background: #ff6600 !important; /* Bright orange for energy */
-    color: #fff !important;
+    background: #ffcc00;
 }
 
 .btt-button {
@@ -111,6 +139,21 @@ a.category-badge > span.badge:hover {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    border: 1px solid #000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btt-button .fa-arrow-up {
+    color: #000;
+}
+
+footer ~ .btt-button .fa-arrow-up {
+    color: #fff;
 }
 
 .btt-link,
@@ -144,18 +187,9 @@ input[name='q']::placeholder {
 .message-container-wishlist {
     position: fixed;
     top: 72px;
-    right: 150px;  /* Adjust as needed for 'My Account' icon */
+    right: 100px;  /* Adjust as needed for 'My Account' icon */
     z-index: 99999999999;
 }
-
-.custom-toast {
-    overflow: visible;
-}
-
-.toast-capper {
-    height: 2px;
-}
-
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
@@ -207,7 +241,6 @@ input[name='q']::placeholder {
     overflow-x: hidden;
     overflow-y: auto;
 }
-
 
 /* -------------------------------- Media Queries */
 
@@ -272,7 +305,6 @@ input[name='q']::placeholder {
 	color: #17a2b8; /* text-info */
 }
 
-
 /* Product Form */
 
 .btn-file {
@@ -328,6 +360,7 @@ input[name='q']::placeholder {
 
 /* Footer Styles */
 footer {
+    margin-top: auto;
     margin-top: 2rem;
 }
 
@@ -338,6 +371,11 @@ footer a:hover {
 .social-icons a {
     font-size: 1.2rem;
     margin-right: 10px;
+}
+
+.custom-discount-price {
+    color: #28A745; 
+    font-weight: bold; 
 }
 
 @media (min-width: 992px) {
@@ -355,6 +393,10 @@ footer a:hover {
 }
 
 @media (max-width: 991px) {
+    .content-wrapper {
+        padding-top: 20px; /* Adjust for more space at the top of main content */
+    }
+
     .header-container {
         padding-top: 116px;
     }
@@ -407,13 +449,13 @@ footer a:hover {
         font-size: .9rem;
     }
 
-    .btn.btn-outline-black.rounded-0,
-    .btn.btn-black.rounded-0 {
+    .btn.btn-outline-black,
+    .btn.btn-black {
         padding: .375rem .375rem;
     }
 
-    .btn.btn-outline-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg {
+    .btn.btn-outline-black.btn-lg,
+    .btn.btn-black.btn-lg {
         padding: .375rem .375rem;
         font-size: .75rem;
     }
@@ -421,4 +463,12 @@ footer a:hover {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }   
+}
+
+@media (max-width: 767px) {
+    .wishlist-container {
+        border: none;
+        padding-top: 0;
+        margin-top: 0;
+    }
 }
