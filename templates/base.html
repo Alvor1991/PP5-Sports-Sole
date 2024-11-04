@@ -139,10 +139,14 @@
     <div class="message-container-wishlist">
         {% for message in messages %}
             {% if 'wishlist' in message.tags %}
-                {% include 'includes/toasts/toast_wishlist.html' %}
+                {% if message.level == 25 %}
+                    {% include 'includes/toasts/toast_wishlist_success.html' %}
+                {% elif message.level == 20 %}
+                    {% include 'includes/toasts/toast_wishlist_info.html' %}
+                {% endif %}
             {% endif %}
         {% endfor %}
-    </div>
+    </div>    
     {% endif %}
 
     <!-- Wrapper for sticky footer with Flexbox -->
