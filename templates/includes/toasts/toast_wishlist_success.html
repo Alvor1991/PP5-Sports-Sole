@@ -8,5 +8,11 @@
     </div>
     <div class="toast-body">
         {{ message }}
+        <a href="{% url 'view_wishlist' %}" class="btn btn-primary btn-block mt-2">
+            <span class="text-uppercase">View Wishlist</span>
+            <span class="icon">
+                <i class="fas fa-heart"></i>
+            </span>
+        </a>
     </div>
 </div>
