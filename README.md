@@ -258,6 +258,8 @@ The typography setup is designed to create a clean, user-friendly reading experi
 
 ### Background Design
 
+![Color scheme image](assets/readme_files/sports-pattern.png)
+
 The background of the Sports Sole website features a subtle sports-themed pattern, with icons representing various sports like basketball, tennis, and football. This design choice reinforces the store’s focus on athletic footwear by creating a visually engaging environment that resonates with sports enthusiasts. The light gray icons blend seamlessly into the background, providing texture without distracting from the main content.
 
 ## Marketing 
