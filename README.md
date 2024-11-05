@@ -2,6 +2,8 @@
 
 Sports Sole is your go-to online platform for high-quality sneakers designed to meet the needs of athletes, casual wearers, and sneaker enthusiasts alike. Whether you're searching for performance running shoes, stylish casual sneakers, or durable basketball shoes, Sports Sole offers a wide selection of top brands and the latest models. At Sports Sole, we’re committed to helping you find the perfect pair for every step.
 
+![Sports Sole image](assets/readme_files/intro.png)
+
 Visit the deployed website [here](https://sports-sole-d03df7b3c157.herokuapp.com/).
 
 ## Table of Contents
@@ -10,17 +12,21 @@ Visit the deployed website [here](https://sports-sole-d03df7b3c157.herokuapp.com
     1. [Strategy](#strategy)
         1. [Project Goals](#project-goals)
         2. [User Stories](#user-stories)
-        3. [Strategy Table](#strategy-table)
-    2. [Scope](#scope)
-        1. [Kanban Board](#kanban-board)
     3. [Structure](#structure)
         1. [Flowchart](#flowchart)
-        3. [Database model](#database-model)
+        2. [Database model](#database-model)
     4. [Skeleton](#skeleton)
         1. [Wireframe](#wireframe)
-    5. [Surface](#surface)
-        1. [Color Scheme](#color-scheme)
+    5. [Agile Development Plan](#agile-development-plan)
+        1. [Epics and User Stories](#epics-and-user-stories)
+        2. [MoSCoW Prioritization and User Stories](#moscow-prioritization-and-user-stories)
+        3. [Difficulty Level and User Stories](#difficulty-level-and-user-stories)
+        4. [Sprint Planning and User Stories](#sprint-planning-and-user-stories)
+        5. [Kanban board](#kanban-board)
+    6. [Surface](#surface)
+        1. [Colour Scheme](#colour-scheme)
         2. [Typography](#typography)
+        3. [Background Design](#background-design)
 2. [Features](#features)
     1. [General](#general)
     2. [Home Page](#home-page)
@@ -49,7 +55,7 @@ Visit the deployed website [here](https://sports-sole-d03df7b3c157.herokuapp.com
 
 ### Strategy
 
-#### Site Owner Goals
+#### Project Goals
 
 - Provide a professional and trustworthy e-commerce platform.
 - Build and maintain a loyal customer base.
@@ -97,8 +103,6 @@ The website is organized using a [Mermaid](https://mermaid.js.org/) Flowchart to
 
 ![Sorts Sole website map](assets/readme_files/flowchart.png)
 
-##### User Flow
-
 #### Database Model
 
 The database model was designed using [drawsql](https://drawsql.app/) and is managed with [PostgreSQL](https://www.postgresql.org/), a relational database.
@@ -123,9 +127,9 @@ Checkout | ![View Appointments wireframe image](assets/wireframes/checkout.png) 
 My profile | ![View Appointments wireframe image](assets/wireframes/profile.png) | ![Mobile View Appointments wireframe image](assets/wireframes/profile_mobile.png)
 Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_product.png) | ![Mobile View Appointments wireframe image](assets/wireframes/add_product_mobile.png)
 
-## Agile Development Plan
+### Agile Development Plan
 
-### Epics and User Stories
+#### Epics and User Stories
 
 | Epic ID | Epic Name | User Stories |
 |---------|-----------|--------------|
@@ -137,8 +141,7 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 | E6 | Admin and Store Management | 21. Add Product (#18)<br>22. Edit/Update Product (#19)<br>23. Delete Product (#20) |
 | E7 | Future Enhancements | 25. Post-Purchase Product Review System (#25) |
 
-
-### MoSCoW Prioritization and User Stories
+#### MoSCoW Prioritization and User Stories
 
 | Priority | User Stories |
 |-------------|-------------------------------------------------------------------------------------------------------|
@@ -147,7 +150,7 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 | Could Have | 1. Quickly Identify Deals and Discounts (#3)<br>2. Sort Sneakers by Price, Rating, or Category (#10)<br>3. Sort Sneakers by Category (#11)<br>4. Filter Products Across Multiple Categories (#13)<br>5. Newsletter Signup (#17)<br>6. Client Testimonial Management (#21)<br>7. FAQ Management (#22)<br>8. Contact Form (#23)<br>9. Wishlist/Favorites feature (#24)<br>10. View and Purchase Discounted Products (#26) |
 | Won't Have | 1. Post-Purchase Product Review System (#25) |
 
-### Difficulty Level and User Stories
+#### Difficulty Level and User Stories
 
 **Fibonacci sequence Key:**
 - 1 = Low complexity (Simple features, basic CRUD operations, straightforward implementations)
@@ -183,7 +186,7 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 | 5 | #18 Add Product - Complex form with image handling |
 | 5 | #19 Edit/Update Product - Similar complexity to adding products |
 
-### Sprint Planning and User Stories
+#### Sprint Planning and User Stories
 
 | Sprint     | Duration   | User Stories                        | Milestone                                               |
 |------------|------------|-------------------------------------|---------------------------------------------------------|
@@ -194,7 +197,7 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 | Sprint 5   | 2 weeks | #10, #11, #12, #13, #3, #26            | Implemented search, sorting, and special offers features |
 | Sprint 6   | 2 weeks    | #17, #21, #22, #23, #24             | Implement marketing features, wishlist functionality, bug fixes, and final testing |
 
-### Kanban board
+#### Kanban board
 
 **Sprint 1 - Basic Product Viewing and User**
 
@@ -258,7 +261,7 @@ The typography setup is designed to create a clean, user-friendly reading experi
 
 ### Background Design
 
-![Color scheme image](assets/readme_files/sports-pattern.png)
+![Background design image](assets/readme_files/sports-pattern.png)
 
 The background of the Sports Sole website features a subtle sports-themed pattern, with icons representing various sports like basketball, tennis, and football. This design choice reinforces the store’s focus on athletic footwear by creating a visually engaging environment that resonates with sports enthusiasts. The light gray icons blend seamlessly into the background, providing texture without distracting from the main content.
 
