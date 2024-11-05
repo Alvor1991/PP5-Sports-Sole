@@ -147,17 +147,6 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 | Could Have | 1. Quickly Identify Deals and Discounts (#3)<br>2. Sort Sneakers by Price, Rating, or Category (#10)<br>3. Sort Sneakers by Category (#11)<br>4. Filter Products Across Multiple Categories (#13)<br>5. Newsletter Signup (#17)<br>6. Client Testimonial Management (#21)<br>7. FAQ Management (#22)<br>8. Contact Form (#23)<br>9. Wishlist/Favorites feature (#24)<br>10. View and Purchase Discounted Products (#26) |
 | Won't Have | 1. Post-Purchase Product Review System (#25) |
 
-### Sprint Planning and User Stories
-
-| Sprint     | Duration   | User Stories                        | Milestone                                               |
-|------------|------------|-------------------------------------|---------------------------------------------------------|
-| Sprint 1   | 2 weeks    | #1, #2, #5, #6                      | Basic product catalog and user account functionality     |
-| Sprint 2   | 2 weeks    | #18, #19, #20, #7, #8, #9           | Admin product management and enhanced user account features |
-| Sprint 3   | 2 weeks    | #4, #14, #15                        | Functional shopping bag and initial checkout process     |
-| Sprint 4   | 2 weeks    | #16                                 | Secure checkout process completion                      |
-| Sprint 5   | 2 weeks | #10, #11, #12, #13, #3, #26            | Implemented search, sorting, and special offers features |
-| Sprint 6   | 2 weeks    | #17, #21, #22, #23, #24             | Implement marketing features, wishlist functionality, bug fixes, and final testing |
-
 ### Difficulty Level and User Stories
 
 **Fibonacci sequence Key:**
@@ -194,6 +183,17 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 | 5 | #18 Add Product - Complex form with image handling |
 | 5 | #19 Edit/Update Product - Similar complexity to adding products |
 
+### Sprint Planning and User Stories
+
+| Sprint     | Duration   | User Stories                        | Milestone                                               |
+|------------|------------|-------------------------------------|---------------------------------------------------------|
+| Sprint 1   | 2 weeks    | #1, #2, #5, #6                      | Basic product catalog and user account functionality     |
+| Sprint 2   | 2 weeks    | #18, #19, #20, #7, #8, #9           | Admin product management and enhanced user account features |
+| Sprint 3   | 2 weeks    | #4, #14, #15                        | Functional shopping bag and initial checkout process     |
+| Sprint 4   | 2 weeks    | #16                                 | Secure checkout process completion                      |
+| Sprint 5   | 2 weeks | #10, #11, #12, #13, #3, #26            | Implemented search, sorting, and special offers features |
+| Sprint 6   | 2 weeks    | #17, #21, #22, #23, #24             | Implement marketing features, wishlist functionality, bug fixes, and final testing |
+
 ### Kanban board
 
 **Sprint 1 - Basic Product Viewing and User**
@@ -224,6 +224,31 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 
 ### Search Engine Optimisation 
 
+## Search Engine Optimization (SEO)
+
+To improve the search index rating on Google, keyword research was conducted using tools like Wordtracker. Popular search terms related to the product categories were identified, such as:
+
+- sports shoes
+- sneakers 
+- running shoes
+- basketball shoes
+- training shoes
+- gym shoes
+- casual sneakers
+
+These keywords were then incorporated into the website's meta tags, including the `<meta name="keywords">` and the page `<title>` tags. 
+
+The selected keywords will be continuously monitored using Google Analytics to determine which terms are driving the most traffic to the site. The keyword strategy will be iteratively refined over time, adding or removing terms as needed, to optimize the site's visibility in search engine results.
+
+Alongside the keyword optimization, other SEO best practices have been implemented, including:
+
+- Proper use of heading tags (`<h1>`, `<h2>`, etc.) to structure content.
+- Optimized alt text for all images.
+- Schema.org structured data markup on product pages.
+- Sitemap and robots.txt configuration.
+- Ongoing monitoring and optimization of site performance and content.
+
+This SEO-focused approach aims to continuously improve the website's search engine rankings and drive more qualified traffic to the Sports Sole e-commerce platform.
 
 ### Business Model
 
