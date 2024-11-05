@@ -127,6 +127,8 @@ Checkout | ![View Appointments wireframe image](assets/wireframes/checkout.png) 
 My profile | ![View Appointments wireframe image](assets/wireframes/profile.png) | ![Mobile View Appointments wireframe image](assets/wireframes/profile_mobile.png)
 Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_product.png) | ![Mobile View Appointments wireframe image](assets/wireframes/add_product_mobile.png)
 
+[Back to top ⇧](#sports-sole)
+
 ### Agile Development Plan
 
 #### Epics and User Stories
@@ -223,6 +225,8 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 
 <img src="assets/readme_files/sprint6.png" alt="User Stories Progress - Sprint 6">
 
+[Back to top ⇧](#sports-sole)
+
 ## Surface 
 
 ### Colour Scheme
@@ -246,7 +250,7 @@ The color scheme combines a professional foundation with vibrant accents. Black 
 - **Accent Green (#28A745) for Discounts**:  
   Green is reserved for discount prices, adding a subtle but clear indicator of value on product listings. It’s a color associated with savings, signaling promotions effectively to potential customers.
 
-### Colour Scheme
+### Typography
 
 The typography setup is designed to create a clean, user-friendly reading experience that aligns with the energetic and professional tone of the Sports Sole brand.
 
@@ -261,9 +265,9 @@ The typography setup is designed to create a clean, user-friendly reading experi
 
 ### Background Design
 
-![Background design image](assets/readme_files/sports-pattern.png)
-
 The background of the Sports Sole website features a subtle sports-themed pattern, with icons representing various sports like basketball, tennis, and football. This design choice reinforces the store’s focus on athletic footwear by creating a visually engaging environment that resonates with sports enthusiasts. The light gray icons blend seamlessly into the background, providing texture without distracting from the main content.
+
+[Back to top ⇧](#sports-sole)
 
 ## Marketing 
 
@@ -371,22 +375,11 @@ The site operates on a B2C model where:
 See the live Facebook Business page [here](https://www.facebook.com/profile.php?id=61567026901922).
 ![Sports Sole Facebook Business page image](assets/readme_files/facebook.png)
 
-Page | Desktop | Mobile |
---- | --- | --- |
-| Nav Bar | ![Nav image](assets/readme_files/nav.png) | ![Nav image](assets/readme_files/mobile_nav.png) |
-| Home (1)  | ![Desktop Home 1 image](assets/readme_files/home1.png) | ![Mobile Home 1 Page image](assets/readme_files/mobile_home1.png) |
-| Home (2) | ![Desktop Home 2 image](assets/readme_files/home2.png) | ![Mobile Home 2 Page image](assets/readme_files/mobile_home2.png) |
-| Products | ![Desktop Products Page image](assets/readme_files/products.png) | ![Mobile Products Page image](assets/readme_files/mobile_products.png) |
-| Product Detail | ![Desktop Product Detail Page image](assets/readme_files/product_detail.png) | ![Mobile Product Detail Page image](assets/readme_files/mobile_product_detail.png) |
-| Bag | ![Desktop User Bag Page image](assets/readme_files/bag.png) | ![Mobile User Bag Page image](assets/readme_files/mobile_bag.png) |
-| Checkout | ![Desktop Checkout Page image](assets/readme_files/checkout.png) | ![Mobile Checkout Page image](assets/readme_files/mobile_checkout.png) |
-| Checkout Success | ![Desktop Checkout Success Page image](assets/readme_files/checkout_success.png) | ![Mobile Checkout Success Page image](assets/readme_files/mobile_checkout_success.png) |
-| My Profile | ![Desktop My Profile Page image](assets/readme_files/profile.png) | ![Mobile My Profile Page image](assets/readme_files/mobile_profile.png) |
-| Admin Add Product | ![Desktop Admin Add Product Page image](assets/readme_files/admin_product.png) | ![Mobile Admin Add Product Page image](assets/readme_files/mobile_admin_product.png) |
-| Admin Edit Product | ![Desktop Admin Edit Product Page image](assets/readme_files/edit_product.png) | ![Mobile Admin Edit Product Page image](assets/readme_files/mobile_edit_product.png) |
-| Sign Up | ![Desktop Sign Up Page image](assets/readme_files/signup.png) | ![Mobile Sign Up Page image](assets/readme_files/mobile_signup.png) |
-| Sign In | ![Desktop Sign In Page image](assets/readme_files/signin.png) | ![Mobile Sign In Page image](assets/readme_files/mobile_signin.png) |
-| 404 Error | ![Desktop 404 Error Page image](assets/readme_files/desktop_404.png) | ![Mobile 404 Error Page image](assets/readme_files/mobile_404.png) |
+[Back to top ⇧](#sports-sole)
+
+## Features
+
+
 
 ## Technologies Used
 
@@ -430,7 +423,7 @@ Page | Desktop | Mobile |
 
 * [Heroku Postgres](https://www.heroku.com/postgres) - was used in production, as a service based on PostgreSQL provided by Heroku.
 
-[Back to top ⇧](#sports-therapy)
+[Back to top ⇧](#sports-sole)
 
 ### Tools and Programs
 
@@ -451,7 +444,7 @@ Page | Desktop | Mobile |
 
 The testing documentation can be found [here](https://github.com/Alvor1991/PP4-SportsTherapy/blob/main/TESTING.md).
 
-[Back to top ⇧](#sports-therapy)
+[Back to top ⇧](#sports-sole)
 
 ## Deployment
 
@@ -525,121 +518,53 @@ git clone https://github.com/Alvor1991/PP4-SportsTherapy
 
 Further reading and troubleshooting on cloning a repository from GitHub [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
+[Back to top ⇧](#sports-sole)
 
+## Finished Product
+
+Page | Desktop | Mobile |
+--- | --- | --- |
+| Nav Bar | ![Nav image](assets/readme_files/nav.png) | ![Nav image](assets/readme_files/mobile_nav.png) |
+| Home (1)  | ![Desktop Home 1 image](assets/readme_files/home1.png) | ![Mobile Home 1 Page image](assets/readme_files/mobile_home1.png) |
+| Home (2) | ![Desktop Home 2 image](assets/readme_files/home2.png) | ![Mobile Home 2 Page image](assets/readme_files/mobile_home2.png) |
+| Products | ![Desktop Products Page image](assets/readme_files/products.png) | ![Mobile Products Page image](assets/readme_files/mobile_products.png) |
+| Product Detail | ![Desktop Product Detail Page image](assets/readme_files/product_detail.png) | ![Mobile Product Detail Page image](assets/readme_files/mobile_product_detail.png) |
+| Bag | ![Desktop User Bag Page image](assets/readme_files/bag.png) | ![Mobile User Bag Page image](assets/readme_files/mobile_bag.png) |
+| Checkout | ![Desktop Checkout Page image](assets/readme_files/checkout.png) | ![Mobile Checkout Page image](assets/readme_files/mobile_checkout.png) |
+| Checkout Success | ![Desktop Checkout Success Page image](assets/readme_files/checkout_success.png) | ![Mobile Checkout Success Page image](assets/readme_files/mobile_checkout_success.png) |
+| My Profile | ![Desktop My Profile Page image](assets/readme_files/profile.png) | ![Mobile My Profile Page image](assets/readme_files/mobile_profile.png) |
+| Admin Add Product | ![Desktop Admin Add Product Page image](assets/readme_files/admin_product.png) | ![Mobile Admin Add Product Page image](assets/readme_files/mobile_admin_product.png) |
+| Admin Edit Product | ![Desktop Admin Edit Product Page image](assets/readme_files/edit_product.png) | ![Mobile Admin Edit Product Page image](assets/readme_files/mobile_edit_product.png) |
+| Sign Up | ![Desktop Sign Up Page image](assets/readme_files/signup.png) | ![Mobile Sign Up Page image](assets/readme_files/mobile_signup.png) |
+| Sign In | ![Desktop Sign In Page image](assets/readme_files/signin.png) | ![Mobile Sign In Page image](assets/readme_files/mobile_signin.png) |
+| 404 Error | ![Desktop 404 Error Page image](assets/readme_files/desktop_404.png) | ![Mobile 404 Error Page image](assets/readme_files/mobile_404.png) |
+
+## Credits
+
+### Code
+
+* General structure of product pages and base HTML code were taken from Code Institute's Boutique Ado project.
+
+* All other content was written by the developer.
+
+### Media
+
+[Kaggle](https://www.kaggle.com/)
+
+* Product images were taken from a [Kaggle dataset](https://www.kaggle.com/datasets/aryashah2k/large-shoe-dataset-ut-zappos50k).
+
+[Pexels](https://www.pexels.com/)
+
+* Home Page image was taken by [Mnz](https://www.pexels.com/@mnzoutfits/).
+
+[Canva](https://www.canva.com/)
+
+* Facebook profile image was created using Canva.
+
+## Known Bugs
 
 [Back to top ⇧](#sports-sole)
 
+## Acknowledgements
 
-
-
-
-
-
-## Persistent Elements (Available on All Pages)
-
-### Header
-- Logo (links to Home)
-- Search Bar
-- My Account Dropdown
-  - For non-authenticated users:
-    -> Register
-    -> Login
-  - For authenticated users:
-    -> My Profile
-    -> Logout
-  - For superusers:
-    -> Product Management
-- Shopping Bag (with total amount)
-- Free Delivery Threshold Banner
-
-### Main Navigation
-- Home
-- All Products
-  -> By Price
-  -> By Rating
-  -> By Category
-  -> All Products
-- Women's
-  -> Running Shoes
-  -> Training and Gym Shoes
-  -> Basketball Shoes
-  -> Casual Sneakers
-  -> All Women's Sneakers
-- Men's
-  -> Running Shoes
-  -> Training and Gym Shoes
-  -> Basketball Shoes
-  -> Casual Sneakers
-  -> All Men's Sneakers
-- Special Offers
-  -> New Arrivals
-  -> Clearance
-
-### Footer
-- Quick Links (Home, Shop,)
-- Customer Service (Contact, FAQ)
-- Social Media Links
-- Newsletter Signup
-
-## Page-Specific Flows
-
-### 1. Home Page (index.html)
-- Hero Section with "Shop Now" CTA
-- New Arrivals Section
-- Customer Testimonials
-- Newsletter Signup Form
-- Contact Form
-- FAQ Section
-
-### 2. Products Page (products.html)
-- Product Listing with Filtering and Sorting Options
-- Category Badges
-- Pagination (if implemented)
-- For superusers: Edit/Delete product options
-
-### 3. Product Detail Page (product_detail.html)
-- Product Image (with zoom option if implemented)
-- Product Information (name, price, category, rating)
-- Size Selection
-- Quantity Selection
-- Add to Bag functionality
-- For superusers: Edit/Delete product options
-
-### 4. Shopping Bag Page (bag.html)
-- List of Items in Bag
-- Update Quantity functionality
-- Remove Item functionality
-- Subtotal for each item
-- Order Total, Delivery Cost, Grand Total
-- "Keep Shopping" and "Secure Checkout" options
-
-### 5. Checkout Page (checkout.html)
-- Order Summary
-- Delivery Information Form
-- Payment Information (Stripe integration)
-- Option to save delivery info to profile (for authenticated users)
-- Complete Order functionality
-
-### 6. Checkout Success Page
-- Order confirmation details
-- Order history
-
-### 7. Profile Page (profile.html)
-- Default Delivery Information Form
-- Order History Table
-
-### 8. Product Management (for superusers)
-- Add Product Form
-- Edit Product Form
-
-## User Interactions
-- Receive and view toast messages for various actions
-- Use of "Back to Top" button on longer pages
-- Responsive design elements (e.g., collapsible navigation on mobile)
-
-## Authentication Flows
-- Registration Process
-- Login Process
-- Password Recovery Process
-
-This comprehensive flow chart now accurately represents the full user experience on your Django Sports Sole website, incorporating all the elements from your provided templates and accounting for various user types and interactions.
+[Back to top ⇧](#sports-sole)

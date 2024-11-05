@@ -37,13 +37,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '8000-alvor1991-pp5-m2hkfsjl009.ws.codeinstitute-ide.net',
     '.herokuapp.com'
 ]
-
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeinstitute-ide.net",
@@ -152,10 +151,8 @@ else:
         }
     }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
-
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -196,7 +193,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
