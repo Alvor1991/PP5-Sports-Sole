@@ -242,6 +242,10 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+.order-history {
+    border: none; /* Remove any border if it exists */
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

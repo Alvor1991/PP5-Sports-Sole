@@ -313,6 +313,9 @@ Page | Desktop | Mobile |
 | Bag | ![Desktop User Bag Page image](assets/readme_files/bag.png) | ![Mobile User Bag Page image](assets/readme_files/mobile_bag.png) |
 | Checkout | ![Desktop Checkout Page image](assets/readme_files/checkout.png) | ![Mobile Checkout Page image](assets/readme_files/mobile_checkout.png) |
 | Checkout Success | ![Desktop Checkout Success Page image](assets/readme_files/checkout_success.png) | ![Mobile Checkout Success Page image](assets/readme_files/mobile_checkout_success.png) |
+| My Profile | ![Desktop My Profile Page image](assets/readme_files/profile.png) | ![Mobile My Profile Page image](assets/readme_files/mobile_profile.png) |
+| Admin Add Product | ![Desktop Admin Add Product Page image](assets/readme_files/admin_product.png) | ![Mobile Admin Add Product Page image](assets/readme_files/mobile_admin_product.png) |
+| Admin Edit Product | ![Desktop Admin Edit Product Page image](assets/readme_files/edit_product.png) | ![Mobile Admin Edit Product Page image](assets/readme_files/mobile_edit_product.png) |
 | Sign Up | ![Desktop Sign Up Page image](assets/readme_files/signup.png) | ![Mobile Sign Up Page image](assets/readme_files/mobile_signup.png) |
 | Sign In | ![Desktop Sign In Page image](assets/readme_files/login.png) | ![Mobile Sign In Page image](assets/readme_files/mobile_login.png) |
 | 404 Error | ![Desktop 404 Error Page image](assets/readme_files/desktop_404.png) | ![Mobile 404 Error Page image](assets/readme_files/mobile_404.png) |
