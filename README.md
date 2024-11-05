@@ -95,12 +95,6 @@ Visit the deployed website [here](https://sports-sole-d03df7b3c157.herokuapp.com
 
 ### Structure
 
-#### Flowchart
-
-The website is organized using a [Mermaid](https://mermaid.js.org/) Flowchart to illustrate the user journey and interactions, ensuring intuitive navigation and a seamless user experience. The chart outlines the interactions available to both logged-in and logged-out users, illustrating how they navigate through the site's features.
-
-![Sorts Sole website map](assets/readme_files/flowchart.png)
-
 #### Database Model
 
 The database model was designed using [drawsql](https://drawsql.app/) and is managed with [PostgreSQL](https://www.postgresql.org/), a relational database.
