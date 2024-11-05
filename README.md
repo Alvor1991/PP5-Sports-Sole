@@ -17,37 +17,35 @@ Visit the deployed website [here](https://sports-sole-d03df7b3c157.herokuapp.com
         2. [Database model](#database-model)
     4. [Skeleton](#skeleton)
         1. [Wireframe](#wireframe)
-    5. [Agile Development Plan](#agile-development-plan)
-        1. [Epics and User Stories](#epics-and-user-stories)
-        2. [MoSCoW Prioritization and User Stories](#moscow-prioritization-and-user-stories)
-        3. [Difficulty Level and User Stories](#difficulty-level-and-user-stories)
-        4. [Sprint Planning and User Stories](#sprint-planning-and-user-stories)
-        5. [Kanban board](#kanban-board)
-    6. [Surface](#surface)
-        1. [Colour Scheme](#colour-scheme)
-        2. [Typography](#typography)
-        3. [Background Design](#background-design)
-2. [Features](#features)
-    1. [General](#general)
-    2. [Home Page](#home-page)
-    3. [About Page](#about-page)
-    4. [Treatments](#treatments)
-    5. [My Appointments](#my-appointments)
-    6. [Error Handling](#user-profile)
-    7. [Authentication Pages](#authentication-pages)
-3. [Technologies Used](#technologies-used)
+2. [Agile Development Plan](#agile-development-plan)
+    1. [Epics and User Stories](#epics-and-user-stories)
+    2. [MoSCoW Prioritization and User Stories](#moscow-prioritization-and-user-stories)
+    3. [Difficulty Level and User Stories](#difficulty-level-and-user-stories)
+    4. [Sprint Planning and User Stories](#sprint-planning-and-user-stories)
+    5. [Kanban board](#kanban-board)
+3. [Surface](#surface)
+    1. [Colour Scheme](#colour-scheme)
+    2. [Typography](#typography)
+    3. [Background Design](#background-design)
+3. [Marketing](#marketing)
+    1. [Marketing Strategy](#colour-scheme)
+    2. [Business Model](#typography)
+        1. [Target Audience](#flowchart)
+        2. [SWOT Analysis](#database-model)
+    3. [Seach Engine Optimization](#background-design)
+4. [Technologies Used](#technologies-used)
     1. [Languages Used](#languages-used)
     2. [Libraries and Frameworks](#libraries-and-frameworks)
     3. [Packages / Dependencies Installed](#packages--dependencies-installed)
     4. [Database Management](#database-management)
     5. [Tools and Programs](#tools-and-programs)
-4. [Testing](#testing)
-    1. [Go to TESTING.md](https://github.com/Alvor1991/PP4-SportsTherapy/blob/main/TESTING.md)
-5. [Deployment](#deployment)
-6. [Finished Product](#finished-product)
-7. [Credits](#credits)
-8. [Known Bugs](#known-bugs)
-9. [Acknowledgements](#acknowledgements)
+5. [Testing](#testing)
+    1. [Go to TESTING.md](https://github.com/Alvor1991/PP5-Sports-Sole/blob/main/TESTING.md)
+6. [Deployment](#deployment)
+7. [Finished Product](#finished-product)
+8. [Credits](#credits)
+9. [Known Bugs](#known-bugs)
+10. [Acknowledgements](#acknowledgements)
 
 ***
 
@@ -129,9 +127,9 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 
 [Back to top ⇧](#sports-sole)
 
-### Agile Development Plan
+## Agile Development Plan
 
-#### Epics and User Stories
+### Epics and User Stories
 
 | Epic ID | Epic Name | User Stories |
 |---------|-----------|--------------|
@@ -143,7 +141,7 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 | E6 | Admin and Store Management | 21. Add Product (#18)<br>22. Edit/Update Product (#19)<br>23. Delete Product (#20) |
 | E7 | Future Enhancements | 25. Post-Purchase Product Review System (#25) |
 
-#### MoSCoW Prioritization and User Stories
+### MoSCoW Prioritization and User Stories
 
 | Priority | User Stories |
 |-------------|-------------------------------------------------------------------------------------------------------|
@@ -152,7 +150,7 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 | Could Have | 1. Quickly Identify Deals and Discounts (#3)<br>2. Sort Sneakers by Price, Rating, or Category (#10)<br>3. Sort Sneakers by Category (#11)<br>4. Filter Products Across Multiple Categories (#13)<br>5. Newsletter Signup (#17)<br>6. Client Testimonial Management (#21)<br>7. FAQ Management (#22)<br>8. Contact Form (#23)<br>9. Wishlist/Favorites feature (#24)<br>10. View and Purchase Discounted Products (#26) |
 | Won't Have | 1. Post-Purchase Product Review System (#25) |
 
-#### Difficulty Level and User Stories
+### Difficulty Level and User Stories
 
 **Fibonacci sequence Key:**
 - 1 = Low complexity (Simple features, basic CRUD operations, straightforward implementations)
@@ -188,7 +186,7 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 | 5 | #18 Add Product - Complex form with image handling |
 | 5 | #19 Edit/Update Product - Similar complexity to adding products |
 
-#### Sprint Planning and User Stories
+### Sprint Planning and User Stories
 
 | Sprint     | Duration   | User Stories                        | Milestone                                               |
 |------------|------------|-------------------------------------|---------------------------------------------------------|
@@ -199,7 +197,7 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 | Sprint 5   | 2 weeks | #10, #11, #12, #13, #3, #26            | Implemented search, sorting, and special offers features |
 | Sprint 6   | 2 weeks    | #17, #21, #22, #23, #24             | Implement marketing features, wishlist functionality, bug fixes, and final testing |
 
-#### Kanban board
+### Kanban board
 
 **Sprint 1 - Basic Product Viewing and User**
 
@@ -255,13 +253,13 @@ The color scheme combines a professional foundation with vibrant accents. Black 
 The typography setup is designed to create a clean, user-friendly reading experience that aligns with the energetic and professional tone of the Sports Sole brand.
 
 - **Primary Font - Poppins:**
-  - **Usage:** Applied to body text and general content, providing a modern and approachable look that complements the website’s active and stylish theme.
+  Applied to body text and general content, providing a modern and approachable look that complements the website’s active and stylish theme.
 
 - **Secondary Font - Oswald:**
-  - **Usage:** Used for all headings, establishing a strong visual hierarchy with a bold, professional appearance that enhances readability and brand presence.
+  Used for all headings, establishing a strong visual hierarchy with a bold, professional appearance that enhances readability and brand presence.
 
 - **Accent Font - Oswald and Poppins Combination:**
-  - **Usage:** Employed for logo and key brand elements, creating a cohesive, recognizable look that ties together different sections and emphasizes brand identity.
+  Employed for logo and key brand elements, creating a cohesive, recognizable look that ties together different sections and emphasizes brand identity.
 
 ### Background Design
 
@@ -270,6 +268,30 @@ The background of the Sports Sole website features a subtle sports-themed patter
 [Back to top ⇧](#sports-sole)
 
 ## Marketing 
+
+### Marketing Strategy
+
+##### Email Marketing
+- Newsletter subscription feature to build customer database
+- Keep customers informed about new products and offers
+
+##### Customer Engagement
+- Customer testimonials to build trust
+- FAQ section to provide immediate answers to common queries
+- Contact form for customer support
+
+##### User Experience
+- Easy navigation through product categories
+- Detailed product information and images
+- Secure user accounts and checkout process
+- Order history and profile management
+- Wish list for favourite products 
+
+##### Facebook Business page
+
+See the live Facebook Business page [here](https://www.facebook.com/profile.php?id=61567026901922).
+
+![Sports Sole Facebook Business page image](assets/readme_files/facebook.png)
 
 ### Search Engine Optimization (SEO) 
 
@@ -322,14 +344,12 @@ The site operates on a B2C model where:
 - Clear product categorization (Men's/Women's)
 - Detailed product information and imagery
 - Newsletter subscription for customer engagement
-- Responsive design accessible on all devices
 
 ##### Weaknesses
 - New brand in a competitive market
 - Limited product range (only footwear)
 - No physical store presence
 - Limited customer reviews and ratings
-- No loyalty program currently implemented
 - Dependency on third-party payment systems
 - Limited social proof as a new business
 
@@ -341,7 +361,6 @@ The site operates on a B2C model where:
 - Seasonal sales and promotions
 - Customer data collection through newsletter signups
 - Integration of customer reviews system
-- Mobile commerce growth
 
 ##### Threats
 - Established competitors (Nike, Adidas, etc.)
@@ -352,34 +371,7 @@ The site operates on a B2C model where:
 - Cybersecurity risks
 - Changes in e-commerce regulations
 
-### Marketing Strategy
-
-1. ##### Email Marketing
-   - Newsletter subscription feature to build customer database
-   - Keep customers informed about new products and offers
-
-2. ##### Customer Engagement
-   - Customer testimonials to build trust
-   - FAQ section to provide immediate answers to common queries
-   - Contact form for customer support
-
-3. ##### User Experience
-   - Easy navigation through product categories
-   - Detailed product information and images
-   - Secure user accounts and checkout process
-   - Order history and profile management
-   - Wish list for favourite products 
-
-**Facebook Business page**
-
-See the live Facebook Business page [here](https://www.facebook.com/profile.php?id=61567026901922).
-![Sports Sole Facebook Business page image](assets/readme_files/facebook.png)
-
 [Back to top ⇧](#sports-sole)
-
-## Features
-
-
 
 ## Technologies Used
 
@@ -442,7 +434,7 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 ## Testing
 
-The testing documentation can be found [here](https://github.com/Alvor1991/PP4-SportsTherapy/blob/main/TESTING.md).
+The testing documentation can be found [here](https://github.com/Alvor1991/PP5-Sports-Sole/blob/main/TESTING.md).
 
 [Back to top ⇧](#sports-sole)
 
@@ -489,7 +481,7 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
 1. Log into [GitHub](https://github.com/login) or [create an account](https://github.com/join).
-2. Locate the [GitHub Repository](https://github.com/Alvor1991/PP4-SportsTherapy).
+2. Locate the [GitHub Repository](https://github.com/Alvor1991/PP5-Sports-Sole).
 3. At the top of the repository, on the right side of the page, select "Fork"
 4. You should now have a copy of the original repository in your GitHub account.
 
@@ -498,21 +490,21 @@ How to run this project locally:
 1. Install the [GitPod Browser](https://www.gitpod.io/docs/browser-extension/ "Link to Gitpod Browser extension download") Extension for Chrome.
 2. After installation, restart the browser.
 3. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
-2. Locate the [GitHub Repository](https://github.com/Alvor1991/PP4-SportsTherapy).
+2. Locate the [GitHub Repository](https://github.com/Alvor1991/PP5-Sports-Sole).
 5. Click the green "GitPod" button in the top right corner of the repository.
 This will trigger a new gitPod workspace to be created from the code in github where you can work locally.
 
 How to run this project within a local IDE, such as VSCode:
 
 1. Log into [GitHub](https://github.com/login) or [create an account](https://github.com/join).
-2. Locate the [GitHub Repository](https://github.com/Alvor1991/PP4-SportsTherapy).
+2. Locate the [GitHub Repository](https://github.com/Alvor1991/PP5-Sports-Sole).
 3. Under the repository name, click "Clone or download".
 4. In the Clone with HTTPs section, copy the clone URL for the repository.
 5. In your local IDE open the terminal.
 6. Change the current working directory to the location where you want the cloned directory to be made.
 7. Type 'git clone', and then paste the URL you copied in Step 3.
 ```
-git clone https://github.com/Alvor1991/PP4-SportsTherapy
+git clone https://github.com/Alvor1991/PP5-Sports-Sole
 ```
 8. Press Enter. Your local clone will be created.
 
@@ -537,7 +529,7 @@ Page | Desktop | Mobile |
 | Admin Edit Product | ![Desktop Admin Edit Product Page image](assets/readme_files/edit_product.png) | ![Mobile Admin Edit Product Page image](assets/readme_files/mobile_edit_product.png) |
 | Sign Up | ![Desktop Sign Up Page image](assets/readme_files/signup.png) | ![Mobile Sign Up Page image](assets/readme_files/mobile_signup.png) |
 | Sign In | ![Desktop Sign In Page image](assets/readme_files/signin.png) | ![Mobile Sign In Page image](assets/readme_files/mobile_signin.png) |
-| 404 Error | ![Desktop 404 Error Page image](assets/readme_files/desktop_404.png) | ![Mobile 404 Error Page image](assets/readme_files/mobile_404.png) |
+| 404 Error | ![Desktop 404 Error Page image](assets/readme_files/404.png) | ![Mobile 404 Error Page image](assets/readme_files/mobile_404.png) |
 
 ## Credits
 
