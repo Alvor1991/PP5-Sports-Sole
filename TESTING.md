@@ -302,7 +302,6 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
 
 #### Base HTML Features
 
-<h4>Base HTML Features</h4>
 <table>
     <tr>
         <th>Feature</th>
@@ -366,7 +365,6 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
 
 #### Home Page Features
 
-<h4>Home Page Features</h4>
 <table>
     <tr>
         <th>Feature</th>
@@ -412,7 +410,8 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
     </tr>
 </table>
 
-<h4>Products Page</h4>
+#### Products Page
+
 <table>
     <tr>
         <th>Feature</th>
@@ -440,7 +439,8 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
     </tr>
 </table>
 
-<h4>Product Detail Page</h4>
+#### Product Detail Page
+
 <table>
     <tr>
         <th>Feature</th>
@@ -478,7 +478,8 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
     </tr>
 </table>
 
-<h4>Profile Page</h4>
+#### Profile Page
+
 <table>
     <tr>
         <th>Feature</th>
@@ -521,7 +522,6 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
     </tr>
 </table>
 
-
 #### Toast Messages
 
 | Feature               | Users     | Test                                          | Outcome                                           | Pass/Fail                       |
@@ -534,7 +534,6 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
 |                       | All       | Payment Errors                              | Shows when payment fails                           | <span style="color:green">Pass</span> |
 |                       | Registered | Account Update Errors                       | Shows when there is an error updating account information | <span style="color:green">Pass</span> |
 |                       | All       | Authentication Errors                       | Shows when login fails                            | <span style="color:green">Pass</span> |
-
 
 #### Responsive Design Testing
 
