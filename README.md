@@ -220,11 +220,49 @@ Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_p
 
 <img src="assets/readme_files/sprint6.png" alt="User Stories Progress - Sprint 6">
 
+## Surface 
+
+### Colour Scheme
+
+![Color scheme image](assets/readme_files/colour_scheme.png)
+
+The color scheme combines a professional foundation with vibrant accents. Black and gray provide a sophisticated base, while golden yellow and green draw attention to interactive and promotional elements. The overall effect is a cohesive, visually appealing design that reinforces the brand's identity, enhancing user engagement and guiding the shopping experience.
+
+- **Black (#000000)**:  
+  Used for the logo, text, and key action elements, black gives the site a clean, bold look. It establishes a sense of professionalism and makes the brand appear strong and reliable. Black also contrasts well with the other colors, highlighting essential elements like navigation and the search bar.
+
+- **Golden Yellow (#e6b800)**:  
+  This golden yellow is used prominently for call-to-action buttons and the "Free Delivery" banner. It’s a warm, inviting color that draws attention without overwhelming the viewer. This shade aligns with the sports-themed imagery, adding energy and creating a visually appealing highlight that guides users’ eyes to key interactive areas.
+
+- **Dark Gray Backgrounds**:  
+  The dark gray in the hero section and product images matches well with the golden accents, creating a sophisticated, modern look. This color sets a neutral backdrop that lets the product images and calls-to-action stand out, maintaining focus on the content.
+
+- **White (#FFFFFF)**:  
+  White is used for the main background and testimonials section, providing a clean, spacious feel. It helps balance the darker and more vibrant colors, making the page feel open and inviting. White also enhances readability and highlights the structured layout.
+
+- **Accent Green (#28A745) for Discounts**:  
+  Green is reserved for discount prices, adding a subtle but clear indicator of value on product listings. It’s a color associated with savings, signaling promotions effectively to potential customers.
+
+### Colour Scheme
+
+The typography setup is designed to create a clean, user-friendly reading experience that aligns with the energetic and professional tone of the Sports Sole brand.
+
+- **Primary Font - Poppins:**
+  - **Usage:** Applied to body text and general content, providing a modern and approachable look that complements the website’s active and stylish theme.
+
+- **Secondary Font - Oswald:**
+  - **Usage:** Used for all headings, establishing a strong visual hierarchy with a bold, professional appearance that enhances readability and brand presence.
+
+- **Accent Font - Oswald and Poppins Combination:**
+  - **Usage:** Employed for logo and key brand elements, creating a cohesive, recognizable look that ties together different sections and emphasizes brand identity.
+
+### Background Design
+
+The background of the Sports Sole website features a subtle sports-themed pattern, with icons representing various sports like basketball, tennis, and football. This design choice reinforces the store’s focus on athletic footwear by creating a visually engaging environment that resonates with sports enthusiasts. The light gray icons blend seamlessly into the background, providing texture without distracting from the main content.
+
 ## Marketing 
 
-### Search Engine Optimisation 
-
-## Search Engine Optimization (SEO)
+### Search Engine Optimization (SEO) 
 
 To improve the search index rating on Google, keyword research was conducted using tools like Wordtracker. Popular search terms related to the product categories were identified, such as:
 
@@ -267,7 +305,7 @@ The site operates on a B2C model where:
 
 #### SWOT analysis
 
-### Strengths
+##### Strengths
 - Wide range of sports shoes catering to different activities (running, basketball, training)
 - User-friendly e-commerce platform with robust search and filtering
 - Secure payment processing system
@@ -277,7 +315,7 @@ The site operates on a B2C model where:
 - Newsletter subscription for customer engagement
 - Responsive design accessible on all devices
 
-### Weaknesses
+##### Weaknesses
 - New brand in a competitive market
 - Limited product range (only footwear)
 - No physical store presence
@@ -286,7 +324,7 @@ The site operates on a B2C model where:
 - Dependency on third-party payment systems
 - Limited social proof as a new business
 
-### Opportunities
+##### Opportunities
 - Growing market for athletic footwear
 - Increasing trend in fitness and sports activities
 - Potential for expansion into related products
@@ -296,7 +334,7 @@ The site operates on a B2C model where:
 - Integration of customer reviews system
 - Mobile commerce growth
 
-### Threats
+##### Threats
 - Established competitors (Nike, Adidas, etc.)
 - Economic fluctuations affecting consumer spending
 - Changing fashion trends
@@ -342,7 +380,7 @@ Page | Desktop | Mobile |
 | Admin Add Product | ![Desktop Admin Add Product Page image](assets/readme_files/admin_product.png) | ![Mobile Admin Add Product Page image](assets/readme_files/mobile_admin_product.png) |
 | Admin Edit Product | ![Desktop Admin Edit Product Page image](assets/readme_files/edit_product.png) | ![Mobile Admin Edit Product Page image](assets/readme_files/mobile_edit_product.png) |
 | Sign Up | ![Desktop Sign Up Page image](assets/readme_files/signup.png) | ![Mobile Sign Up Page image](assets/readme_files/mobile_signup.png) |
-| Sign In | ![Desktop Sign In Page image](assets/readme_files/login.png) | ![Mobile Sign In Page image](assets/readme_files/mobile_login.png) |
+| Sign In | ![Desktop Sign In Page image](assets/readme_files/signin.png) | ![Mobile Sign In Page image](assets/readme_files/mobile_signin.png) |
 | 404 Error | ![Desktop 404 Error Page image](assets/readme_files/desktop_404.png) | ![Mobile 404 Error Page image](assets/readme_files/mobile_404.png) |
 
 ## Technologies Used
