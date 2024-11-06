@@ -168,6 +168,7 @@ input[name='q']::placeholder {
 
 /* ------------------------------- bootstrap toasts */
 
+/* Toasts for Bag Items */
 .message-container {
     position: fixed;
     top: 72px;
@@ -240,10 +241,6 @@ input[name='q']::placeholder {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
-}
-
-.order-history {
-    border: none; /* Remove any border if it exists */
 }
 
 /* -------------------------------- Media Queries */

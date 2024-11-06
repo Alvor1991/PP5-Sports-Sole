@@ -36,9 +36,11 @@ Visit the deployed website [here](https://sports-sole-d03df7b3c157.herokuapp.com
 4. [Technologies Used](#technologies-used)
     1. [Languages Used](#languages-used)
     2. [Libraries and Frameworks](#libraries-and-frameworks)
-    3. [Packages / Dependencies Installed](#packages--dependencies-installed)
-    4. [Database Management](#database-management)
-    5. [Tools and Programs](#tools-and-programs)
+    3. [Packages/Dependencies Installed](#packages--dependencies-installed)
+    4. [Payment Service](#payment-service)
+    5. [Cloud Storage](#cloud-storage)
+    6. [Database Management](#database-management)
+    7. [Tools and Programs](#tools-and-programs)
 5. [Testing](#testing)
     1. [Go to TESTING.md](https://github.com/Alvor1991/PP5-Sports-Sole/blob/main/TESTING.md)
 6. [Deployment](#deployment)
@@ -234,7 +236,7 @@ The color scheme combines a professional foundation with vibrant accents. Black 
   This golden yellow is used prominently for call-to-action buttons and the "Free Delivery" banner. It’s a warm, inviting color that draws attention without overwhelming the viewer. This shade aligns with the sports-themed imagery, adding energy and creating a visually appealing highlight that guides users’ eyes to key interactive areas.
 
 - **Dark Gray Backgrounds**:  
-  The dark gray in the hero section and product images matches well with the golden accents, creating a sophisticated, modern look. This color sets a neutral backdrop that lets the product images and calls-to-action stand out, maintaining focus on the content.
+  The dark gray used in product cardss matches well with the golden accents, creating a sophisticated, modern look. This color sets a neutral backdrop that lets the product images and calls-to-action stand out, maintaining focus on the content.
 
 - **White (#FFFFFF)**:  
   White is used for the main background and testimonials section, providing a clean, spacious feel. It helps balance the darker and more vibrant colors, making the page feel open and inviting. White also enhances readability and highlights the structured layout.
@@ -251,9 +253,6 @@ The typography setup is designed to create a clean, user-friendly reading experi
 
 - **Secondary Font - Oswald:**
   Used for all headings, establishing a strong visual hierarchy with a bold, professional appearance that enhances readability and brand presence.
-
-- **Accent Font - Oswald and Poppins Combination:**
-  Employed for logo and key brand elements, creating a cohesive, recognizable look that ties together different sections and emphasizes brand identity.
 
 ### Background Design
 
@@ -409,8 +408,6 @@ The site operates on a B2C model where:
 
 * [Heroku Postgres](https://www.heroku.com/postgres) - was used in production, as a service based on PostgreSQL provided by Heroku.
 
-[Back to top ⇧](#sports-sole)
-
 ### Tools and Programs
 
 * [GitPod](https://gitpod.io/) - used for writing code, committing, and then pushing to GitHub.
@@ -425,6 +422,8 @@ The site operates on a B2C model where:
 * [JSHint](https://jshint.com/) - used to validate the site's JavaScript code.
 * [PEP8CI](https://pep8ci.herokuapp.com/) - used to validate the Python code.
 * [Favicon.cc](https://www.favicon.cc/) - used to create the site favicon.
+
+[Back to top ⇧](#sports-sole)
 
 ## Testing
 
@@ -502,7 +501,7 @@ git clone https://github.com/Alvor1991/PP5-Sports-Sole
 ```
 8. Press Enter. Your local clone will be created.
 
-Further reading and troubleshooting on cloning a repository from GitHub [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+Further reading and troubleshooting on cloning a repository from GitHub [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
 
 [Back to top ⇧](#sports-sole)
 
@@ -529,23 +528,22 @@ Page | Desktop | Mobile |
 
 ### Code
 
-* General structure of product pages and base HTML code were taken from Code Institute's Boutique Ado project.
-
-* All other content was written by the developer.
+- General structure of product pages and base HTML code were taken from Code Institute's Boutique Ado project.
+- All other content was written by the developer.
 
 ### Media
 
 [Kaggle](https://www.kaggle.com/)
 
-* Product images were taken from a [Kaggle dataset](https://www.kaggle.com/datasets/aryashah2k/large-shoe-dataset-ut-zappos50k).
+Product images were taken from a [Kaggle dataset](https://www.kaggle.com/datasets/aryashah2k/large-shoe-dataset-ut-zappos50k).
 
 [Pexels](https://www.pexels.com/)
 
-* Home Page image was taken by [Mnz](https://www.pexels.com/@mnzoutfits/).
+Home Page image was taken by [Mnz](https://www.pexels.com/@mnzoutfits/).
 
 [Canva](https://www.canva.com/)
 
-* Facebook profile image was created using Canva.
+Facebook profile image was created using Canva.
 
 ## Known Bugs
 

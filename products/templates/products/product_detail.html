@@ -36,7 +36,7 @@
                     <p class="lead mb-0 text-left font-weight-bold">
                         {% if product.discounted_price %}
                             <span class="text-muted" style="text-decoration: line-through;">€{{ product.price }}</span>
-                            <span class="text-danger">€{{ product.discounted_price }}</span>
+                            <span class="custom-discount-price">€{{ product.discounted_price }}</span>
                         {% else %}
                             €{{ product.price }}
                         {% endif %}
