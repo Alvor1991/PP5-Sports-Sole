@@ -394,16 +394,12 @@ footer a:hover {
 }
 
 @media (max-width: 991px) {
-    .content-wrapper {
-        padding-top: 20px; /* Adjust for more space at the top of main content */
+    body {
+        height: calc(100vh - 116px);
     }
 
     .header-container {
         padding-top: 116px;
-    }
-
-    body {
-        height: calc(100vh - 116px);
     }
 
     .hero-section {

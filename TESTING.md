@@ -122,7 +122,7 @@
 
 * AC1: Admin can add new client testimonials.
 * AC2: Existing testimonials can be edited or removed.
-* AC3: Testimonials are displayed on the appropriate page(s).
+* AC3: Testimonials are displayed on the appropriate pages.
 
 ### 22. FAQ Management
 
@@ -331,17 +331,12 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td>Main Nav Menu</td>
+        <td>Main Navigation Menu</td>
         <td>Navigation links work correctly (Products, Men's, Women's, Special)</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan="5">Footer</td>
-        <td>Footer Content</td>
-        <td>All links functional across pages</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
+        <td rowspan="4">Footer</td>
         <td>Contact link</td>
         <td>Redirects to contact form</td>
         <td><span style="color:green">Pass</span></td>
@@ -363,6 +358,7 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
     </tr>
 </table>
 
+<!-- HOME PAGE -->
 #### Home Page Features
 
 <table>
@@ -374,8 +370,8 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
     </tr>
     <tr>
         <td>Hero Section</td>
-        <td>Shop Now Button, Hero Image</td>
-        <td>Redirects correctly and image loads</td>
+        <td>Shop Now button, Hero Image</td>
+        <td>Shop Now button directs to Products, image responsive across different devices</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -410,6 +406,7 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
     </tr>
 </table>
 
+<!-- PRODUCTS -->
 #### Products Page
 
 <table>
@@ -420,25 +417,44 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <th>Pass/Fail</th>
     </tr>
     <tr>
-        <td>Product Filtering</td>
-        <td>Category Filtering, Sort Selector, Price Filtering</td>
-        <td>Filters products correctly based on selection</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Category Filters</td>
+        <td>Category Selection</td>
+        <td>Displays only products within selected category</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Sorting</td>
+        <td>Sort Options</td>
+        <td>Allows sorting by price, rating, name, and category in ascending/descending order</td>
+        <td>Pass</td>
     </tr>
     <tr>
         <td>Product Cards</td>
-        <td>Product Information</td>
-        <td>Displays correct details</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Product Image and Name</td>
+        <td>Shows correct product image, name, and category</td>
+        <td>Pass</td>
     </tr>
     <tr>
-        <td>Scroll-to-Top Button</td>
-        <td>Arrow Button</td>
-        <td>Returns user to the top of the products page</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Discounted Price Display</td>
+        <td>Discount Price</td>
+        <td>Displays discounted price alongside original price when applicable</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Rating Display</td>
+        <td>Star Rating</td>
+        <td>Shows average star rating if available</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Back to Top Button</td>
+        <td>Scroll to Top</td>
+        <td>Scrolls user back to the top of the page</td>
+        <td>Pass</td>
     </tr>
 </table>
 
+<!-- PRODUCT DETAIL PAGE -->
 #### Product Detail Page
 
 <table>
@@ -450,35 +466,68 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
     </tr>
     <tr>
         <td>Product Images</td>
-        <td>Main Image, Additional Images</td>
-        <td>All images load correctly</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Display main product image or fallback image</td>
+        <td>Main image and fallback image load correctly</td>
+        <td>Pass</td>
     </tr>
     <tr>
-        <td>Product Controls</td>
-        <td>Size Selector, Quantity Selector</td>
-        <td>All controls work as intended</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Product Price Display</td>
+        <td>Show price and discounted price if applicable</td>
+        <td>Displays correct price, with original crossed out if discounted</td>
+        <td>Pass</td>
     </tr>
     <tr>
-        <td rowspan="3">Buttons</td>
-        <td>Add To Bag button</td>
-        <td>Adds items to bag</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Product Category Link</td>
+        <td>Click category name</td>
+        <td>Redirects user to filtered products by selected category</td>
+        <td>Pass</td>
     </tr>
     <tr>
-        <td>Keep Shopping button</td>
-        <td>Returns user to the products page</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Product Rating</td>
+        <td>Display average rating</td>
+        <td>Shows correct rating or "No Rating" if unavailable</td>
+        <td>Pass</td>
     </tr>
     <tr>
-        <td>Add to Wishlist button</td>
-        <td>Successfully adds item to wishlist</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Product Description</td>
+        <td>Show detailed description</td>
+        <td>Displays full product description accurately</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Size Selector</td>
+        <td>Select size from dropdown</td>
+        <td>Dropdown shows available sizes and validates selection</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Quantity Selector</td>
+        <td>Adjust quantity using increment and decrement buttons</td>
+        <td>Quantity updates correctly within set limits (1–99)</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Add to Bag Button</td>
+        <td>Click "Add to Bag"</td>
+        <td>Adds selected size and quantity to shopping bag</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Keep Shopping Button</td>
+        <td>Click "Keep Shopping"</td>
+        <td>Redirects user to Products page</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Add to Wishlist Button</td>
+        <td>Click "Wishlist" button</td>
+        <td>Adds product to user’s wishlist or shows it is already added</td>
+        <td>Pass</td>
     </tr>
 </table>
 
-#### Profile Page
+<!-- SHOPPING BAG -->
+#### Shopping Bag
 
 <table>
     <tr>
@@ -488,16 +537,150 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <th>Pass/Fail</th>
     </tr>
     <tr>
-        <td>Profile Management</td>
-        <td>Default Delivery Info, Update Button</td>
-        <td>All fields can be updated, updates are successful</td>
-        <td><span style="color:green">Pass</span></td>
+        <td rowspan="2">Bag Summary</td>
+        <td>Bag Header</td>
+        <td>Displays the bag header correctly</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Bag Totals Display</td>
+        <td>Shows the total amount in the bag</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Product Details</td>
+        <td>Product Information Display</td>
+        <td>Shows product name, size, and price for each item</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Quantity Update</td>
+        <td>Quantity Selector</td>
+        <td>Allows users to update quantity directly in bag</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Remove Item</td>
+        <td>Remove Button</td>
+        <td>Removes item from the bag and refreshes page</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Subtotal Calculation</td>
+        <td>Subtotal Display for Each Item</td>
+        <td>Shows correct subtotal based on quantity and price</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Total Calculation</td>
+        <td>Total Price Calculation</td>
+        <td>Calculates and displays the total cost for all items</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Checkout Button</td>
+        <td>Proceed to Checkout Button</td>
+        <td>Directs user to the checkout page when clicked</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Back to Top Button</td>
+        <td>Back-to-Top Function</td>
+        <td>Scrolls user to the top of the page</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Empty Bag Message</td>
+        <td>Empty State Display</td>
+        <td>Displays a message and 'Keep Shopping' link if bag is empty</td>
+        <td>Pass</td>
+    </tr>
+</table>
+
+<!-- CHECKOUT PAGES -->
+#### Checkout Pages
+
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Test</th>
+        <th>Outcome</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Order Summary</td>
+        <td>Display Order Summary</td>
+        <td>Shows summary of items in the order with correct quantities, prices, and subtotal</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Grand Total Calculation</td>
+        <td>Correctly calculates order total, delivery cost, and grand total</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Checkout Form</td>
+        <td>Order Form Fields</td>
+        <td>Form fields for name, email, address, and phone validate correctly</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Payment Processing</td>
+        <td>Stripe Payment Element</td>
+        <td>Stripe card element appears and accepts valid payment details</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Payment Confirmation</td>
+        <td>Displays a confirmation message when payment is processed successfully</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Save Information</td>
+        <td>Save Delivery Info Option</td>
+        <td>Allows logged-in users to save delivery information for future orders</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Checkout Success</td>
+        <td>Order Confirmation Message</td>
+        <td>Displays order confirmation message with order number and email confirmation</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Order Details Display</td>
+        <td>Shows details of the completed order, including delivery address and billing information</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Profile Update</td>
+        <td>Profile Information Update</td>
+        <td>Updates user profile with saved delivery information when selected</td>
+        <td>Pass</td>
+    </tr>
+</table>
+
+<!-- MY PROFILE PAGE -->
+#### My Profile Page
+
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Test</th>
+        <th>Outcome</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td>Default Delivery Info</td>
+        <td>Enter from details and click update</td>
+        <td>Updates are successful</td>
+        <td>Pass</td>
     </tr>
     <tr>
         <td>Order History</td>
         <td>Order List, Order Details Link</td>
         <td>Displays past orders correctly, links function</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Pass</td>
     </tr>
     <tr>
         <td rowspan="4">Wishlist Management</td>
@@ -521,6 +704,106 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>
+
+<!-- ADMIN ADD PRODUCT PAGE -->
+#### Admin Add Product Page
+
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Test</th>
+        <th>Outcome</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td>Form Fields</td>
+        <td>Complete all fields with valid data</td>
+        <td>All fields accept valid inputs and validate correctly</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Product Image Upload</td>
+        <td>Upload an image for the product</td>
+        <td>Image file is successfully uploaded and displays correctly</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Product Detail Image Upload</td>
+        <td>Upload a detailed image for the product</td>
+        <td>Detail image file uploads successfully and displays correctly</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Cancel Button</td>
+        <td>Click "Cancel" button</td>
+        <td>Redirects user back to the Products page without saving changes</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Add Product Button</td>
+        <td>Click "Add Product" button</td>
+        <td>Submits the form and adds the new product to the product list</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>CSRF Protection</td>
+        <td>Submit form without valid CSRF token</td>
+        <td>Form submission is blocked to prevent CSRF attacks</td>
+        <td>Pass</td>
+    </tr>
+</table>
+
+<!-- ADMIN EDIT PRODUCT PAGE -->
+#### Admin Edit Product Page
+
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Test</th>
+        <th>Outcome</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td>Form Fields</td>
+        <td>Edit all fields with valid data</td>
+        <td>All fields accept updated inputs and validate correctly</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pre-filled Data</td>
+        <td>Check pre-filled form values</td>
+        <td>Form loads with current product data pre-filled</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Product Image Update</td>
+        <td>Upload a new image for the product</td>
+        <td>New image file uploads successfully and replaces previous image</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Cancel Button</td>
+        <td>Click "Cancel" button</td>
+        <td>Redirects user back to the Products page without saving changes</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Update Product Button</td>
+        <td>Click "Update Product" button</td>
+        <td>Submits the form and updates the product with new data</td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>CSRF Protection</td>
+        <td>Submit form without valid CSRF token</td>
+        <td>Form submission is blocked to prevent CSRF attacks</td>
+        <td>Pass</td>
+    </tr>
+</table>
+
+
+
+
 
 #### Toast Messages
 
@@ -604,3 +887,163 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>
+
+
+
+## Navigation 
+
+### 12. Search for Sneakers by Name or Description
+* AC1: Search bar is easily accessible from all pages.
+* AC2: Search returns relevant results based on sneaker name or description.
+* AC3: User can view the number of search results.
+
+## Home Page 
+
+### 17. Newsletter Signup
+* AC1: Newsletter signup form is easily accessible.
+* AC2: User can enter email and subscribe with one click.
+* AC3: Confirmation of subscription is provided to the user.
+
+### 23. Contact Form
+
+* AC1: I can easily find and access the contact form.
+* AC2: Form includes fields for name, email, and message.
+* AC3: I receive a confirmation when message is sent successfully.
+
+## Products Page
+
+### 1. View a List of Sneakers
+* AC1: User can see a list of sneakers on the main products page.
+* AC2: Sneakers are displayed with basic information (name, image, price).
+* AC3: User can navigate through multiple pages of sneakers if applicable.
+
+### 10. Sort Sneakers by Price, Rating, or Category
+* AC1: User can sort sneakers by price (low to high, high to low).
+* AC2: User can sort sneakers by rating.
+* AC3: User can sort sneakers by category.
+
+### 11. Sort Sneakers by Category
+* AC1: User can navigate to a specific sneaker category.
+* AC2: Sorting options are available within the category view.
+* AC3: Category-specific sorting (if applicable) is available.
+
+## Products Detail Page
+
+### 2. See Detailed Information for Sneakers
+* AC1: User can click on a sneaker to view its detailed information.
+* AC2: Detailed view shows price, description, rating, and available sizes.
+* AC3: User can see sneaker images clearly.
+
+### 14. Select Size and Quantity of Sneakers
+* AC1: Size options are clearly displayed on the product page.
+* AC2: Quantity can be easily adjusted before adding to bag.
+* AC3: Selected size and quantity are confirmed when adding to bag.
+
+### 24. Wishlist/Favorites Feature
+
+* AC1: Given I am viewing a product, I can click a button to add it to my wishlist.
+* AC2: When I access my profile, I can view all my wishlist items in a dedicated section.
+* AC3: Given I am viewing my wishlist in my profile, I can remove items using a button beneath each product.
+
+## Special Offers Pages
+
+### 3. Quickly Identify Deals and Discounts
+* AC1: Special offers are clearly marked on the product list.
+* AC2: User can easily navigate to a dedicated special offers section.
+* AC3: Discounts or deal prices are prominently displayed.
+
+### 26. View and Purchase Discounted Products
+* AC1: Given I am viewing a product page, I can see the original price crossed out and the discounted price clearly displayed.
+* AC2: When I click on Special Offers, I can see all products that currently have discounts applied.
+* AC3: When I add discounted items to bag, they are added at the correct reduced price. 
+
+## Shopping Bag
+
+### 4. View the Total Cost of Selected Items
+* AC1: Running total is visible in the shopping bag icon.
+* AC2: Total updates immediately when adding or removing items.
+* AC3: User can view a detailed breakdown in the shopping bag.
+
+## Register
+
+### 5. Register for an Account
+* AC1: User can access a registration form from the main navigation.
+* AC2: Form validates input and creates account with valid information.
+* AC3: User receives confirmation of successful registration.
+
+### 8. Receive an Email Confirmation After Registering
+* AC1: User receives an email shortly after registration.
+* AC2: Email contains confirmation link or welcome message.
+* AC3: User can verify their email address if required.
+
+## Login
+
+### 6. Log In or Log Out of My Account
+* AC1: Registered user can log in with correct credentials.
+* AC2: Logged-in user can easily log out from any page.
+* AC3: User's login status is clearly indicated in the navigation.
+
+### 7. Recover My Password
+* AC1: User can request password reset from login page.
+* AC2: Reset instructions are sent to user's email.
+* AC3: User can set a new password and access their account.
+
+## My Profile Page
+
+### 9. Have a Personalized User Profile
+* AC1: Logged-in user can access their profile page.
+* AC2: Profile displays order history and saved information.
+* AC3: User can update their default delivery information.
+
+### 13. Filter Products Across Multiple Categories
+* AC1: User can select multiple categories to filter sneakers.
+* AC2: Filtered results show sneakers from all selected categories.
+* AC3: User can easily add or remove categories from the filter.
+
+### 15. View Final Cost Including Taxes and Shipping
+* AC1: Final cost breakdown is shown before completing purchase.
+* AC2: Taxes and shipping costs are clearly itemized.
+* AC3: User can see how costs change based on delivery options.
+
+### 16. Complete My Purchase Securely
+* AC1: Checkout process guides user through payment steps.
+* AC2: Payment form is clear and easy to fill out.
+* AC3: User receives clear confirmation of successful purchase.
+
+## Admin Management
+
+### 18. Add Product
+* AC1: Admin can access a form to add new products.
+* AC2: All necessary product details can be entered.
+* AC3: New product appears in the product list after adding.
+
+### 19. Edit/Update Product
+
+* AC1: Admin can select a product to edit.
+* AC2: Edit form is pre-filled with current product information.
+* AC3: Changes are reflected immediately after updating.
+
+### 20. Delete Product
+
+* AC1: Admin can select a product to delete.
+* AC2: Confirmation is required before deletion.
+* AC3: Product is removed from the site after confirmation.
+
+### 21. Client Testimonial Management
+
+* AC1: Admin can add new client testimonials.
+* AC2: Existing testimonials can be edited or removed.
+* AC3: Testimonials are displayed on the appropriate pages.
+
+### 22. FAQ Management
+
+* AC1: Admin can add new FAQ entries.
+* AC2: Existing FAQs can be updated or deleted.
+* AC3: FAQs are organized and easily accessible to users.
+
+### 25. Post-Purchase Product Review System
+
+* AC1: Given I have received my order, I receive an email invitation to review my purchased items.
+* AC2: When clicking the review link in the email, I can rate the product and write my review.
+* AC3: When viewing products, I can see verified purchase reviews from other customers to help inform my decision.
+
