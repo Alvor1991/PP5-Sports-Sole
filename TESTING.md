@@ -672,36 +672,39 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
     </tr>
     <tr>
         <td>Default Delivery Info</td>
-        <td>Enter from details and click update</td>
-        <td>Updates are successful</td>
+        <td>Enter form details and click update</td>
+        <td>Updates are successful and stored</td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Order History</td>
-        <td>Order List, Order Details Link</td>
-        <td>Displays past orders correctly, links function</td>
+        <td>View list of past orders, click Order Number link</td>
+        <td>Displays order history with links to order details</td>
         <td>Pass</td>
     </tr>
     <tr>
         <td rowspan="4">Wishlist Management</td>
         <td>Wishlist Accessibility</td>
-        <td>Wishlist accessible from profile page</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Wishlist is accessible from the profile page</td>
+        <td>Pass</td>
     </tr>
     <tr>
         <td>Item Display</td>
-        <td>Shows all wishlisted items correctly</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Displays all items currently in the wishlist</td>
+        <td>Shows each item’s image, name, and price correctly</td>
+        <td>Pass</td>
     </tr>
     <tr>
         <td>Remove Items</td>
-        <td>Can remove items from wishlist</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Click 'Remove' button on an item in the wishlist</td>
+        <td>Removes item from the wishlist and updates display</td>
+        <td>Pass</td>
     </tr>
     <tr>
         <td>Empty State</td>
-        <td>Shows appropriate message when wishlist empty</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Remove all items, check empty state message</td>
+        <td>Displays 'Your wishlist is empty' message when no items</td>
+        <td>Pass</td>
     </tr>
 </table>
 
@@ -802,248 +805,61 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
 </table>
 
 
-
-
-
-#### Toast Messages
-
-| Feature               | Users     | Test                                          | Outcome                                           | Pass/Fail                       |
-|-----------------------|-----------|-----------------------------------------------|---------------------------------------------------|----------------------------------|
-| Success Toasts        | All       | Add to Bag                                   | Shows when item added to bag                      | <span style="color:green">Pass</span> |
-|                       | All       | Remove from Bag                             | Shows when item removed from bag                  | <span style="color:green">Pass</span> |
-|                       | Registered | Profile Update                              | Shows when profile updated successfully            | <span style="color:green">Pass</span> |
-|                       | All       | Order Confirmation                           | Shows after successful order                      | <span style="color:green">Pass</span> |
-| Error Toasts          | All       | Form Errors                                 | Shows when form submission fails                   | <span style="color:green">Pass</span> |
-|                       | All       | Payment Errors                              | Shows when payment fails                           | <span style="color:green">Pass</span> |
-|                       | Registered | Account Update Errors                       | Shows when there is an error updating account information | <span style="color:green">Pass</span> |
-|                       | All       | Authentication Errors                       | Shows when login fails                            | <span style="color:green">Pass</span> |
-
-#### Responsive Design Testing
+### Error Handling on Forms
 
 <table>
     <tr>
-        <th colspan=2>Feature</th>
-        <th>Device/Screen Size</th>
+        <th>Feature</th>
         <th>Test</th>
         <th>Outcome</th>
         <th>Pass/Fail</th>
     </tr>
     <tr>
-        <td rowspan=4>Navigation Elements</td>
-        <td rowspan=1>Desktop (>1024px)</td>
-        <td rowspan=1>Large Screens</td>
-        <td>Functionality</td>
-        <td>All navigation elements accessible</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Registration Form</td>
+        <td>Submit form with missing required fields</td>
+        <td>Displays error message indicating required fields</td>
+        <td>Pass</td>
     </tr>
     <tr>
-        <td rowspan=1>Tablet (768px-1024px)</td>
-        <td rowspan=1>Medium Screens</td>
-        <td>Functionality</td>
-        <td>All features remain accessible</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Login Form</td>
+        <td>Enter incorrect credentials and submit</td>
+        <td>Displays error message for invalid login</td>
+        <td>Pass</td>
     </tr>
     <tr>
-        <td rowspan=1>Mobile (320px-767px)</td>
-        <td rowspan=1>Small Screens</td>
-        <td>Functionality</td>
-        <td>Menu toggles correctly, all links work</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Profile Update Form</td>
+        <td>Submit form with invalid phone number format</td>
+        <td>Displays error message indicating incorrect format</td>
+        <td>Pass</td>
     </tr>
     <tr>
-        <td rowspan=1>Small Mobile (<320px)</td>
-        <td rowspan=1>Extra Small</td>
-        <td>Functionality</td>
-        <td>All essential features usable</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Profile Update Form</td>
+        <td>Submit form with empty required fields</td>
+        <td>Displays error message indicating required fields</td>
+        <td>Pass</td>
     </tr>
     <tr>
-        <td rowspan=4>Content Layout</td>
-        <td rowspan=1>Product Cards</td>
-        <td rowspan=1>All Sizes</td>
-        <td>Functionality</td>
-        <td>All product information remains visible</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Checkout Form</td>
+        <td>Leave required fields blank and submit</td>
+        <td>Displays error message for missing information</td>
+        <td>Pass</td>
     </tr>
     <tr>
-        <td rowspan=1>Forms</td>
-        <td rowspan=1>All Sizes</td>
-        <td>Functionality</td>
-        <td>All form fields remain usable</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Checkout Form</td>
+        <td>Enter invalid email format</td>
+        <td>Displays error message indicating invalid email format</td>
+        <td>Pass</td>
     </tr>
     <tr>
-        <td rowspan=1>Images</td>
-        <td rowspan=1>All Sizes</td>
-        <td>Functionality</td>
-        <td>Images load and display correctly</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Contact Form</td>
+        <td>Submit form with empty message field</td>
+        <td>Displays error message indicating message is required</td>
+        <td>Pass</td>
     </tr>
     <tr>
-        <td rowspan=1>Text Content</td>
-        <td rowspan=1>All Sizes</td>
-        <td>Functionality</td>
-        <td>No text overflow or overlap issues</td>
-        <td><span style="color:green">Pass</span></td>
+        <td>Contact Form</td>
+        <td>Enter invalid email format in email field</td>
+        <td>Displays error message indicating invalid email format</td>
+        <td>Pass</td>
     </tr>
 </table>
-
-
-
-## Navigation 
-
-### 12. Search for Sneakers by Name or Description
-* AC1: Search bar is easily accessible from all pages.
-* AC2: Search returns relevant results based on sneaker name or description.
-* AC3: User can view the number of search results.
-
-## Home Page 
-
-### 17. Newsletter Signup
-* AC1: Newsletter signup form is easily accessible.
-* AC2: User can enter email and subscribe with one click.
-* AC3: Confirmation of subscription is provided to the user.
-
-### 23. Contact Form
-
-* AC1: I can easily find and access the contact form.
-* AC2: Form includes fields for name, email, and message.
-* AC3: I receive a confirmation when message is sent successfully.
-
-## Products Page
-
-### 1. View a List of Sneakers
-* AC1: User can see a list of sneakers on the main products page.
-* AC2: Sneakers are displayed with basic information (name, image, price).
-* AC3: User can navigate through multiple pages of sneakers if applicable.
-
-### 10. Sort Sneakers by Price, Rating, or Category
-* AC1: User can sort sneakers by price (low to high, high to low).
-* AC2: User can sort sneakers by rating.
-* AC3: User can sort sneakers by category.
-
-### 11. Sort Sneakers by Category
-* AC1: User can navigate to a specific sneaker category.
-* AC2: Sorting options are available within the category view.
-* AC3: Category-specific sorting (if applicable) is available.
-
-## Products Detail Page
-
-### 2. See Detailed Information for Sneakers
-* AC1: User can click on a sneaker to view its detailed information.
-* AC2: Detailed view shows price, description, rating, and available sizes.
-* AC3: User can see sneaker images clearly.
-
-### 14. Select Size and Quantity of Sneakers
-* AC1: Size options are clearly displayed on the product page.
-* AC2: Quantity can be easily adjusted before adding to bag.
-* AC3: Selected size and quantity are confirmed when adding to bag.
-
-### 24. Wishlist/Favorites Feature
-
-* AC1: Given I am viewing a product, I can click a button to add it to my wishlist.
-* AC2: When I access my profile, I can view all my wishlist items in a dedicated section.
-* AC3: Given I am viewing my wishlist in my profile, I can remove items using a button beneath each product.
-
-## Special Offers Pages
-
-### 3. Quickly Identify Deals and Discounts
-* AC1: Special offers are clearly marked on the product list.
-* AC2: User can easily navigate to a dedicated special offers section.
-* AC3: Discounts or deal prices are prominently displayed.
-
-### 26. View and Purchase Discounted Products
-* AC1: Given I am viewing a product page, I can see the original price crossed out and the discounted price clearly displayed.
-* AC2: When I click on Special Offers, I can see all products that currently have discounts applied.
-* AC3: When I add discounted items to bag, they are added at the correct reduced price. 
-
-## Shopping Bag
-
-### 4. View the Total Cost of Selected Items
-* AC1: Running total is visible in the shopping bag icon.
-* AC2: Total updates immediately when adding or removing items.
-* AC3: User can view a detailed breakdown in the shopping bag.
-
-## Register
-
-### 5. Register for an Account
-* AC1: User can access a registration form from the main navigation.
-* AC2: Form validates input and creates account with valid information.
-* AC3: User receives confirmation of successful registration.
-
-### 8. Receive an Email Confirmation After Registering
-* AC1: User receives an email shortly after registration.
-* AC2: Email contains confirmation link or welcome message.
-* AC3: User can verify their email address if required.
-
-## Login
-
-### 6. Log In or Log Out of My Account
-* AC1: Registered user can log in with correct credentials.
-* AC2: Logged-in user can easily log out from any page.
-* AC3: User's login status is clearly indicated in the navigation.
-
-### 7. Recover My Password
-* AC1: User can request password reset from login page.
-* AC2: Reset instructions are sent to user's email.
-* AC3: User can set a new password and access their account.
-
-## My Profile Page
-
-### 9. Have a Personalized User Profile
-* AC1: Logged-in user can access their profile page.
-* AC2: Profile displays order history and saved information.
-* AC3: User can update their default delivery information.
-
-### 13. Filter Products Across Multiple Categories
-* AC1: User can select multiple categories to filter sneakers.
-* AC2: Filtered results show sneakers from all selected categories.
-* AC3: User can easily add or remove categories from the filter.
-
-### 15. View Final Cost Including Taxes and Shipping
-* AC1: Final cost breakdown is shown before completing purchase.
-* AC2: Taxes and shipping costs are clearly itemized.
-* AC3: User can see how costs change based on delivery options.
-
-### 16. Complete My Purchase Securely
-* AC1: Checkout process guides user through payment steps.
-* AC2: Payment form is clear and easy to fill out.
-* AC3: User receives clear confirmation of successful purchase.
-
-## Admin Management
-
-### 18. Add Product
-* AC1: Admin can access a form to add new products.
-* AC2: All necessary product details can be entered.
-* AC3: New product appears in the product list after adding.
-
-### 19. Edit/Update Product
-
-* AC1: Admin can select a product to edit.
-* AC2: Edit form is pre-filled with current product information.
-* AC3: Changes are reflected immediately after updating.
-
-### 20. Delete Product
-
-* AC1: Admin can select a product to delete.
-* AC2: Confirmation is required before deletion.
-* AC3: Product is removed from the site after confirmation.
-
-### 21. Client Testimonial Management
-
-* AC1: Admin can add new client testimonials.
-* AC2: Existing testimonials can be edited or removed.
-* AC3: Testimonials are displayed on the appropriate pages.
-
-### 22. FAQ Management
-
-* AC1: Admin can add new FAQ entries.
-* AC2: Existing FAQs can be updated or deleted.
-* AC3: FAQs are organized and easily accessible to users.
-
-### 25. Post-Purchase Product Review System
-
-* AC1: Given I have received my order, I receive an email invitation to review my purchased items.
-* AC2: When clicking the review link in the email, I can rate the product and write my review.
-* AC3: When viewing products, I can see verified purchase reviews from other customers to help inform my decision.
-
