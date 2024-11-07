@@ -89,7 +89,7 @@
                 Thank you for subscribing to our newsletter!
             </div>
             {% endif %}
-            <form method="post" action="{% url 'home' %}">
+            <form method="post" action="{% url 'home' %}#newsletter-section">
                 {% csrf_token %}
                 <div class="input-group newsletter-input">  
                     {{ newsletter_form.email }}  
@@ -110,7 +110,7 @@
         Thank you for your message. We will get back to you soon.
     </div>
     {% endif %}
-    <form method="post" action="{% url 'home' %}">
+    <form method="post" action="{% url 'home' %}#contact-section">
         {% csrf_token %}
         {{ contact_form.as_p }}
         <button type="submit" name="contact_form" class="btn btn-dark">Send Message</button>

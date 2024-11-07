@@ -17,15 +17,16 @@ def index(request):
     if request.method == 'POST' and 'newsletter_signup' in request.POST:
         newsletter_form = NewsletterSignupForm(request.POST)
         if newsletter_form.is_valid():
-            newsletter_form.save()  # Save to database
+            newsletter_form.save()
             signup_success = True
+            print("Newsletter signup success:", signup_success)  # Debug print
             newsletter_form = NewsletterSignupForm()
         else:
             print("Newsletter form errors:", newsletter_form.errors)
     else:
         newsletter_form = NewsletterSignupForm()
 
-    # Handle contact form submission (this is working fine)
+    # Handle contact form submission
     if request.method == 'POST' and 'contact_form' in request.POST:
         contact_form = ContactForm(request.POST)
         if contact_form.is_valid():

@@ -804,7 +804,6 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
     </tr>
 </table>
 
-
 ### Error Handling on Forms
 
 <table>
