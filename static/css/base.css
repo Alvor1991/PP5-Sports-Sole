@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6, .logo-font {
 }
 
 main {
-    flex-grow: 1; /* Allows the main content to grow and push the footer down */
+    flex-grow: 1;
 }
 
 /* Buttons */
@@ -188,7 +188,7 @@ input[name='q']::placeholder {
 .message-container-wishlist {
     position: fixed;
     top: 72px;
-    right: 100px;  /* Adjust as needed for 'My Account' icon */
+    right: 100px;
     z-index: 99999999999;
 }
 
@@ -255,8 +255,8 @@ input[name='q']::placeholder {
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    margin-top: 1.5rem;
+    color: #6c757d;
 }
 
 .allauth-form-inner-content input {
@@ -394,9 +394,10 @@ footer a:hover {
 }
 
 @media (max-width: 991px) {
-    body {
+
+    /* body {
         height: calc(100vh - 116px);
-    }
+    } */
 
     .header-container {
         padding-top: 116px;
