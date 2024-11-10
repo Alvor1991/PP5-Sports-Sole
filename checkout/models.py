@@ -94,12 +94,11 @@ class OrderLineItem(models.Model):
     def save(self, *args, **kwargs):
         """
         Override the original save method to set the lineitem total
-        and update the order total.
+        and update the order total. Use discounted price if available.
         """
-        print(f"Product price: {self.product.price}, Quantity: {self.quantity}")
-        self.lineitem_total = Decimal(self.product.price) * self.quantity
+        price = Decimal(self.product.discounted_price) if self.product.discounted_price else Decimal(self.product.price)
+        self.lineitem_total = price * self.quantity
         super().save(*args, **kwargs)
-
 
     def __str__(self):
         return f'SKU {self.product.sku} on order {self.order.order_number}'
