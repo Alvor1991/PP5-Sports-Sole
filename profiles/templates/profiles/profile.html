@@ -82,7 +82,7 @@
                             <div class="card h-100 text-center">
                                 <a href="{% url 'product_detail' item.product.id %}">
                                     {% if item.product.image %}
-                                    <img class="card-img-top" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                                    <img class="card-img-top" src="{{ item.product.image.url }}" alt="{{ item.product.name }}" width="300" height="300" loading="lazy">
                                     {% else %}
                                     <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
                                     {% endif %}

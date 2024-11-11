@@ -421,7 +421,6 @@ The site operates on a B2C model where:
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - used to validate the CSS code.
 * [JSHint](https://jshint.com/) - used to validate the site's JavaScript code.
 * [PEP8CI](https://pep8ci.herokuapp.com/) - used to validate the Python code.
-* [Favicon.cc](https://www.favicon.cc/) - used to create the site favicon.
 
 [Back to top ⇧](#sports-sole)
 
