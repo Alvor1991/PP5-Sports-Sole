@@ -404,8 +404,8 @@ footer a:hover {
     }
 
     .hero-section {
-        background-size: cover;
-        background-position: center; 
+        background-size: 200%;
+        background-position: center top; 
         height: auto; 
     }
 
@@ -422,6 +422,10 @@ footer a:hover {
 
     .hero-section .container {
         padding: 1rem; 
+    }
+
+    .hero-section h1 {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     }
 
     .display-4.logo-font.text-black {
