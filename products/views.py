@@ -84,7 +84,7 @@ def product_detail(request, product_id):
 
     context = {
         'product': product,
-        'wishlist_items': wishlist_items,  
+        'wishlist_items': wishlist_items,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -168,11 +168,14 @@ def delete_product(request, product_id):
 def add_to_wishlist(request, product_id):
     """ Add a product to the user's wishlist """
     product = get_object_or_404(Product, id=product_id)
-    wishlist_item, created = Wishlist.objects.get_or_create(user=request.user, product=product)
-    
+    wishlist_item, created = Wishlist.objects.get_or_create(
+        user=request.user,
+        product=product
+        )
+
     if created:
-        messages.success(request, f"{product.name} has been added to your wishlist!")
+        messages.success(request, f"{product.name} added to your wishlist!")
     else:
         messages.info(request, f"{product.name} is already in your wishlist.")
-    
+
     return redirect('product_detail', product_id=product_id)

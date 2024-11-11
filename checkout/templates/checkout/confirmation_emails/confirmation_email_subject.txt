@@ -1,1 +1,1 @@
-Boutique Ado Confirmation for Order Number {{ order.order_number }}
+Sports Sole Confirmation for Order Number {{ order.order_number }}

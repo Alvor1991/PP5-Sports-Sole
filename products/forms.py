@@ -4,6 +4,10 @@ from .models import Product, Category
 
 
 class ProductForm(forms.ModelForm):
+    """
+    Form for adding and updating product information,
+    excluding the 'sizes' field and using custom widgets for image fields.
+    """
     class Meta:
         model = Product
         # Exclude the sizes field from the form

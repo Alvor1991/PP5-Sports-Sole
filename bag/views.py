@@ -13,7 +13,11 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
     product = Product.objects.get(pk=item_id)
-    price = float(product.discounted_price) if product.discounted_price else float(product.price)  # Convert Decimal to float
+    price = (
+        float(product.discounted_price)
+        if product.discounted_price
+        else float(product.price)
+        )
     quantity = int(request.POST.get('quantity', 1))
     redirect_url = request.POST.get('redirect_url')
     size = request.POST.get('product_size')
@@ -31,11 +35,14 @@ def add_to_bag(request, item_id):
             f'{bag[item_id]["items_by_size"][size]["quantity"]}'
         )
     else:
-        bag[item_id]['items_by_size'][size] = {'quantity': quantity, 'price': price}
+        bag[item_id]['items_by_size'][size] = {
+            'quantity': quantity,
+            'price': price
+            }
         messages.success(
             request,
             f'Added size {size.upper()} {product.name} to your bag'
-        )
+            )
 
     request.session['bag'] = bag  # Save the updated bag in session
     return redirect(redirect_url)
@@ -96,4 +103,3 @@ def remove_from_bag(request, item_id):
     except Exception as e:
         messages.error(request, f'Error removing item: {str(e)}')
         return HttpResponse(status=500)
-

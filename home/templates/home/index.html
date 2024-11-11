@@ -11,7 +11,7 @@
 
 {% block content %}
 
-<!-- Hero Section (Half the height with background image) -->
+<!-- Hero Section -->
 <div class="hero-section">
     <div class="container h-100">
         <div class="row h-100">
@@ -21,14 +21,14 @@
                 </h1>
                 <div class="my-5">
                     <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded text-uppercase py-3">Shop Now</a>
+                        <a href="{% url 'products' %}"
+                            class="shop-now-button btn btn-lg rounded text-uppercase py-3">Shop Now</a>
                     </h4>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <!-- Arrivals Section -->
 {% if new_arrivals %}
 <div class="container my-5">
@@ -50,7 +50,6 @@
     </div>
 </div>
 {% endif %}
-
 <!-- Testimonials Section -->
 {% if testimonials %}
 <div class="container my-5">
@@ -64,11 +63,11 @@
             </blockquote>
             <div class="text-center mt-2">
                 {% for star in "12345" %}
-                    {% if forloop.counter <= testimonial.rating %}
-                        <i class="fas fa-star text-warning"></i> 
-                    {% else %}
-                        <i class="far fa-star text-muted"></i> 
-                    {% endif %}
+                {% if forloop.counter <= testimonial.rating %}
+                <i class="fas fa-star text-warning"></i>
+                {% else %}
+                <i class="far fa-star text-muted"></i>
+                {% endif %}
                 {% endfor %}
             </div>
             <small class="text-muted">{{ testimonial.date }}</small>
@@ -77,7 +76,6 @@
     </div>
 </div>
 {% endif %}
-
 <!-- Newsletter Signup Section -->
 <div class="container bg-light py-5 my-5" id="newsletter-section" style="scroll-margin-top: 100px;">
     <div class="row">
@@ -91,8 +89,8 @@
             {% endif %}
             <form method="post" action="{% url 'home' %}#newsletter-section">
                 {% csrf_token %}
-                <div class="input-group newsletter-input">  
-                    {{ newsletter_form.email }}  
+                <div class="input-group newsletter-input">
+                    {{ newsletter_form.email }}
                     <div class="input-group-append">
                         <button class="btn btn-dark rounded" type="submit" name="newsletter_signup">Subscribe</button>
                     </div>
@@ -101,7 +99,6 @@
         </div>
     </div>
 </div>
-
 <!-- Contact Form Section -->
 <div class="container py-5 my-5" id="contact-section" style="scroll-margin-top: 150px;">
     <h2 class="text-center mb-4">Get in Touch</h2>
@@ -116,7 +113,6 @@
         <button type="submit" name="contact_form" class="btn btn-dark">Send Message</button>
     </form>
 </div>
-
 <!-- FAQ Section -->
 {% if faqs %}
 <div class="container my-5" id="faq-section" style="scroll-margin-top: 100px;">
@@ -126,12 +122,15 @@
         <div class="card">
             <div class="card-header" id="heading{{ forloop.counter }}">
                 <h2 class="mb-0">
-                    <button class="btn btn-block text-left text-dark" type="button" data-toggle="collapse" data-target="#collapse{{ forloop.counter }}" aria-expanded="true" aria-controls="collapse{{ forloop.counter }}">
+                    <button class="btn btn-block text-left text-dark" type="button" data-toggle="collapse"
+                        data-target="#collapse{{ forloop.counter }}" aria-expanded="true"
+                        aria-controls="collapse{{ forloop.counter }}">
                         {{ faq.question }}
                     </button>
                 </h2>
             </div>
-            <div id="collapse{{ forloop.counter }}" class="collapse" aria-labelledby="heading{{ forloop.counter }}" data-parent="#faqAccordion">
+            <div id="collapse{{ forloop.counter }}" class="collapse" aria-labelledby="heading{{ forloop.counter }}"
+                data-parent="#faqAccordion">
                 <div class="card-body">
                     {{ faq.answer|linebreaks }}
                 </div>
@@ -147,7 +146,7 @@
 {% block postloadjs %}
 {{ block.super }}
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('.collapse').on('show.bs.collapse', function () {
             $(this).prev('.card-header').addClass('active');
         });

@@ -4,6 +4,10 @@ from taggit.managers import TaggableManager
 
 
 class ProductAdmin(admin.ModelAdmin):
+    """
+    Admin configuration for products, including display
+    of key fields and ordering by SKU.
+    """
     list_display = (
         'sku',
         'name',
@@ -29,6 +33,10 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class CategoryAdmin(admin.ModelAdmin):
+    """
+    Admin configuration for categories, showing
+    friendly names and names in the list display.
+    """
     list_display = (
         'friendly_name',
         'name',
@@ -36,6 +44,10 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 class SizeAdmin(admin.ModelAdmin):
+    """
+    Admin configuration for sizes, displaying available
+    sizes in the admin list view.
+    """
     list_display = (
         'size',
     )

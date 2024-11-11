@@ -68,7 +68,11 @@ def checkout(request):
             for item_id, item_data in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)
-                    product_price = product.discounted_price if product.discounted_price else product.price
+                    product_price = (
+                        product.discounted_price
+                        if product.discounted_price
+                        else product.price
+                        )
 
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
@@ -79,9 +83,13 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for size, item_info in item_data['items_by_size'].items():
+                        for size, item_info in (
+                            item_data['items_by_size'].items()
+                        ):
                             quantity = item_info['quantity']
-                            price = Decimal(item_info.get('price', product_price))
+                            price = Decimal(
+                                item_info.get('price', product_price)
+                                )
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
@@ -92,16 +100,18 @@ def checkout(request):
                             order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "Some products in your bag weren't found in the database. "
+                        "Some products in your bag weren't found in database."
                         "Please call us for assistance!"
                     ))
                     order.delete()
                     return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(
+                reverse('checkout_success', args=[order.order_number])
+                )
         else:
-            messages.error(request, 'There was an error with your form. Please double-check your information.')
+            messages.error(request, 'Form error. Please double-check info.')
 
     else:
         bag = request.session.get('bag', {})
@@ -138,8 +148,8 @@ def checkout(request):
             order_form = OrderForm()
 
     if not stripe_public_key:
-        messages.warning(request, 'Stripe public key is missing. '
-                                  'Did you forget to set it in your environment?')
+        messages.warning(request, 'Stripe public key is missing.'
+                                  'Did you forget to set in your environment?')
 
     template = 'checkout/checkout.html'
     context = {

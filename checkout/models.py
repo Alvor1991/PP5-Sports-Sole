@@ -12,6 +12,9 @@ from decimal import Decimal
 
 
 class Order(models.Model):
+    """
+    Stores a single order, including delivery details and calculated costs.
+    """
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(
         UserProfile, on_delete=models.SET_NULL,
@@ -78,6 +81,10 @@ class Order(models.Model):
 
 
 class OrderLineItem(models.Model):
+    """
+    Represents a single product within an order, including specific size
+    and quantity information.
+    """
     order = models.ForeignKey(
         Order, null=False, blank=False, on_delete=models.CASCADE,
         related_name='lineitems'
@@ -96,7 +103,12 @@ class OrderLineItem(models.Model):
         Override the original save method to set the lineitem total
         and update the order total. Use discounted price if available.
         """
-        price = Decimal(self.product.discounted_price) if self.product.discounted_price else Decimal(self.product.price)
+        price = (
+            Decimal(self.product.discounted_price)
+            if self.product.discounted_price
+            else Decimal(self.product.price)
+            )
+
         self.lineitem_total = price * self.quantity
         super().save(*args, **kwargs)
 

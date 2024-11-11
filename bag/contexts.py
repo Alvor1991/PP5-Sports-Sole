@@ -13,9 +13,13 @@ def bag_contents(request):
     for item_id, item_data in bag.items():
         product = get_object_or_404(Product, pk=item_id)
 
-        # Use discounted price if available, otherwise fall back to regular price
-        product_price = product.discounted_price if product.discounted_price else product.price
-        
+        # Use discounted price if available, otherwise regular price
+        product_price = (
+            product.discounted_price
+            if product.discounted_price
+            else product.price
+            )
+
         if isinstance(item_data, int):
             # Handle legacy case where quantity is stored as an int
             price = Decimal(product_price)
@@ -67,4 +71,3 @@ def bag_contents(request):
     }
 
     return context
-
