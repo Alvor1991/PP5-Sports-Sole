@@ -185,14 +185,7 @@ W3C CSS Validator found no errors or warnings in the CSS.
 
 ### Python
 
-[PEP8CI](https://pep8ci.herokuapp.com/) was used to validate the Python code for PEP8 compliance. As there were many files to assess within each app, I have focused on the appointment app for this testing section. 
-
-| Location | Errors / Warnings | Code Reviewed |
-| --- | --- | --- |
-| ./appointments/model.py | ![forms.py errors/warnings image](assets/testing_files/appointment_model.png) | ![forms.py code reviewed image](assets/testing_files/models_reviewed.pmg.png) |
-| ./appointments/views.py | ![views.py errors/warnings image](assets/testing_files/appointments_views.png) | ![views.py code reviewed image](assets/testing_files/views_reviewed.png) |
-| ./appointments/forms.py | ![urls.py errors/warnings image](assets/testing_files/appointments_forms.png) | ![urls.py code reviewed image](assets/testing_files/forms_reviewed.pmg.png) |
-
+[PEP8CI](https://pep8ci.herokuapp.com/) was used to validate the Python code for PEP8 compliance. All errors have beeen fixed. 
 
 ### JavaScript
 
