@@ -253,6 +253,10 @@ html {
     overflow-x: hidden;
     overflow-y: auto;
   }
+
+  .scroll-mt {
+    scroll-margin-top: 150px; 
+}
   
   /* -------------------------------- Media Queries */
   

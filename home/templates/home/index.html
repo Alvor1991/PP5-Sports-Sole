@@ -78,7 +78,7 @@
 </div>
 {% endif %}
 <!-- Newsletter Signup Section -->
-<div class="container bg-light py-5 my-5" id="newsletter-section" style="scroll-margin-top: 150px;">
+<div class="container bg-light py-5 my-5 scroll-mt" id="newsletter-section">
     <div class="row">
         <div class="col-12 text-center">
             <h3>Join Our Community</h3>
@@ -101,7 +101,7 @@
     </div>
 </div>
 <!-- Contact Form Section -->
-<div class="container py-5 my-5" id="contact-section" style="scroll-margin-top: 150px;">
+<div class="container py-5 my-5 scroll-mt" id="contact-section">
     <h2 class="text-center mb-4">Get in Touch</h2>
     {% if contact_success %}
     <div class="alert alert-success" role="alert">
@@ -116,7 +116,7 @@
 </div>
 <!-- FAQ Section -->
 {% if faqs %}
-<div class="container my-5" id="faq-section" style="scroll-margin-top: 100px;">
+<div class="container my-5 scroll-mt" id="faq-section">
     <h2 class="text-center mb-4">Frequently Asked Questions</h2>
     <div class="accordion" id="faqAccordion">
         {% for faq in faqs %}
