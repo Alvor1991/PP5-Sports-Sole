@@ -175,6 +175,12 @@
 | Element li not allowed as child of element nav in this context. | Wrapped `<li>` elements in `<ul class="list-inline">` within nav element. |
 | Duplicate ID `id_email` found. | Changed duplicate IDs to unique values `id_email_signup` and `id_email_add` using django-widget-tweaks. |
 
+#### HTML Validation Error: aria-describedby Attribute Issue
+
+Another error was flagged for the aria-describedby attribute referencing a non-existent element (id_password_helptext). This issue stems from Django and third-party libraries, such as Django Allauth and Crispy Forms, dynamically adding the attribute when rendering forms, even if no help text exists. Since this behavior is controlled by the form rendering logic rather than the HTML templates, it cannot be directly fixed in the templates without overriding or customizing the library's behavior. Resolving this is non-trivial and has been deferred for now as the application functions correctly.
+
+![HTML validation error](assets/testing_files/validation_error.png)
+
 ### CSS
 
 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) service was used to validate the CSS code of the project to ensure there were no syntax errors.

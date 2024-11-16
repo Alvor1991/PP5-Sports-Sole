@@ -103,6 +103,20 @@ The database model was designed using [drawsql](https://drawsql.app/) and is man
 
 ![Sports Sole database model](assets/readme_files/erdiagram.png)
 
+The data models for this project are based on a walkthrough but have been significantly extended to meet the unique requirements of Sports Sole. Below is a summary of the key changes made to each model:
+
+##### Checkout Models
+In the `OrderLineItem` model, logic was added to calculate the `lineitem_total` using the discounted price when available, ensuring accurate handling of discounts. The use of the `Decimal` class improves precision in price calculations. The `Order` model remains similar but integrates seamlessly with this updated discount logic.
+
+##### Products Model
+A `Size` model and a many-to-many relationship with `Product` were introduced, allowing multiple sizes per product. This replaces the walkthrough's `has_sizes` field for greater flexibility. The `Product` model now includes a `discounted_price` field for managing price reductions, a `gender` field for product categorization, and uses `CloudinaryField` for efficient media storage. Additionally, the `TaggableManager` enhances search and organization capabilities by allowing product tagging.
+
+##### Profile Models 
+A new `Wishlist` model was introduced, enabling users to save products for future reference. It tracks which user added the product and when. The core `UserProfile` model is retained with minimal changes, ensuring smooth management of user-specific delivery information.
+
+##### Home Models
+The `NewsletterSubscriber`, `CustomerTestimonial`, `FAQ`, and `ContactSubmission` models help manage dynamic content on the website, such as testimonials, FAQs, newsletter subscriptions, and contact form submissions. These models enhance customer interaction and admin efficiency.
+
 ### Skeleton
 
 #### Wireframes
@@ -550,4 +564,34 @@ Facebook profile image was created using Canva.
 
 ## Acknowledgements
 
+
+
 [Back to top ⇧](#sports-sole)
+
+
+
+
+NewsletterSubscriber
+This model manages the list of newsletter subscribers. Admins can view and manage subscriber details, including their email address, signup date, and subscription status, allowing for easy activation or deactivation of subscribers.
+CustomerTestimonial
+This model allows admins to collect and display customer feedback. Admins can add testimonials with the customer’s name, feedback text, and a rating between 1 and 5. Testimonials are automatically timestamped and can be showcased on the website.
+FAQ (Frequently Asked Questions)
+This model helps organize and manage FAQs displayed on the website. Admins can add or edit questions, answers, and optional categories, while also controlling the order in which FAQs are displayed for better user experience.
+ContactSubmission
+This model stores messages submitted via the contact form. Admins can review messages from customers, including their name, email, and message content, along with a timestamp for when the message was submitted.
+
+
+
+checkout models 
+
+The custom model introduced several enhancements and modifications compared to the walkthrough model. In the OrderLineItem model, logic was added to consider a product's discounted price (if available) when calculating the lineitem_total, ensuring accurate handling of discounts in the total order cost. Additionally, the Decimal class was used to ensure precise calculations for prices. In the Order model, functionality remains largely the same as the walkthrough,
+
+
+Products model
+
+A Size model and a many-to-many relationship with Product were added to allow products to have multiple sizes, addressing limitations of the walkthrough’s has_sizes field. The Product model now includes a discounted_price field to manage price reductions and a gender field with choices for Men and Women, improving product categorization and filtering. Additionally, the integration of Cloudinary for the image and detail_image fields replaces the traditional ImageField, streamlining media storage. The use of TaggableManager adds tagging functionality, enhancing product search and organization. These changes collectively provide a more robust and feature-rich data model for managing the store's inventory.
+
+
+Profile 
+
+The custom model expands upon the walkthrough implementation by introducing a new Wishlist model, which allows users to save products they are interested in for future reference. This model establishes a ForeignKey relationship between the User and Product models and includes an added_on field to track when each product was added to the wishlist. This enhancement significantly improves the user experience by enabling a personalized feature that was not present in the walkthrough. Apart from the addition of the Wishlist model, the core UserProfile model remains largely unchanged.
