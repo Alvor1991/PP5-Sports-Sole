@@ -16,7 +16,6 @@ class CustomerTestimonial(models.Model):
     testimonial = models.TextField()
     rating = models.IntegerField(
         validators=[MinValueValidator(1), MaxValueValidator(5)],
-        help_text="Rating from 1 to 5"
     )
     date = models.DateField(auto_now_add=True)
 
