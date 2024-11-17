@@ -27,13 +27,13 @@ Visit the deployed website [here](https://sports-sole-d03df7b3c157.herokuapp.com
     1. [Colour Scheme](#colour-scheme)
     2. [Typography](#typography)
     3. [Background Design](#background-design)
-3. [Marketing](#marketing)
-    1. [Marketing Strategy](#colour-scheme)
-    2. [Business Model](#typography)
-        1. [Target Audience](#flowchart)
-        2. [SWOT Analysis](#database-model)
-    3. [Seach Engine Optimization](#background-design)
-4. [Technologies Used](#technologies-used)
+4. [Marketing](#marketing)
+    1. [Marketing Strategy](#marketing-strategy)
+    2. [Business Model](#business-model)
+        1. [Target Audience](#target-audience)
+        2. [SWOT Analysis](#swot-analysis)
+    3. [Seach Engine Optimization](#search-engine-optimization)
+5. [Technologies Used](#technologies-used)
     1. [Languages Used](#languages-used)
     2. [Libraries and Frameworks](#libraries-and-frameworks)
     3. [Packages/Dependencies Installed](#packages--dependencies-installed)
@@ -41,13 +41,13 @@ Visit the deployed website [here](https://sports-sole-d03df7b3c157.herokuapp.com
     5. [Cloud Storage](#cloud-storage)
     6. [Database Management](#database-management)
     7. [Tools and Programs](#tools-and-programs)
-5. [Testing](#testing)
+6. [Testing](#testing)
     1. [Go to TESTING.md](https://github.com/Alvor1991/PP5-Sports-Sole/blob/main/TESTING.md)
-6. [Deployment](#deployment)
-7. [Finished Product](#finished-product)
-8. [Credits](#credits)
-9. [Known Bugs](#known-bugs)
-10. [Acknowledgements](#acknowledgements)
+7. [Deployment](#deployment)
+8. [Finished Product](#finished-product)
+9. [Credits](#credits)
+10. [Known Bugs](#known-bugs)
+11. [Acknowledgements](#acknowledgements)
 
 ***
 
@@ -397,7 +397,7 @@ The site operates on a B2C model where:
 * [Google Fonts](https://fonts.google.com) - was used to import the fonts into the HTML file.
 * [Font Awesome](https://fontawesome.com) - was used throughout the website to add icons for aesthetic and UX purposes.
 
-### Packages / Dependencies Installed
+### Packages/Dependencies Installed
 
 * [Django Allauth](https://docs.allauth.org/en/latest/) - used for user authentication, registration, and account management.
 * [Django Crispy Form](https://django-crispy-forms.readthedocs.io/en/latest/) - used to control the rendering of the forms.
@@ -446,7 +446,7 @@ The testing documentation can be found [here](https://github.com/Alvor1991/PP5-S
 
 ## Deployment
 
-Project developed using a [GitPod](https://gitpod.io/) workspace. The code was committed to [Git](https://git-scm.com/) and pushed to [GitHub](https://github.com/").
+Project developed using a [GitPod](https://gitpod.io/) workspace. The code was committed to [Git](https://git-scm.com/) and pushed to [GitHub](https://github.com/).
 
 ### Deploying on Heroku
 To deploy this page to Heroku from its GitHub repository, the following steps were taken:
@@ -456,39 +456,82 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
     - Choose a name for your app and select the location.
 
 2. Attach the Postgres database:
-    - In the Resources tab, under add-ons, type in Postgres and select the Heroku Postgres option.
+    - In the **Resources** tab, under **Add-ons**, type in Postgres and select the Heroku Postgres option.
 
-3. Prepare the environment and settings.py file:
-    * In the Settings tab, click on Reveal Config Vars and copy the url next to DATABASE_URL.
-    * In your GitPod workspace, create an env.py file in the main directory. 
-    * Add the DATABASE_URL value and your chosen SECRET_KEY value to the env.py file.
-    * Add the SECRET_KEY value to the Config Vars in Heroku.
-    * Update the settings.py file to import the env file and add the SECRETKEY and DATABASE_URL file paths.
-    * Update the Config Vars with the Cloudinary url, adding into the settings.py file also.
-    * In settings.py add the following sections:
-        * Cloudinary to the INSTALLED_APPS list
-        * STATICFILE_STORAGE
-        * STATICFILES_DIRS
-        * STATIC_ROOT
-        * MEDIA_URL
-        * DEFAULT_FILE_STORAGE
-        * TEMPLATES_DIR
-        * Update DIRS in TEMPLATES with TEMPLATES_DIR
-        * Update ALLOWED_HOSTS with ['app_name.heroku.com', 'localhost']
+3. Prepare the environment and `settings.py` file:
+    * In the **Settings** tab, click on **Reveal Config Vars** and copy the URL next to `DATABASE_URL`.
+    * In your GitPod workspace, create an `env.py` file in the main directory. Add the following:
+      ```python
+      import os
+
+      os.environ["DATABASE_URL"] = "your-database-url"
+      os.environ["SECRET_KEY"] = "your-secret-key"
+      os.environ["CLOUD_NAME"] = "your-cloudinary-cloud-name"
+      os.environ["API_KEY"] = "your-cloudinary-api-key"
+      os.environ["API_SECRET"] = "your-cloudinary-api-secret"
+      ```
+    * Add `env.py` to your `.gitignore` file to ensure it is not pushed to version control.
+    * Update `settings.py`:
+      ```python
+      import os
+      from pathlib import Path
+      import dj_database_url
+
+      BASE_DIR = Path(__file__).resolve().parent.parent
+
+      SECRET_KEY = os.getenv("SECRET_KEY")
+      DEBUG = "DEVELOPMENT" in os.environ
+      ALLOWED_HOSTS = ["your-app-name.herokuapp.com", "localhost"]
+
+      DATABASES = {
+          "default": dj_database_url.parse(os.environ.get("DATABASE_URL"))
+      }
+
+      INSTALLED_APPS += [
+          "cloudinary",
+          "cloudinary_storage",
+      ]
+
+      DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
+      MEDIA_URL = "/media/"
+
+      STATICFILES_STORAGE = "cloudinary_storage.storage.StaticHashedCloudinaryStorage"
+      STATIC_URL = "/static/"
+      STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+      STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+      ```
 
 4. Store Static and Media files in Cloudinary and Deploy to Heroku:
-    - Create three directories in the main directory; media, storage and templates.
-    - Create a file named "Procfile" in the main directory and add the following:
-        - web: gunicorn project-name.wsgi
-    - Go to Deploy tab on Heroku and connect to the GitHub, then to the required repository.
-    Click on Deploy Branch and wait for the build to load. When the build is complete, the app can be opened through Heroku.
+    - Create three directories in the main directory: `media`, `static`, and `templates`.
+    - Create a file named `Procfile` in the main directory and add the following:
+      ```
+      web: gunicorn project-name.wsgi
+      ```
+    - Go to the **Deploy** tab on Heroku and connect to your GitHub repository.
+    - Enable automatic deploys, then click **Deploy Branch** and wait for the build to complete.
+    - When the build is complete, the app can be opened through Heroku.
+
+5. Apply migrations:
+    - After deployment, run the following commands in the Heroku terminal to apply migrations:
+      ```bash
+      heroku run python manage.py makemigrations
+      heroku run python manage.py migrate
+      ```
+    - These commands will set up the database schema on your production database.
+
+6. Create a superuser:
+    - Run the following command in the Heroku terminal to create an admin account:
+      ```bash
+      heroku run python manage.py createsuperuser
+      ```
+    - Follow the prompts to enter a username, email, and password for the admin account.
 
 ### Forking the Repository
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:
 
-1. Log into [GitHub](https://github.com/login) or [create an account](https://github.com/join).
+1. Log into [GitHub](https://github.com/login).
 2. Locate the [GitHub Repository](https://github.com/Alvor1991/PP5-Sports-Sole).
-3. At the top of the repository, on the right side of the page, select "Fork"
+3. At the top of the repository, on the right side of the page, select "Fork".
 4. You should now have a copy of the original repository in your GitHub account.
 
 ### Creating a Clone
@@ -496,9 +539,9 @@ How to run this project locally:
 1. Install the [GitPod Browser](https://www.gitpod.io/docs/browser-extension/ "Link to Gitpod Browser extension download") Extension for Chrome.
 2. After installation, restart the browser.
 3. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
-2. Locate the [GitHub Repository](https://github.com/Alvor1991/PP5-Sports-Sole).
+4. Locate the [GitHub Repository](https://github.com/Alvor1991/PP5-Sports-Sole).
 5. Click the green "GitPod" button in the top right corner of the repository.
-This will trigger a new gitPod workspace to be created from the code in github where you can work locally.
+   This will trigger a new GitPod workspace to be created from the code in GitHub where you can work locally.
 
 How to run this project within a local IDE, such as VSCode:
 
@@ -506,15 +549,16 @@ How to run this project within a local IDE, such as VSCode:
 2. Locate the [GitHub Repository](https://github.com/Alvor1991/PP5-Sports-Sole).
 3. Under the repository name, click "Clone or download".
 4. In the Clone with HTTPs section, copy the clone URL for the repository.
-5. In your local IDE open the terminal.
+5. In your local IDE, open the terminal.
 6. Change the current working directory to the location where you want the cloned directory to be made.
-7. Type 'git clone', and then paste the URL you copied in Step 3.
-```
-git clone https://github.com/Alvor1991/PP5-Sports-Sole
-```
+7. Type the following command:
+    ```
+    git clone https://github.com/Alvor1991/PP5-Sports-Sole
+    ```
 8. Press Enter. Your local clone will be created.
 
 Further reading and troubleshooting on cloning a repository from GitHub [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+
 
 [Back to top ⇧](#sports-sole)
 
@@ -560,8 +604,14 @@ Facebook profile image was created using Canva.
 
 ## Known Bugs
 
+No known bugs at the time of deployment.
+
 [Back to top ⇧](#sports-sole)
 
 ## Acknowledgements
+
+* My tutor, Marcel, for his  feedback and guidance.
+
+* Code Institute and the Slack community.
 
 [Back to top ⇧](#sports-sole)
