@@ -241,13 +241,13 @@ Admin Add Product | ![Admin Add Product wireframe image](assets/wireframes/add_p
 
 ![Color scheme image](assets/readme_files/colour_scheme.png)
 
-The color scheme combines a professional foundation with vibrant accents. Black and gray provide a sophisticated base, while golden yellow and green draw attention to interactive and promotional elements. The overall effect is a cohesive, visually appealing design that reinforces the brand's identity, enhancing user engagement and guiding the shopping experience.
+The color scheme combines a professional foundation with vibrant accents. Black and gray provide a sophisticated base, while golden yellow and green draw attention to interactive and promotional elements. The overall effect is a cohesive, visually appealing design that reinforces the brand's identity.
 
 - **Black (#000000)**:  
   Used for the logo, text, and key action elements, black gives the site a clean, bold look. It establishes a sense of professionalism and makes the brand appear strong and reliable. Black also contrasts well with the other colors, highlighting essential elements like navigation and the search bar.
 
 - **Golden Yellow (#e6b800)**:  
-  This golden yellow is used prominently for call-to-action buttons and the "Free Delivery" banner. It’s a warm, inviting color that draws attention without overwhelming the viewer. This shade aligns with the sports-themed imagery, adding energy and creating a visually appealing highlight that guides users’ eyes to key interactive areas.
+  This golden yellow is used prominently for CTA buttons and the "Free Delivery" banner. It’s a warm, inviting color that draws attention without overwhelming the viewer. This shade aligns with the sports-themed imagery, adding energy and creating a visually appealing highlight that guides users’ eyes to key interactive areas.
 
 - **Dark Gray Backgrounds**:  
   The dark gray used in product cards matches well with the golden accents, creating a sophisticated, modern look. This color sets a neutral backdrop that lets the product images and calls-to-action stand out, maintaining focus on the content.
