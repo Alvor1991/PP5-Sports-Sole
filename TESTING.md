@@ -177,21 +177,19 @@
 
 #### HTML Validation Error: aria-describedby Attribute Issue
 
-Another error was flagged for the aria-describedby attribute referencing a non-existent element (id_password_helptext). This issue stems from Django and third-party libraries, such as Django Allauth and Crispy Forms, dynamically adding the attribute when rendering forms, even if no help text exists. Since this behavior is controlled by the form rendering logic rather than the HTML templates, it cannot be directly fixed in the templates without overriding or customizing the library's behavior. Resolving this is non-trivial and has been deferred for now as the application functions correctly.
+Another error was flagged for the aria-describedby attribute referencing a non-existent element (id_password_helptext). This issue stems from Django and third-party libraries (Django Allauth and Crispy Forms) dynamically adding the attribute when rendering forms. Since this behavior is controlled by the form rendering logic rather than the HTML templates, it cannot be directly fixed in the templates without overriding or customizing the library's behavior. Resolving this is non-trivial and has been deferred for now as the application functions correctly.
 
 ![HTML validation error](assets/testing_files/validation_error.png)
 
 ### CSS
 
-[W3C CSS Validator](https://jigsaw.w3.org/css-validator/) service was used to validate the CSS code of the project to ensure there were no syntax errors.
-
-W3C CSS Validator found no errors or warnings in the CSS.
+[W3C CSS Validator](https://jigsaw.w3.org/css-validator/) service was used to validate the CSS code of the project and found no errors.
 
 ![CSS validation image](assets/testing_files/css_validation.png)
 
 ### Python
 
-[PEP8CI](https://pep8ci.herokuapp.com/) was used to validate the Python code for PEP8 compliance. All errors have beeen fixed. 
+[PEP8CI](https://pep8ci.herokuapp.com/) was used to validate the Python code for PEP8 compliance. All errors have been fixed. 
 
 ### JavaScript
 
@@ -228,7 +226,7 @@ Page | Lighthouse Report |
 
 Browser | Outcome | Pass/Fail | 
 --- | --- | --- |
-Google Chrome | No appearance, responsiveness, or functionality issues.| <span style="color:green">Pass</span> |
+Google Chrome | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
 Safari | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
 Mozilla Firefox | No responsiveness or functionality issues.| <span style="color:green">Pass</span> |
 
@@ -580,12 +578,6 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <td>Checkout Button</td>
         <td>Proceed to Checkout Button</td>
         <td>Directs user to the checkout page when clicked</td>
-        <td>Pass</td>
-    </tr>
-    <tr>
-        <td>Back to Top Button</td>
-        <td>Back-to-Top Function</td>
-        <td>Scrolls user to the top of the page</td>
         <td>Pass</td>
     </tr>
     <tr>

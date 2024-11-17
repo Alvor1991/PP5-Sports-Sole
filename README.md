@@ -130,10 +130,10 @@ Sign Up | ![Desktop Sign Up wireframe image](assets/wireframes/signup.png) | ![M
 Home | ![Desktop Home wireframe image](assets/wireframes/index.png) | ![Mobile Home wireframe image](assets/wireframes/index_mobile.png)
 Products | ![Desktop About wireframe image](assets/wireframes/products.png) | ![Mobile About wireframe image](assets/wireframes/products_mobile.png)
 Product Detail | ![Desktop Treatments wireframe image](assets/wireframes/product_detail.png) | ![Mobile Treatments wireframe image](assets/wireframes/product_detail_mobile.png)
-Bag | ![Book Appointment wireframe image](assets/wireframes/bag.png) | ![Mobile Book Appointment wireframe image](assets/wireframes/bag_mobile.png)
-Checkout | ![View Appointments wireframe image](assets/wireframes/checkout.png) | ![Mobile View Appointments wireframe image](assets/wireframes/checkout_mobile.png)
-My profile | ![View Appointments wireframe image](assets/wireframes/profile.png) | ![Mobile View Appointments wireframe image](assets/wireframes/profile_mobile.png)
-Admin Add Product | ![View Appointments wireframe image](assets/wireframes/add_product.png) | ![Mobile View Appointments wireframe image](assets/wireframes/add_product_mobile.png)
+Bag | ![Bag wireframe image](assets/wireframes/bag.png) | ![Mobile Bag wireframe image](assets/wireframes/bag_mobile.png)
+Checkout | ![Checkout wireframe image](assets/wireframes/checkout.png) | ![Mobile Checkout wireframe image](assets/wireframes/checkout_mobile.png)
+My profile | ![My profile wireframe image](assets/wireframes/profile.png) | ![Mobile My profile wireframe image](assets/wireframes/profile_mobile.png)
+Admin Add Product | ![Admin Add Product wireframe image](assets/wireframes/add_product.png) | ![Mobile Admin Add Product wireframe image](assets/wireframes/add_product_mobile.png)
 
 [Back to top ⇧](#sports-sole)
 
@@ -250,7 +250,7 @@ The color scheme combines a professional foundation with vibrant accents. Black 
   This golden yellow is used prominently for call-to-action buttons and the "Free Delivery" banner. It’s a warm, inviting color that draws attention without overwhelming the viewer. This shade aligns with the sports-themed imagery, adding energy and creating a visually appealing highlight that guides users’ eyes to key interactive areas.
 
 - **Dark Gray Backgrounds**:  
-  The dark gray used in product cardss matches well with the golden accents, creating a sophisticated, modern look. This color sets a neutral backdrop that lets the product images and calls-to-action stand out, maintaining focus on the content.
+  The dark gray used in product cards matches well with the golden accents, creating a sophisticated, modern look. This color sets a neutral backdrop that lets the product images and calls-to-action stand out, maintaining focus on the content.
 
 - **White (#FFFFFF)**:  
   White is used for the main background and testimonials section, providing a clean, spacious feel. It helps balance the darker and more vibrant colors, making the page feel open and inviting. White also enhances readability and highlights the structured layout.
@@ -481,7 +481,7 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
     - Create a file named "Procfile" in the main directory and add the following:
         - web: gunicorn project-name.wsgi
     - Go to Deploy tab on Heroku and connect to the GitHub, then to the required repository.
-    Click on Delpoy Branch and wait for the build to load. When the build is complete, the app can be opened through Heroku.
+    Click on Deploy Branch and wait for the build to load. When the build is complete, the app can be opened through Heroku.
 
 ### Forking the Repository
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
@@ -564,34 +564,4 @@ Facebook profile image was created using Canva.
 
 ## Acknowledgements
 
-
-
 [Back to top ⇧](#sports-sole)
-
-
-
-
-NewsletterSubscriber
-This model manages the list of newsletter subscribers. Admins can view and manage subscriber details, including their email address, signup date, and subscription status, allowing for easy activation or deactivation of subscribers.
-CustomerTestimonial
-This model allows admins to collect and display customer feedback. Admins can add testimonials with the customer’s name, feedback text, and a rating between 1 and 5. Testimonials are automatically timestamped and can be showcased on the website.
-FAQ (Frequently Asked Questions)
-This model helps organize and manage FAQs displayed on the website. Admins can add or edit questions, answers, and optional categories, while also controlling the order in which FAQs are displayed for better user experience.
-ContactSubmission
-This model stores messages submitted via the contact form. Admins can review messages from customers, including their name, email, and message content, along with a timestamp for when the message was submitted.
-
-
-
-checkout models 
-
-The custom model introduced several enhancements and modifications compared to the walkthrough model. In the OrderLineItem model, logic was added to consider a product's discounted price (if available) when calculating the lineitem_total, ensuring accurate handling of discounts in the total order cost. Additionally, the Decimal class was used to ensure precise calculations for prices. In the Order model, functionality remains largely the same as the walkthrough,
-
-
-Products model
-
-A Size model and a many-to-many relationship with Product were added to allow products to have multiple sizes, addressing limitations of the walkthrough’s has_sizes field. The Product model now includes a discounted_price field to manage price reductions and a gender field with choices for Men and Women, improving product categorization and filtering. Additionally, the integration of Cloudinary for the image and detail_image fields replaces the traditional ImageField, streamlining media storage. The use of TaggableManager adds tagging functionality, enhancing product search and organization. These changes collectively provide a more robust and feature-rich data model for managing the store's inventory.
-
-
-Profile 
-
-The custom model expands upon the walkthrough implementation by introducing a new Wishlist model, which allows users to save products they are interested in for future reference. This model establishes a ForeignKey relationship between the User and Product models and includes an added_on field to track when each product was added to the wishlist. This enhancement significantly improves the user experience by enabling a personalized feature that was not present in the walkthrough. Apart from the addition of the Wishlist model, the core UserProfile model remains largely unchanged.
