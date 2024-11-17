@@ -207,12 +207,14 @@ Lighthouse in Chrome DevTools was used to confirm that colors & fonts used throu
 
 Page | Lighthouse Report |
 | --- | --- |
-| Home | ![Index Lighthouse Report](assets/testing_files/lighthouse_index.jpg) |
-| About | ![About Lighthouse Report](assets/testing_files/lighthouse_about.jpg) |
-| Treatments | ![Register Lighthouse Report](assets/testing_files/lighthouse_treatments.jpg) |
-| My appointments | ![Booking Lighthouse Report](assets/testing_files/lighthouse_myappointments.jpg) |
-| Login | ![Login Lighthouse Report](assets/testing_files/lighthouse_login.jpg) |
-| Signup | ![Signup Lighthouse Report](assets/testing_files/lighthouse_signup.jpg) |
+| Home | ![Index Lighthouse Report](assets/testing_files/lighthouse_index.png) |
+| Products | ![Products Lighthouse Report](assets/testing_files/lighthouse_products.png) |
+| Product Detail | ![Register Lighthouse Report](assets/testing_files/lighthouse_product_detail.png) |
+| Bag | ![Bag Lighthouse Report](assets/testing_files/lighthouse_bag.png) |
+| Checkout | ![Checkout Lighthouse Report](assets/testing_files/lighthouse_checkout.png) |
+| My Profile | ![Bag Lighthouse Report](assets/testing_files/lighthouse_profile.png) |
+| Login | ![Login Lighthouse Report](assets/testing_files/lighthouse_login.png) |
+| Signup | ![Signup Lighthouse Report](assets/testing_files/lighthouse_signup.png) |
 
 ## Tools Testing
 
